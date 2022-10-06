@@ -1,0 +1,18 @@
+initial_joint_positions:
+  pepper_arm:
+     LShoulder: 0.0
+     LBicep: 0.00873665
+     LElbow: 0.0
+     LForeArm: -1.56307
+     l_wrist: 0.0
+  pepper_hand:
+     finger_1: 0.2
+     finger_2: 0.2
+     finger_3: 0.2
+     finger_4: 0.2
+
+        
+        
+        
+        
+       

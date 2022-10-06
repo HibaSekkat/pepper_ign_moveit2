@@ -1,0 +1,25 @@
+# Docker
+**/Dockerfile
+**/.dockerignore
+**/.docker/host
+**/.docker/*.bash
+
+# Git
+**/.git
+**/.gitignore
+
+# Pre-commit
+**/.git_hooks
+**/.pre-commit-config.yaml
+
+# Colcon
+**/build
+**/install
+**/log
+
+# Python
+**/__pycache__
+
+# Markdown
+**/README.md
+**/CHANGELOG.md

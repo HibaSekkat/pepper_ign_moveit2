@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<!-- Macro for SRDF of Summit XL-GEN (LunaLab variant) with Kinova robot j2s7s300 -->
+<!-- j - Jaco -->
+<!-- 2 - v2 (Gen2) -->
+<!-- s - spherical wrist -->
+<!-- 7 - 7 DOF -->
+<!-- s - service -->
+<!-- 3 - 3 finger gripper -->
+<!-- 0 - reserved -->
+<!-- 0 - reserved -->
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!--       -->
+  <!-- Macro -->
+  <!--       -->
+  <xacro:macro name="lunalab_summit_xl_gen_j2s7s300" params="
+   prefix:=robot_
+   external_devices:=false
+   realsense_d435:=false
+   realsense_d455:=false
+   realsense_l515:=false
+   lidar:=false
+  ">
+    <group name="arm">
+      <chain base_link="${prefix}j2s7s300_link_base" tip_link="${prefix}j2s7s300_end_effector"/>
+    </group>
+    <group name="gripper">
+      <joint name="${prefix}j2s7s300_joint_finger_1"/>
+      <joint name="${prefix}j2s7s300_joint_finger_2"/>
+      <joint name="${prefix}j2s7s300_joint_finger_3"/>
+      <passive_joint name="${prefix}j2s7s300_joint_finger_tip_1"/>
+      <passive_joint name="${prefix}j2s7s300_joint_finger_tip_2"/>
+      <passive_joint name="${prefix}j2s7s300_joint_finger_tip_3"/>
+    </group>
+
+    <group_state name="vertical" group="arm">
+      <joint name="${prefix}j2s7s300_joint_1" value="0"/>
+      <joint name="${prefix}j2s7s300_joint_2" value="${pi}"/>
+      <joint name="${prefix}j2s7s300_joint_3" value="0"/>
+      <joint name="${prefix}j2s7s300_joint_4" value="${pi}"/>
+      <joint name="${prefix}j2s7s300_joint_5" value="0"/>
+      <joint name="${prefix}j2s7s300_joint_6" value="${pi}"/>
+      <joint name="${prefix}j2s7s300_joint_7" value="0"/>
+    </group_state>
+    <group_state name="home" group="arm">
+      <joint name="${prefix}j2s7s300_joint_1" value="0"/>
+      <joint name="${prefix}j2s7s300_joint_2" value="${pi}"/>
+      <joint name="${prefix}j2s7s300_joint_3" value="0"/>
+      <joint name="${prefix}j2s7s300_joint_4" value="${270*pi/180}"/>
+      <joint name="${prefix}j2s7s300_joint_5" value="0"/>
+      <joint name="${prefix}j2s7s300_joint_6" value="${90*pi/180}"/>
+      <joint name="${prefix}j2s7s300_joint_7" value="0"/>
+    </group_state>
+
+    <group_state name="open" group="gripper">
+      <joint name="${prefix}j2s7s300_joint_finger_1" value="0.2"/>
+      <joint name="${prefix}j2s7s300_joint_finger_2" value="0.2"/>
+      <joint name="${prefix}j2s7s300_joint_finger_3" value="0.2"/>
+    </group_state>
+    <group_state name="close" group="gripper">
+      <joint name="${prefix}j2s7s300_joint_finger_1" value="1.3"/>
+      <joint name="${prefix}j2s7s300_joint_finger_2" value="1.3"/>
+      <joint name="${prefix}j2s7s300_joint_finger_3" value="1.3"/>
+    </group_state>
+
+    <end_effector name="gripper" parent_link="${prefix}j2s7s300_end_effector" group="gripper" parent_group="arm"/>
+
+    <passive_joint name="${prefix}j2s7s300_joint_finger_tip_1"/>
+    <passive_joint name="${prefix}j2s7s300_joint_finger_tip_2"/>
+    <passive_joint name="${prefix}j2s7s300_joint_finger_tip_3"/>
+
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_j2s7s300_link_2" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_j2s7s300_link_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_j2s7s300_link_4" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_j2s7s300_link_5" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_j2s7s300_link_6" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_j2s7s300_link_base" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_j2s7s300_link_3" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_j2s7s300_link_4" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_j2s7s300_link_5" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_j2s7s300_link_6" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_j2s7s300_link_base" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_4" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_5" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_6" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_7" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_base" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_finger_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_finger_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_finger_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_finger_tip_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_finger_tip_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_5" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_6" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_7" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_base" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_finger_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_finger_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_finger_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_finger_tip_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_finger_tip_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_6" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_7" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_finger_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_finger_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_finger_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_finger_tip_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_finger_tip_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_7" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_finger_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_finger_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_finger_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_finger_tip_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_finger_tip_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_j2s7s300_link_finger_1" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_j2s7s300_link_finger_2" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_j2s7s300_link_finger_3" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_j2s7s300_link_finger_tip_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_j2s7s300_link_finger_tip_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_summit_xl_base_link" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_j2s7s300_link_finger_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_j2s7s300_link_finger_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_j2s7s300_link_finger_tip_1" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_j2s7s300_link_finger_tip_2" reason="User"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_j2s7s300_link_finger_tip_3" reason="User"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_2" link2="robot_j2s7s300_link_finger_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_2" link2="robot_j2s7s300_link_finger_tip_1" reason="User"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_2" link2="robot_j2s7s300_link_finger_tip_2" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_2" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_3" link2="robot_j2s7s300_link_finger_tip_1" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_3" link2="robot_j2s7s300_link_finger_tip_2" reason="Never"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_3" link2="robot_j2s7s300_link_finger_tip_3" reason="Adjacent"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_tip_1" link2="robot_j2s7s300_link_finger_tip_2" reason="User"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_tip_1" link2="robot_j2s7s300_link_finger_tip_3" reason="User"/>
+    <disable_collisions link1="robot_j2s7s300_link_finger_tip_2" link2="robot_j2s7s300_link_finger_tip_3" reason="Never"/>
+    <disable_collisions link1="robot_summit_xl_back_left_wheel" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_summit_xl_back_left_wheel" link2="robot_summit_xl_base_link" reason="Adjacent"/>
+    <disable_collisions link1="robot_summit_xl_back_left_wheel" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_summit_xl_back_left_wheel" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_summit_xl_back_right_wheel" link2="robot_summit_xl_base_link" reason="Adjacent"/>
+    <disable_collisions link1="robot_summit_xl_back_right_wheel" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+    <disable_collisions link1="robot_summit_xl_back_right_wheel" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    <disable_collisions link1="robot_summit_xl_base_link" link2="robot_summit_xl_front_left_wheel" reason="Adjacent"/>
+    <disable_collisions link1="robot_summit_xl_base_link" link2="robot_summit_xl_front_right_wheel" reason="Adjacent"/>
+    <disable_collisions link1="robot_summit_xl_front_left_wheel" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+
+    <xacro:if value="${external_devices}">
+      <disable_collisions link1="robot_external_devices_link" link2="robot_j2s7s300_link_1" reason="Never"/>
+      <disable_collisions link1="robot_external_devices_link" link2="robot_j2s7s300_link_base" reason="Never"/>
+      <disable_collisions link1="robot_external_devices_link" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_external_devices_link" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_external_devices_link" link2="robot_summit_xl_base_link" reason="Adjacent"/>
+      <disable_collisions link1="robot_external_devices_link" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_external_devices_link" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+
+      <xacro:if value="${realsense_d435}">
+        <disable_collisions link1="robot_external_devices_link" link2="robot_realsense_d435_mount1" reason="Adjacent"/>
+        <disable_collisions link1="robot_external_devices_link" link2="robot_realsense_d435_mount2" reason="Adjacent"/>
+        <disable_collisions link1="robot_external_devices_link" link2="robot_realsense_d435_sensor" reason="Adjacent"/>
+      </xacro:if>
+
+      <xacro:if value="${realsense_d455}">
+        <disable_collisions link1="robot_external_devices_link" link2="robot_realsense_d455_link" reason="Adjacent"/>
+      </xacro:if>
+
+      <xacro:if value="${lidar}">
+        <disable_collisions link1="robot_external_devices_link" link2="robot_lidar_mount" reason="Never"/>
+      </xacro:if>
+    </xacro:if>
+
+    <xacro:if value="${realsense_d435}">
+      <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_realsense_d435_mount1" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_realsense_d435_mount1" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_realsense_d435_mount1" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_realsense_d435_mount2" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_realsense_d435_mount2" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_realsense_d435_mount2" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_realsense_d435_sensor" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_realsense_d435_sensor" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_realsense_d435_sensor" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount1" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount1" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount1" link2="robot_summit_xl_base_link" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount1" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount1" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount2" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount2" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount2" link2="robot_summit_xl_base_link" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount2" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_mount2" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_sensor" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_sensor" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_sensor" link2="robot_summit_xl_base_link" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_sensor" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d435_sensor" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+
+      <xacro:if value="${lidar}">
+        <disable_collisions link1="robot_lidar_mount" link2="robot_realsense_d455_mount1" reason="Never"/>
+        <disable_collisions link1="robot_lidar_mount" link2="robot_realsense_d455_mount2" reason="Never"/>
+        <disable_collisions link1="robot_lidar_mount" link2="robot_realsense_d455_sensor" reason="Never"/>
+      </xacro:if>
+    </xacro:if>
+
+    <xacro:if value="${realsense_d455}">
+      <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_realsense_d455_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_2" link2="robot_realsense_d455_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_realsense_d455_link" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d455_link" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d455_link" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d455_link" link2="robot_summit_xl_base_link" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d455_link" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_realsense_d455_link" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+
+      <xacro:if value="${lidar}">
+        <disable_collisions link1="robot_lidar_mount" link2="robot_realsense_d455_link" reason="Never"/>
+      </xacro:if>
+    </xacro:if>
+
+    <xacro:if value="${realsense_l515}">
+      <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_3" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_5" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_6" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_7" link2="robot_realsense_l515_mount" reason="Adjacent"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_1" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_2" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_2" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_3" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_3" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_tip_1" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_tip_1" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_tip_2" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_tip_2" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_tip_3" link2="robot_realsense_l515_link" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_finger_tip_3" link2="robot_realsense_l515_mount" reason="Never"/>
+      <disable_collisions link1="robot_realsense_l515_link" link2="robot_realsense_l515_mount" reason="Adjacent"/>
+    </xacro:if>
+
+    <xacro:if value="${lidar}">
+      <disable_collisions link1="robot_j2s7s300_link_1" link2="robot_lidar_mount" reason="Default"/>
+      <disable_collisions link1="robot_j2s7s300_link_4" link2="robot_lidar_mount" reason="Never"/>
+      <disable_collisions link1="robot_j2s7s300_link_base" link2="robot_lidar_mount" reason="Default"/>
+      <disable_collisions link1="robot_lidar_mount" link2="robot_summit_xl_back_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_lidar_mount" link2="robot_summit_xl_back_right_wheel" reason="Never"/>
+      <disable_collisions link1="robot_lidar_mount" link2="robot_summit_xl_base_link" reason="Adjacent"/>
+      <disable_collisions link1="robot_lidar_mount" link2="robot_summit_xl_front_left_wheel" reason="Never"/>
+      <disable_collisions link1="robot_lidar_mount" link2="robot_summit_xl_front_right_wheel" reason="Never"/>
+    </xacro:if>
+
+  </xacro:macro>
+</robot>

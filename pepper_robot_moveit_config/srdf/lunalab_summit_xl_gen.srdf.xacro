@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- SRDF for Summit XL-GEN (LunaLab variant) -->
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
+
+  <!--                   -->
+  <!-- Imported elements -->
+  <!--                   -->
+  <!-- Manipulator variants -->
+  <xacro:include filename="$(find lunalab_summit_xl_gen_moveit_config)/srdf/lunalab_summit_xl_manipulators.xacro"/>
+
+
+  <!--            -->
+  <!-- Parameters -->
+  <!--            -->
+  <!-- Name of the robot (mandatory) -->
+  <xacro:arg name="name" default="lunalab_summit_xl_gen"/>
+  <!-- Prefix for all entities -->
+  <xacro:arg name="prefix" default="robot_"/>
+  <!-- Flag to enable disabling of collisions with external devices -->
+  <xacro:arg name="external_devices" default="true"/>
+  <!-- Flag to enable disabling of collisions with RealSense D435 -->
+  <xacro:arg name="realsense_d435" default="true"/>
+  <!-- Flag to enable disabling of collisions with RealSense D455 -->
+  <xacro:arg name="realsense_d455" default="true"/>
+  <!-- Flag to enable disabling of collisions with RealSense L515 -->
+  <xacro:arg name="realsense_l515" default="true"/>
+  <!-- Flag to enable disabling of collisions with LiDAR -->
+  <xacro:arg name="lidar" default="true"/>
+
+
+  <!--       -->
+  <!-- Robot -->
+  <!--       -->
+  <!-- Kinova Gen2 (Jaco2, spherical wrist, 7DOF, 3-finger gripper) -->
+  <xacro:lunalab_summit_xl_gen_j2s7s300
+    prefix="$(arg prefix)"
+    external_devices="$(arg external_devices)"
+    realsense_d435="$(arg realsense_d435)"
+    realsense_d455="$(arg realsense_d455)"
+    realsense_l515="$(arg realsense_l515)"
+    lidar="$(arg lidar)"
+  />
+
+</robot>
