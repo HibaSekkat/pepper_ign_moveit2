@@ -58,7 +58,7 @@ The following directory structure is utilised for this package.
 ├── scripts/                                  # [dir] Additional useful scripts
 ├── srdf/                                     # [dir] SRDF description (xacros)
     ├── pepper_robot_j2s7s300.xacro  # Xacro specific to SRDF of Kinova j2s7s300 manipulator
-    ├── pepper_robot.srdf            # SRDF generated from `pepper_robot.srdf.xacro`
+    ├── pepper_robot.srdf            # SRDF generated from `pepper_robot.xacro`
     ├── pepper_robot.srdf.xacro      # The primary xacro of the robot
     └── lunalab_summit_xl_manipulators.xacro  # Xacro for utilised manipulators
 ├── CMakeLists.txt                            # Colcon-enabled CMake recipe

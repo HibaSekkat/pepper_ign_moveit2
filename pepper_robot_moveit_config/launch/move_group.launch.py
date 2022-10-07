@@ -125,7 +125,7 @@ def generate_launch_description():
                 [
                     FindPackageShare(moveit_config_package),
                     "srdf",
-                    "pepper_robot.srdf.xacro",
+                    "pepper_robot.xacro",
                 ]
             ),
             " ",
