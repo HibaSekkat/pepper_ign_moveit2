@@ -37,6 +37,7 @@ def generate_launch_description():
     safety_k_position = LaunchConfiguration("safety_k_position")
     collision_arm = LaunchConfiguration("collision_arm")
     collision_gripper = LaunchConfiguration("collision_gripper")
+    publish_state = LaunchConfiguration("publish_state")
     execute_trajectories = LaunchConfiguration("execute_trajectories")
     ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
@@ -449,6 +450,30 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "collision_gripper",
             default_value="true",
             description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
+        ),
+        # Geometry
+        DeclareLaunchArgument(
+            "high_quality_mesh",
+            default_value="true",
+            description="Flag to select the high or low quality model.",
+        ),
+        # State publishing
+        DeclareLaunchArgument(
+            "publish_state",
+            default_value="true",
+            description="Flag to enable robot state publisher.",
+        ),
+        # Execution
+        DeclareLaunchArgument(
+            "execute_trajectories",
+            default_value="true",
+            description="Flag to enable execution of trajectories for MoveIt 2.",
+        ),
+        # Gripper
+        DeclareLaunchArgument(
+            "mimic_gripper_joints",
+            default_value="false",
+            description="Flag to mimic joints of the gripper.",
         ),
         # ROS 2 control
         DeclareLaunchArgument(
