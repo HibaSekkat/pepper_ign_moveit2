@@ -28,6 +28,7 @@ def generate_launch_description():
     # Get substitution for all arguments
     description_package = LaunchConfiguration("description_package")
     description_filepath = LaunchConfiguration("description_filepath")
+    moveit_config_package = "pepper_robot_moveit_config"
     name = LaunchConfiguration("name")
     prefix = LaunchConfiguration("prefix")
     gripper = LaunchConfiguration("gripper")
@@ -36,6 +37,7 @@ def generate_launch_description():
     safety_k_position = LaunchConfiguration("safety_k_position")
     collision_arm = LaunchConfiguration("collision_arm")
     collision_gripper = LaunchConfiguration("collision_gripper")
+    execute_trajectories = LaunchConfiguration("execute_trajectories")
     ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
@@ -499,9 +501,9 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         DeclareLaunchArgument(
             "rviz_config",
             default_value=path.join(
-                get_package_share_directory("pepper_robot_description"),
+                get_package_share_directory("pepper_robot_moveit_config"),
                 "rviz",
-                "view.rviz",
+                "moveit.rviz",
             ),
             description="Path to configuration for RViz2.",
         ),
