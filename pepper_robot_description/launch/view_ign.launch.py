@@ -1,5 +1,5 @@
 #!/usr/bin/env -S ros2 launch
-"""Visualisation of SDF model for Summit XL-GEN (LunaLab variant) in Ignition Gazebo. Note that the generated model://pepper_robot/model.sdf descriptor is used."""
+"""Visualisation of SDF model for pepper_robot in Ignition Gazebo. Note that the generated model://pepper_robot/model.sdf descriptor is used."""
 
 from os import path
 from typing import List

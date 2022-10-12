@@ -2,9 +2,9 @@
 <package format="3">
   <name>pepper_robot_moveit_config</name>
   <version>1.0.0</version>
-  <description>MoveIt configuration for manipulators that can be attached to Summit XL-GEN (LunaLab variant)</description>
-  <maintainer email="andrejorsula@uni.lu">Andrej Orsula</maintainer>
-  <author>Andrej Orsula</author>
+  <description>MoveIt configuration for manipulators that can be attached to pepper_robot</description>
+  <maintainer email="h.sekkat@ueuromed.org">Hiba Sekkat</maintainer>
+  <author>HibaSekkat</author>
   <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
