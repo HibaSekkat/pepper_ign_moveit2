@@ -35,10 +35,14 @@ def generate_launch_description():
     safety_limits = LaunchConfiguration("safety_limits")
     safety_position_margin = LaunchConfiguration("safety_position_margin")
     safety_k_position = LaunchConfiguration("safety_k_position")
+    collision_chassis = LaunchConfiguration("collision_chassis")
+    collision_wheels = LaunchConfiguration("collision_wheels")
     collision_arm = LaunchConfiguration("collision_arm")
     collision_gripper = LaunchConfiguration("collision_gripper")
+    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
     publish_state = LaunchConfiguration("publish_state")
     execute_trajectories = LaunchConfiguration("execute_trajectories")
+    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
     ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
@@ -48,6 +52,7 @@ def generate_launch_description():
     gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
     gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
     gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
+    gazebo_diff_drive = LaunchConfiguration("gazebo_diff_drive")
     gazebo_joint_trajectory_controller = LaunchConfiguration(
         "gazebo_joint_trajectory_controller"
     )
@@ -85,11 +90,23 @@ def generate_launch_description():
             "safety_k_position:=",
             safety_k_position,
             " ",
+            "collision_chassis:=",
+            collision_chassis,
+            " ",
+            "collision_wheels:=",
+            collision_wheels,
+            " ",
             "collision_arm:=",
             collision_arm,
             " ",
             "collision_gripper:=",
             collision_gripper,
+            " ",
+            "high_quality_mesh:=",
+            high_quality_mesh,
+            " ",
+            "mimic_gripper_joints:=",
+            mimic_gripper_joints,
             " ",
             "ros2_control:=",
             ros2_control,
@@ -108,6 +125,9 @@ def generate_launch_description():
             " ",
             "gazebo_self_collide_fingers:=",
             gazebo_self_collide_fingers,
+            " ",
+            "gazebo_diff_drive:=",
+            gazebo_diff_drive,
             " ",
             "gazebo_joint_trajectory_controller:=",
             gazebo_joint_trajectory_controller,
@@ -417,7 +437,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="robot_",
+            default_value="pepper_robot_",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
         #gripper
@@ -443,6 +463,16 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             description="Parametric k-position factor of all safety controllers.",
         ),
         # Collision geometry
+        DeclareLaunchArgument(
+            "collision_chassis",
+            default_value="true",
+            description="Flag to enable collision geometry for the chassis of Summit XL.",
+        ),
+        DeclareLaunchArgument(
+            "collision_wheels",
+            default_value="true",
+            description="Flag to enable collision geometry for the wheels of Summit XL.",
+        ),
         DeclareLaunchArgument(
             "collision_arm",
             default_value="true",
@@ -514,6 +544,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "gazebo_self_collide_fingers",
             default_value="true",
             description="Flag to enable self-collision of robot between fingers (finger tips) when generating SDF for Gazebo.",
+        ),
+        DeclareLaunchArgument(
+            "gazebo_diff_drive",
+            default_value="true",
+            description="Flag to enable DiffDrive Gazebo plugin for Summit XL.",
         ),
         DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",
