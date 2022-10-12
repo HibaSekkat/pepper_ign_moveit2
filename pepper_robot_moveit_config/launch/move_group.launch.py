@@ -53,6 +53,7 @@ def generate_launch_description():
     )
     gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
     gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
+    enable_rviz = LaunchConfiguration("enable_rviz")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
     log_level = LaunchConfiguration("log_level")
@@ -530,6 +531,9 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             description="Flag to enable PosePublisher Gazebo plugin for true pose of robot.",
         ),
         # Miscellaneous
+        DeclareLaunchArgument(
+            "enable_rviz", default_value="true", description="Flag to enable RViz2."
+        ),
         DeclareLaunchArgument(
             "rviz_config",
             default_value=path.join(
