@@ -44,6 +44,7 @@ def generate_launch_description():
     ros2_control_command_interface = LaunchConfiguration(
         "ros2_control_command_interface"
     )
+    servo = LaunchConfiguration("servo")
     gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
     gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
     gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
@@ -490,6 +491,12 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "ros2_control_command_interface",
             default_value="effort",
             description="The output control command interface provided by ros2_control ('position', 'velocity' or 'effort').",
+        ),
+        # Servo
+        DeclareLaunchArgument(
+            "servo",
+            default_value="true",
+            description="Flag to enable MoveIt2 Servo for manipulator.",
         ),
         # Gazebo
         DeclareLaunchArgument(
