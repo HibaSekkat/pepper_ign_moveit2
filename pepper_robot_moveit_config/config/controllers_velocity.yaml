@@ -13,32 +13,35 @@ controller_manager:
 
 joint_trajectory_controller:
   ros__parameters:
-    joints:
+    LeftArm_joints:
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
+    RightArm_joints:
+      -RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+    Head_joints:
+      - HeadYaw
+      - HeadPitch
+    Pelvis_joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
+    LeftHand_joints:
+      - LHand
+    RightHand_joints:
+      - RHand
     command_interfaces:
       - effort
     state_interfaces:
       - position
       - velocity
-  gains: 
-    RHand:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    LHand:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
+  gains:
     LWristYaw:
       p: 100
       i: 0.1
@@ -53,7 +56,7 @@ joint_trajectory_controller:
       i_clamp: 0.2
       antiwindup: false
       publish_state: true
-      LElbowRoll:
+    LElbowRoll:
       p: 100
       i: 0.1
       d: 1.0
@@ -104,6 +107,55 @@ joint_trajectory_controller:
       publish_state: true
     RShoulderPitch:
       p: 500
+      i: 0.1
+      d: 1.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    HeadYaw:
+      p: 100
+      i: 0.1
+      d: 1.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    HeadPitch:
+      p: 100
+      i: 0.1
+      d: 1.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    HipRoll:
+      p: 1000
+      i: 0.1
+      d: 5.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    HipPitch:
+      p: 1000
+      i: 0.1
+      d: 5.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    KneePitch:
+      p: 1000
+      i: 0.1
+      d: 5.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    LHand:
+      p: 100
+      i: 0.1
+      d: 1.0
+      i_clamp: 0.2
+      antiwindup: false
+      publish_state: true
+    RHand:
+      p: 100
       i: 0.1
       d: 1.0
       i_clamp: 0.2
