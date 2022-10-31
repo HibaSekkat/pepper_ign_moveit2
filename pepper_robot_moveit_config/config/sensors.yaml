@@ -1,4 +1,4 @@
-sensors:
+ sensors:
   - sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
     image_topic: /camera/image_raw
 #    image_topic: /naoqi_driver_node/camera/depth/image_raw

@@ -1,9 +1,9 @@
-controller_names:
+ controller_names:
   - joint_trajectory_controller
   - gripper_trajectory_controller
   # - gripper_action_controller
 
-joint_trajectory_controller:
+ joint_trajectory_controller:
   action_ns: follow_joint_trajectory
   type: FollowJointTrajectory
   default: true
@@ -14,7 +14,7 @@ joint_trajectory_controller:
       - LElbowRoll
       - LWristYaw
 
-gripper_trajectory_controller:
+ gripper_trajectory_controller:
   action_ns: follow_joint_trajectory
   type: FollowJointTrajectory
   default: true
@@ -44,7 +44,7 @@ gripper_trajectory_controller:
       - RFinger42
       - RFinger43
       - LThumb1
-      - Rthumb1
+      - RThumb1
       - LThumb2
       - RThumb2
 
