@@ -15,7 +15,7 @@ from launch.substitutions import (
 )
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-
+from launch_ros.descriptions import ParameterValue
 def generate_launch_description() -> LaunchDescription:
 
     # Declare all launch arguments
@@ -120,7 +120,10 @@ def generate_launch_description() -> LaunchDescription:
             executable="robot_state_publisher",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            parameters=[robot_description, {"use_sim_time": use_sim_time}],
+            parameters=[{
+                'use_sim_time': use_sim_time,
+                'robot_description': ParameterValue(Command(['cat ', description_filepath]), value_type=str)
+            }],
         ),
         # rviz2
         Node(
