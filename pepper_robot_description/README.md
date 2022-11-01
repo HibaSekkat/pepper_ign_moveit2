@@ -57,7 +57,7 @@ The following directory structure is utilised for this package because it provid
     ├── sensors/                             # [dir] Xacros for all sensors
     ├── summit_xl/                           # [dir] Xacros for Summit XL
     ├── pepper_robot.gazebo         # Xacro for utilised Gazebo plugins
-    ├── pepper_robot.urdf           # URDF generated from `pepper_robot.urdf.xacro`
+    ├── pepper_robot.urdf           # URDF generated from `pepper_robot.xacro`
     ├── pepper_robot.xacro     # The primary xacro of the robot
     ├── pepper_robot_manipulators.xacro # Xacro for utilised manipulators
     ├── pepper_robot_misc.xacro         # Xacro for utilised miscellaneous additions
