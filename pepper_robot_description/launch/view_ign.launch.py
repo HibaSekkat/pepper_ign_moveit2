@@ -35,11 +35,11 @@ def generate_launch_description() -> LaunchDescription:
     _robot_description_xml = Command(
         [
             PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
+            "",
             PathJoinSubstitution(
                 [FindPackageShare(description_package), description_filepath]
             ),
-            " ",
+            "",
             "name:=",
             model,
         ]
@@ -75,7 +75,7 @@ def generate_launch_description() -> LaunchDescription:
                 robot_description,
                 {
                     "publish_frequency": 50.0,
-                    "frame_prefix": "pepper_robot",
+                    "frame_prefix": " ",
                     "use_sim_time": use_sim_time,
                 },
             ],
