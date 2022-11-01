@@ -107,7 +107,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "description_filepath",
-            default_value=path.join("urdf", "pepper_robot.urdf.xacro"),
+            default_value=path.join("urdf", "pepper_robot.xacro"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # World and model for Ignition Gazebo
