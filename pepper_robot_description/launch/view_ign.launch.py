@@ -75,7 +75,7 @@ def generate_launch_description() -> LaunchDescription:
                 robot_description,
                 {
                     "publish_frequency": 50.0,
-                    "frame_prefix": "",
+                    "frame_prefix": "pepper_robot",
                     "use_sim_time": use_sim_time,
                 },
             ],
