@@ -6,13 +6,13 @@
 	<xacro:macro name="insert_visu_RFinger41_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger41.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger41.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -20,13 +20,13 @@
 	<xacro:macro name="insert_visu_LFinger42_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger42.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger42.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -34,13 +34,13 @@
 	<xacro:macro name="insert_visu_Hip">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HipRoll.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HipRoll.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HipRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HipRoll_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -48,13 +48,13 @@
 	<xacro:macro name="insert_visu_LElbow">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LElbowYaw.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LElbowYaw.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LElbowYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LElbowYaw_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -62,13 +62,13 @@
 	<xacro:macro name="insert_visu_RFinger12_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger12.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger12.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -76,13 +76,13 @@
 	<xacro:macro name="insert_visu_LFinger33_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger33.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger33.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -90,13 +90,13 @@
 	<xacro:macro name="insert_visu_RFinger31_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger31.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger31.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -104,13 +104,13 @@
 	<xacro:macro name="insert_visu_WheelFL_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/WheelFL.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/WheelFL.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/WheelFL_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/WheelFL_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -118,13 +118,13 @@
 	<xacro:macro name="insert_visu_LFinger21_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger21.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger21.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -132,13 +132,13 @@
 	<xacro:macro name="insert_visu_RFinger32_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger32.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger32.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -146,13 +146,13 @@
 	<xacro:macro name="insert_visu_LFinger13_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger13.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger13.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -160,13 +160,13 @@
 	<xacro:macro name="insert_visu_LFinger32_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger32.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger32.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -174,13 +174,13 @@
 	<xacro:macro name="insert_visu_LThumb1_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LThumb1.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LThumb1.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -188,13 +188,13 @@
 	<xacro:macro name="insert_visu_LFinger11_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger11.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger11.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -202,13 +202,13 @@
 	<xacro:macro name="insert_visu_RFinger22_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger22.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger22.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -216,13 +216,13 @@
 	<xacro:macro name="insert_visu_RThumb2_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RThumb2.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RThumb2.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -230,13 +230,13 @@
 	<xacro:macro name="insert_visu_RFinger13_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger13.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger13.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -244,13 +244,13 @@
 	<xacro:macro name="insert_visu_Tibia">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/KneePitch.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/KneePitch.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/KneePitch_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/KneePitch_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -258,13 +258,13 @@
 	<xacro:macro name="insert_visu_Head">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HeadPitch.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HeadPitch.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HeadPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HeadPitch_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -272,13 +272,13 @@
 	<xacro:macro name="insert_visu_LFinger22_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger22.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger22.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -286,13 +286,13 @@
 	<xacro:macro name="insert_visu_RFinger21_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger21.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger21.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -300,13 +300,13 @@
 	<xacro:macro name="insert_visu_LBicep">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LShoulderRoll.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LShoulderRoll.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LShoulderRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LShoulderRoll_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -314,13 +314,13 @@
 	<xacro:macro name="insert_visu_RThumb1_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RThumb1.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RThumb1.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -328,13 +328,13 @@
 	<xacro:macro name="insert_visu_LFinger41_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger41.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger41.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -342,13 +342,13 @@
 	<xacro:macro name="insert_visu_r_wrist">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RWristYaw.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RWristYaw.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RWristYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RWristYaw_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -356,13 +356,13 @@
 	<xacro:macro name="insert_visu_LForeArm">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LElbowRoll.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LElbowRoll.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LElbowRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LElbowRoll_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -370,13 +370,13 @@
 	<xacro:macro name="insert_visu_LThumb2_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LThumb2.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LThumb2.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -384,13 +384,13 @@
 	<xacro:macro name="insert_visu_LFinger12_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger12.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger12.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -398,13 +398,13 @@
 	<xacro:macro name="insert_visu_RShoulder">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RShoulderPitch.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RShoulderPitch.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RShoulderPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RShoulderPitch_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -412,13 +412,13 @@
 	<xacro:macro name="insert_visu_RFinger23_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger23.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger23.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -426,13 +426,13 @@
 	<xacro:macro name="insert_visu_RBicep">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RShoulderRoll.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RShoulderRoll.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RShoulderRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RShoulderRoll_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -440,13 +440,13 @@
 	<xacro:macro name="insert_visu_RFinger11_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger11.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger11.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -454,13 +454,13 @@
 	<xacro:macro name="insert_visu_WheelB_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/WheelB.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/WheelB.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/WheelB_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/WheelB_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -468,13 +468,13 @@
 	<xacro:macro name="insert_visu_LFinger23_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger23.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger23.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -482,13 +482,13 @@
 	<xacro:macro name="insert_visu_RElbow">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RElbowYaw.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RElbowYaw.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RElbowYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RElbowYaw_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -496,13 +496,13 @@
 	<xacro:macro name="insert_visu_Neck">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HeadYaw.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HeadYaw.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HeadYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HeadYaw_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -510,13 +510,13 @@
 	<xacro:macro name="insert_visu_LFinger43_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger43.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger43.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -524,13 +524,13 @@
 	<xacro:macro name="insert_visu_RFinger43_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger43.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger43.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -538,13 +538,13 @@
 	<xacro:macro name="insert_visu_torso">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -552,13 +552,13 @@
 	<xacro:macro name="insert_visu_RFinger42_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger42.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger42.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -566,13 +566,13 @@
 	<xacro:macro name="insert_visu_LFinger31_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger31.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger31.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -580,13 +580,13 @@
 	<xacro:macro name="insert_visu_RFinger33_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger33.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger33.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -594,13 +594,13 @@
 	<xacro:macro name="insert_visu_l_wrist">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LWristYaw.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LWristYaw.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LWristYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LWristYaw_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -608,13 +608,13 @@
 	<xacro:macro name="insert_visu_RForeArm">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RElbowRoll.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RElbowRoll.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/RElbowRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/RElbowRoll_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -622,13 +622,13 @@
 	<xacro:macro name="insert_visu_WheelFR_link">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/WheelFR.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/WheelFR.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/WheelFR_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/WheelFR_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -636,13 +636,13 @@
 	<xacro:macro name="insert_visu_LShoulder">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LShoulderPitch.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LShoulderPitch.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/LShoulderPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/LShoulderPitch_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -650,13 +650,13 @@
 	<xacro:macro name="insert_visu_Pelvis">
 		<visual>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+				<mesh filename="package://pepper_robot_description/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
