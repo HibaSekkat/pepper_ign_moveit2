@@ -1,4 +1,5 @@
-Panels:
+
+zPanels:
   - Class: rviz/Displays
     Help Height: 78
     Name: Displays
@@ -7,10 +8,12 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /RobotModel1/Links1
+        - /Camera1
         - /TF1
-        - /DepthCloud1/Auto Size1
-      Splitter Ratio: 0.5
-    Tree Height: 565
+        - /TF1/Frames1
+      Splitter Ratio: 0.51795578
+    Tree Height: 339
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -19,7 +22,7 @@ Panels:
       - /2D Nav Goal1
       - /Publish Point1
     Name: Tool Properties
-    Splitter Ratio: 0.588679
+    Splitter Ratio: 0.588679016
   - Class: rviz/Views
     Expanded:
       - /Current View1
@@ -39,7 +42,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.03
+        Line Width: 0.0299999993
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -51,7 +54,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.7
+    - Alpha: 0.5
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
@@ -61,10 +64,19 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        CameraTop_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Hip:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -78,37 +90,63 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        LFeet:
+          Value: true
+        LFinger11_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LFinger11:
+        LFinger12_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LFinger12:
+        LFinger13_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LFinger13:
+        LFinger21_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LFinger21:
+        LFinger22_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LFinger22:
+        LFinger23_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LFinger23:
+        LFinger31_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LFinger32_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LFinger33_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LFinger41_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LFinger42_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LFinger43_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -118,47 +156,28 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        LHip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        LPelvis:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         LShoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LSonar:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        LThigh:
+        LThumb1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        LThumb1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        LThumb2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        LTibia:
+        LThumb2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         Link Tree Style: Links in Alphabetic Order
         Neck:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Pelvis:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -172,37 +191,63 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        RFeet:
+          Value: true
+        RFinger11_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RFinger11:
+        RFinger12_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RFinger12:
+        RFinger13_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RFinger13:
+        RFinger21_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RFinger21:
+        RFinger22_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RFinger22:
+        RFinger23_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RFinger23:
+        RFinger31_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RFinger32_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RFinger33_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RFinger41_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RFinger42_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RFinger43_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -212,54 +257,85 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        RHip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        RPelvis:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         RShoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RSonar:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        RThigh:
+        RThumb1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RThumb1:
+        RThumb2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RThumb2:
+        RealSence_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        RealSence_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        RealSence_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        RealSence_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        RealSense_screw_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        RTibia:
+        Tibia:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        WheelB_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WheelFL_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WheelFR_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        azure_depth_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        azure_imu_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
-          Show Axes: false
+          Show Axes: true
           Show Trail: false
-        gaze:
+        camera_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        l_ankle:
+          Value: true
+        camera_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_visor:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -268,16 +344,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        l_sole:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         l_wrist:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        r_ankle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -286,11 +353,12 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        r_sole:
+        r_wrist:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        r_wrist:
+          Value: true
+        t265:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -306,311 +374,268 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /camera/rgb/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Camera
+      Enabled: true
+      Image Rendering: background and overlay
+      Image Topic: /camera/rgb/image_raw
+      Name: Camera
+      Overlay Alpha: 0.5
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+      Visibility:
+        Grid: true
+        Image: true
+        RobotModel: true
+        TF: true
+        Value: true
+      Zoom Factor: 1
     - Class: rviz/TF
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         CameraTop_frame:
-          Value: true
+          Value: false
+        CameraTop_optical_frame:
+          Value: false
         Head:
-          Value: true
+          Value: false
+        Hip:
+          Value: false
         LBicep:
-          Value: true
+          Value: false
         LElbow:
-          Value: true
-        LFeet:
-          Value: true
-        LFinger11:
-          Value: true
-        LFinger12:
-          Value: true
-        LFinger13:
-          Value: true
-        LFinger21:
-          Value: true
-        LFinger22:
-          Value: true
-        LFinger23:
-          Value: true
+          Value: false
+        LFinger11_link:
+          Value: false
+        LFinger12_link:
+          Value: false
+        LFinger13_link:
+          Value: false
+        LFinger21_link:
+          Value: false
+        LFinger22_link:
+          Value: false
+        LFinger23_link:
+          Value: false
+        LFinger31_link:
+          Value: false
+        LFinger32_link:
+          Value: false
+        LFinger33_link:
+          Value: false
+        LFinger41_link:
+          Value: false
+        LFinger42_link:
+          Value: false
+        LFinger43_link:
+          Value: false
         LForeArm:
-          Value: true
-        LHip:
-          Value: true
-        LPelvis:
-          Value: true
+          Value: false
         LShoulder:
-          Value: true
-        LSonar:
-          Value: true
-        LThigh:
-          Value: true
-        LThumb1:
-          Value: true
-        LThumb2:
-          Value: true
-        LTibia:
-          Value: true
+          Value: false
+        LThumb1_link:
+          Value: false
+        LThumb2_link:
+          Value: false
         Neck:
-          Value: true
+          Value: false
+        Pelvis:
+          Value: false
         RBicep:
-          Value: true
+          Value: false
         RElbow:
-          Value: true
-        RFeet:
-          Value: true
-        RFinger11:
-          Value: true
-        RFinger12:
-          Value: true
-        RFinger13:
-          Value: true
-        RFinger21:
-          Value: true
-        RFinger22:
-          Value: true
-        RFinger23:
-          Value: true
+          Value: false
+        RFinger11_link:
+          Value: false
+        RFinger12_link:
+          Value: false
+        RFinger13_link:
+          Value: false
+        RFinger21_link:
+          Value: false
+        RFinger22_link:
+          Value: false
+        RFinger23_link:
+          Value: false
+        RFinger31_link:
+          Value: false
+        RFinger32_link:
+          Value: false
+        RFinger33_link:
+          Value: false
+        RFinger41_link:
+          Value: false
+        RFinger42_link:
+          Value: false
+        RFinger43_link:
+          Value: false
         RForeArm:
-          Value: true
-        RHip:
-          Value: true
-        RPelvis:
-          Value: true
+          Value: false
         RShoulder:
+          Value: false
+        RThumb1_link:
+          Value: false
+        RThumb2_link:
+          Value: false
+        RealSence_color_frame:
+          Value: false
+        RealSence_color_optical_frame:
+          Value: false
+        RealSence_depth_frame:
+          Value: false
+        RealSence_depth_optical_frame:
+          Value: false
+        RealSense_screw_frame:
           Value: true
-        RSonar:
-          Value: true
-        RThigh:
-          Value: true
-        RThumb1:
-          Value: true
-        RThumb2:
-          Value: true
-        RTibia:
-          Value: true
+        Tibia:
+          Value: false
+        WheelB_link:
+          Value: false
+        WheelFL_link:
+          Value: false
+        WheelFR_link:
+          Value: false
+        azure_depth_camera_optical_frame:
+          Value: false
+        azure_imu_frame:
+          Value: false
         base_link:
-          Value: true
-        gaze:
-          Value: true
-        l_ankle:
-          Value: true
+          Value: false
+        camera_base:
+          Value: false
+        camera_body:
+          Value: false
+        camera_rgb_optical_frame:
+          Value: false
+        camera_visor:
+          Value: false
         l_gripper:
-          Value: true
-        l_sole:
-          Value: true
+          Value: false
         l_wrist:
-          Value: true
-        r_ankle:
-          Value: true
+          Value: false
         r_gripper:
-          Value: true
-        r_sole:
-          Value: true
+          Value: false
         r_wrist:
+          Value: false
+        t265:
           Value: true
         torso:
-          Value: true
-      Marker Scale: 0.3
+          Value: false
+      Marker Scale: 0.0599999987
       Name: TF
-      Show Arrows: true
+      Show Arrows: false
       Show Axes: true
       Show Names: true
       Tree:
         base_link:
-          torso:
-            LPelvis:
-              LHip:
-                LThigh:
-                  LTibia:
-                    l_ankle:
-                      LFeet:
-                        l_sole:
-                          {}
-            LShoulder:
-              LBicep:
-                LElbow:
-                  LForeArm:
-                    l_wrist:
-                      LFinger11:
-                        LFinger12:
-                          LFinger13:
+          Tibia:
+            Pelvis:
+              Hip:
+                torso:
+                  LShoulder:
+                    LBicep:
+                      LElbow:
+                        LForeArm:
+                          l_wrist:
+                            LFinger11_link:
+                              LFinger12_link:
+                                LFinger13_link:
+                                  {}
+                            LFinger21_link:
+                              LFinger22_link:
+                                LFinger23_link:
+                                  {}
+                            LFinger31_link:
+                              LFinger32_link:
+                                LFinger33_link:
+                                  {}
+                            LFinger41_link:
+                              LFinger42_link:
+                                LFinger43_link:
+                                  {}
+                            LThumb1_link:
+                              LThumb2_link:
+                                {}
+                            l_gripper:
+                              {}
+                  Neck:
+                    Head:
+                      CameraTop_frame:
+                        CameraTop_optical_frame:
+                          camera_rgb_optical_frame:
                             {}
-                      LFinger21:
-                        LFinger22:
-                          LFinger23:
+                        RealSense_screw_frame:
+                          RealSence_color_frame:
+                            RealSence_color_optical_frame:
+                              {}
+                          RealSence_depth_frame:
+                            RealSence_depth_optical_frame:
+                              {}
+                          camera_base:
+                            azure_depth_camera_optical_frame:
+                              {}
+                            azure_imu_frame:
+                              {}
+                            camera_body:
+                              {}
+                            camera_visor:
+                              {}
+                          t265:
                             {}
-                      LThumb1:
-                        LThumb2:
-                          {}
-                      l_gripper:
-                        {}
-            LSonar:
+                  RShoulder:
+                    RBicep:
+                      RElbow:
+                        RForeArm:
+                          r_wrist:
+                            RFinger11_link:
+                              RFinger12_link:
+                                RFinger13_link:
+                                  {}
+                            RFinger21_link:
+                              RFinger22_link:
+                                RFinger23_link:
+                                  {}
+                            RFinger31_link:
+                              RFinger32_link:
+                                RFinger33_link:
+                                  {}
+                            RFinger41_link:
+                              RFinger42_link:
+                                RFinger43_link:
+                                  {}
+                            RThumb1_link:
+                              RThumb2_link:
+                                {}
+                            r_gripper:
+                              {}
+            WheelB_link:
               {}
-            Neck:
-              Head:
-                CameraTop_frame:
-                  gaze:
-                    {}
-            RPelvis:
-              RHip:
-                RThigh:
-                  RTibia:
-                    r_ankle:
-                      RFeet:
-                        r_sole:
-                          {}
-            RShoulder:
-              RBicep:
-                RElbow:
-                  RForeArm:
-                    r_wrist:
-                      RFinger11:
-                        RFinger12:
-                          RFinger13:
-                            {}
-                      RFinger21:
-                        RFinger22:
-                          RFinger23:
-                            {}
-                      RThumb1:
-                        RThumb2:
-                          {}
-                      r_gripper:
-                        {}
-            RSonar:
+            WheelFL_link:
+              {}
+            WheelFR_link:
               {}
       Update Interval: 0
       Value: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/LaserScan
-      Color: 0; 255; 0
-      Color Transformer: FlatColor
-      Decay Time: 0
-      Enabled: false
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: LaserScan
-      Position Transformer: XYZ
-      Queue Size: 10
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.01
-      Style: Points
-      Topic: /pepper_robot/laser
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: false
-    - Alpha: 0.5
-      Buffer Length: 1
-      Class: rviz/Range
-      Color: 255; 255; 255
-      Enabled: false
-      Name: BackSonar
-      Queue Size: 100
-      Topic: /pepper_robot/sonar/back
-      Value: false
-    - Alpha: 0.5
-      Buffer Length: 1
-      Class: rviz/Range
-      Color: 255; 255; 255
-      Enabled: false
-      Name: FrontSonar
-      Queue Size: 100
-      Topic: /pepper_robot/sonar/front
-      Value: false
-    - Class: rviz/Camera
-      Enabled: false
-      Image Rendering: background and overlay
-      Image Topic: /pepper_robot/camera/front/image_raw
-      Name: FrontCamera
-      Overlay Alpha: 0.5
-      Queue Size: 2
-      Transport Hint: compressed
-      Value: false
-      Visibility:
-        BackSonar: true
-        BottomCamera: true
-        DepthCloud: true
-        FrontSonar: true
-        Grid: true
-        LaserScan: true
-        RobotModel: true
-        TF: true
-        Value: true
-      Zoom Factor: 1
-    - Class: rviz/Camera
-      Enabled: false
-      Image Rendering: background and overlay
-      Image Topic: /pepper_robot/camera/bottom/image_raw
-      Name: BottomCamera
-      Overlay Alpha: 0.5
-      Queue Size: 2
-      Transport Hint: raw
-      Value: false
-      Visibility:
-        BackSonar: true
-        DepthCloud: true
-        FrontCamera: true
-        FrontSonar: true
-        Grid: true
-        LaserScan: true
-        RobotModel: true
-        TF: true
-        Value: true
-      Zoom Factor: 1
-    - Alpha: 1
-      Auto Size:
-        Auto Size Factor: 1
-        Value: true
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 0.946703
-        Min Value: -0.746588
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/DepthCloud
-      Color: 255; 255; 255
-      Color Image Topic: ""
-      Color Transformer: AxisColor
-      Color Transport Hint: raw
-      Decay Time: 0
-      Depth Map Topic: /pepper_robot/camera/depth/image_raw
-      Depth Map Transport Hint: raw
-      Enabled: false
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: DepthCloud
-      Occlusion Compensation:
-        Occlusion Time-Out: 30
-        Value: false
-      Position Transformer: XYZ
-      Queue Size: 5
-      Selectable: true
-      Size (Pixels): 3
-      Style: Flat Squares
-      Topic Filter: true
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: torso
+    Default Light: true
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -631,30 +656,37 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.32784
+      Distance: 0.218854427
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.06
+        Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.0411379859
+        Y: 0.000491698273
+        Z: 1.23917532
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
-      Pitch: 0.055398
+      Near Clip Distance: 0.00999999978
+      Pitch: -0.12520279
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.000398632
+      Yaw: 0.717283368
     Saved: ~
 Window Geometry:
+  Camera:
+    collapsed: false
   Displays:
     collapsed: false
-  Height: 846
+  Height: 1056
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000013c000002c4fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000028000002c4000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000002c4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730100000028000002c4000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004b00000003efc0100000002fb0000000800540069006d00650100000000000004b0000002f600fffffffb0000000800540069006d0065010000000000000450000000000000000000000259000002c400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000002e300000396fc020000000afb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000028000001e2000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d0061006700650100000210000000b20000001600fffffffb0000000c00430061006d00650072006101000002c8000000f60000001600ffffff000000010000010f00000396fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000002800000396000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003efc0100000002fb0000000800540069006d006501000000000000073f0000030000fffffffb0000000800540069006d00650100000000000004500000000000000000000003410000039600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -663,6 +695,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1200
-  X: 55
-  Y: 40
+  Width: 1855
+  X: 65
+  Y: 24
