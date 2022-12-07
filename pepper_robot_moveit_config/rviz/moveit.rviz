@@ -795,24 +795,27 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz_default_plugins/XYOrbit
-      Distance: 3.1229
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.5
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.624256
-        Y: -0.109979
-        Z: 1.34111e-07
+        X: 0.3333333432674408
+        Y: 0
+        Z: 0.5
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
-      Pitch: 0.454797
-      Target Frame: base_link
-      Value: XYOrbit (rviz_default_plugins)
-      Yaw: 5.95997
-    Saved: null
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.39269909262657166
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.7853981852531433
+    Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
@@ -827,7 +830,7 @@ Window Geometry:
     collapsed: false
   QMainWindow State: 000000ff00000000fd0000000100000000000002b1000002b5fc0200000007fb000000100044006900730070006c0061007900730100000028000000f9000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000127000001b6000001ab00fffffffc00000324000000c20000000000fffffffa000000000100000002fb000000160049006d006100670065005f006400650070007400680000000000ffffffff0000000000000000fb000000160049006d006100670065005f0063006f006c006f00720100000000000002a20000000000000000fb0000000a0049006d00610067006501000002e80000011a0000000000000000000002d2000002b500000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
-    collapsed: false
+    collapsed: true
   Width: 1417
   X: 2224
   Y: 114
