@@ -9,7 +9,7 @@ Panels:
         - /PlanningScene1
         - /PlanningScene1/Scene Robot1
       Splitter Ratio: 0.5
-    Tree Height: 486
+    Tree Height: 412
   - Class: rviz_common/Views
     Expanded:
       - /Current View1
@@ -17,13 +17,11 @@ Panels:
     Splitter Ratio: 0.5
   - Class: rviz_common/Tool Properties
     Expanded:
-      - /2D Goal Pose1
-      - /2D Goal Pose1/Topic1
-      - /2D Pose Estimate1
-      - /2D Pose Estimate1/Topic1
       - /Interact1
       - /Publish Point1
       - /Measure1
+      - /2D Goal Pose1
+      - /2D Pose Estimate1
     Name: Tool Properties
     Splitter Ratio: 0.5
 Visualization Manager:
@@ -2129,6 +2127,20 @@ Visualization Manager:
     Frame Rate: 30
   Name: root
   Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/Select
     - Class: rviz_default_plugins/SetGoal
       Topic:
         Depth: 5
@@ -2147,20 +2159,6 @@ Visualization Manager:
         Reliability Policy: Reliable
         Value: initialpose
     - Class: rviz_default_plugins/FocusCamera
-    - Class: rviz_default_plugins/Interact
-      Hide Inactive Objects: true
-    - Class: rviz_default_plugins/MoveCamera
-    - Class: rviz_default_plugins/PublishPoint
-      Single click: true
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /clicked_point
-    - Class: rviz_default_plugins/Measure
-      Line color: 128; 128; 0
-    - Class: rviz_default_plugins/Select
   Transformation:
     Current:
       Class: rviz_default_plugins/TF
@@ -2168,7 +2166,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.7318975925445557
+      Distance: 3.420848846435547
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -2183,26 +2181,28 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3236769735813141
+      Pitch: 0.2036767601966858
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 0.3614085912704468
+      Yaw: 0.4364076852798462
     Saved: ~
 Window Geometry:
-  "":
-    collapsed: false
-  " - Trajectory Slider":
-    collapsed: false
   Displays:
     collapsed: false
   Height: 1376
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b40000050afc0200000006fb000000100044006900730070006c006100790073010000003b00000267000000c700fffffffb0000000a0056006900650077007301000002a8000000a0000000a000fffffffb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000034e0000007d0000005c00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00fffffffbffffffff01000003d1000001740000016900fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00ffffff000003d90000050a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Trajectory Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b40000050afc0200000008fb000000100044006900730070006c006100790073010000003b0000021d000000c700fffffffb0000000a00560069006500770073010000025e000000a0000000a000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007301000003040000006f0000005c00fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000379000001cc0000016a00fffffffb0000003c005400720061006a006500630074006f007200790020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00ffffff000003d90000050a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Tool Properties:
+    collapsed: false
+  Trajectory - Trajectory Slider:
     collapsed: false
   Views:
     collapsed: false
   Width: 1683
-  X: 1757
+  X: 74
   Y: 27
