@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# This script converts xacro (SRDF variant) into SRDF for `lpepper_robot_description` package
+# This script converts xacro (SRDF variant) into SRDF for `pepper_robot_description` package
 
 SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" &>/dev/null && pwd)"
-XACRO_PATH="$(dirname "${SCRIPT_DIR}")/srdf/pepper_robot.srdf.xacro"
+XACRO_PATH="$(dirname "${SCRIPT_DIR}")/srdf/pepper_robot.xacro"
 SRDF_PATH="$(dirname "${SCRIPT_DIR}")/srdf/pepper_robot.srdf"
 
 # Arguments for xacro
