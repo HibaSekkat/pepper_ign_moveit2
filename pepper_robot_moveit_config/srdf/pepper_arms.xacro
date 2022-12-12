@@ -65,5 +65,9 @@
     <passive_joint name="${prefix}LThumb1"/>
     <passive_joint name="${prefix}LThumb2"/>
 
+    <disable_collisions link1="LShoulder" link2="LElbow" reason="Adjacent"/>
+    <disable_collisions link1="LShoulder" link2="LWrist" reason="Never"/>
+
+
   </xacro:macro>
 </robot>
