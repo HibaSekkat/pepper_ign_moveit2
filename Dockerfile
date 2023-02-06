@@ -21,7 +21,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ### Import and install dependencies, then build these dependencies (not pepper_robot yet)
-COPY ./pepper.repos ${WS_SRC_DIR}/pepper_robot/pepper_robot.repos
+COPY ./pepper_robot.repos ${WS_SRC_DIR}/pepper_robot/pepper_robot.repos
 RUN vcs import --shallow ${WS_SRC_DIR} < ${WS_SRC_DIR}/pepper_robot/pepper_robot.repos && \
     rosdep update && \
     apt-get update && \
