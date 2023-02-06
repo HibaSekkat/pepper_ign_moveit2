@@ -2042,7 +2042,7 @@
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <!--
-        RGB CAMERAS:
+        RGB CAMERAS
 -->
   <gazebo reference="CameraTop_frame">
     <sensor name="CameraTop" type="camera">
