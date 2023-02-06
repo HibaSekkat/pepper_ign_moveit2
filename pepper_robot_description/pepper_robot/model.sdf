@@ -3196,14 +3196,7 @@
       <parameters>/home/andrej/ws/code/repos/pepper_robot/install/share/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
     <static>false</static>
-    <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
-      <use_pose_vector_msg>true</use_pose_vector_msg>
-      <publish_nested_model_pose>true</publish_nested_model_pose>
-      <publish_link_pose>false</publish_link_pose>
-      <publish_collision_pose>false</publish_collision_pose>
-      <publish_visual_pose>false</publish_visual_pose>
-    </plugin>
-    <plugin name='differential_drive_controller' filename='libgazebo_ros_diff_drive.so'>
+    <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <alwaysOn>true</alwaysOn>
       <updateRate>100</updateRate>
       <robotNamespace>/</robotNamespace>
@@ -3216,6 +3209,13 @@
       <odometryTopic>odom_diffdrive</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>base_footprint</robotBaseFrame>
+    </plugin>
+    <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <publish_nested_model_pose>true</publish_nested_model_pose>
+      <publish_link_pose>false</publish_link_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
     </plugin>
   </model>
 </sdf>
