@@ -166,7 +166,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "description_filepath",
-            default_value=path.join("/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf", "pepper_robot.urdf"),
+            default_value=path.join("urdf", "pepper_robot.urdf"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # Naming of the robot

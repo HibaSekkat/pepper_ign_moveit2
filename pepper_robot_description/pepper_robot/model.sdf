@@ -3454,7 +3454,17 @@
     <plugin name='r_gripper' filename='libroboticsgroup_gazebo_disable_link_plugin.so'>
       <link>r_gripper</link>
     </plugin>
+    <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>
+      <parameters>/home/andrej/ws/code/repos/pepper_robot/install/share/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
+    </plugin>
     <static>false</static>
+    <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <publish_nested_model_pose>true</publish_nested_model_pose>
+      <publish_link_pose>false</publish_link_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
+    </plugin>
     <plugin name='differential_drive_controller' filename='libgazebo_ros_diff_drive.so'>
       <alwaysOn>true</alwaysOn>
       <updateRate>100</updateRate>

@@ -20,7 +20,7 @@
       - LElbowRoll
       - LWristYaw
     RightArm_joints:
-      -RShoulderPitch
+      - RShoulderPitch
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
