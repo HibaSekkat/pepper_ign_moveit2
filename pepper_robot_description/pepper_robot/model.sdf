@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot/meshes/Torso_0.10.stl</uri>
+            <uri>pepper_robot/meshes/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -38,7 +38,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot/meshes/Torso.dae</uri>
+            <uri>pepper_robot/meshes/Torso.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -446,18 +446,6 @@
             <resolution>3</resolution>
           </range>
         </ray>
-        <plugin name='gazebo_ros_range' filename='libgazebo_ros_range.so'>
-          <robotNamespace>/pepper_robot</robotNamespace>
-          <gaussianNoise>0.05</gaussianNoise>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>20</updateRate>
-          <topicName>sonar_back</topicName>
-          <frameName>SonarBack_frame</frameName>
-          <minRange>0.0</minRange>
-          <maxRange>5.0</maxRange>
-          <fov>1.05</fov>
-          <radiation>ultrasound</radiation>
-        </plugin>
         <pose>-0.0718 0 -0.0534 -1.81761e-08 -0.209438 -3.14159</pose>
       </sensor>
       <sensor name='SonarFront' type='ray'>
@@ -484,18 +472,6 @@
             <resolution>3</resolution>
           </range>
         </ray>
-        <plugin name='gazebo_ros_range' filename='libgazebo_ros_range.so'>
-          <robotNamespace>/pepper_robot</robotNamespace>
-          <gaussianNoise>0.05</gaussianNoise>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>20</updateRate>
-          <topicName>sonar_front</topicName>
-          <frameName>SonarFront_frame</frameName>
-          <minRange>0.0</minRange>
-          <maxRange>5.0</maxRange>
-          <fov>1.05</fov>
-          <radiation>ultrasound</radiation>
-        </plugin>
         <pose>0.0699 0 -0.1023 0 -0.322858 0</pose>
       </sensor>
       <gravity>true</gravity>
