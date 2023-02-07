@@ -3134,12 +3134,12 @@
       <alwaysOn>true</alwaysOn>
       <updateRate>100</updateRate>
       <robotNamespace>/</robotNamespace>
-      <leftJoint>WheelFL</leftJoint>
-      <leftJoint>WheelBL</leftJoint>
-      <rightJoint>WheelFR</rightJoint>
-      <rightJoint>WheelBR</rightJoint>
-      <wheelSeparation>0.170</wheelSeparation>
-      <wheelDiameter>0.140</wheelDiameter>
+      <left_joint>WheelFL</left_joint>
+      <left_joint>WheelBL</left_joint>
+      <right_joint>WheelFR</right_joint>
+      <right_joint>WheelBR</right_joint>
+      <wheel_separation>0.170</wheel_separation>
+      <wheel_radius>0.7</wheel_radius>
       <torque>36.9</torque>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom_diffdrive</odometryTopic>
