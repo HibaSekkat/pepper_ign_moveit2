@@ -41,7 +41,7 @@
     state_interfaces:
       - position
       - velocity
-  gains:
+    gains:
     LWristYaw:
       p: 100
       i: 0.1
