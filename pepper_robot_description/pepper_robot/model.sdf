@@ -191,21 +191,6 @@
             <stddev>0.0070000000000000001</stddev>
           </noise>
         </camera>
-        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
-          <robotNamespace>/pepper_robot</robotNamespace>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>5.0</updateRate>
-          <cameraName>camera/bottom</cameraName>
-          <imageTopicName>image_raw</imageTopicName>
-          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-          <frameName>CameraBottom_optical_frame</frameName>
-          <hackBaseline>0.07</hackBaseline>
-          <distortionK1>-0.0648764</distortionK1>
-          <distortionK2>0.06125202</distortionK2>
-          <distortionK3>0.00382815</distortionK3>
-          <distortionT1>-0.00551104</distortionT1>
-          <distortionT2>0.0</distortionT2>
-        </plugin>
         <pose>0.09262 0 0.06177 0 0.698132 0</pose>
       </sensor>
       <sensor name='CameraDepth_frame_sensor' type='depth'>
@@ -223,18 +208,6 @@
             <far>8</far>
           </clip>
         </camera>
-        <plugin name='CameraDepth_frame_controller' filename='libgazebo_ros_openni_kinect.so'>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>20.0</updateRate>
-          <cameraName>pepper_robot/camera</cameraName>
-          <imageTopicName>ir/image_raw</imageTopicName>
-          <cameraInfoTopicName>depth/camera_info</cameraInfoTopicName>
-          <depthImageTopicName>depth/image_raw</depthImageTopicName>
-          <pointCloudTopicName>depth/points</pointCloudTopicName>
-          <frameName>CameraDepth_optical_frame</frameName>
-          <pointCloudCutoff>0.4</pointCloudCutoff>
-          <pointCloudCutoffMax>8.0</pointCloudCutoffMax>
-        </plugin>
         <pose>0.05138 0.039 0.1194 0 -0 0</pose>
       </sensor>
       <sensor name='CameraTop' type='camera'>
@@ -256,21 +229,6 @@
             <stddev>0.0070000000000000001</stddev>
           </noise>
         </camera>
-        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
-          <robotNamespace>/pepper_robot</robotNamespace>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>5.0</updateRate>
-          <cameraName>camera/front</cameraName>
-          <imageTopicName>image_raw</imageTopicName>
-          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-          <frameName>CameraTop_optical_frame</frameName>
-          <hackBaseline>0.07</hackBaseline>
-          <distortionK1>-0.0545211</distortionK1>
-          <distortionK2>0.06919734</distortionK2>
-          <distortionK3>-0.0241095</distortionK3>
-          <distortionT1>-0.0112245</distortionT1>
-          <distortionT2>0.0</distortionT2>
-        </plugin>
         <pose>0.08601 0 0.16284 0 -0 0</pose>
       </sensor>
     </link>
