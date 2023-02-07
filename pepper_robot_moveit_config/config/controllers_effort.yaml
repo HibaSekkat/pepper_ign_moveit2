@@ -42,91 +42,91 @@
       - position
       - velocity
     gains:
-    LWristYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RWristYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LElbowRoll:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RElbowRoll:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LElbowYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RElbowYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LShoulderRoll:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RShoulderRoll:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LShoulderPitch:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RShoulderPitch:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    HeadYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    HeadPitch:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    HipRoll:
-      p: 1000
-      i: 0.1
-      d: 5.0
-      i_clamp: 0.2
-    HipPitch:
-      p: 1000
-      i: 0.1
-      d: 5.0
-      i_clamp: 0.2
-    KneePitch:
-      p: 1000
-      i: 0.1
-      d: 5.0
-      i_clamp: 0.2
-    LHand:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RHand:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
+      LWristYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RWristYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LElbowRoll:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RElbowRoll:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LElbowYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RElbowYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LShoulderRoll:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RShoulderRoll:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LShoulderPitch:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RShoulderPitch:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      HeadYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      HeadPitch:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      HipRoll:
+        p: 1000
+        i: 0.1
+        d: 5.0
+        i_clamp: 0.2
+      HipPitch:
+        p: 1000
+        i: 0.1
+        d: 5.0
+        i_clamp: 0.2
+      KneePitch:
+        p: 1000
+        i: 0.1
+        d: 5.0
+        i_clamp: 0.2
+      LHand:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RHand:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
  gripper_trajectory_controller:
   ros__parameters:
     joints:
@@ -165,144 +165,143 @@
       - position
       - velocity
     gains:
-    LFinger11:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger12:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger13:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger11:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger12:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger13:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger21:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger22:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger23:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger21:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger22:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger23:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger31:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger32:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger33:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger31:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger32:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger33:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger41:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger42:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LFinger43:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger41:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger42:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RFinger43:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LThumb1:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RThumb1:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    LThumb2:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-    RThumb2:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-  
+      LFinger11:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger12:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger13:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger11:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger12:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger13:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger21:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger22:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger23:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger21:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger22:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger23:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger31:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger32:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger33:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger31:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger32:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger33:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger41:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger42:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger43:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger41:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger42:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger43:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LThumb1:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RThumb1:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LThumb2:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RThumb2:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
