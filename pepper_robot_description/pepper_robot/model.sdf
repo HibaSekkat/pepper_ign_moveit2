@@ -3131,9 +3131,6 @@
     </plugin>
     <static>false</static>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
-      <alwaysOn>true</alwaysOn>
-      <updateRate>100</updateRate>
-      <robotNamespace>/</robotNamespace>
       <leftJoint>WheelFL</leftJoint>
       <rightJoint>WheelFR</rightJoint>
       <wheelSeparation>0.170</wheelSeparation>
