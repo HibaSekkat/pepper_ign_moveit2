@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/Torso_0.10.stl</uri>
+            <uri>meshes/collision/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -38,7 +38,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/Torso.dae</uri>
+            <uri>meshes/visual/Torso.dae</uri>
           </mesh>
         </geometry>
       </visual>
