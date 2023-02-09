@@ -120,10 +120,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="robot_state_publisher",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            parameters=[{
-                'use_sim_time': use_sim_time,
-                'robot_description': ParameterValue(Command(['cat ', description_filepath]), value_type=str)
-            }],
+            parameters=[robot_description, {"use_sim_time": use_sim_time}],
         ),
         # rviz2
         Node(
