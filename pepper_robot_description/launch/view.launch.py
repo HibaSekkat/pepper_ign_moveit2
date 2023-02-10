@@ -141,7 +141,7 @@ def generate_launch_description() -> LaunchDescription:
             package="joint_state_publisher_gui",
             executable="joint_state_publisher_gui",
             output="log",
-            arguments=["--ros-args", "--log-level", log_level],
+            arguments=["--ros-args", "--log-level debug", log_level],
             parameters=[{"use_sim_time": use_sim_time}],
         ),
     ]
