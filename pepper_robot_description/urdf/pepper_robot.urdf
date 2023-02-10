@@ -2556,7 +2556,7 @@
   </ros2_control>
    <gazebo>
     <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>
-      <parameters>/root/ws/src/install/share/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
+      <parameters>/root/ws/src/share/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
   </gazebo>
   <gazebo>
