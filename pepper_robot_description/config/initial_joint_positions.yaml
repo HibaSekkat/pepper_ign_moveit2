@@ -1,9 +1,9 @@
  initial_joint_positions:
 
-  HeadPitch: -0.7168
-  HeadYaw: -2.0861
-  LElbowRoll: -1.5631
-  LElbowYaw: -2.0861
+  HeadPitch: -0.3665191
+  HeadYaw: 0.0174533
+  LElbowRoll: 0.0872665
+  LElbowYaw: 1.69297
   LFinger11: 0.1
   LFinger12: 0.1
   LFinger13: 0.1
@@ -16,14 +16,14 @@
   LFinger41: 0.1
   LFinger42: 0.1
   LFinger43: 0.1
-  LHand: 0.2
-  LShoulderPitch: -2.0861
-  LShoulderRoll: 0.0091
+  LHand: 0.0
+  LShoulderPitch: 1.74533
+  LShoulderRoll: -0.10472
   LThumb1: 0.1
   LThumb2: 0.1
-  LWristYaw: -1.8241
-  RElbowRoll: -1.5622
-  RElbowYaw: -2.0861
+  LWristYaw: -0.0174533
+  RElbowRoll: 0.0872665
+  RElbowYaw: 1.69297
   RFinger11: 0.1
   RFinger12: 0.1
   RFinger13: 0.1
@@ -37,8 +37,8 @@
   RFinger42: 0.1
   RFinger43: 0.1
   RHand: 0.2
-  RShoulderPitch: -2.0861
-  RShoulderRoll: -1.5622
+  RShoulderPitch: 1.74533
+  RShoulderRoll: -0.10472
   RThumb1: 0.1
   RThumb2: 0.1
-  RWristYaw: -1.8241
+  RWristYaw: 1.69297
