@@ -38,7 +38,7 @@
     <child link="Head"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="2.666" lower="-0.706858" upper="0.637045" velocity="9.22756"/>
+    <limit effort="2.666" lower="-0.706858" upper="0.4451" velocity="9.22756"/>
   </joint>
   <link name="Head">
     <inertial>

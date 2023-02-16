@@ -117,7 +117,7 @@
         <xyz>0 1 0</xyz>
         <limit>
           <lower>-0.70685799999999999</lower>
-          <upper>0.63704499999999997</upper>
+          <upper>0.44514499999999997</upper>
           <effort>2.6659999999999999</effort>
           <velocity>9.2275600000000004</velocity>
         </limit>
