@@ -15,8 +15,7 @@ from launch.substitutions import (
 )
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-
-
+from launch_ros.descriptions import ParameterValue
 def generate_launch_description() -> LaunchDescription:
 
     # Declare all launch arguments
@@ -164,7 +163,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "description_filepath",
-            default_value=path.join("urdf", "pepper_robot.xacro"),
+            default_value=path.join("urdf", "pepper_robot.urdf"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # Naming of the robot

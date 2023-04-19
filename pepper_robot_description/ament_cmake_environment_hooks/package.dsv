@@ -1,0 +1,4 @@
+source;share/pepper_robot_description/local_setup.bash
+source;share/pepper_robot_description/local_setup.dsv
+source;share/pepper_robot_description/local_setup.sh
+source;share/pepper_robot_description/local_setup.zsh

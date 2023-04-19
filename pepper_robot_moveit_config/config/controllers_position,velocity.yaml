@@ -1,4 +1,4 @@
-controller_manager:
+ controller_manager:
   ros__parameters:
     update_rate: 250
 
@@ -11,14 +11,31 @@ controller_manager:
     gripper_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-joint_trajectory_controller:
+ joint_trajectory_controller:
   ros__parameters:
-    joints:
+    LeftArm_joints:
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
+    RightArm_joints:
+      -RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+    Head_joints:
+      - HeadYaw
+      - HeadPitch
+    Pelvis_joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
+    LeftHand_joints:
+      - LHand
+    RightHand_joints:
+      - RHand
     command_interfaces:
       - position
       - velocity
@@ -26,7 +43,7 @@ joint_trajectory_controller:
       - position
       - velocity
 
-gripper_trajectory_controller:
+ gripper_trajectory_controller:
   ros__parameters:
     joints:
       - LFinger11

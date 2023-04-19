@@ -8,7 +8,7 @@ SRDF_PATH="$(dirname "${SCRIPT_DIR}")/srdf/pepper_robot.srdf"
 # Arguments for xacro
 XACRO_ARGS=(
     name:=pepper_robot
-  
+    prefix:=pepper_robot_
 )
 
 # Remove old SRDF file

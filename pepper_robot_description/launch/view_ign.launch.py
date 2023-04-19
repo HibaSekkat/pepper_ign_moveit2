@@ -1,5 +1,5 @@
 #!/usr/bin/env -S ros2 launch
-"""Visualisation of SDF model for Summit XL-GEN (LunaLab variant) in Ignition Gazebo. Note that the generated model://pepper_robot/model.sdf descriptor is used."""
+"""Visualisation of SDF model for pepper_robot in Ignition Gazebo. Note that the generated model://lunalab_summit_xl_gen/model.sdf descriptor is used."""
 
 from os import path
 from typing import List
@@ -107,7 +107,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "description_filepath",
-            default_value=path.join("urdf", "pepper_robot.urdf.xacro"),
+            default_value=path.join("urdf", "pepper_robot.urdf"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # World and model for Ignition Gazebo

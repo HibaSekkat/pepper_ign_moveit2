@@ -1,15 +1,19 @@
 from typing import List
 
-MOVE_GROUP_ARM: str = "arm"
-MOVE_GROUP_GRIPPER: str = "gripper"
+MOVE_GROUP_ARM: str = "left_arm"
+MOVE_GROUP_GRIPPER: str = "l_gripper"
 
 OPEN_GRIPPER_JOINT_POSITIONS: List[float] = [
     0.2,
     0.2,
     0.2,
     0.2,
+    0.2,
+    0.2,
 ]
 CLOSED_GRIPPER_JOINT_POSITIONS: List[float] = [
+    1.3,
+    1.3,
     1.3,
     1.3,
     1.3,
@@ -24,6 +28,7 @@ def joint_names(prefix: str = "pepper_robot") -> List[str]:
         prefix + "LElbowYaw",
         prefix + "LElbowRoll",
         prefix + "LWristYaw",
+        prefix + "LHand",
     ]
 
 

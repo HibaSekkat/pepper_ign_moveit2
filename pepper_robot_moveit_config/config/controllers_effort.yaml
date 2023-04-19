@@ -1,4 +1,4 @@
-controller_manager:
+ controller_manager:
   ros__parameters:
     update_rate: 250
 
@@ -11,105 +11,123 @@ controller_manager:
     gripper_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-joint_trajectory_controller:
+ joint_trajectory_controller:
   ros__parameters:
-    joints:
+    LeftArm_joints:
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
+    RightArm_joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+    Head_joints:
+      - HeadYaw
+      - HeadPitch
+    Pelvis_joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
+    LeftHand_joints:
+      - LHand
+    RightHand_joints:
+      - RHand
     command_interfaces:
       - effort
     state_interfaces:
       - position
       - velocity
-  gains: 
-    RHand:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    LHand:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    LWristYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    RWristYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
+    gains:
+      LWristYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RWristYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LElbowRoll:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    RElbowRoll:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    LElbowYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    RElbowYaw:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    LShoulderRoll:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    RShoulderRoll:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    LShoulderPitch:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-    RShoulderPitch:
-      p: 500
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: false
-      publish_state: true
-gripper_trajectory_controller:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RElbowRoll:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LElbowYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RElbowYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LShoulderRoll:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RShoulderRoll:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LShoulderPitch:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RShoulderPitch:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      HeadYaw:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      HeadPitch:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      HipRoll:
+        p: 1000
+        i: 0.1
+        d: 5.0
+        i_clamp: 0.2
+      HipPitch:
+        p: 1000
+        i: 0.1
+        d: 5.0
+        i_clamp: 0.2
+      KneePitch:
+        p: 1000
+        i: 0.1
+        d: 5.0
+        i_clamp: 0.2
+      LHand:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RHand:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+ gripper_trajectory_controller:
   ros__parameters:
     joints:
       - LFinger11
@@ -137,7 +155,7 @@ gripper_trajectory_controller:
       - RFinger42
       - RFinger43
       - LThumb1
-      - Rthumb1
+      - RThumb1
       - LThumb2
       - RThumb2
 
@@ -147,200 +165,143 @@ gripper_trajectory_controller:
       - position
       - velocity
     gains:
-    LFinger11:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger12:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger13:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger11:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger12:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger13:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger21:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger22:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger23:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger21:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger22:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger23:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger31:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger32:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger33:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger31:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger32:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger33:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger41:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger42:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LFinger43:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger41:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger42:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RFinger43:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LThumb1:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RThumb1:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    LThumb2:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-    RThumb2:
-      p: 100
-      i: 0.1
-      d: 1.0
-      i_clamp: 0.2
-      antiwindup: true
-      publish_state: true
-  
+      LFinger11:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger12:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger13:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger11:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger12:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger13:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger21:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger22:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger23:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger21:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger22:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger23:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger31:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger32:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger33:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger31:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger32:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger33:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger41:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger42:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LFinger43:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger41:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger42:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RFinger43:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LThumb1:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RThumb1:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LThumb2:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      RThumb2:
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2

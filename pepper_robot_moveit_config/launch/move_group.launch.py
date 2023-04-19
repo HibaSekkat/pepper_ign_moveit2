@@ -28,27 +28,37 @@ def generate_launch_description():
     # Get substitution for all arguments
     description_package = LaunchConfiguration("description_package")
     description_filepath = LaunchConfiguration("description_filepath")
+    moveit_config_package = "pepper_robot_moveit_config"
     name = LaunchConfiguration("name")
     prefix = LaunchConfiguration("prefix")
     gripper = LaunchConfiguration("gripper")
     safety_limits = LaunchConfiguration("safety_limits")
     safety_position_margin = LaunchConfiguration("safety_position_margin")
     safety_k_position = LaunchConfiguration("safety_k_position")
+    collision_chassis = LaunchConfiguration("collision_chassis")
+    collision_wheels = LaunchConfiguration("collision_wheels")
     collision_arm = LaunchConfiguration("collision_arm")
     collision_gripper = LaunchConfiguration("collision_gripper")
+    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
+    publish_state = LaunchConfiguration("publish_state")
+    execute_trajectories = LaunchConfiguration("execute_trajectories")
+    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
     ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
         "ros2_control_command_interface"
     )
+    servo = LaunchConfiguration("servo")
     gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
     gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
     gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
+    gazebo_diff_drive = LaunchConfiguration("gazebo_diff_drive")
     gazebo_joint_trajectory_controller = LaunchConfiguration(
         "gazebo_joint_trajectory_controller"
     )
     gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
     gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
+    enable_rviz = LaunchConfiguration("enable_rviz")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
     log_level = LaunchConfiguration("log_level")
@@ -80,11 +90,23 @@ def generate_launch_description():
             "safety_k_position:=",
             safety_k_position,
             " ",
+            "collision_chassis:=",
+            collision_chassis,
+            " ",
+            "collision_wheels:=",
+            collision_wheels,
+            " ",
             "collision_arm:=",
             collision_arm,
             " ",
             "collision_gripper:=",
             collision_gripper,
+            " ",
+            "high_quality_mesh:=",
+            high_quality_mesh,
+            " ",
+            "mimic_gripper_joints:=",
+            mimic_gripper_joints,
             " ",
             "ros2_control:=",
             ros2_control,
@@ -103,6 +125,9 @@ def generate_launch_description():
             " ",
             "gazebo_self_collide_fingers:=",
             gazebo_self_collide_fingers,
+            " ",
+            "gazebo_diff_drive:=",
+            gazebo_diff_drive,
             " ",
             "gazebo_joint_trajectory_controller:=",
             gazebo_joint_trajectory_controller,
@@ -412,7 +437,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="robot_",
+            default_value="pepper_robot_",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
         #gripper
@@ -439,6 +464,16 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         # Collision geometry
         DeclareLaunchArgument(
+            "collision_chassis",
+            default_value="true",
+            description="Flag to enable collision geometry for the chassis of Summit XL.",
+        ),
+        DeclareLaunchArgument(
+            "collision_wheels",
+            default_value="true",
+            description="Flag to enable collision geometry for the wheels of Summit XL.",
+        ),
+        DeclareLaunchArgument(
             "collision_arm",
             default_value="true",
             description="Flag to enable collision geometry for manipulator's arm.",
@@ -447,6 +482,30 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "collision_gripper",
             default_value="true",
             description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
+        ),
+        # Geometry
+        DeclareLaunchArgument(
+            "high_quality_mesh",
+            default_value="true",
+            description="Flag to select the high or low quality model.",
+        ),
+        # State publishing
+        DeclareLaunchArgument(
+            "publish_state",
+            default_value="true",
+            description="Flag to enable robot state publisher.",
+        ),
+        # Execution
+        DeclareLaunchArgument(
+            "execute_trajectories",
+            default_value="true",
+            description="Flag to enable execution of trajectories for MoveIt 2.",
+        ),
+        # Gripper
+        DeclareLaunchArgument(
+            "mimic_gripper_joints",
+            default_value="false",
+            description="Flag to mimic joints of the gripper.",
         ),
         # ROS 2 control
         DeclareLaunchArgument(
@@ -463,6 +522,12 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "ros2_control_command_interface",
             default_value="effort",
             description="The output control command interface provided by ros2_control ('position', 'velocity' or 'effort').",
+        ),
+        # Servo
+        DeclareLaunchArgument(
+            "servo",
+            default_value="true",
+            description="Flag to enable MoveIt2 Servo for manipulator.",
         ),
         # Gazebo
         DeclareLaunchArgument(
@@ -481,6 +546,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             description="Flag to enable self-collision of robot between fingers (finger tips) when generating SDF for Gazebo.",
         ),
         DeclareLaunchArgument(
+            "gazebo_diff_drive",
+            default_value="true",
+            description="Flag to enable DiffDrive Gazebo plugin for Summit XL.",
+        ),
+        DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",
             default_value="false",
             description="Flag to enable JointTrajectoryController Gazebo plugin for manipulator.",
@@ -497,11 +567,14 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         # Miscellaneous
         DeclareLaunchArgument(
+            "enable_rviz", default_value="true", description="Flag to enable RViz2."
+        ),
+        DeclareLaunchArgument(
             "rviz_config",
             default_value=path.join(
-                get_package_share_directory("pepper_robot_description"),
+                get_package_share_directory("pepper_robot_moveit_config"),
                 "rviz",
-                "view.rviz",
+                "moveit.rviz",
             ),
             description="Path to configuration for RViz2.",
         ),

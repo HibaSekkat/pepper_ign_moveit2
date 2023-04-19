@@ -1,18 +1,44 @@
-initial_joint_positions:
-  pepper_arm:
-     LShoulder: 0.0
-     LBicep: 0.00873665
-     LElbow: 0.0
-     LForeArm: -1.56307
-     l_wrist: 0.0
-  pepper_hand:
-     finger_1: 0.2
-     finger_2: 0.2
-     finger_3: 0.2
-     finger_4: 0.2
+ initial_joint_positions:
 
-        
-        
-        
-        
-       
+  HeadPitch: -0.3665191
+  HeadYaw: 0.0174533
+  LElbowRoll: 0.0872665
+  LElbowYaw: 1.69297
+  LFinger11: 0.1
+  LFinger12: 0.1
+  LFinger13: 0.1
+  LFinger21: 0.1
+  LFinger22: 0.1
+  LFinger23: 0.1
+  LFinger31: 0.1
+  LFinger32: 0.1
+  LFinger33: 0.1
+  LFinger41: 0.1
+  LFinger42: 0.1
+  LFinger43: 0.1
+  LHand: 0.0
+  LShoulderPitch: 1.74533
+  LShoulderRoll: -0.10472
+  LThumb1: 0.1
+  LThumb2: 0.1
+  LWristYaw: -0.0174533
+  RElbowRoll: 0.0872665
+  RElbowYaw: 1.69297
+  RFinger11: 0.1
+  RFinger12: 0.1
+  RFinger13: 0.1
+  RFinger21: 0.1
+  RFinger22: 0.1
+  RFinger23: 0.1
+  RFinger31: 0.1
+  RFinger32: 0.1
+  RFinger33: 0.1
+  RFinger41: 0.1
+  RFinger42: 0.1
+  RFinger43: 0.1
+  RHand: 0.0
+  RShoulderPitch: 1.74533
+  RShoulderRoll: -0.10472
+  RThumb1: 0.1
+  RThumb2: 0.1
+  RWristYaw: 1.69297

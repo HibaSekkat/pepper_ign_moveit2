@@ -1,0 +1,15 @@
+/usr/local/share/ament_index/resource_index/package_run_dependencies/pepper_robot
+/usr/local/share/ament_index/resource_index/parent_prefix_path/pepper_robot
+/usr/local/share/pepper_robot/environment/ament_prefix_path.sh
+/usr/local/share/pepper_robot/environment/ament_prefix_path.dsv
+/usr/local/share/pepper_robot/environment/path.sh
+/usr/local/share/pepper_robot/environment/path.dsv
+/usr/local/share/pepper_robot/local_setup.bash
+/usr/local/share/pepper_robot/local_setup.sh
+/usr/local/share/pepper_robot/local_setup.zsh
+/usr/local/share/pepper_robot/local_setup.dsv
+/usr/local/share/pepper_robot/package.dsv
+/usr/local/share/ament_index/resource_index/packages/pepper_robot
+/usr/local/share/pepper_robot/cmake/pepper_robotConfig.cmake
+/usr/local/share/pepper_robot/cmake/pepper_robotConfig-version.cmake
+/usr/local/share/pepper_robot/package.xml

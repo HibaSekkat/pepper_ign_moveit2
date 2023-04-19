@@ -444,7 +444,7 @@
     </gazebo>
 
 <!--
-        RGB CAMERAS:
+        RGB CAMERAS
 -->
     <gazebo reference="CameraTop_frame">
       <sensor type="camera" name="CameraTop">

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pepper_robot</name>
+  <version>1.0.0</version>
+  <description>Metapackage for pepper_robot in ROS2 galactic (Moveit2)</description>
+  <maintainer email="h.sekkat@ueuromed.org">Hiba Sekkat</maintainer>
+  <author>Hiba Sekkat</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>pepper_robot_description</build_depend>
+  <build_depend>pepper_robot_moveit_config</build_depend>
+  <build_depend>xacro</build_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
