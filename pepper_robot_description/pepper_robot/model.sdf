@@ -117,11 +117,7 @@
         <xyz>0 1 0</xyz>
         <limit>
           <lower>-0.70685799999999999</lower>
-<<<<<<< HEAD
           <upper>0.63704499999999997</upper>
-=======
-          <upper>0.44514499999999997</upper>
->>>>>>> e2ce096a3e9d29c5c5a3c13adea0f48f89ef0ee1
           <effort>2.6659999999999999</effort>
           <velocity>9.2275600000000004</velocity>
         </limit>
@@ -1756,11 +1752,7 @@
         <xyz>1 0 0</xyz>
         <limit>
           <lower>0.02</lower>
-<<<<<<< HEAD
           <upper>0.97999999999999998</upper>
-=======
-          <upper>0.989999999998</upper>
->>>>>>> e2ce096a3e9d29c5c5a3c13adea0f48f89ef0ee1
           <effort>0.14399999999999999</effort>
           <velocity>12.56</velocity>
         </limit>
@@ -2983,11 +2975,7 @@
         <xyz>1 0 0</xyz>
         <limit>
           <lower>0.02</lower>
-<<<<<<< HEAD
           <upper>0.97999999999999998</upper>
-=======
-          <upper>0.98999999998</upper>
->>>>>>> e2ce096a3e9d29c5c5a3c13adea0f48f89ef0ee1
           <effort>0.14399999999999999</effort>
           <velocity>12.56</velocity>
         </limit>
@@ -3167,7 +3155,3 @@
     </plugin>
   </model>
 </sdf>
-<<<<<<< HEAD
-
-=======
->>>>>>> e2ce096a3e9d29c5c5a3c13adea0f48f89ef0ee1
