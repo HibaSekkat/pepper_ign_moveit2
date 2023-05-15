@@ -3130,21 +3130,19 @@
       <parameters>/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
     <static>false</static>
-    <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
-      <alwaysOn>true</alwaysOn>
-      <updateRate>100</updateRate>
-      <robotNamespace>/</robotNamespace>
-      <left_joint>WheelFL</left_joint>
-      <left_joint>WheelBL</left_joint>
-      <right_joint>WheelFR</right_joint>
-      <right_joint>WheelBR</right_joint>
-      <wheel_separation>0.170</wheel_separation>
-      <wheel_radius>0.7</wheel_radius>
-      <torque>36.9</torque>
-      <commandTopic>cmd_vel</commandTopic>
-      <odometryTopic>odom_diffdrive</odometryTopic>
-      <odometryFrame>odom</odometryFrame>
-      <robotBaseFrame>base_footprint</robotBaseFrame>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>100</updateRate>
+    <leftJoint>WheelFL</leftJoint>
+    <rightJoint>WheelFR</rightJoint>
+    <backJoint>WheelB</backJoint>
+    <wheelSeparation>0.170</wheelSeparation>
+    <wheelDiameter>0.7</wheelDiameter>
+    <torque>36.9</torque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
     </plugin>
     <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
       <use_pose_vector_msg>true</use_pose_vector_msg>

@@ -548,7 +548,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         DeclareLaunchArgument(
             "gazebo_diff_drive",
             default_value="true",
-            description="Flag to enable DiffDrive Gazebo plugin for Summit XL.",
+            description="Flag to enable skid_steer_drive_controller Gazebo plugin for Summit XL.",
         ),
         DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",
