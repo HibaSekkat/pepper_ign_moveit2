@@ -14,12 +14,4 @@
 	<xacro:include filename="pepperGazebo.xacro"/>
 	<xacro:include filename="pepperTransmission.xacro"/>
 
-	<!--            -->
-  <!-- Parameters -->
-  <!--            -->
-  <!-- Name of the robot (mandatory) -->
-  <xacro:arg name="name" default="pepper_robot"/>
-  <!-- Prefix for all entities -->
-  <xacro:arg name="prefix" default="robot"/>
-
 </robot>
