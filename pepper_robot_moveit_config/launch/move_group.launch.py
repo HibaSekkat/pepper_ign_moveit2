@@ -1,7 +1,6 @@
 #!/usr/bin/env -S ros2 launch
 """Configure and setup move group for planning with MoveIt 2"""
 
-import os
 from os import path
 from typing import List
 
@@ -65,12 +64,7 @@ def generate_launch_description():
     log_level = LaunchConfiguration("log_level")
 
     # URDF
-    urdf_file_path = os.path.join(
-        get_package_share_directory("pepper_ign_moveit2"),
-        "pepper_robot_description",
-        "urdf",
-        "pepper_robot.urdf",
-    )
+    urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
     with open(urdf_file_path, "r") as file:
         urdf_content = file.read()
 
@@ -78,12 +72,7 @@ def generate_launch_description():
     robot_description = {"robot_description": _robot_description_xml}
 
     # SRDF
-    srdf_file_path = os.path.join(
-        get_package_share_directory("pepper_ign_moveit2"),
-        "pepper_robot_moveit_config",
-        "srdf",
-        "pepper_robot.srdf",
-    )
+    srdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/srdf/pepper_robot.srdf"
     with open(srdf_file_path, "r") as file:
         srdf_content = file.read()
 
