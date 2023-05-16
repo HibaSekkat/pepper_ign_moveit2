@@ -37,7 +37,7 @@ def generate_launch_description():
     safety_k_position = LaunchConfiguration("safety_k_position")
     collision_chassis = LaunchConfiguration("collision_chassis")
     collision_wheels = LaunchConfiguration("collision_wheels")
-    collision_arm = LaunchConfiguration("collision_arm")
+    collision_left_arm = LaunchConfiguration("collision_left_arm")
     collision_gripper = LaunchConfiguration("collision_gripper")
     high_quality_mesh = LaunchConfiguration("high_quality_mesh")
     publish_state = LaunchConfiguration("publish_state")
@@ -96,8 +96,8 @@ def generate_launch_description():
             "collision_wheels:=",
             collision_wheels,
             " ",
-            "collision_arm:=",
-            collision_arm,
+            "collision_left_arm:=",
+            collision_left_arm,
             " ",
             "collision_gripper:=",
             collision_gripper,
@@ -474,9 +474,9 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             description="Flag to enable collision geometry for the wheels of Summit XL.",
         ),
         DeclareLaunchArgument(
-            "collision_arm",
+            "collision_left_arm",
             default_value="true",
-            description="Flag to enable collision geometry for manipulator's arm.",
+            description="Flag to enable collision geometry for manipulator's left_arm.",
         ),
         DeclareLaunchArgument(
             "collision_gripper",
@@ -548,7 +548,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         DeclareLaunchArgument(
             "gazebo_diff_drive",
             default_value="true",
-            description="Flag to enable skid_steer_drive_controller Gazebo plugin for Summit XL.",
+            description="Flag to enable DiffDrive Gazebo plugin for Summit XL.",
         ),
         DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",
