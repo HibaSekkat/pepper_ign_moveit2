@@ -2,6 +2,7 @@
 """Configure and setup move group for planning with MoveIt 2"""
 
 import os
+from os import path
 from typing import List
 
 import yaml
