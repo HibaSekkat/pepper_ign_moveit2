@@ -66,7 +66,7 @@ def generate_launch_description():
     # URDF
     _robot_description_xml = Command(
         [
-            PathJoinSubstitution([FindExecutable(name="urdf")]),
+            PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
                 [FindPackageShare(description_package), description_filepath]
