@@ -144,7 +144,7 @@ def generate_launch_description():
     # SRDF
     _robot_description_semantic_xml = Command(
         [
-            PathJoinSubstitution([FindExecutable(name="srdf")]),
+            PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
                 [
