@@ -66,7 +66,7 @@ def generate_launch_description():
     # URDF
     _robot_description_xml = Command(
         [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
+            PathJoinSubstitution([FindExecutable(name="urdf")]),
             " ",
             PathJoinSubstitution(
                 [FindPackageShare(description_package), description_filepath]
@@ -144,13 +144,13 @@ def generate_launch_description():
     # SRDF
     _robot_description_semantic_xml = Command(
         [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
+            PathJoinSubstitution([FindExecutable(name="srdf")]),
             " ",
             PathJoinSubstitution(
                 [
                     FindPackageShare(moveit_config_package),
                     "srdf",
-                    "pepper_robot.xacro",
+                    "pepper_robot.srdf",
                 ]
             ),
             " ",
