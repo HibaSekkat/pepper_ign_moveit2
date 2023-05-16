@@ -345,6 +345,9 @@ def generate_launch_description():
                 servo_params,
                 {"use_sim_time": use_sim_time},
             ],
+            extra_arguments=[
+                {"use_intra_process_comms": True}
+            ],
             condition=IfCondition(servo),
         ),
         # rviz2
