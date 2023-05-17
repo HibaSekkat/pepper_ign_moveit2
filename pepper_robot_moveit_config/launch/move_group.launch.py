@@ -64,7 +64,7 @@ def generate_launch_description():
     log_level = LaunchConfiguration("log_level")
 
     # URDF
-    robot_description_xml = Command(
+    _robot_description_xml = Command(
         [
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
