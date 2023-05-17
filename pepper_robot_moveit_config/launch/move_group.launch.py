@@ -64,81 +64,11 @@ def generate_launch_description():
     log_level = LaunchConfiguration("log_level")
 
     # URDF
-    _robot_description_xml = Command(
-        [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
-            PathJoinSubstitution(
-                [FindPackageShare(description_package), description_filepath]
-            ),
-            " ",
-            "name:=",
-            name,
-            " ",
-            "prefix:=",
-            prefix,
-            " ",
-            "gripper:=",
-            gripper,
-            " ",
-            "safety_limits:=",
-            safety_limits,
-            " ",
-            "safety_position_margin:=",
-            safety_position_margin,
-            " ",
-            "safety_k_position:=",
-            safety_k_position,
-            " ",
-            "collision_chassis:=",
-            collision_chassis,
-            " ",
-            "collision_wheels:=",
-            collision_wheels,
-            " ",
-            "collision_left_arm:=",
-            collision_left_arm,
-            " ",
-            "collision_gripper:=",
-            collision_gripper,
-            " ",
-            "high_quality_mesh:=",
-            high_quality_mesh,
-            " ",
-            "mimic_gripper_joints:=",
-            mimic_gripper_joints,
-            " ",
-            "ros2_control:=",
-            ros2_control,
-            " ",
-            "ros2_control_plugin:=",
-            ros2_control_plugin,
-            " ",
-            "ros2_control_command_interface:=",
-            ros2_control_command_interface,
-            " ",
-            "gazebo_preserve_fixed_joint:=",
-            gazebo_preserve_fixed_joint,
-            " ",
-            "gazebo_self_collide:=",
-            gazebo_self_collide,
-            " ",
-            "gazebo_self_collide_fingers:=",
-            gazebo_self_collide_fingers,
-            " ",
-            "gazebo_diff_drive:=",
-            gazebo_diff_drive,
-            " ",
-            "gazebo_joint_trajectory_controller:=",
-            gazebo_joint_trajectory_controller,
-            " ",
-            "gazebo_joint_state_publisher:=",
-            gazebo_joint_state_publisher,
-            " ",
-            "gazebo_pose_publisher:=",
-            gazebo_pose_publisher,
-        ]
-    )
+    urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
+    with open(urdf_file_path, "r") as file:
+        urdf_content = file.read()
+
+    _robot_description_xml = {"value": urdf_content}
     robot_description = {"robot_description": _robot_description_xml}
 
     # SRDF
