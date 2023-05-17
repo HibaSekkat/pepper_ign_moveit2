@@ -1,5 +1,5 @@
 <sdf version='1.9'>
-  <model name='JulietteY20MP'>
+  <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
         <pose>0.003220000000000001 0 -0.01029 0 0 0</pose>
