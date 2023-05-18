@@ -125,8 +125,9 @@ def generate_launch_description():
                 "0",  # --yaw
                 "0",  # --pitch
                 "0",  # --roll
-                robot_name,  # --frame-id
-                prefix + "pepper_robot_base_footprint",  # --child-frame-id
+                LaunchConfiguration(robot_name),  # --frame-id
+                Substitution(function=lambda context: LaunchConfiguration(prefix) + "pepper_robot_base_footprint"),
+                # --child-frame-id
                 "--ros-args",
                 "--log-level",
                 log_level,
