@@ -119,22 +119,14 @@ def generate_launch_description():
             executable="static_transform_publisher",
             output="log",
             arguments=[
-                # "--x",
-                "0",
-                # "--y",
-                "0",
-                # "--z",
-                "0",
-                # "--yaw",
-                "0",
-                # "--pitch",
-                "0",
-                # "--roll",
-                "0",
-                # "--frame-id",
-                [robot_name, "/"],
-                # "--child-frame-id",
-                [prefix, "pepper_robot_base_footprint"],
+                "0",  # --x
+                "0",  # --y
+                "0",  # --z
+                "0",  # --yaw
+                "0",  # --pitch
+                "0",  # --roll
+                robot_name,  # --frame-id
+                prefix + "pepper_robot_base_footprint",  # --child-frame-id
                 "--ros-args",
                 "--log-level",
                 log_level,
