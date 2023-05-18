@@ -8,7 +8,6 @@ from launch.actions import DeclareLaunchArgument, LogInfo
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration, TextSubstitution
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration, Substitution
 
 DIR_BOTH = "@"
 DIR_IGN_TO_ROS2 = "["
@@ -120,15 +119,22 @@ def generate_launch_description():
             executable="static_transform_publisher",
             output="log",
             arguments=[
-                "0",  # --x
-                "0",  # --y
-                "0",  # --z
-                "0",  # --yaw
-                "0",  # --pitch
-                "0",  # --roll
-                LaunchConfiguration(robot_name),  # --frame-id
-                Substitution(function=lambda context: LaunchConfiguration(prefix) + "pepper_robot_base_footprint"),
-                # --child-frame-id
+                # "--x",
+                "0",
+                # "--y",
+                "0",
+                # "--z",
+                "0",
+                # "--yaw",
+                "0",
+                # "--pitch",
+                "0",
+                # "--roll",
+                "0",
+                # "--frame-id",
+                [robot_name, "/"],
+                # "--child-frame-id",
+                [prefix, "pepper_robot_base_footprint"],
                 "--ros-args",
                 "--log-level",
                 log_level,
