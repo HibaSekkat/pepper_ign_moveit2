@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/install/pepper_robot_moveit_config")
+  set(CMAKE_INSTALL_PREFIX "/root/ws/install/share")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
