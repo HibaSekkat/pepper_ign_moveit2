@@ -134,7 +134,7 @@ def generate_launch_description():
                 # "--frame-id",
                 [robot_name, "/"],
                 # "--child-frame-id",
-                #[prefix, "summit_xl_base_footprint"],
+                [prefix, "pepper_robot_base_footprint"],
                 "--ros-args",
                 "--log-level",
                 log_level,
