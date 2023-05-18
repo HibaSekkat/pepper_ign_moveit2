@@ -25,8 +25,8 @@
 /root/ws/install/share/pepper_robot_moveit_config/srdf/pepperGazebo.xacro
 /root/ws/install/share/pepper_robot_moveit_config/srdf/pepper_head.xacro
 /root/ws/install/share/pepper_robot_moveit_config/srdf/pepper_torso.xacro
-/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/install/pepper_robot_moveit_config/share/ament_index/resource_index/package_run_dependencies/pepper_robot_moveit_config
-/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/install/pepper_robot_moveit_config/share/ament_index/resource_index/parent_prefix_path/pepper_robot_moveit_config
+/root/ws/install/share/pepper_robot_moveit_config/ament_index/resource_index/package_run_dependencies/pepper_robot_moveit_config
+/root/ws/install/share/pepper_robot_moveit_config/ament_index/resource_index/parent_prefix_path/pepper_robot_moveit_config
 /root/ws/install/share/pepper_robot_moveit_config/environment/ament_prefix_path.sh
 /root/ws/install/share/pepper_robot_moveit_config/environment/ament_prefix_path.dsv
 /root/ws/install/share/pepper_robot_moveit_config/environment/path.sh
@@ -36,7 +36,7 @@
 /root/ws/install/share/pepper_robot_moveit_config/local_setup.zsh
 /root/ws/install/share/pepper_robot_moveit_config/local_setup.dsv
 /root/ws/install/share/pepper_robot_moveit_config/package.dsv
-/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/install/pepper_robot_moveit_config/share/ament_index/resource_index/packages/pepper_robot_moveit_config
+/root/ws/install/share/pepper_robot_moveit_config/ament_index/resource_index/packages/pepper_robot_moveit_config
 /root/ws/install/share/pepper_robot_moveit_config/cmake/pepper_robot_moveit_configConfig.cmake
 /root/ws/install/share/pepper_robot_moveit_config/cmake/pepper_robot_moveit_configConfig-version.cmake
 /root/ws/install/share/pepper_robot_moveit_config/package.xml
