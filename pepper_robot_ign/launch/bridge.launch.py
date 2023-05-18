@@ -8,7 +8,7 @@ from launch.actions import DeclareLaunchArgument, LogInfo
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration, TextSubstitution
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration, Substitution
+from launch.actions import LaunchConfiguration, Substitution
 
 DIR_BOTH = "@"
 DIR_IGN_TO_ROS2 = "["
