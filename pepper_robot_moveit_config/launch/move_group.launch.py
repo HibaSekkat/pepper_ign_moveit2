@@ -162,12 +162,12 @@ def generate_launch_description():
     }
 
     # Servo
-    #servo_params = {
-    #    "moveit_servo": load_yaml(
-    #        moveit_config_package, path.join("config", "servo.yaml")
-    #    )
-    #}
-    #servo_params["moveit_servo"].update({"use_gazebo": use_sim_time})
+    servo_params = {
+        "moveit_servo": load_yaml(
+            moveit_config_package, path.join("config", "servo.yaml")
+        )
+    }
+    servo_params["moveit_servo"].update({"use_gazebo": use_sim_time})
 
     # Planning pipeline
     planning_pipeline = {
