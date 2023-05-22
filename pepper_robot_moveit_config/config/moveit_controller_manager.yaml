@@ -21,7 +21,7 @@
   type: FollowJointTrajectory
   default: true
   joints:
-    - LFinger11
+      - LFinger11
       - LFinger12
       - LFinger13
       - RFinger11
