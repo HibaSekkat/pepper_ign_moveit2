@@ -314,7 +314,7 @@ def generate_launch_description():
         # move_servo
         Node(
             package="moveit_servo",
-           executable="servo_node_main",
+            executable="servo_node_main",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
             parameters=[
