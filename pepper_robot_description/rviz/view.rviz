@@ -43,6 +43,240 @@ Visualization Manager:
     Plane Cell Count: 10
     Reference Frame: <Fixed Frame>
     Value: true
+  - Class: rviz_default_plugins/Image
+    Enabled: true
+    Max Value: 1
+    Median window: 5
+    Min Value: 0
+    Name: Image
+    Normalize Range: true
+    Topic:
+      Depth: 2
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /camera/rgb/image_raw
+    Value: true
+  - Class: rviz_default_plugins/Camera
+    Enabled: true
+    Far Plane Distance: 100
+    Image Rendering: background and overlay
+    Name: Camera
+    Overlay Alpha: 0.5
+    Topic:
+      Depth: 2
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+      Value: /camera/rgb/image_raw
+    Value: true
+    Visibility: {}
+    Zoom Factor: 1
+  - Class: rviz_default_plugins/TF
+    Enabled: true
+    Frame Timeout: 15
+    Frames:
+      All Enabled: false
+      CameraTop_frame:
+        Value: false
+      CameraTop_optical_frame:
+        Value: false
+      Head:
+        Value: false
+      Hip:
+        Value: false
+      LBicep:
+        Value: false
+      LElbow:
+        Value: false
+      LFinger11_link:
+        Value: false
+      LFinger12_link:
+        Value: false
+      LFinger13_link:
+        Value: false
+      LFinger21_link:
+        Value: false
+      LFinger22_link:
+        Value: false
+      LFinger23_link:
+        Value: false
+      LFinger31_link:
+        Value: false
+      LFinger32_link:
+        Value: false
+      LFinger33_link:
+        Value: false
+      LFinger41_link:
+        Value: false
+      LFinger42_link:
+        Value: false
+      LFinger43_link:
+        Value: false
+      LForeArm:
+        Value: false
+      LShoulder:
+        Value: false
+      LThumb1_link:
+        Value: false
+      LThumb2_link:
+        Value: false
+      Neck:
+        Value: false
+      Pelvis:
+        Value: false
+      RBicep:
+        Value: false
+      RElbow:
+        Value: false
+      RFinger11_link:
+        Value: false
+      RFinger12_link:
+        Value: false
+      RFinger13_link:
+        Value: false
+      RFinger21_link:
+        Value: false
+      RFinger22_link:
+        Value: false
+      RFinger23_link:
+        Value: false
+      RFinger31_link:
+        Value: false
+      RFinger32_link:
+        Value: false
+      RFinger33_link:
+        Value: false
+      RFinger41_link:
+        Value: false
+      RFinger42_link:
+        Value: false
+      RFinger43_link:
+        Value: false
+      RForeArm:
+        Value: false
+      RShoulder:
+        Value: false
+      RThumb1_link:
+        Value: false
+      RThumb2_link:
+        Value: false
+      RealSence_color_frame:
+        Value: false
+      RealSence_color_optical_frame:
+        Value: false
+      RealSence_depth_frame:
+        Value: false
+      RealSence_depth_optical_frame:
+        Value: false
+      RealSense_screw_frame:
+        Value: true
+      Tibia:
+        Value: false
+      WheelB_link:
+        Value: false
+      WheelFL_link:
+        Value: false
+      WheelFR_link:
+        Value: false
+      azure_depth_camera_optical_frame:
+        Value: false
+      azure_imu_frame:
+        Value: false
+      base_link:
+        Value: false
+      camera_base:
+        Value: false
+      camera_body:
+        Value: false
+      camera_rgb_optical_frame:
+        Value: false
+      camera_visor:
+        Value: false
+      l_gripper:
+        Value: false
+      l_wrist:
+        Value: false
+      r_gripper:
+        Value: false
+      r_wrist:
+        Value: false
+      t265:
+        Value: true
+      torso:
+        Value: false
+    Marker Scale: 0.0599999987
+    Name: TF
+    Show Arrows: false
+    Show Axes: true
+    Show Names: true
+    Tree:
+      base_link:
+        Tibia:
+          Pelvis:
+            Hip:
+              torso:
+                LShoulder:
+                  LBicep:
+                    LElbow:
+                      LForeArm:
+                        l_wrist:
+                          LFinger11_link:
+                            LFinger12_link:
+                              LFinger13_link: {}
+                          LFinger21_link:
+                            LFinger22_link:
+                              LFinger23_link: {}
+                          LFinger31_link:
+                            LFinger32_link:
+                              LFinger33_link: {}
+                          LFinger41_link:
+                            LFinger42_link:
+                              LFinger43_link: {}
+                          LThumb1_link:
+                            LThumb2_link: {}
+                          l_gripper: {}
+                Neck:
+                  Head:
+                    CameraTop_frame:
+                      CameraTop_optical_frame:
+                        camera_rgb_optical_frame: {}
+                      RealSense_screw_frame:
+                        RealSence_color_frame:
+                          RealSence_color_optical_frame: {}
+                        RealSence_depth_frame:
+                          RealSence_depth_optical_frame: {}
+                        camera_base:
+                          azure_depth_camera_optical_frame: {}
+                          azure_imu_frame: {}
+                          camera_body: {}
+                          camera_visor: {}
+                        t265: {}
+                RShoulder:
+                  RBicep:
+                    RElbow:
+                      RForeArm:
+                        r_wrist:
+                          RFinger11_link:
+                            RFinger12_link:
+                              RFinger13_link: {}
+                          RFinger21_link:
+                            RFinger22_link:
+                              RFinger23_link: {}
+                          RFinger31_link:
+                            RFinger32_link:
+                              RFinger33_link: {}
+                          RFinger41_link:
+                            RFinger42_link:
+                              RFinger43_link: {}
+                          RThumb1_link:
+                            RThumb2_link: {}
+                          r_gripper: {}
+          WheelB_link: {}
+          WheelFL_link: {}
+          WheelFR_link: {}
+    Update Interval: 0
+    Value: true
   - Alpha: 0.5
     Class: rviz_default_plugins/RobotModel
     Collision Enabled: false
@@ -373,240 +607,6 @@ Visualization Manager:
     Update Interval: 0
     Value: true
     Visual Enabled: true
-  - Class: rviz_default_plugins/Image
-    Enabled: true
-    Max Value: 1
-    Median window: 5
-    Min Value: 0
-    Name: Image
-    Normalize Range: true
-    Topic:
-      Depth: 2
-      Durability Policy: Volatile
-      History Policy: Keep Last
-      Reliability Policy: Reliable
-      Value: /camera/rgb/image_raw
-    Value: true
-  - Class: rviz_default_plugins/Camera
-    Enabled: true
-    Far Plane Distance: 100
-    Image Rendering: background and overlay
-    Name: Camera
-    Overlay Alpha: 0.5
-    Topic:
-      Depth: 2
-      Durability Policy: Volatile
-      History Policy: Keep Last
-      Reliability Policy: Reliable
-      Value: /camera/rgb/image_raw
-    Value: true
-    Visibility: {}
-    Zoom Factor: 1
-  - Class: rviz_default_plugins/TF
-    Enabled: true
-    Frame Timeout: 15
-    Frames:
-      All Enabled: false
-      CameraTop_frame:
-        Value: false
-      CameraTop_optical_frame:
-        Value: false
-      Head:
-        Value: false
-      Hip:
-        Value: false
-      LBicep:
-        Value: false
-      LElbow:
-        Value: false
-      LFinger11_link:
-        Value: false
-      LFinger12_link:
-        Value: false
-      LFinger13_link:
-        Value: false
-      LFinger21_link:
-        Value: false
-      LFinger22_link:
-        Value: false
-      LFinger23_link:
-        Value: false
-      LFinger31_link:
-        Value: false
-      LFinger32_link:
-        Value: false
-      LFinger33_link:
-        Value: false
-      LFinger41_link:
-        Value: false
-      LFinger42_link:
-        Value: false
-      LFinger43_link:
-        Value: false
-      LForeArm:
-        Value: false
-      LShoulder:
-        Value: false
-      LThumb1_link:
-        Value: false
-      LThumb2_link:
-        Value: false
-      Neck:
-        Value: false
-      Pelvis:
-        Value: false
-      RBicep:
-        Value: false
-      RElbow:
-        Value: false
-      RFinger11_link:
-        Value: false
-      RFinger12_link:
-        Value: false
-      RFinger13_link:
-        Value: false
-      RFinger21_link:
-        Value: false
-      RFinger22_link:
-        Value: false
-      RFinger23_link:
-        Value: false
-      RFinger31_link:
-        Value: false
-      RFinger32_link:
-        Value: false
-      RFinger33_link:
-        Value: false
-      RFinger41_link:
-        Value: false
-      RFinger42_link:
-        Value: false
-      RFinger43_link:
-        Value: false
-      RForeArm:
-        Value: false
-      RShoulder:
-        Value: false
-      RThumb1_link:
-        Value: false
-      RThumb2_link:
-        Value: false
-      RealSence_color_frame:
-        Value: false
-      RealSence_color_optical_frame:
-        Value: false
-      RealSence_depth_frame:
-        Value: false
-      RealSence_depth_optical_frame:
-        Value: false
-      RealSense_screw_frame:
-        Value: true
-      Tibia:
-        Value: false
-      WheelB_link:
-        Value: false
-      WheelFL_link:
-        Value: false
-      WheelFR_link:
-        Value: false
-      azure_depth_camera_optical_frame:
-        Value: false
-      azure_imu_frame:
-        Value: false
-      base_link:
-        Value: false
-      camera_base:
-        Value: false
-      camera_body:
-        Value: false
-      camera_rgb_optical_frame:
-        Value: false
-      camera_visor:
-        Value: false
-      l_gripper:
-        Value: false
-      l_wrist:
-        Value: false
-      r_gripper:
-        Value: false
-      r_wrist:
-        Value: false
-      t265:
-        Value: true
-      torso:
-        Value: false
-    Marker Scale: 0.0599999987
-    Name: TF
-    Show Arrows: false
-    Show Axes: true
-    Show Names: true
-    Tree:
-      base_link:
-        Tibia:
-          Pelvis:
-            Hip:
-              torso:
-                LShoulder:
-                  LBicep:
-                    LElbow:
-                      LForeArm:
-                        l_wrist:
-                          LFinger11_link:
-                            LFinger12_link:
-                              LFinger13_link: {}
-                          LFinger21_link:
-                            LFinger22_link:
-                              LFinger23_link: {}
-                          LFinger31_link:
-                            LFinger32_link:
-                              LFinger33_link: {}
-                          LFinger41_link:
-                            LFinger42_link:
-                              LFinger43_link: {}
-                          LThumb1_link:
-                            LThumb2_link: {}
-                          l_gripper: {}
-                Neck:
-                  Head:
-                    CameraTop_frame:
-                      CameraTop_optical_frame:
-                        camera_rgb_optical_frame: {}
-                      RealSense_screw_frame:
-                        RealSence_color_frame:
-                          RealSence_color_optical_frame: {}
-                        RealSence_depth_frame:
-                          RealSence_depth_optical_frame: {}
-                        camera_base:
-                          azure_depth_camera_optical_frame: {}
-                          azure_imu_frame: {}
-                          camera_body: {}
-                          camera_visor: {}
-                        t265: {}
-                RShoulder:
-                  RBicep:
-                    RElbow:
-                      RForeArm:
-                        r_wrist:
-                          RFinger11_link:
-                            RFinger12_link:
-                              RFinger13_link: {}
-                          RFinger21_link:
-                            RFinger22_link:
-                              RFinger23_link: {}
-                          RFinger31_link:
-                            RFinger32_link:
-                              RFinger33_link: {}
-                          RFinger41_link:
-                            RFinger42_link:
-                              RFinger43_link: {}
-                          RThumb1_link:
-                            RThumb2_link: {}
-                          r_gripper: {}
-          WheelB_link: {}
-          WheelFL_link: {}
-          WheelFR_link: {}
-    Update Interval: 0
-    Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
