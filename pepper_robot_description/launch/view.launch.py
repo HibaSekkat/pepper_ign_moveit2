@@ -30,8 +30,11 @@ def generate_launch_description() -> LaunchDescription:
     safety_limits = LaunchConfiguration("safety_limits")
     safety_position_margin = LaunchConfiguration("safety_position_margin")
     safety_k_position = LaunchConfiguration("safety_k_position")
+    collision_wheels = LaunchConfiguration("collision_wheels")
     collision_arm = LaunchConfiguration("collision_arm")
     collision_gripper = LaunchConfiguration("collision_gripper")
+    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
+    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
     ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
@@ -76,11 +79,20 @@ def generate_launch_description() -> LaunchDescription:
             "safety_k_position:=",
             safety_k_position,
             " ",
+            "collision_wheels:=",
+            collision_wheels,
+            " ",
             "collision_arm:=",
             collision_arm,
             " ",
             "collision_gripper:=",
             collision_gripper,
+            " ",
+            "high_quality_mesh:=",
+            high_quality_mesh,
+            " ",
+            "mimic_gripper_joints:=",
+            mimic_gripper_joints,
             " ",
             "ros2_control:=",
             ros2_control,
@@ -174,7 +186,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="robot_",
+            default_value="pepper_robot_",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
         #gripper
@@ -201,6 +213,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         # Collision geometry
         DeclareLaunchArgument(
+            "collision_wheels",
+            default_value="true",
+            description="Flag to enable collision geometry for the wheels of Summit XL.",
+        ),
+        DeclareLaunchArgument(
             "collision_arm",
             default_value="true",
             description="Flag to enable collision geometry for manipulator's arm.",
@@ -209,6 +226,18 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "collision_gripper",
             default_value="true",
             description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
+        ),
+        # Geometry
+        DeclareLaunchArgument(
+            "high_quality_mesh",
+            default_value="true",
+            description="Flag to select the high or low quality model.",
+        ),
+        # Gripper
+        DeclareLaunchArgument(
+            "mimic_gripper_joints",
+            default_value="false",
+            description="Flag to mimic joints of the gripper.",
         ),
         # ROS 2 control
         DeclareLaunchArgument(
