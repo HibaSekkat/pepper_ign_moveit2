@@ -3,10 +3,7 @@ Panels:
   Help Height: 78
   Name: Displays
   Property Tree Widget:
-    Expanded:
-      - /Global Options1
-      - /RobotModel1
-      - /RobotModel1/Mass Properties1
+    Expanded: null
     Splitter Ratio: 0.51795578
   Tree Height: 339
 - Class: rviz_common/Selection
