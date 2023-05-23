@@ -12,12 +12,15 @@ Panels:
 - Class: rviz_common/Selection
   Name: Selection
 - Class: rviz_common/Tool Properties
-  Expanded: null
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
   Name: Tool Properties
   Splitter Ratio: 0.588679016
 - Class: rviz_common/Views
   Expanded:
   - /Current View1
+  - /Current View1/Focal Point1
   Name: Views
   Splitter Ratio: 0.5
 - Class: rviz_common/Time
@@ -26,353 +29,28 @@ Panels:
   SyncMode: 0
   SyncSource: ''
 Visualization Manager:
-  Class: ''
+  Class: ""
   Displays:
-  - Alpha: 0.5
-    Cell Size: 1
-    Class: rviz_default_plugins/Grid
-    Color: 160; 160; 164
-    Enabled: true
-    Line Style:
-      Line Width: 0.0299999993
-      Value: Lines
-    Name: Grid
-    Normal Cell Count: 0
-    Offset:
-      X: 0
-      Y: 0
-      Z: 0
-    Plane: XY
-    Plane Cell Count: 10
-    Reference Frame: <Fixed Frame>
-    Value: true
-  - Alpha: 0.5
+  - Alpha: 1
     Class: rviz_default_plugins/RobotModel
     Collision Enabled: false
-    Description File: ''
+    Description File: ""
     Description Source: Topic
     Description Topic:
       Depth: 5
       Durability Policy: Volatile
       History Policy: Keep Last
-      Reliability Policy: Best Effort
-      Value: robot_description
+      Reliability Policy: Reliable
+      Value: ""
     Enabled: true
     Links:
       All Links Enabled: true
-      CameraTop_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      CameraTop_optical_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
       Expand Joint Details: false
       Expand Link Details: false
       Expand Tree: false
-      Head:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      Hip:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LBicep:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LElbow:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger11_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger12_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger13_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger21_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger22_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger23_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger31_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger32_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger33_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger41_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger42_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LFinger43_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LForeArm:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LShoulder:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LThumb1_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      LThumb2_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      Link Tree Style: Links in Alphabetic Order
-      Neck:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      Pelvis:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RBicep:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RElbow:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger11_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger12_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger13_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger21_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger22_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger23_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger31_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger32_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger33_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger41_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger42_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RFinger43_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RForeArm:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RShoulder:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RThumb1_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RThumb2_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      RealSence_color_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      RealSence_color_optical_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      RealSence_depth_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      RealSence_depth_optical_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      RealSense_screw_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      Tibia:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      WheelB_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      WheelFL_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      WheelFR_link:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      azure_depth_camera_optical_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      azure_imu_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      base_link:
-        Alpha: 1
-        Show Axes: true
-        Show Trail: false
-      camera_base:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      camera_body:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      camera_visor:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      l_gripper:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      l_wrist:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      r_gripper:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      r_wrist:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      t265:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      torso:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-    Mass Properties:
-      Inertia: false
-      Mass: false
+      Link Tree Style: ""
     Name: RobotModel
-    TF Prefix: ''
+    TF Prefix: ""
     Update Interval: 0
     Value: true
     Visual Enabled: true
@@ -629,14 +307,14 @@ Visualization Manager:
       Depth: 5
       Durability Policy: Volatile
       History Policy: Keep Last
-      Reliability Policy: Best Effort
+      Reliability Policy: Reliable
       Value: /initialpose
   - Class: rviz_default_plugins/SetGoal
     Topic:
       Depth: 5
       Durability Policy: Volatile
       History Policy: Keep Last
-      Reliability Policy: Best Effort
+      Reliability Policy: Reliable
       Value: /move_base_simple/goal
   - Class: rviz_default_plugins/PublishPoint
     Single click: true
@@ -644,7 +322,7 @@ Visualization Manager:
       Depth: 5
       Durability Policy: Volatile
       History Policy: Keep Last
-      Reliability Policy: Best Effort
+      Reliability Policy: Reliable
       Value: /clicked_point
   Transformation:
     Current:
