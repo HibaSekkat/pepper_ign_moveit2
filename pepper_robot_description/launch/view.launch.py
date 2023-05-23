@@ -24,7 +24,6 @@ def generate_launch_description() -> LaunchDescription:
     # Get substitution for all arguments
     description_package = LaunchConfiguration("description_package")
     description_filepath = LaunchConfiguration("description_filepath")
-    model = LaunchConfiguration("model")
     name = LaunchConfiguration("name")
     prefix = LaunchConfiguration("prefix")
     gripper = LaunchConfiguration("gripper")
@@ -61,9 +60,6 @@ def generate_launch_description() -> LaunchDescription:
             PathJoinSubstitution(
                 [FindPackageShare(description_package), description_filepath]
             ),
-            " ",
-            "name:=",
-            model,
             " ",
             "name:=",
             name,
@@ -146,7 +142,6 @@ def generate_launch_description() -> LaunchDescription:
             arguments=[
                 "--display-config",
                 rviz_config,
-                model,
                 "--ros-args",
                 "--log-level",
                 log_level,
@@ -182,11 +177,6 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "description_filepath",
             default_value=path.join("urdf", "pepper_robot.urdf"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
-        ),
-        DeclareLaunchArgument(
-            "model",
-            default_value="pepper_robot",
-            description="Name or filepath of model to load.",
         ),
         # Naming of the robot
         DeclareLaunchArgument(
@@ -237,7 +227,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             default_value="true",
             description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
         ),
-        # Geometry
+         # Geometry
         DeclareLaunchArgument(
             "high_quality_mesh",
             default_value="true",
