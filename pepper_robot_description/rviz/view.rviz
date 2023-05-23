@@ -161,16 +161,6 @@ Visualization Manager:
         Value: false
       RThumb2_link:
         Value: false
-      RealSence_color_frame:
-        Value: false
-      RealSence_color_optical_frame:
-        Value: false
-      RealSence_depth_frame:
-        Value: false
-      RealSence_depth_optical_frame:
-        Value: false
-      RealSense_screw_frame:
-        Value: true
       Tibia:
         Value: false
       WheelB_link:
@@ -179,19 +169,11 @@ Visualization Manager:
         Value: false
       WheelFR_link:
         Value: false
-      azure_depth_camera_optical_frame:
-        Value: false
-      azure_imu_frame:
-        Value: false
       base_link:
         Value: false
       camera_base:
         Value: false
       camera_body:
-        Value: false
-      camera_rgb_optical_frame:
-        Value: false
-      camera_visor:
         Value: false
       l_gripper:
         Value: false
@@ -240,17 +222,6 @@ Visualization Manager:
                   Head:
                     CameraTop_frame:
                       CameraTop_optical_frame:
-                        camera_rgb_optical_frame: {}
-                      RealSense_screw_frame:
-                        RealSence_color_frame:
-                          RealSence_color_optical_frame: {}
-                        RealSence_depth_frame:
-                          RealSence_depth_optical_frame: {}
-                        camera_base:
-                          azure_depth_camera_optical_frame: {}
-                          azure_imu_frame: {}
-                          camera_body: {}
-                          camera_visor: {}
                         t265: {}
                 RShoulder:
                   RBicep:
@@ -291,11 +262,43 @@ Visualization Manager:
     Enabled: true
     Links:
       All Links Enabled: true
+      BumperB_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      BumperFL_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      BumperFR_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      CameraBottom_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      CameraBottom_optical_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      CameraDepth_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      CameraDepth_optical_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       CameraTop_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
       CameraTop_optical_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      ChestButton_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
@@ -307,11 +310,35 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
         Value: true
+      HeadTouchFront_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      HeadTouchMiddle_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      HeadTouchRear_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       Hip:
         Alpha: 1
         Show Axes: false
         Show Trail: false
         Value: true
+      ImuBaseAccelerometer_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      ImuTorsoAccelerometer_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      ImuTorsoGyrometer_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       LBicep:
         Alpha: 1
         Show Axes: false
@@ -387,11 +414,19 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
         Value: true
+      LHandTouchBack_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       LShoulder:
         Alpha: 1
         Show Axes: false
         Show Trail: false
         Value: true
+      LSpeaker_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       LThumb1_link:
         Alpha: 1
         Show Axes: false
@@ -488,11 +523,19 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
         Value: true
+      RHandTouchBack_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       RShoulder:
         Alpha: 1
         Show Axes: false
         Show Trail: false
         Value: true
+      RSpeaker_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       RThumb1_link:
         Alpha: 1
         Show Axes: false
@@ -503,32 +546,59 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
         Value: true
-      RealSence_color_frame:
+      ShovelLaser_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
-      RealSence_color_optical_frame:
+      SonarBack_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
-      RealSence_depth_frame:
+      SonarFront_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
-      RealSence_depth_optical_frame:
+      SurroundingFrontLaser_device_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
-      RealSense_screw_frame:
+      SurroundingFrontLaser_frame:
         Alpha: 1
         Show Axes: false
         Show Trail: false
-        Value: true
+      SurroundingLeftLaser_device_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      SurroundingLeftLaser_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      SurroundingRightLaser_device_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      SurroundingRightLaser_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      Tablet_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       Tibia:
         Alpha: 1
         Show Axes: false
         Show Trail: false
         Value: true
+      VerticalLeftLaser_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
+      VerticalRightLaser_frame:
+        Alpha: 1
+        Show Axes: false
+        Show Trail: false
       WheelB_link:
         Alpha: 1
         Show Axes: false
@@ -544,33 +614,14 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
         Value: true
-      azure_depth_camera_optical_frame:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-      azure_imu_frame:
+      base_footprint:
         Alpha: 1
         Show Axes: false
         Show Trail: false
       base_link:
         Alpha: 1
-        Show Axes: true
-        Show Trail: false
-      camera_base:
-        Alpha: 1
         Show Axes: false
         Show Trail: false
-        Value: true
-      camera_body:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      camera_visor:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
       l_gripper:
         Alpha: 1
         Show Axes: false
@@ -585,11 +636,6 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
       r_wrist:
-        Alpha: 1
-        Show Axes: false
-        Show Trail: false
-        Value: true
-      t265:
         Alpha: 1
         Show Axes: false
         Show Trail: false
