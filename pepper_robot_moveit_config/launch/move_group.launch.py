@@ -26,8 +26,6 @@ def generate_launch_description():
     declared_arguments = generate_declared_arguments()
 
     # Get substitution for all arguments
-    description_package = LaunchConfiguration("description_package")
-    description_filepath = LaunchConfiguration("description_filepath")
     moveit_config_package = "pepper_robot_moveit_config"
     name = LaunchConfiguration("name")
     prefix = LaunchConfiguration("prefix")
@@ -409,7 +407,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "description_filepath",
-            default_value=path.join("urdf", "pepper_robot.xacro"),
+            default_value=path.join("urdf", "pepper_robot.urdf"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # Naming of the robot
