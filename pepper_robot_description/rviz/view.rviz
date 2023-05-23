@@ -21,9 +21,9 @@ Panels:
   Experimental: false
   Name: Time
   SyncMode: 0
-  SyncSource: ''
+  SyncSource: ""
 Visualization Manager:
-  Class: ''
+  Class: ""
   Displays:
   - Alpha: 0.5
     Cell Size: 1
@@ -46,7 +46,7 @@ Visualization Manager:
   - Alpha: 0.5
     Class: rviz_default_plugins/RobotModel
     Collision Enabled: false
-    Description File: ''
+    Description File: ""
     Description Source: Topic
     Description Topic:
       Depth: 5
@@ -369,7 +369,7 @@ Visualization Manager:
       Inertia: false
       Mass: false
     Name: RobotModel
-    TF Prefix: ''
+    TF Prefix: ""
     Update Interval: 0
     Value: true
     Visual Enabled: true
