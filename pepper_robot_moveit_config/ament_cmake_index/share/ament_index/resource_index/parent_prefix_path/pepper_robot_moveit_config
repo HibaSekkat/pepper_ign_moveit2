@@ -1,1 +1,1 @@
-/root/install:/root/ws/install:/opt/ros/galactic
+/root/install:/root/ws/src/pepper_ign_moveit2/:/opt/ros/galactic
