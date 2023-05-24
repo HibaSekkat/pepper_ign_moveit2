@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config
+CMAKE_BINARY_DIR = /root/ws/install/
 
 #=============================================================================
 # Targets provided globally by CMake.
