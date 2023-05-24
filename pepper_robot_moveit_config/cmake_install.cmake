@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/ws/src/pepper_ign_moveit2//share")
+  set(CMAKE_INSTALL_PREFIX "/root/ws/install/share/")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,10 +39,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE DIRECTORY FILES
-    "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/config"
-    "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/launch"
-    "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/rviz"
-    "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/srdf"
+    "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/config"
+    "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/launch"
+    "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/rviz"
+    "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/srdf"
     )
 endif()
 
@@ -96,8 +96,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config/cmake" TYPE FILE FILES
-    "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_core/pepper_robot_moveit_configConfig.cmake"
-    "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_core/pepper_robot_moveit_configConfig-version.cmake"
+    "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_core/pepper_robot_moveit_configConfig.cmake"
+    "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_core/pepper_robot_moveit_configConfig-version.cmake"
     )
 endif()
 
@@ -113,5 +113,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
