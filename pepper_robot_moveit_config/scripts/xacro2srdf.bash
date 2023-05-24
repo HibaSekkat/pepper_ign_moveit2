@@ -2,7 +2,7 @@
 # This script converts URDF into SRDF for `pepper_robot_description` package
 
 SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" &>/dev/null && pwd)"
-URDF_PATH="$(dirname "${SCRIPT_DIR}")/urdf/pepper_robot.urdf"
+URDF_PATH="/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
 SRDF_PATH="$(dirname "${SCRIPT_DIR}")/srdf/pepper_robot.srdf"
 
 # Remove old SRDF file
