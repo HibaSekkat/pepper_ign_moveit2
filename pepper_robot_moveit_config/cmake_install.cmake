@@ -1,4 +1,4 @@
-# Install script for directory: /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config
+# Install script for directory: /root/ws/install/pepper_robot_moveit_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
