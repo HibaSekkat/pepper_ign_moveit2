@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config
+CMAKE_SOURCE_DIR = /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config
+CMAKE_BINARY_DIR = /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config
 
 # Utility rule file for pepper_robot_moveit_config_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config
 include CMakeFiles/pepper_robot_moveit_config_uninstall.dir/progress.make
 
 CMakeFiles/pepper_robot_moveit_config_uninstall:
-	/usr/bin/cmake -P /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 pepper_robot_moveit_config_uninstall: CMakeFiles/pepper_robot_moveit_config_uninstall
 pepper_robot_moveit_config_uninstall: CMakeFiles/pepper_robot_moveit_config_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/pepper_robot_moveit_config_uninstall.dir/clean:
 .PHONY : CMakeFiles/pepper_robot_moveit_config_uninstall.dir/clean
 
 CMakeFiles/pepper_robot_moveit_config_uninstall.dir/depend:
-	cd /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/CMakeFiles/pepper_robot_moveit_config_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/CMakeFiles/pepper_robot_moveit_config_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pepper_robot_moveit_config_uninstall.dir/depend
 

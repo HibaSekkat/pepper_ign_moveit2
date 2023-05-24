@@ -1,4 +1,4 @@
-# Install script for directory: /root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config
+# Install script for directory: /root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,11 +47,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pepper_robot_moveit_config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pepper_robot_moveit_config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pepper_robot_moveit_config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pepper_robot_moveit_config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config/environment" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config/environment" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -67,31 +67,31 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config/environment" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config/environment" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/pepper_robot_moveit_config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/pepper_robot_moveit_config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -102,7 +102,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2//pepper_robot_moveit_config/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pepper_robot_moveit_config" TYPE FILE FILES "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
