@@ -9,6 +9,6 @@ SRDF_PATH="$(dirname "${SCRIPT_DIR}")/srdf/pepper_robot.srdf"
 rm "${SRDF_PATH}" 2>/dev/null
 
 # Process URDF into SRDF
-ros2run srdfdom urdf_to_srdf "${URDF_PATH}" "${SRDF_PATH}"
+ros2 run srdfdom urdf_to_srdf "${URDF_PATH}" "${SRDF_PATH}"
 
 echo "Created new ${SRDF_PATH}"
