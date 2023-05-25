@@ -507,7 +507,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         # Servo
         DeclareLaunchArgument(
             "servo",
-            default_value="ture",
+            default_value="true",
             description="Flag to enable MoveIt2 Servo for manipulator.",
         ),
         # Gazebo
