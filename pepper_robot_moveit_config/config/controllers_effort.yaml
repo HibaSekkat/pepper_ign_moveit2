@@ -105,17 +105,17 @@ joint_trajectory_controller:
       HipRoll:
         p: 1000
         i: 0.1
-        d: 5.0
+        d: 1.0
         i_clamp: 0.2
       HipPitch:
         p: 1000
         i: 0.1
-        d: 5.0
+        d: 1.0
         i_clamp: 0.2
       KneePitch:
         p: 1000
         i: 0.1
-        d: 5.0
+        d: 1.0
         i_clamp: 0.2
       LHand:
         p: 100
@@ -127,6 +127,7 @@ joint_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
+
 gripper_trajectory_controller:
   ros__parameters:
     joints:
