@@ -13,42 +13,40 @@
 
  joint_trajectory_controller:
   ros__parameters:
-    left_arm:
-      joints:
-        - LShoulderPitch
-        - LShoulderRoll
-        - LElbowYaw
-        - LElbowRoll
-        - LWristYaw
-    right_arm:
-      joints:
-      -RShoulderPitch
-      - RShoulderRoll
-      - RElbowYaw
-      - RElbowRoll
-      - RWristYaw
-    Head:
-      joints:
-      - HeadYaw
-      - HeadPitch
-    Pelvis:
-      joints:
-      - HipRoll
-      - HipPitch
-      - KneePitch
-    left_hand:
-      joints:
-      - LHand
-    right_hand:
-      joints:
-      - RHand
+    - name: pepper_dcm/left_arm
+        joints:
+          - LShoulderPitch
+          - LShoulderRoll
+          - LElbowYaw
+          - LElbowRoll
+          - LWristYaw
+    - name: pepper_dcm/right_arm
+        joints:
+          - RShoulderPitch
+          - RShoulderRoll
+          - RElbowYaw
+          - RElbowRoll
+          - RWristYaw
+    - name: pepper_dcm/Head
+        joints:
+          - HeadYaw
+          - HeadPitch
+    - name: pepper_dcm/Pelvis
+        joints:
+          - HipRoll
+          - HipPitch
+          - KneePitch
+    - name: pepper_dcm/left_hand
+        joints:
+          - LHand
+    - name: pepper_dcm/right_hand
+        joints:
+          - RHand
     command_interfaces:
-      - position
-      - velocity
+          - effort
     state_interfaces:
-      - position
-      - velocity
-
+          - position
+          - velocity
  gripper_trajectory_controller:
   ros__parameters:
     joints:
