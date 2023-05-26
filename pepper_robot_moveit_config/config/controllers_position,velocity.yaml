@@ -11,7 +11,7 @@ controller_manager:
     gripper_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
- joint_trajectory_controller:
+joint_trajectory_controller:
   ros__parameters:
     left_arm_joints:
       - LShoulderPitch
@@ -20,7 +20,7 @@ controller_manager:
       - LElbowRoll
       - LWristYaw
     right_arm_joints:
-      -RShoulderPitch
+      - RShoulderPitch
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
@@ -43,7 +43,7 @@ controller_manager:
       - position
       - velocity
 
- gripper_trajectory_controller:
+gripper_trajectory_controller:
   ros__parameters:
     joints:
       - LFinger11
