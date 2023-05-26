@@ -13,28 +13,34 @@
 
  joint_trajectory_controller:
   ros__parameters:
-    left_arm_joints:
+    left_arm:
+      joints:
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
-    right_arm_joints:
+    right_arm:
+      joints:
       -RShoulderPitch
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
       - RWristYaw
-    Head_joints:
+    Head:
+      joints:
       - HeadYaw
       - HeadPitch
-    Pelvis_joints:
+    Pelvis:
+      joints:
       - HipRoll
       - HipPitch
       - KneePitch
-    left_hand_joints:
+    left_hand:
+      joints:
       - LHand
-    right_hand_joints:
+    right_hand:
+      joints:
       - RHand
     command_interfaces:
       - effort
