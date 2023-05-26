@@ -13,33 +13,33 @@
 
  joint_trajectory_controller:
   ros__parameters:
-    - name: pepper_dcm/left_arm
+    - name: left_arm
         joints:
           - LShoulderPitch
           - LShoulderRoll
           - LElbowYaw
           - LElbowRoll
           - LWristYaw
-    - name: pepper_dcm/right_arm
+    - name: right_arm
         joints:
           - RShoulderPitch
           - RShoulderRoll
           - RElbowYaw
           - RElbowRoll
           - RWristYaw
-    - name: pepper_dcm/Head
+    - name: Head
         joints:
           - HeadYaw
           - HeadPitch
-    - name: pepper_dcm/Pelvis
+    - name: Pelvis
         joints:
           - HipRoll
           - HipPitch
           - KneePitch
-    - name: pepper_dcm/left_hand
+    - name: left_hand
         joints:
           - LHand
-    - name: pepper_dcm/right_hand
+    - name: right_hand
         joints:
           - RHand
     command_interfaces:
