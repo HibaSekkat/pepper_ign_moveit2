@@ -42,14 +42,21 @@ joint_trajectory_controller:
       - position
       - velocity
     gains:
-      LWristYaw:
-        p: 100
+      LShoulderPitch:
+        p: 500
         i: 0.1
         d: 1.0
         i_clamp: 0.2
         antiwindup: false
         publish_state: true
-      RWristYaw:
+      LShoulderRoll:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+        antiwindup: false
+        publish_state: true
+      LElbowYaw:
         p: 100
         i: 0.1
         d: 1.0
@@ -63,28 +70,14 @@ joint_trajectory_controller:
         i_clamp: 0.2
         antiwindup: false
         publish_state: true
-      RElbowRoll:
+      LWristYaw:
         p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
         antiwindup: false
         publish_state: true
-      LElbowYaw:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-        antiwindup: false
-        publish_state: true
-      RElbowYaw:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-        antiwindup: false
-        publish_state: true
-      LShoulderRoll:
+      RShoulderPitch:
         p: 500
         i: 0.1
         d: 1.0
@@ -98,15 +91,15 @@ joint_trajectory_controller:
         i_clamp: 0.2
         antiwindup: false
         publish_state: true
-      LShoulderPitch:
-        p: 500
+      RElbowYaw:
+        p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
         antiwindup: false
         publish_state: true
-      RShoulderPitch:
-        p: 500
+      RElbowRoll:
+        p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2

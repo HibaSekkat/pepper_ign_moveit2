@@ -42,12 +42,17 @@ joint_trajectory_controller:
       - position
       - velocity
     gains:
-      LWristYaw:
-        p: 100
+      LShoulderPitch:
+        p: 500
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RWristYaw:
+      LShoulderRoll:
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
+      LElbowYaw:
         p: 100
         i: 0.1
         d: 1.0
@@ -57,22 +62,12 @@ joint_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RElbowRoll:
+      LWristYaw:
         p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      LElbowYaw:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RElbowYaw:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      LShoulderRoll:
+      RShoulderPitch:
         p: 500
         i: 0.1
         d: 1.0
@@ -82,13 +77,13 @@ joint_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      LShoulderPitch:
-        p: 500
+      RElbowYaw:
+        p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RShoulderPitch:
-        p: 500
+      RElbowRoll:
+        p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
@@ -127,7 +122,6 @@ joint_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-
 gripper_trajectory_controller:
   ros__parameters:
     joints:
