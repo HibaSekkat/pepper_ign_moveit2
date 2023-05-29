@@ -28,6 +28,7 @@ def generate_launch_description():
     # Get substitution for all arguments
     moveit_config_package = "pepper_robot_moveit_config"
     name = LaunchConfiguration("name")
+    prefix = LaunchConfiguration("prefix")
     gripper = LaunchConfiguration("gripper")
     safety_limits = LaunchConfiguration("safety_limits")
     safety_position_margin = LaunchConfiguration("safety_position_margin")
@@ -70,6 +71,9 @@ def generate_launch_description():
         " ",
         "name:=",
         name,
+        " ",
+        "prefix:=",
+        prefix,
         " ",
         "gripper:=",
         gripper,
@@ -233,6 +237,7 @@ def generate_launch_description():
                 robot_description,
                 {
                     "publish_frequency": 50.0,
+                    "frame_prefix": "",
                     "use_sim_time": use_sim_time,
                 },
             ],
@@ -410,6 +415,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "name",
             default_value="pepper_robot",
             description="Name of the robot.",
+        ),
+        DeclareLaunchArgument(
+            "prefix",
+            default_value="",
+            description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
         #gripper
          DeclareLaunchArgument(

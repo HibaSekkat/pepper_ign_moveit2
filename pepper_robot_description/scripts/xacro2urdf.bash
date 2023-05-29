@@ -9,7 +9,7 @@ URDF_PATH="$(dirname "${SCRIPT_DIR}")/urdf/pepper_robot.urdf"
 # Arguments for xacro
 XACRO_ARGS=(
     name:=pepper_robot
-    prefix:=robot_
+    prefix:=
     gripper:=true
     collision_arm:=true
     collision_gripper:=true
