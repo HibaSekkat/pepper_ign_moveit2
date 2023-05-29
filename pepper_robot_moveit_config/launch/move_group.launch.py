@@ -141,6 +141,7 @@ def generate_launch_description():
 
     # SRDF
     srdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/srdf/pepper_robot.srdf"
+    PathJoinSubstitution([FindExecutable(name="srdf")])
     with open(srdf_file_path, "r") as file:
         srdf_content = file.read()
 
