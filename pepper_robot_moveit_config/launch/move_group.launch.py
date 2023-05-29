@@ -327,7 +327,6 @@ def generate_launch_description():
                 {"use_sim_time": use_sim_time},
             ],
         condition=IfCondition(servo),
-        extra_arguments=[{'use_intra_process_comms': True}]
            ),
         # rviz2
         Node(
