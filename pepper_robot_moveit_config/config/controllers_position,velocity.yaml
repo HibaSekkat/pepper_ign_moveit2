@@ -41,12 +41,6 @@ joint_trajectory_controller:
     state_interfaces:
       - position
       - velocity
-    command_interfaces:
-      - position
-      - velocity
-    state_interfaces:
-      - position
-      - velocity
 
 gripper_trajectory_controller:
   ros__parameters:

@@ -41,11 +41,6 @@ joint_trajectory_controller:
     state_interfaces:
       - position
       - velocity
-    command_interfaces:
-      - effort
-    state_interfaces:
-      - position
-      - velocity
     gains:
       LWristYaw:
         p: 100
