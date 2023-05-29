@@ -9,12 +9,29 @@
   action_ns: follow_joint_trajectory
   type: FollowJointTrajectory
   default: true
-  joints:
-      - LShoulderPitch
-      - LShoulderRoll
-      - LElbowYaw
-      - LElbowRoll
-      - LWristYaw
+  left_arm:
+    - LShoulderPitch
+    - LShoulderRoll
+    - LElbowYaw
+    - LElbowRoll
+    - LWristYaw
+  right_arm:
+    - RShoulderPitch
+    - RShoulderRoll
+    - RElbowYaw
+    - RElbowRoll
+    - RWristYaw
+  Head:
+    - HeadYaw
+    - HeadPitch
+  Pelvis:
+    - HipRoll
+    - HipPitch
+    - KneePitch
+  left_hand:
+    - LHand
+  right_hand:
+    - RHand
 
  gripper_trajectory_controller:
   action_ns: follow_joint_trajectory
