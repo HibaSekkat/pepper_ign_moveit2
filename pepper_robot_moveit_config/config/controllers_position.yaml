@@ -13,23 +13,28 @@ controller_manager:
 
 joint_trajectory_controller:
   ros__parameters:
-    joints:
+    left_arm:
       - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
+    right_arm:
       - RShoulderPitch
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
       - RWristYaw
+    Head:
       - HeadYaw
       - HeadPitch
+    Pelvis:
       - HipRoll
       - HipPitch
       - KneePitch
+    left_hand:
       - LHand
+    right_hand:
       - RHand
     command_interfaces:
       - position
