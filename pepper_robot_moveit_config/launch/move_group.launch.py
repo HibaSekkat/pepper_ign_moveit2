@@ -144,10 +144,6 @@ def generate_launch_description():
             PathJoinSubstitution([FindPackageShare(moveit_config_package),
             "/srdf/pepper_robot.srdf",
                                   ]),
-            "name:=",
-            name,
-            "prefix:=",
-            prefix,
         ]
     )
     robot_description_semantic = {
