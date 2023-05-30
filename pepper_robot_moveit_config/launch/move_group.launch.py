@@ -21,6 +21,7 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
+
     # Declare all launch arguments
     declared_arguments = generate_declared_arguments()
 
@@ -325,8 +326,8 @@ def generate_launch_description():
                 servo_params,
                 {"use_sim_time": use_sim_time},
             ],
-            condition=IfCondition(servo),
-        ),
+        condition=IfCondition(servo),
+           ),
         # rviz2
         Node(
             package="rviz2",
@@ -420,8 +421,8 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             default_value="",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
-        # gripper
-        DeclareLaunchArgument(
+        #gripper
+         DeclareLaunchArgument(
             "gripper",
             default_value="true",
             description="Flag to enable default gripper.",
