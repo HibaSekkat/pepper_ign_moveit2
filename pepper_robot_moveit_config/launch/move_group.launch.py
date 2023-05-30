@@ -143,14 +143,6 @@ def generate_launch_description():
 
     _robot_description_semantic_xml = Command(
         [
-            "ros2",
-            "param",
-            "set",
-            "/move_group",
-            "robot_description_semantic",
-            "-t",
-            "string",
-            "-v",
             _srdf_file_path
         ]
     )
