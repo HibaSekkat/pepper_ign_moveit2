@@ -142,7 +142,7 @@ def generate_launch_description():
     _robot_description_semantic_xml = Command(
         [
             PathJoinSubstitution([FindPackageShare(moveit_config_package)]),
-            "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/srdf/pepper_robot.srdf",
+            "/srdf/pepper_robot.srdf",
             "name:=",
             name,
             "prefix:=",
