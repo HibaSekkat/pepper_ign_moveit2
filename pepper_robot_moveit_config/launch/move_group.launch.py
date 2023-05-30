@@ -141,9 +141,8 @@ def generate_launch_description():
     # SRDF
     _robot_description_semantic_xml = Command(
         [
-            PathJoinSubstitution([FindPackageShare(moveit_config_package),
+            PathJoinSubstitution([FindPackageShare(moveit_config_package)]),
             "/srdf/pepper_robot.srdf",
-                                  ]),
         ]
     )
     robot_description_semantic = {
