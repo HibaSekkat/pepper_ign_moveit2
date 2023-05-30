@@ -139,18 +139,26 @@ def generate_launch_description():
     robot_description = {"robot_description": _robot_description_xml}
 
     # SRDF
+    _srdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/srdf/pepper_robot.srdf"  # Replace with the actual path to your SRDF file
+
     _robot_description_semantic_xml = Command(
         [
-            PathJoinSubstitution([
-                FindPackageShare(moveit_config_package),
-                "srdf",
-                "pepper_robot.srdf"  # Replace with the actual SRDF file name
-            ]),
+            "ros2",
+            "param",
+            "set",
+            "/move_group",
+            "robot_description_semantic",
+            "-t",
+            "string",
+            "-v",
+            _srdf_file_path
         ]
     )
+
     robot_description_semantic = {
         "robot_description_semantic": _robot_description_semantic_xml
     }
+
     # Kinematics
     kinematics = load_yaml(
         moveit_config_package, path.join("config", "kinematics.yaml")
