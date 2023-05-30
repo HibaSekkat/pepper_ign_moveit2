@@ -13,6 +13,7 @@ controller_manager:
 
 joint_trajectory_controller:
   ros__parameters:
+    joints:
     left_arm:
       - LShoulderPitch
       - LShoulderRoll
@@ -37,7 +38,7 @@ joint_trajectory_controller:
     right_hand:
       - RHand
     command_interfaces:
-      - effort
+      - velocity
     state_interfaces:
       - position
       - velocity
@@ -187,7 +188,7 @@ gripper_trajectory_controller:
       - RThumb2
 
     command_interfaces:
-      - effort
+      - velocity
     state_interfaces:
       - position
       - velocity

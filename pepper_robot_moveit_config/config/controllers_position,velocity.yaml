@@ -37,7 +37,8 @@ joint_trajectory_controller:
     right_hand:
       - RHand
     command_interfaces:
-      - effort
+      - position
+      - velocity
     state_interfaces:
       - position
       - velocity
