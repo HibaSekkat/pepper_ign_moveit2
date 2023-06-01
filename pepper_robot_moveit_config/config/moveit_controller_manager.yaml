@@ -3,34 +3,27 @@
   - gripper_trajectory_controller
  # - gripper_action_controller
 
-
-
  joint_trajectory_controller:
   action_ns: follow_joint_trajectory
   type: FollowJointTrajectory
   default: true
-  left_arm:
+  joints:
     - LShoulderPitch
     - LShoulderRoll
     - LElbowYaw
     - LElbowRoll
     - LWristYaw
-  right_arm:
     - RShoulderPitch
     - RShoulderRoll
     - RElbowYaw
     - RElbowRoll
     - RWristYaw
-  Head:
     - HeadYaw
     - HeadPitch
-  Pelvis:
     - HipRoll
     - HipPitch
     - KneePitch
-  left_hand:
     - LHand
-  right_hand:
     - RHand
 
  gripper_trajectory_controller:
