@@ -65,7 +65,7 @@ def generate_launch_description():
     urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
 
     with open(urdf_file_path, "r") as urdf_file:
-    urdf_content = urdf_file.read()
+        urdf_content = urdf_file.read()
 
     robot_description = {"robot_description": urdf_content}
 
