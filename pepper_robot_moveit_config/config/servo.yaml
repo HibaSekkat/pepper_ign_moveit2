@@ -24,7 +24,7 @@
  low_pass_filter_coeff: 1.05
 
 ## MoveIt properties
- move_group_name: right_arm # Often 'manipulator' or 'arm'
+ move_group_name: head # Often 'manipulator' or 'arm'
  planning_frame: pepper_robot_base_link # The MoveIt planning frame. Often 'base_link' or 'world'
 
 ## Other frames

@@ -463,7 +463,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0.10000000149011612
         Joint Violation Color: 255; 0; 255
-        Planning Group: right_arm
+        Planning Group: head
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
