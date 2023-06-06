@@ -1,6 +1,6 @@
 from typing import List
 
-MOVE_GROUP_ARM: str = "head"
+MOVE_GROUP_ARM: str = "left_arm"
 MOVE_GROUP_GRIPPER: str = "l_gripper"
 
 OPEN_GRIPPER_JOINT_POSITIONS: List[float] = [
