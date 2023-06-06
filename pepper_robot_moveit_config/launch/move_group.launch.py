@@ -363,9 +363,9 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             description="Flag to enable collision geometry for the wheels of pepper_robot.",
         ),
         DeclareLaunchArgument(
-            "collision_left_arm",
+            "collision_arm",
             default_value="true",
-            description="Flag to enable collision geometry for manipulator's left_arm.",
+            description="Flag to enable collision geometry for manipulator's arm.",
         ),
         DeclareLaunchArgument(
             "collision_gripper",
