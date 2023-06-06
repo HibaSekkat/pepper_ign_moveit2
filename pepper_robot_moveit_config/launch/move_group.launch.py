@@ -48,7 +48,7 @@ def generate_launch_description():
     robot_description = {"robot_description": urdf_content}
 
     # SRDF
-    srdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config3/srdf/pepper_robot.srdf"
+    srdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/srdf/pepper_robot.srdf"
     with open(srdf_file_path, "r") as file:
         srdf_content = file.read()
 
