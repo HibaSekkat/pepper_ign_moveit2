@@ -27,35 +27,13 @@ def generate_launch_description():
 
     # Get substitution for all arguments
     moveit_config_package = "pepper_robot_moveit_config"
-    name = LaunchConfiguration("name")
-    prefix = LaunchConfiguration("prefix")
-    gripper = LaunchConfiguration("gripper")
-    safety_limits = LaunchConfiguration("safety_limits")
-    safety_position_margin = LaunchConfiguration("safety_position_margin")
-    safety_k_position = LaunchConfiguration("safety_k_position")
-    collision_chassis = LaunchConfiguration("collision_chassis")
-    collision_wheels = LaunchConfiguration("collision_wheels")
-    collision_left_arm = LaunchConfiguration("collision_left_arm")
-    collision_gripper = LaunchConfiguration("collision_gripper")
-    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
     publish_state = LaunchConfiguration("publish_state")
     execute_trajectories = LaunchConfiguration("execute_trajectories")
-    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
-    ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
         "ros2_control_command_interface"
     )
     servo = LaunchConfiguration("servo")
-    gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
-    gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
-    gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
-    gazebo_diff_drive = LaunchConfiguration("gazebo_diff_drive")
-    gazebo_joint_trajectory_controller = LaunchConfiguration(
-        "gazebo_joint_trajectory_controller"
-    )
-    gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
-    gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
     enable_rviz = LaunchConfiguration("enable_rviz")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
