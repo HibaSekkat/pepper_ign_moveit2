@@ -56,7 +56,7 @@ def generate_launch_description() -> LaunchDescription:
                 "--log-level",
                 log_level,
             ],
-            #parameters=[{"use_sim_time": use_sim_time}],
+            parameters=[{"use_sim_time": use_sim_time}],
         ),
         # joint_state_publisher_gui
         Node(
@@ -64,7 +64,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="joint_state_publisher_gui",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            parameters=[{"use_sim_time": use_sim_time}],
+            #parameters=[{"use_sim_time": use_sim_time}],
         ),
     ]
 
