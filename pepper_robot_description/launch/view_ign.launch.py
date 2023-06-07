@@ -86,7 +86,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="create",
             output="log",
             arguments=["-file", model, "--ros-args", "--log-level", log_level],
-            parameters=[{"use_sim_time": use_sim_time}],
+            #parameters=[{"use_sim_time": use_sim_time}],
         ),
     ]
 
