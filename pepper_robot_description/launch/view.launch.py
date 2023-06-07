@@ -22,32 +22,6 @@ def generate_launch_description() -> LaunchDescription:
     declared_arguments = generate_declared_arguments()
 
     # Get substitution for all arguments
-    description_package = LaunchConfiguration("description_package")
-    description_filepath = LaunchConfiguration("description_filepath")
-    name = LaunchConfiguration("name")
-    prefix = LaunchConfiguration("prefix")
-    gripper = LaunchConfiguration("gripper")
-    safety_limits = LaunchConfiguration("safety_limits")
-    safety_position_margin = LaunchConfiguration("safety_position_margin")
-    safety_k_position = LaunchConfiguration("safety_k_position")
-    collision_wheels = LaunchConfiguration("collision_wheels")
-    collision_arm = LaunchConfiguration("collision_arm")
-    collision_gripper = LaunchConfiguration("collision_gripper")
-    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
-    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
-    ros2_control = LaunchConfiguration("ros2_control")
-    ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
-    ros2_control_command_interface = LaunchConfiguration(
-        "ros2_control_command_interface"
-    )
-    gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
-    gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
-    gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
-    gazebo_joint_trajectory_controller = LaunchConfiguration(
-        "gazebo_joint_trajectory_controller"
-    )
-    gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
-    gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
     log_level = LaunchConfiguration("log_level")
@@ -68,7 +42,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="robot_state_publisher",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            parameters=[robot_description, {"use_sim_time": use_sim_time}],
+            #parameters=[robot_description, {"use_sim_time": use_sim_time}],
         ),
         # rviz2
         Node(
@@ -82,7 +56,7 @@ def generate_launch_description() -> LaunchDescription:
                 "--log-level",
                 log_level,
             ],
-            parameters=[{"use_sim_time": use_sim_time}],
+            #parameters=[{"use_sim_time": use_sim_time}],
         ),
         # joint_state_publisher_gui
         Node(
@@ -90,7 +64,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="joint_state_publisher_gui",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            parameters=[{"use_sim_time": use_sim_time}],
+            #parameters=[{"use_sim_time": use_sim_time}],
         ),
     ]
 
@@ -232,11 +206,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             ),
             description="Path to configuration for RViz2.",
         ),
-        DeclareLaunchArgument(
-            "use_sim_time",
-            default_value="false",
-            description="If true, use simulated clock.",
-        ),
+        #DeclareLaunchArgument(
+         #   "use_sim_time",
+          #  default_value="false",
+           # description="If true, use simulated clock.",
+        #),
         DeclareLaunchArgument(
             "log_level",
             default_value="warn",
