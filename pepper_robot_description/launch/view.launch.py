@@ -42,7 +42,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="robot_state_publisher",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            #parameters=[robot_description, {"use_sim_time": use_sim_time}],
+            parameters=[robot_description, {"use_sim_time": use_sim_time}],
         ),
         # rviz2
         Node(
@@ -56,7 +56,7 @@ def generate_launch_description() -> LaunchDescription:
                 "--log-level",
                 log_level,
             ],
-            #parameters=[{"use_sim_time": use_sim_time}],
+            parameters=[{"use_sim_time": use_sim_time}],
         ),
         # joint_state_publisher_gui
         Node(
@@ -64,7 +64,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="joint_state_publisher_gui",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            #parameters=[{"use_sim_time": use_sim_time}],
+            parameters=[{"use_sim_time": use_sim_time}],
         ),
     ]
 
@@ -206,11 +206,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             ),
             description="Path to configuration for RViz2.",
         ),
-        #DeclareLaunchArgument(
-         #   "use_sim_time",
-          #  default_value="false",
-           # description="If true, use simulated clock.",
-        #),
+        DeclareLaunchArgument(
+            "use_sim_time",
+            default_value="false",
+            description="If true, use simulated clock.",
+        ),
         DeclareLaunchArgument(
             "log_level",
             default_value="warn",
