@@ -53,76 +53,12 @@ def generate_launch_description() -> LaunchDescription:
     log_level = LaunchConfiguration("log_level")
 
     # Extract URDF from description file
-    robot_description_content = Command(
-        [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
-            PathJoinSubstitution(
-                [FindPackageShare(description_package), description_filepath]
-            ),
-            " ",
-            "name:=",
-            name,
-            " ",
-            "prefix:=",
-            prefix,
-            " ",
-            "gripper:=",
-            gripper,
-            " ",
-            "safety_limits:=",
-            safety_limits,
-            " ",
-            "safety_position_margin:=",
-            safety_position_margin,
-            " ",
-            "safety_k_position:=",
-            safety_k_position,
-            " ",
-            "collision_wheels:=",
-            collision_wheels,
-            " ",
-            "collision_arm:=",
-            collision_arm,
-            " ",
-            "collision_gripper:=",
-            collision_gripper,
-            " ",
-            "high_quality_mesh:=",
-            high_quality_mesh,
-            " ",
-            "mimic_gripper_joints:=",
-            mimic_gripper_joints,
-            " ",
-            "ros2_control:=",
-            ros2_control,
-            " ",
-            "ros2_control_plugin:=",
-            ros2_control_plugin,
-            " ",
-            "ros2_control_command_interface:=",
-            ros2_control_command_interface,
-            " ",
-            "gazebo_preserve_fixed_joint:=",
-            gazebo_preserve_fixed_joint,
-            " ",
-            "gazebo_self_collide:=",
-            gazebo_self_collide,
-            " ",
-            "gazebo_self_collide_fingers:=",
-            gazebo_self_collide_fingers,
-            " ",
-            "gazebo_joint_trajectory_controller:=",
-            gazebo_joint_trajectory_controller,
-            " ",
-            "gazebo_joint_state_publisher:=",
-            gazebo_joint_state_publisher,
-            " ",
-            "gazebo_pose_publisher:=",
-            gazebo_pose_publisher,
-        ]
-    )
-    robot_description = {"robot_description": robot_description_content}
+    urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
+
+    with open(urdf_file_path, "r") as urdf_file:
+        urdf_content = urdf_file.read()
+
+    robot_description = {"robot_description": urdf_content}
 
     # List of nodes to be launched
     nodes = [
@@ -186,7 +122,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="pepper_robot_",
+            default_value="",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
         #gripper
