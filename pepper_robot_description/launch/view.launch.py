@@ -183,7 +183,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",
-            default_value="false",
+            default_value="true",
             description="Flag to enable JointTrajectoryController Gazebo plugin for manipulator.",
         ),
         DeclareLaunchArgument(
