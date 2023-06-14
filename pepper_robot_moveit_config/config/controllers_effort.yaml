@@ -19,18 +19,7 @@ joint_trajectory_controller:
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
-      - RShoulderPitch
-      - RShoulderRoll
-      - RElbowYaw
-      - RElbowRoll
-      - RWristYaw
-      - HeadYaw
-      - HeadPitch
-      - HipRoll
-      - HipPitch
-      - KneePitch
       - LHand
-      - RHand
     command_interfaces:
       - effort
     state_interfaces:
@@ -62,57 +51,7 @@ joint_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RShoulderPitch:
-        p: 500
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RShoulderRoll:
-        p: 500
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RElbowYaw:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RElbowRoll:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      HeadYaw:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      HeadPitch:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      HipRoll:
-        p: 1000
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      HipPitch:
-        p: 1000
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      KneePitch:
-        p: 1000
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
       LHand:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RHand:
         p: 100
         i: 0.1
         d: 1.0
@@ -123,32 +62,17 @@ gripper_trajectory_controller:
       - LFinger11
       - LFinger12
       - LFinger13
-      - RFinger11
-      - RFinger12
-      - RFinger13
       - LFinger21
       - LFinger22
       - LFinger23
-      - RFinger21
-      - RFinger22
-      - RFinger23
       - LFinger31
       - LFinger32
       - LFinger33
-      - RFinger31
-      - RFinger32
-      - RFinger33
       - LFinger41
       - LFinger42
       - LFinger43
-      - RFinger41
-      - RFinger42
-      - RFinger43
       - LThumb1
-      - RThumb1
       - LThumb2
-      - RThumb2
-
     command_interfaces:
       - effort
     state_interfaces:
@@ -170,47 +94,12 @@ gripper_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RFinger11:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger12:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger13:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      LFinger21:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
       LFinger22:
         p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
       LFinger23:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger21:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger22:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger23:
         p: 100
         i: 0.1
         d: 1.0
@@ -230,21 +119,6 @@ gripper_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RFinger31:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger32:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger33:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
       LFinger41:
         p: 100
         i: 0.1
@@ -260,37 +134,12 @@ gripper_trajectory_controller:
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RFinger41:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger42:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RFinger43:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
       LThumb1:
         p: 100
         i: 0.1
         d: 1.0
         i_clamp: 0.2
-      RThumb1:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
       LThumb2:
-        p: 100
-        i: 0.1
-        d: 1.0
-        i_clamp: 0.2
-      RThumb2:
         p: 100
         i: 0.1
         d: 1.0
