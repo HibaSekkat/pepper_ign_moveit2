@@ -3,13 +3,13 @@ controller_manager:
     update_rate: 250
 
     joint_state_broadcaster:
-      type: joint_state_broadcaster
+      type: joint_state_broadcaster/JointStateBroadcaster
 
     joint_trajectory_controller:
-      type: joint_trajectory_controller
+      type: joint_trajectory_controller/JointTrajectoryController
 
     gripper_trajectory_controller:
-      type: joint_trajectory_controller
+      type: joint_trajectory_controller/JointTrajectoryController
 
 joint_trajectory_controller:
   ros__parameters:
@@ -19,7 +19,18 @@ joint_trajectory_controller:
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+      - HeadYaw
+      - HeadPitch
+      - HipRoll
+      - HipPitch
+      - KneePitch
       - LHand
+      - RHand
     command_interfaces:
       - position
     state_interfaces:
@@ -32,17 +43,31 @@ gripper_trajectory_controller:
       - LFinger11
       - LFinger12
       - LFinger13
+      - RFinger11
+      - RFinger12
+      - RFinger13
       - LFinger21
       - LFinger22
       - LFinger23
+      - RFinger21
+      - RFinger22
+      - RFinger23
       - LFinger31
       - LFinger32
       - LFinger33
+      - RFinger31
+      - RFinger32
+      - RFinger33
       - LFinger41
       - LFinger42
       - LFinger43
+      - RFinger41
+      - RFinger42
+      - RFinger43
       - LThumb1
+      - Rthumb1
       - LThumb2
+      - RThumb2
     command_interfaces:
       - position
     state_interfaces:
