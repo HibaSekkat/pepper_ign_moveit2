@@ -117,7 +117,7 @@ def generate_launch_description():
         "trajectory_execution.allowed_goal_duration_margin": 0.5,
         "trajectory_execution.allowed_start_tolerance": 0.1,
     }
-
+    print("66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666")
     # Controller parameters
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -132,7 +132,7 @@ def generate_launch_description():
             LaunchConfiguration("__controller_parameters__basename"),
         ]
     )
-
+    print("7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777")
     # List of nodes to be launched
     nodes = [
         # robot_state_publisher
