@@ -66,7 +66,7 @@ def generate_launch_description():
             moveit_config_package, path.join("config", "joint_limits.yaml")
         )
     }
-
+    print("111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111")
     # Servo
     servo_params = {
         "moveit_servo": load_yaml(
@@ -74,7 +74,7 @@ def generate_launch_description():
         )
     }
     servo_params["moveit_servo"].update({"use_gazebo": use_sim_time})
-
+    print("2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222")
     # Planning pipeline
     planning_pipeline = {
         "planning_pipelines": ["ompl"],
@@ -91,7 +91,7 @@ def generate_launch_description():
         moveit_config_package, path.join("config", "ompl_planning.yaml")
     )
     planning_pipeline["ompl"].update(_ompl_yaml)
-
+print("333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333")
     # Planning scene
     planning_scene_monitor_parameters = {
         "publish_planning_scene": True,
@@ -99,7 +99,7 @@ def generate_launch_description():
         "publish_state_updates": True,
         "publish_transforms_updates": True,
     }
-
+    print("4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444")
     # MoveIt controller manager
     moveit_controller_manager_yaml = load_yaml(
         moveit_config_package, path.join("config", "moveit_controller_manager.yaml")
@@ -108,7 +108,7 @@ def generate_launch_description():
         "moveit_controller_manager": "moveit_simple_controller_manager/MoveItSimpleControllerManager",
         "moveit_simple_controller_manager": moveit_controller_manager_yaml,
     }
-
+    print("55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555")
     # Trajectory execution
     trajectory_execution = {
         "allow_trajectory_execution": execute_trajectories,
