@@ -32,7 +32,7 @@ Visualization Manager:
     - Acceleration_Scaling_Factor: 0.1
       Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
-      Move Group Namespace: ""
+      Move Group Namespace: "left_arm"
       MoveIt_Allow_Approximate_IK: false
       MoveIt_Allow_External_Program: false
       MoveIt_Allow_Replanning: false
@@ -465,8 +465,8 @@ Visualization Manager:
         Joint Violation Color: 255; 0; 255
         Planning Group: "left_arm"
         Query Goal State: true
-        Query Start State: false
-        Show Workspace: false
+        Query Start State: true
+        Show Workspace: true
         Start State Alpha: 1
         Start State Color: 0; 255; 0
       Planning Scene Topic: /monitored_planning_scene
@@ -872,7 +872,7 @@ Visualization Manager:
       Velocity_Scaling_Factor: 0.1
     - Class: moveit_rviz_plugin/PlanningScene
       Enabled: true
-      Move Group Namespace: ""
+      Move Group Namespace: "left_arm"
       Name: PlanningScene
       Planning Scene Topic: /monitored_planning_scene
       Robot Description: robot_description
