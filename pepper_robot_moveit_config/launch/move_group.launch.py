@@ -151,7 +151,6 @@ def generate_launch_description():
             ],
             condition=IfCondition(publish_state),
         ),
-        print ("888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888"),
         # ros2_control_node (only for fake controller)
         Node(
             package="controller_manager",
@@ -181,7 +180,6 @@ def generate_launch_description():
                 )
             ),
         ),
-        print("9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"),
         # move_group (with execution)
         Node(
             package="moveit_ros_move_group",
