@@ -91,7 +91,7 @@ def generate_launch_description():
         moveit_config_package, path.join("config", "ompl_planning.yaml")
     )
     planning_pipeline["ompl"].update(_ompl_yaml)
-print("333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333")
+    print("333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333")
     # Planning scene
     planning_scene_monitor_parameters = {
         "publish_planning_scene": True,
