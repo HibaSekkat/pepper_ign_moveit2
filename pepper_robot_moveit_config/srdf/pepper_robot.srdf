@@ -65,7 +65,7 @@
     <group name="head">
         <chain base_link="torso" tip_link="Head" />
     </group>
-    <group_state name="down" group="left_arm">
+    <group_state group="left_arm" name="down">
         <joint name="LShoulderPitch" value="1.57075" />
         <joint name="LShoulderRoll" value="0" />
         <joint name="LElbowYaw" value="-1.57075" />
@@ -91,10 +91,10 @@
         <joint name="RElbowRoll" value="0" />
         <joint name="RWristYaw" value="0" />
     </group_state>
-    <group_state name="closed" group="left_hand">
+    <group_state group="left_hand" name="closed">
         <joint name="LHand" value="0.02" />
     </group_state>
-    <group_state name="open" group="left_hand">
+    <group_state group="left_hand" name="open" >
         <joint name="LHand" value="0.98" />
     </group_state>
     <group_state name="closed" group="right_hand">
@@ -103,7 +103,7 @@
     <group_state name="open" group="right_hand">
         <joint name="RHand" value="0.98" />
     </group_state>
-    <group_state name="closed" group="both_hands">
+    <group_state group="both_hands" name="closed">
         <joint name="RHand" value="0.02" />
         <joint name="LHand" value="0.02" />
     </group_state>
