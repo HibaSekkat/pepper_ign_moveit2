@@ -36,7 +36,7 @@ CLOSED_GRIPPER_JOINT_POSITIONS: List[float] = [
     0.2,
 ]
 
-def joint_names(str="") -> List[str]:
+def joint_names(prefix: str = "") -> List[str]:
     return [
         "LShoulderPitch",
         "LShoulderRoll",
@@ -46,15 +46,15 @@ def joint_names(str="") -> List[str]:
         "LHand",
     ]
 
-def base_link_name(str="") -> str:
+def base_link_name(prefix: str = "") -> str:
     return "base_link"
 
 
-def end_effector_name(str="") -> str:
+def end_effector_name(prefix: str = "") -> str:
     return "left_eef"
 
 
-def gripper_joint_names(str="") -> List[str]:
+def gripper_joint_names(prefix: str = "") -> List[str]:
     return [
         "LFinger11",
         "LFinger12",
