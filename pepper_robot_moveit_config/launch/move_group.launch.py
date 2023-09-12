@@ -249,7 +249,7 @@ def generate_launch_description():
                 servo_params,
                 {"use_sim_time": use_sim_time},
             ],
-        condition=IfCondition(servo),
+            condition=IfCondition(servo),
            ),
         # rviz2
         Node(
