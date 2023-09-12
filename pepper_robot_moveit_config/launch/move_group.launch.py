@@ -27,13 +27,35 @@ def generate_launch_description():
 
     # Get substitution for all arguments
     moveit_config_package = "pepper_robot_moveit_config"
+    name = LaunchConfiguration("name")
+    prefix = LaunchConfiguration("prefix")
+    safety_limits = LaunchConfiguration("safety_limits")
+    safety_position_margin = LaunchConfiguration("safety_position_margin")
+    safety_k_position = LaunchConfiguration("safety_k_position")
+    external_devices = LaunchConfiguration("external_devices")
+    collision_chassis = LaunchConfiguration("collision_chassis")
+    collision_wheels = LaunchConfiguration("collision_wheels")
+    collision_arm = LaunchConfiguration("collision_arm")
+    collision_gripper = LaunchConfiguration("collision_gripper")
+    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
     publish_state = LaunchConfiguration("publish_state")
     execute_trajectories = LaunchConfiguration("execute_trajectories")
+    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
+    ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
         "ros2_control_command_interface"
     )
     servo = LaunchConfiguration("servo")
+    gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
+    gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
+    gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
+    gazebo_diff_drive = LaunchConfiguration("gazebo_diff_drive")
+    gazebo_joint_trajectory_controller = LaunchConfiguration(
+        "gazebo_joint_trajectory_controller"
+    )
+    gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
+    gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
     enable_rviz = LaunchConfiguration("enable_rviz")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
@@ -344,6 +366,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             default_value="20",
             description="Parametric k-position factor of all safety controllers.",
         ),
+        DeclareLaunchArgument(
+            "external_devices",
+            default_value="false",
+            description="Flag to enable external devices (mesh).",
+        ),
         # Collision geometry
         DeclareLaunchArgument(
             "collision_chassis",
@@ -364,6 +391,11 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             "collision_gripper",
             default_value="true",
             description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
+        ),
+        DeclareLaunchArgument(
+            "collision_external_devices",
+            default_value="true",
+            description="Flag to enable collision geometry for external devices.",
         ),
         # Geometry
         DeclareLaunchArgument(
