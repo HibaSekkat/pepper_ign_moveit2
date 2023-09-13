@@ -15,7 +15,7 @@ from launch.substitutions import (
 )
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-
+from launch_ros.descriptions import ParameterValue
 
 def generate_launch_description() -> LaunchDescription:
 
@@ -23,8 +23,6 @@ def generate_launch_description() -> LaunchDescription:
     declared_arguments = generate_declared_arguments()
 
     # Get substitution for all arguments
-    description_package = LaunchConfiguration("description_package")
-    description_filepath = LaunchConfiguration("description_filepath")
     world = LaunchConfiguration("world")
     model = LaunchConfiguration("model")
     use_sim_time = LaunchConfiguration("use_sim_time")
@@ -32,19 +30,12 @@ def generate_launch_description() -> LaunchDescription:
     log_level = LaunchConfiguration("log_level")
 
     # URDF
-    _robot_description_xml = Command(
-        [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
-            PathJoinSubstitution(
-                [FindPackageShare(description_package), description_filepath]
-            ),
-            " ",
-            "name:=",
-            model,
-        ]
-    )
-    robot_description = {"robot_description": _robot_description_xml}
+    urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
+
+    with open(urdf_file_path, "r") as urdf_file:
+        urdf_content = urdf_file.read()
+
+    robot_description = {"robot_description": urdf_content}
 
     # List of included launch descriptions
     launch_descriptions = [
