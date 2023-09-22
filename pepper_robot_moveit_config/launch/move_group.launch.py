@@ -344,12 +344,6 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             default_value="",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
-        #gripper
-         DeclareLaunchArgument(
-            "gripper",
-            default_value="true",
-            description="Flag to enable default gripper.",
-        ),
         # Safety controller
         DeclareLaunchArgument(
             "safety_limits",
