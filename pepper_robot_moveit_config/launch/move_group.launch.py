@@ -434,7 +434,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         # Servo
         DeclareLaunchArgument(
             "servo",
-            default_value="false",
+            default_value="true",
             description="Flag to enable MoveIt2 Servo for manipulator.",
         ),
         # Gazebo
@@ -475,7 +475,9 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         # Miscellaneous
         DeclareLaunchArgument(
-            "enable_rviz", default_value="true", description="Flag to enable RViz2."
+            "enable_rviz",
+            default_value="true",
+            description="Flag to enable RViz2."
         ),
         DeclareLaunchArgument(
             "rviz_config",
