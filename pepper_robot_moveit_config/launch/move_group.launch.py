@@ -104,7 +104,7 @@ def generate_launch_description():
             # TODO: Re-enable `default_planner_request_adapters/AddRuckigTrajectorySmoothing` once its issues are resolved
             "request_adapters": "default_planner_request_adapters/AddTimeOptimalParameterization default_planner_request_adapters/ResolveConstraintFrames default_planner_request_adapters/FixWorkspaceBounds default_planner_request_adapters/FixStartStateBounds default_planner_request_adapters/FixStartStateCollision default_planner_request_adapters/FixStartStatePathConstraints",
             # TODO: Reduce start_state_max_bounds_error once spawning with specific joint configuration is enabled
-            "start_state_max_bounds_error": 1.5707963,
+            "start_state_max_bounds_error": 0,
         },
     }
     _ompl_yaml = load_yaml(
