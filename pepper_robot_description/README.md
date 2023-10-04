@@ -1,6 +1,6 @@
 # pepper_robot_description
 
-URDF and SDF description of Summit XL-GEN (LunaLab variant).
+URDF and SDF description of pepper_robot.
 
 <p align="left" float="middle">
   <img width="50.0%" src="https://github.com/jrl-umi3218/pepper_description/raw/master/doc/pepper_description.png" alt="Visualisation of pepper_robot"/>
@@ -30,7 +30,7 @@ ros2 launch pepper_robot_description view_ign.launch.py
 
 ## Disclaimer
 
-Several of the included xacros and meshes originated in other repositories. Many of these descriptors and meshes were modified in order to represent the specific LunaLab variant and add support for Gazebo. Furthermore, additional improvements were added along the way, e.g. xacros were refactored, safety limits controllers were added, mesh geometry was remodelled to improve performance, materials of models were improved for `ogre2`, ...
+Several of the included xacros and meshes originated in other repositories. Many of these descriptors and meshes were modified in order to represent the pepper_robot and add support for Gazebo. Furthermore, additional improvements were added along the way, e.g. xacros were refactored, safety limits controllers were added, mesh geometry was remodelled to improve performance, materials of models were improved for `ogre2`, ...
 
 ## Directory Structure
 
@@ -52,16 +52,7 @@ The following directory structure is utilised for this package because it provid
 ├── rviz/view.rviz                           # RViz2 config for visualising URDF
 ├── scripts/                                 # [dir] Additional useful scripts
 ├── urdf/                                    # [dir] URDF description (xacros)
-    ├── manipulators/                        # [dir] Xacros for manipulators (e.g. Kinova j2s7s300)
-    ├── misc/                                # [dir] Xacros for all miscellaneous additions to the platform
-    ├── sensors/                             # [dir] Xacros for all sensors
-    ├── summit_xl/                           # [dir] Xacros for Summit XL
-    ├── pepper_robot.gazebo         # Xacro for utilised Gazebo plugins
-    ├── pepper_robot.urdf           # URDF generated from `pepper_robot.xacro`
-    ├── pepper_robot.xacro     # The primary xacro of the robot
-    ├── pepper_robot_manipulators.xacro # Xacro for utilised manipulators
-    ├── pepper_robot_misc.xacro         # Xacro for utilised miscellaneous additions
-    └── pepper_robot_sensors.xacro      # Xacro for utilised sensors
+    └── pepper_robot.urdf           # URDF generated from `pepper_robot.xacro`
 ├── CMakeLists.txt                           # Colcon-enabled CMake recipe
 └── package.xml                              # ROS 2 package metadata
 ```

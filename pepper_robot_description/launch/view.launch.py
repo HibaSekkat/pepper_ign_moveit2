@@ -155,12 +155,12 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         DeclareLaunchArgument(
             "collision_chassis",
             default_value="true",
-            description="Flag to enable collision geometry for the chassis of Summit XL.",
+            description="Flag to enable collision geometry for the chassis of pepper_robot.",
         ),
         DeclareLaunchArgument(
             "collision_wheels",
             default_value="true",
-            description="Flag to enable collision geometry for the wheels of Summit XL.",
+            description="Flag to enable collision geometry for the wheels of pepper_robot.",
         ),
         DeclareLaunchArgument(
             "collision_arm",
@@ -224,7 +224,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         DeclareLaunchArgument(
             "gazebo_diff_drive",
             default_value="true",
-            description="Flag to enable DiffDrive Gazebo plugin for Summit XL.",
+            description="Flag to enable DiffDrive Gazebo plugin for pepper_robot.",
         ),
         DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",

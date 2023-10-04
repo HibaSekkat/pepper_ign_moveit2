@@ -52,15 +52,12 @@ The following directory structure is utilised for this package.
 ├── launch/                                   # [dir] ROS 2 launch scripts
     ├── ex_fake_control.launch.py             # Launch script virtual motion planning and execution inside RViz2
     ├── ex_ign_control.launch.py              # Launch script virtual motion planning and execution inside Gazebo
-    ├── move_group_ros1_controllers.launch.py # Launch script for configuring and setting up move_group of MoveIt 2 using on-board ROS 1 controllers
     └── move_group.launch.py                  # Launch script for configuring and setting up move_group of MoveIt 2
 ├── rviz/moveit.rviz                          # RViz2 config for motion planning with MoveIt 2
 ├── scripts/                                  # [dir] Additional useful scripts
 ├── srdf/                                     # [dir] SRDF description (xacros)
     ├── pepper_robot_j2s7s300.xacro  # Xacro specific to SRDF of Kinova j2s7s300 manipulator
-    ├── pepper_robot.srdf            # SRDF generated from `pepper_robot.xacro`
-    ├── pepper_robot.xacro      # The primary xacro of the robot
-    └── lunalab_summit_xl_manipulators.xacro  # Xacro for utilised manipulators
+    └──  pepper_robot.srdf            # SRDF generated from `pepper_robot.xacro`
 ├── CMakeLists.txt                            # Colcon-enabled CMake recipe
 └── package.xml                               # ROS 2 package metadata
 ```
