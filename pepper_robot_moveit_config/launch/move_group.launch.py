@@ -75,8 +75,7 @@ def generate_launch_description():
     with open(srdf_file_path, "r") as file:
         srdf_content = file.read()
 
-    _robot_description_semantic_xml = {"value": srdf_content}
-    robot_description_semantic = {"robot_description_semantic": _robot_description_semantic_xml}
+    robot_description_semantic = {"robot_description_semantic": srdf_content}
 
     # Kinematics
     kinematics = load_yaml(
