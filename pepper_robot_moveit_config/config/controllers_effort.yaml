@@ -36,32 +36,37 @@ joint_trajectory_controller:
     state_interfaces:
       - position
       - velocity
+# gains are coefficients used to adjust the performance and behavior of the control system.
+#p: proportional gain: determines the strength of the control action in response to the current error.
+#i: integral gain: The integral gain is used to eliminate steady-state errors in the system. It represents the accumulation of past errors over time. A value of 0.1 indicates a relatively low integral gain.
+#d: derivative gain: used to dampen the oscillations and reduce overshoot in the system's response. A value of 1.0 suggests a moderate derivative gain.
+#i_clamp: 0.2: This line specifies an integral clamping value. It restricts the maximum allowed value for the integral component of the control. In this case, it's set to 0.2, which means that the integral component will not accumulate beyond this limit.
     gains:
       LShoulderPitch:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LShoulderRoll:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 500
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LElbowYaw:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LElbowRoll:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LWristYaw:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RShoulderPitch:
         p: 500
         i: 0.1
@@ -73,25 +78,25 @@ joint_trajectory_controller:
         d: 1.0
         i_clamp: 0.2
       RElbowYaw:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RElbowRoll:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       HeadYaw:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       HeadPitch:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       HipRoll:
         p: 1000
         i: 0.1
@@ -108,15 +113,15 @@ joint_trajectory_controller:
         d: 1.0
         i_clamp: 0.2
       LHand:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RHand:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
 gripper_trajectory_controller:
   ros__parameters:
     joints:
@@ -156,142 +161,142 @@ gripper_trajectory_controller:
       - velocity
     gains:
       LFinger11:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger12:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger13:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger11:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger12:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger13:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger21:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger22:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger23:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger21:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger22:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger23:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger31:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger32:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger33:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger31:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger32:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger33:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger41:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger42:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LFinger43:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger41:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger42:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RFinger43:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LThumb1:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RThumb1:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       LThumb2:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2
       RThumb2:
-        p: 1500
-        i: 5.0
-        d: 50.0
-        i_clamp: 10.0
+        p: 100
+        i: 0.1
+        d: 1.0
+        i_clamp: 0.2

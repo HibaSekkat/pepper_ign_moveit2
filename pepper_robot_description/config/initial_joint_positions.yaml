@@ -2,7 +2,7 @@
 
   HeadPitch: -0.3665191
   HeadYaw: 0.0174533
-  LElbowRoll: 0.0872665
+  LElbowRoll: 0.0
   LElbowYaw: 1.69297
   LFinger11: 0.1
   LFinger12: 0.1
@@ -16,12 +16,12 @@
   LFinger41: 0.1
   LFinger42: 0.1
   LFinger43: 0.1
-  LHand: 0.0
+  LHand: 0.02
   LShoulderPitch: 1.74533
-  LShoulderRoll: -0.10472
+  LShoulderRoll: 0.00872665
   LThumb1: 0.1
   LThumb2: 0.1
-  LWristYaw: -0.0174533
+  LWristYaw: 1.82387
   RElbowRoll: 0.0872665
   RElbowYaw: 1.69297
   RFinger11: 0.1
@@ -36,9 +36,9 @@
   RFinger41: 0.1
   RFinger42: 0.1
   RFinger43: 0.1
-  RHand: 0.0
+  RHand: 0.02
   RShoulderPitch: 1.74533
-  RShoulderRoll: -0.10472
+  RShoulderRoll: -1.56207
   RThumb1: 0.1
   RThumb2: 0.1
   RWristYaw: 1.69297
