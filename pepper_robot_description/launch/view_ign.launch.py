@@ -30,8 +30,7 @@ def generate_launch_description() -> LaunchDescription:
     log_level = LaunchConfiguration("log_level")
 
     # URDF
-    urdf_file_path = path.join(get_package_share_directory("pepper_robot_description"), "urdf",
-                               "pepper_robot.urdf")
+    urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
 
     with open(urdf_file_path, "r") as urdf_file:
         urdf_content = urdf_file.read()
