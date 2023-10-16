@@ -31,7 +31,7 @@ joint_trajectory_controller:
       - KneePitch
       - LHand
       - RHand
-    right_hand:
+    RHand:
       - RHand
     command_interfaces:
       - velocity

@@ -19,7 +19,7 @@
         <group name="left_arm" />
         <group name="right_arm" />
     </group>
-    <group name="right_hand">
+    <group name="RHand">
         <link name="RFinger11_link" />
         <link name="RFinger12_link" />
         <link name="RFinger13_link" />
@@ -37,7 +37,7 @@
         <link name="RThumb2_link" />
         <joint name="RHand" />
     </group>
-    <group name="left_hand">
+    <group name="LHand">
         <link name="LFinger11_link" />
         <link name="LFinger12_link" />
         <link name="LFinger13_link" />
@@ -56,8 +56,8 @@
         <joint name="LHand" />
     </group>
     <group name="both_hands">
-        <group name="left_hand" />
-        <group name="right_hand" />
+        <group name="LHand" />
+        <group name="RHand" />
     </group>
     <group name="base">
         <joint name="virtual_odom" />
@@ -91,16 +91,16 @@
         <joint name="RElbowRoll" value="0" />
         <joint name="RWristYaw" value="0" />
     </group_state>
-    <group_state name="closed" group="left_hand">
+    <group_state name="closed" group="LHand">
         <joint name="LHand" value="0.02" />
     </group_state>
-    <group_state name="open" group="left_hand">
+    <group_state name="open" group="LHand">
         <joint name="LHand" value="0.98" />
     </group_state>
-    <group_state name="closed" group="right_hand">
+    <group_state name="closed" group="RHand">
         <joint name="RHand" value="0.02" />
     </group_state>
-    <group_state name="open" group="right_hand">
+    <group_state name="open" group="RHand">
         <joint name="RHand" value="0.98" />
     </group_state>
     <group_state name="closed" group="both_hands">
@@ -112,8 +112,8 @@
         <joint name="LHand" value="0.98" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="left_eef" parent_link="l_wrist" group="left_hand" />
-    <end_effector name="right_eef" parent_link="r_wrist" group="right_hand" />
+    <end_effector name="LHand" parent_link="l_wrist" group="LHand" />
+    <end_effector name="RHand" parent_link="r_wrist" group="RHand" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_odom" type="floating" parent_frame="odom" child_link="base_link" />
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->

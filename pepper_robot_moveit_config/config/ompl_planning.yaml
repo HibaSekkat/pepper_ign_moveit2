@@ -216,7 +216,7 @@
     - SPARStwo
     - TrajOpt
   longest_valid_segment_fraction: 0.05
- right_hand:
+ RHand:
   planner_configs:
     - AnytimePathShortening
     - SBL
@@ -244,7 +244,7 @@
     - SPARStwo
     - TrajOpt
   longest_valid_segment_fraction: 0.05
- left_hand:
+ LHand:
   planner_configs:
     - AnytimePathShortening
     - SBL

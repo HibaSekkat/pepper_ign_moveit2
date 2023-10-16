@@ -51,7 +51,7 @@ def base_link_name(prefix: str = "") -> str:
 
 
 def end_effector_name(prefix: str = "") -> str:
-    return prefix +"left_eef"
+    return prefix +"LHand"
 
 
 def gripper_joint_names(prefix: str = "") -> List[str]:

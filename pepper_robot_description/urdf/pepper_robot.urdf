@@ -2334,7 +2334,7 @@
       <state_interface name="effort"/>
     </joint>
   </ros2_control>
-  <ros2_control name="pepper_robot_left_handSystem" type="system">
+  <ros2_control name="pepper_robot_LHandSystem" type="system">
     <hardware>
       <plugin>ign_ros2_control/IgnitionSystem</plugin>
     </hardware>
@@ -2444,7 +2444,7 @@
       <state_interface name="effort"/>
     </joint>
   </ros2_control>
-  <ros2_control name="pepper_robot_right_handSystem" type="system">
+  <ros2_control name="pepper_robot_RHandSystem" type="system">
     <hardware>
       <plugin>ign_ros2_control/IgnitionSystem</plugin>
     </hardware>
