@@ -201,7 +201,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="robot_",
+            default_value="",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
         ),
         # Bridge enablers
