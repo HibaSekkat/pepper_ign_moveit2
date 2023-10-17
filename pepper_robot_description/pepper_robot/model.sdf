@@ -3131,18 +3131,11 @@
     </plugin>
     <static>false</static>
     <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
-    <alwaysOn>true</alwaysOn>
-    <updateRate>100</updateRate>
-    <leftJoint>WheelFL</leftJoint>
-    <rightJoint>WheelFR</rightJoint>
-    <backJoint>WheelB</backJoint>
-    <wheelSeparation>0.170</wheelSeparation>
-    <wheelDiameter>0.7</wheelDiameter>
-    <torque>36.9</torque>
-    <commandTopic>cmd_vel</commandTopic>
-    <odometryTopic>odom</odometryTopic>
-    <odometryFrame>odom</odometryFrame>
-    <robotBaseFrame>base_footprint</robotBaseFrame>
+    <left_joint>WheelFL</left_joint>
+    <right_joint>WheelFR</right_joint>
+    <back_joint>WheelB</back_joint>
+    <wheel_separation>0.170</wheel_separation>
+    <wheel_radius>0.35</wheel_radius>
     </plugin>
     <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
       <use_pose_vector_msg>true</use_pose_vector_msg>
