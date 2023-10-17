@@ -1979,11 +1979,18 @@
   </ros2_control>
   <gazebo>
     <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>100</updateRate>
     <left_joint>WheelFL</left_joint>
     <right_joint>WheelFR</right_joint>
     <back_joint>WheelB</back_joint>
     <wheel_separation>0.170</wheel_separation>
     <wheel_radius>0.35</wheel_radius>
+    <torque>36.9</torque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
     </plugin>
   </gazebo>
 
