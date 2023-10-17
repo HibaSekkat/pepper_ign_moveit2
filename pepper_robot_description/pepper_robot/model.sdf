@@ -3130,7 +3130,7 @@
       <parameters>/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
     <static>false</static>
-    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
     <alwaysOn>true</alwaysOn>
     <updateRate>100</updateRate>
     <leftJoint>WheelFL</leftJoint>
