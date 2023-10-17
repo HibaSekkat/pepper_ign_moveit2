@@ -1978,7 +1978,7 @@
     </joint>
   </ros2_control>
   <gazebo>
-    <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
     <alwaysOn>true</alwaysOn>
     <updateRate>100</updateRate>
     <leftJoint>WheelFL</leftJoint>
