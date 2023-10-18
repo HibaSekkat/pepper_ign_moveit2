@@ -106,7 +106,7 @@ def generate_launch_description():
                 # "--frame-id",
                 robot_name,
                 # "--child-frame-id",
-                [prefix, "base_footpint"],
+                [prefix, "base_footprint"],
                 "--ros-args",
                 "--log-level",
                 log_level,
