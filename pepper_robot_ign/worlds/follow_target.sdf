@@ -85,7 +85,7 @@
     <!-- Static target -->
     <model name="target">
       <static>true</static>
-      <pose>0.35 1.0 0.15 3.1415927 0 0</pose>
+      <pose>0.35 0 0.15 3.1415927 0 0</pose>
       <link name="target_link">
         <visual name="target_visual">
           <geometry>
