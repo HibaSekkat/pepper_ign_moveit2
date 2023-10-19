@@ -5,210 +5,210 @@
   HeadPitch:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   HeadYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LElbowYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger11:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger12:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger13:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger21:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger22:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger23:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger31:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger32:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger33:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger41:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger42:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LFinger43:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LHand:
     has_velocity_limits: true
     max_velocity: 12.56
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LShoulderPitch:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LThumb1:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LThumb2:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   LWristYaw:
     has_velocity_limits: true
     max_velocity: 17.3835
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RElbowYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger11:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger12:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger13:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger21:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger22:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger23:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger31:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger32:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger33:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger41:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger42:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RFinger43:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RHand:
     has_velocity_limits: true
     max_velocity: 12.56
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RShoulderPitch:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RThumb1:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RThumb2:
     has_velocity_limits: false
     max_velocity: 0
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
   RWristYaw:
     has_velocity_limits: true
     max_velocity: 17.3835
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.9531
