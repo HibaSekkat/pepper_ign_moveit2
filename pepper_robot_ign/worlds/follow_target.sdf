@@ -56,7 +56,7 @@
     <!--        -->
     <!-- Ground -->
     <model name="ground_plane">
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 0 0 0 -10</pose>
       <static>true</static>
       <link name="ground_plane_link">
         <collision name="ground_plane_collision">
