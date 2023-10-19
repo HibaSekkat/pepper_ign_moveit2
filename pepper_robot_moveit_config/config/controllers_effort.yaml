@@ -185,7 +185,6 @@ gripper_trajectory_controller:
       - RThumb1
       - LThumb2
       - RThumb2
-
     command_interfaces:
       - effort
     state_interfaces:
