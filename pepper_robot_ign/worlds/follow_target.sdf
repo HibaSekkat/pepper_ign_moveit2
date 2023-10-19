@@ -54,33 +54,6 @@
     <!--        -->
     <!-- Models -->
     <!--        -->
-    <!-- Ground -->
-    <model name="ground_plane">
-      <pose>0 0 0 0 0 -10</pose>
-      <static>true</static>
-      <link name="ground_plane_link">
-        <collision name="ground_plane_collision">
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-            </plane>
-          </geometry>
-        </collision>
-        <visual name="ground_plane_visual">
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>4 4</size>
-            </plane>
-          </geometry>
-          <material>
-            <ambient>0.8 0.8 0.8 1</ambient>
-            <diffuse>0.8 0.8 0.8 1</diffuse>
-            <specular>0.8 0.8 0.8 1</specular>
-          </material>
-        </visual>
-      </link>
-    </model>
 
     <!-- Static target -->
     <model name="target">
