@@ -36,11 +36,6 @@ joint_trajectory_controller:
     state_interfaces:
       - position
       - velocity
-# gains are coefficients used to adjust the performance and behavior of the control system.
-#p: proportional gain: determines the strength of the control action in response to the current error.
-#i: integral gain: The integral gain is used to eliminate steady-state errors in the system. It represents the accumulation of past errors over time. A value of 0.1 indicates a relatively low integral gain.
-#d: derivative gain: used to dampen the oscillations and reduce overshoot in the system's response. A value of 1.0 suggests a moderate derivative gain.
-#i_clamp: 0.2: This line specifies an integral clamping value. It restricts the maximum allowed value for the integral component of the control. In this case, it's set to 0.2, which means that the integral component will not accumulate beyond this limit.
     gains:
       LShoulderPitch:
         p: 500.0
