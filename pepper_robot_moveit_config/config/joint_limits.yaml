@@ -5,23 +5,23 @@
   HeadPitch:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: true
-    max_acceleration: 27.68268
+    has_acceleration_limits: false
+    max_acceleration: 0
   HeadYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: true
-    max_acceleration: 22.01994
+    has_acceleration_limits: false
+    max_acceleration: 0
   LElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: true
-    max_acceleration: 27.68268
+    has_acceleration_limits: false
+    max_acceleration: 0
   LElbowYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: true
-    max_acceleration: 22.01994
+    has_acceleration_limits: false
+    max_acceleration: 0
   LFinger11:
     has_velocity_limits: false
     max_velocity: 0
@@ -85,18 +85,18 @@
   LHand:
     has_velocity_limits: true
     max_velocity: 12.56
-    has_acceleration_limits: true
-    max_acceleration: 37.68
+    has_acceleration_limits: false
+    max_acceleration: 0
   LShoulderPitch:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: true
-    max_acceleration: 22.01994
+    has_acceleration_limits: false
+    max_acceleration: 0
   LShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: true
-    max_acceleration: 27.68268
+    has_acceleration_limits: false
+    max_acceleration: 0
   LThumb1:
     has_velocity_limits: false
     max_velocity: 0
@@ -110,18 +110,18 @@
   LWristYaw:
     has_velocity_limits: true
     max_velocity: 17.3835
-    has_acceleration_limits: true
-    max_acceleration: 52.1505
+    has_acceleration_limits: false
+    max_acceleration: 0
   RElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: true
-    max_acceleration: 27.68268
+    has_acceleration_limits: false
+    max_acceleration: 0
   RElbowYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: true
-    max_acceleration: 22.01994
+    has_acceleration_limits: false
+    max_acceleration: 0
   RFinger11:
     has_velocity_limits: false
     max_velocity: 0
@@ -185,18 +185,18 @@
   RHand:
     has_velocity_limits: true
     max_velocity: 12.56
-    has_acceleration_limits: true
-    max_acceleration: 37.68
+    has_acceleration_limits: false
+    max_acceleration: 0
   RShoulderPitch:
     has_velocity_limits: true
     max_velocity: 7.33998
-    has_acceleration_limits: true
-    max_acceleration: 22.01994
+    has_acceleration_limits: false
+    max_acceleration: 0
   RShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
-    has_acceleration_limits: true
-    max_acceleration: 27.68268
+    has_acceleration_limits: false
+    max_acceleration: 0
   RThumb1:
     has_velocity_limits: false
     max_velocity: 0
@@ -210,5 +210,5 @@
   RWristYaw:
     has_velocity_limits: true
     max_velocity: 17.3835
-    has_acceleration_limits: true
-    max_acceleration: 52.1505
+    has_acceleration_limits: false
+    max_acceleration: 0
