@@ -6,22 +6,22 @@
     has_velocity_limits: true
     max_velocity: 9.22756
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 27.68268
   HeadYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 22.01994
   LElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 27.68268
   LElbowYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 22.01994
   LFinger11:
     has_velocity_limits: false
     max_velocity: 0
@@ -86,17 +86,17 @@
     has_velocity_limits: true
     max_velocity: 12.56
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 37.68
   LShoulderPitch:
     has_velocity_limits: true
     max_velocity: 7.33998
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 22.01994
   LShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 27.68268
   LThumb1:
     has_velocity_limits: false
     max_velocity: 0
@@ -111,17 +111,17 @@
     has_velocity_limits: true
     max_velocity: 17.3835
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 52.1505
   RElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 27.68268
   RElbowYaw:
     has_velocity_limits: true
     max_velocity: 7.33998
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 22.01994
   RFinger11:
     has_velocity_limits: false
     max_velocity: 0
@@ -186,17 +186,17 @@
     has_velocity_limits: true
     max_velocity: 12.56
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 37.68
   RShoulderPitch:
     has_velocity_limits: true
     max_velocity: 7.33998
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 22.01994
   RShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 27.68268
   RThumb1:
     has_velocity_limits: false
     max_velocity: 0
@@ -211,4 +211,4 @@
     has_velocity_limits: true
     max_velocity: 17.3835
     has_acceleration_limits: true
-    max_acceleration: 2.9531
+    max_acceleration: 52.1505
