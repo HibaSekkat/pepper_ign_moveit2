@@ -1,6 +1,6 @@
 <sdf version='1.9'>
   <model name='pepper_robot'>
-    <link name='base_footprint'>
+    <link name='base_link'>
       <inertial>
         <pose>0.00322 0 -0.01029 0 -0 0</pose>
         <mass>3.99533</mass>
@@ -13,7 +13,7 @@
           <izz>0.0258881</izz>
         </inertia>
       </inertial>
-      <collision name='base_footprint_fixed_joint_lump__torso_collision'>
+      <collision name='base_link_fixed_joint_lump__torso_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -33,7 +33,7 @@
           </friction>
         </surface>
       </collision>
-      <visual name='base_footprint_fixed_joint_lump__torso_visual'>
+      <visual name='base_link_fixed_joint_lump__torso_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -46,8 +46,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='base_footprint'>-0.038 0 0.1699 0 -0 0</pose>
-      <parent>base_footprint</parent>
+      <pose relative_to='base_link'>-0.038 0 0.1699 0 -0 0</pose>
+      <parent>base_link</parent>
       <child>Neck</child>
       <axis>
         <xyz>0 0 1</xyz>
@@ -233,8 +233,8 @@
       </sensor>
     </link>
     <joint name='HipRoll' type='revolute'>
-      <pose relative_to='base_footprint'>2e-05 0 -0.139 0 -0 0</pose>
-      <parent>base_footprint</parent>
+      <pose relative_to='base_link'>2e-05 0 -0.139 0 -0 0</pose>
+      <parent>base_link</parent>
       <child>Hip</child>
       <axis>
         <xyz>1 0 0</xyz>
@@ -681,8 +681,8 @@
       <gravity>1</gravity>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
-      <pose relative_to='base_footprint'>-0.057 0.14974 0.08682 0 -0 0</pose>
-      <parent>base_footprint</parent>
+      <pose relative_to='base_link'>-0.057 0.14974 0.08682 0 -0 0</pose>
+      <parent>base_link</parent>
       <child>LShoulder</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -1904,8 +1904,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
-      <pose relative_to='base_footprint'>-0.057 -0.14974 0.08682 0 -0 0</pose>
-      <parent>base_footprint</parent>
+      <pose relative_to='base_link'>-0.057 -0.14974 0.08682 0 -0 0</pose>
+      <parent>base_link</parent>
       <child>RShoulder</child>
       <axis>
         <xyz>0 1 0</xyz>
