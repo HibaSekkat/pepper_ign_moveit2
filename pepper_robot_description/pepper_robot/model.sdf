@@ -2,7 +2,7 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.00322 0 0.80971 0 -0 0</pose>
+        <pose>0.00322 0 -0.01029 0 -0 0</pose>
         <mass>3.99533</mass>
         <inertia>
           <ixx>0.0452761</ixx>
@@ -14,7 +14,7 @@
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__torso_collision'>
-        <pose>0 0 0.82 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -34,7 +34,7 @@
         </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__torso_visual'>
-        <pose>0 0 0.82 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -46,7 +46,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='base_link'>-0.038 0 0.9899 0 -0 0</pose>
+      <pose relative_to='base_link'>-0.038 0 0.1699 0 -0 0</pose>
       <parent>base_link</parent>
       <child>Neck</child>
       <axis>
@@ -233,7 +233,7 @@
       </sensor>
     </link>
     <joint name='HipRoll' type='revolute'>
-      <pose relative_to='base_link'>2e-05 0 0.681 0 -0 0</pose>
+      <pose relative_to='base_link'>2e-05 0 -0.139 0 -0 0</pose>
       <parent>base_link</parent>
       <child>Hip</child>
       <axis>
@@ -681,7 +681,7 @@
       <gravity>1</gravity>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
-      <pose relative_to='base_link'>-0.057 0.14974 0.90682 0 -0 0</pose>
+      <pose relative_to='base_link'>-0.057 0.14974 0.08682 0 -0 0</pose>
       <parent>base_link</parent>
       <child>LShoulder</child>
       <axis>
@@ -1904,7 +1904,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
-      <pose relative_to='base_link'>-0.057 -0.14974 0.90682 0 -0 0</pose>
+      <pose relative_to='base_link'>-0.057 -0.14974 0.08682 0 -0 0</pose>
       <parent>base_link</parent>
       <child>RShoulder</child>
       <axis>
