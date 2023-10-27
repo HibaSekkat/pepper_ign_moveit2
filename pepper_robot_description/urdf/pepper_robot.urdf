@@ -147,7 +147,7 @@
   <joint name="base_link_fixedjoint" type="fixed">
     <parent link="base_link"/>
     <child link="torso"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="-0.038 0 -0.82"/>
     <axis xyz="0 0 0"/>
   </joint>
   <link name="torso">
@@ -1983,7 +1983,7 @@
     <right_joint>WheelFR</right_joint>
     <back_joint>WheelB</back_joint>
     <wheel_separation>0.170</wheel_separation>
-    <wheel_radius>0.35</wheel_radius>
+    <wheel_radius>0.07</wheel_radius>
     </plugin>
   </gazebo>
 
