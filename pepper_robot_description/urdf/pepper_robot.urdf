@@ -4,7 +4,7 @@
   <joint name="HeadYaw" type="revolute">
     <parent link="torso"/>
     <child link="Neck"/>
-    <origin rpy="0 0 0" xyz="-0.038 0 0.1699"/>
+    <origin rpy="0 0 0" xyz="-0.038 0 0.3089"/>
     <axis xyz="0 0 1.0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -56,8 +56,8 @@
   <joint name="HipRoll" type="revolute">
     <parent link="Hip"/>
     <child link="torso"/>
-    <origin rpy="0 0 0" xyz="2e-05 0 -0.139"/>
-    <axis xyz="1.0 0 0"/>
+    <origin rpy="0 0 0" xyz="2e-05 0 0.079"/>
+    <axis xyz="-1.0 0 0"/>
     <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
@@ -70,20 +70,20 @@
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </collision>
   </link>
   <joint name="HipPitch" type="revolute">
     <parent link="Pelvis"/>
     <child link="Hip"/>
-    <origin rpy="0 0 0" xyz="0 0 -0.079"/>
-    <axis xyz="0 1.0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.268"/>
+    <axis xyz="0 -1.0 0"/>
     <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
@@ -96,20 +96,20 @@
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </collision>
   </link>
   <joint name="KneePitch" type="revolute">
     <parent link="Tibia"/>
     <child link="Pelvis"/>
-    <origin rpy="0 0 0" xyz="0 0 -0.268"/>
-    <axis xyz="0 1.0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 -1.0 0"/>
     <limit effort="27.702" lower="-0.514872" upper="0.514872" velocity="2.93276"/>
   </joint>
   <link name="Tibia">
@@ -153,7 +153,7 @@
   <joint name="LShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="LShoulder"/>
-    <origin rpy="0 0 0" xyz="-0.057 0.14974 0.08682"/>
+    <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -296,7 +296,7 @@
   <joint name="RShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="RShoulder"/>
-    <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.08682"/>
+    <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
