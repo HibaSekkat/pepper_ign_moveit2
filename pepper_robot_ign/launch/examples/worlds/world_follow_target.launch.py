@@ -93,7 +93,7 @@ def generate_launch_description() -> LaunchDescription:
                 # "--frame-id",
                 "pepper_robot",
                 # "--child-frame-id",
-                "base_footprint",
+                "base_link",
                 "--ros-args",
                 "--log-level",
                 log_level,
