@@ -2,7 +2,7 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.002205 0 -0.185729 0 -0 0</pose>
+        <pose>0.002205 0 0.148271 0 -0 0</pose>
         <mass>11.6015</mass>
         <inertia>
           <ixx>0.129229</ixx>
@@ -14,7 +14,7 @@
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -34,7 +34,7 @@
         </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__Tibia_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -44,65 +44,13 @@
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
-      <sensor name='SonarBack' type='ray'>
-        <update_rate>20</update_rate>
-        <visualize>0</visualize>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </horizontal>
-            <vertical>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </vertical>
-          </scan>
-          <range>
-            <min>0</min>
-            <max>5</max>
-            <resolution>3</resolution>
-          </range>
-        </ray>
-        <pose>-0.0718 0 -0.0534 -0 -0.209438 -3.14159</pose>
-      </sensor>
-      <sensor name='SonarFront' type='ray'>
-        <update_rate>20</update_rate>
-        <visualize>0</visualize>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </horizontal>
-            <vertical>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </vertical>
-          </scan>
-          <range>
-            <min>0</min>
-            <max>5</max>
-            <resolution>3</resolution>
-          </range>
-        </ray>
-        <pose>0.0699 0 -0.1023 0 -0.322858 0</pose>
-      </sensor>
     </link>
     <joint name='KneePitch' type='revolute'>
-      <pose relative_to='base_link'>0 0 -0.268 0 -0 0</pose>
+      <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
       <parent>base_link</parent>
       <child>Pelvis</child>
       <axis>
-        <xyz>0 1 0</xyz>
+        <xyz>0 -1 0</xyz>
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
@@ -130,7 +78,7 @@
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -150,7 +98,7 @@
         </surface>
       </collision>
       <visual name='Pelvis_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -162,11 +110,11 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
-      <pose relative_to='Pelvis'>0 0 -0.079 0 -0 0</pose>
+      <pose relative_to='Pelvis'>0 0 0.268 0 -0 0</pose>
       <parent>Pelvis</parent>
       <child>Hip</child>
       <axis>
-        <xyz>0 1 0</xyz>
+        <xyz>0 -1 0</xyz>
         <limit>
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
@@ -194,7 +142,7 @@
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -214,7 +162,7 @@
         </surface>
       </collision>
       <visual name='Hip_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -226,11 +174,11 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
-      <pose relative_to='Hip'>2e-05 0 -0.139 0 -0 0</pose>
+      <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
       <parent>Hip</parent>
       <child>torso</child>
       <axis>
-        <xyz>1 0 0</xyz>
+        <xyz>-1 0 0</xyz>
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
@@ -258,7 +206,7 @@
         </inertia>
       </inertial>
       <collision name='torso_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -278,7 +226,7 @@
         </surface>
       </collision>
       <visual name='torso_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -290,7 +238,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='torso'>-0.038 0 0.1699 0 -0 0</pose>
+      <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
       <parent>torso</parent>
       <child>Neck</child>
       <axis>
@@ -416,68 +364,9 @@
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
-      <sensor name='CameraBottom' type='camera'>
-        <update_rate>5</update_rate>
-        <camera name='camera_bottom'>
-          <horizontal_fov>1</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.05</near>
-            <far>500</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
-        <pose>0.09262 0 0.06177 0 0.698132 0</pose>
-      </sensor>
-      <sensor name='CameraDepth_frame_sensor' type='depth'>
-        <always_on>1</always_on>
-        <update_rate>20</update_rate>
-        <camera>
-          <horizontal_fov>1.01229</horizontal_fov>
-          <image>
-            <format>B8G8R8</format>
-            <width>320</width>
-            <height>240</height>
-          </image>
-          <clip>
-            <near>0.4</near>
-            <far>8</far>
-          </clip>
-        </camera>
-        <pose>0.05138 0.039 0.1194 0 -0 0</pose>
-      </sensor>
-      <sensor name='CameraTop' type='camera'>
-        <update_rate>5</update_rate>
-        <camera name='camera_top'>
-          <horizontal_fov>1</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.3</near>
-            <far>500</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
-        <pose>0.08601 0 0.16284 0 -0 0</pose>
-      </sensor>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
-      <pose relative_to='torso'>-0.057 0.14974 0.08682 0 -0 0</pose>
+      <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
       <parent>torso</parent>
       <child>LShoulder</child>
       <axis>
@@ -1700,7 +1589,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
-      <pose relative_to='torso'>-0.057 -0.14974 0.08682 0 -0 0</pose>
+      <pose relative_to='torso'>-0.057 -0.14974 0.22582 0 -0 0</pose>
       <parent>torso</parent>
       <child>RShoulder</child>
       <axis>
@@ -2923,7 +2812,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='WheelB' type='revolute'>
-      <pose relative_to='base_link'>-0.17 0 -0.264 0 0 -3.14159</pose>
+      <pose relative_to='base_link'>-0.17 0 0.07 0 0 -3.14159</pose>
       <parent>base_link</parent>
       <child>WheelB_link</child>
       <axis>
@@ -2991,7 +2880,7 @@
       <gravity>1</gravity>
     </link>
     <joint name='WheelFL' type='revolute'>
-      <pose relative_to='base_link'>0.09 0.155 -0.264 0 -0 1.07517</pose>
+      <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
       <parent>base_link</parent>
       <child>WheelFL_link</child>
       <axis>
@@ -3059,7 +2948,7 @@
       <gravity>1</gravity>
     </link>
     <joint name='WheelFR' type='revolute'>
-      <pose relative_to='base_link'>0.09 -0.155 -0.264 0 0 -1.07517</pose>
+      <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
       <parent>base_link</parent>
       <child>WheelFR_link</child>
       <axis>
