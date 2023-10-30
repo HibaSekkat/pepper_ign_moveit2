@@ -1225,9 +1225,6 @@
   <!-- Fingers -->
   <!-- Thumbs -->
   <!-- GAZEBO MATERIALS -->
-  <gazebo reference="base_footprint">
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
   <gazebo reference="base_link">
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
