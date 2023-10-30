@@ -1954,7 +1954,7 @@
     </sensor>
   </gazebo>
   <!-- Drive controller -->
-<ros2_control name="pepper_robot" type="system">
+<ros2_control name="pepper_robot_wheel_system" type="system">
     <hardware>
       <plugin>ign_ros2_control/IgnitionSystem</plugin>
     </hardware>
