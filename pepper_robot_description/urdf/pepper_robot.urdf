@@ -131,6 +131,12 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.334"/>
+  </joint>
+  <link name="base_footprint"/>
   <link name="torso">
     <inertial>
       <mass value="3.99533"/>
@@ -1225,6 +1231,9 @@
   <!-- Fingers -->
   <!-- Thumbs -->
   <!-- GAZEBO MATERIALS -->
+  <gazebo reference="base_footprint">
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
   <gazebo reference="base_link">
     <turnGravityOff>false</turnGravityOff>
   </gazebo>

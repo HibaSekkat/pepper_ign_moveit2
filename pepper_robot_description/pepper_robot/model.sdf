@@ -1,8 +1,8 @@
 <sdf version='1.9'>
   <model name='pepper_robot'>
-    <link name='base_link'>
+    <link name='base_footprint'>
       <inertial>
-        <pose>0.002205 0 0.148271 0 -0 0</pose>
+        <pose>0.002205 0 0.482271 0 -0 0</pose>
         <mass>11.6015</mass>
         <inertia>
           <ixx>0.129229</ixx>
@@ -13,8 +13,8 @@
           <izz>0.108168</izz>
         </inertia>
       </inertial>
-      <collision name='base_link_fixed_joint_lump__Tibia_collision'>
-        <pose>0 0 0.334 0 -0 0</pose>
+      <collision name='base_footprint_fixed_joint_lump__Tibia_collision'>
+        <pose>0 0 0.668 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -33,8 +33,8 @@
           </friction>
         </surface>
       </collision>
-      <visual name='base_link_fixed_joint_lump__Tibia_visual'>
-        <pose>0 0 0.334 0 -0 0</pose>
+      <visual name='base_footprint_fixed_joint_lump__Tibia_visual'>
+        <pose>0 0 0.668 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -46,8 +46,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
-      <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='base_footprint'>0 0 0.668 0 -0 0</pose>
+      <parent>base_footprint</parent>
       <child>Pelvis</child>
       <axis>
         <xyz>0 -1 0</xyz>
@@ -2812,8 +2812,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='WheelB' type='revolute'>
-      <pose relative_to='base_link'>-0.17 0 0.07 0 0 -3.14159</pose>
-      <parent>base_link</parent>
+      <pose relative_to='base_footprint'>-0.17 0 0.404 0 0 -3.14159</pose>
+      <parent>base_footprint</parent>
       <child>WheelB_link</child>
       <axis>
         <xyz>1 0 0</xyz>
@@ -2880,8 +2880,8 @@
       <gravity>1</gravity>
     </link>
     <joint name='WheelFL' type='revolute'>
-      <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
-      <parent>base_link</parent>
+      <pose relative_to='base_footprint'>0.09 0.155 0.404 0 -0 1.07517</pose>
+      <parent>base_footprint</parent>
       <child>WheelFL_link</child>
       <axis>
         <xyz>1 0 0</xyz>
@@ -2948,8 +2948,8 @@
       <gravity>1</gravity>
     </link>
     <joint name='WheelFR' type='revolute'>
-      <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
-      <parent>base_link</parent>
+      <pose relative_to='base_footprint'>0.09 -0.155 0.404 0 0 -1.07517</pose>
+      <parent>base_footprint</parent>
       <child>WheelFR_link</child>
       <axis>
         <xyz>1 0 0</xyz>

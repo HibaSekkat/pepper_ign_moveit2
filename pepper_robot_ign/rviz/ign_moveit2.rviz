@@ -410,6 +410,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           base_link:
             Alpha: 1
             Show Axes: false
@@ -830,6 +834,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           base_link:
             Alpha: 1
             Show Axes: false
