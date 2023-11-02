@@ -63,7 +63,7 @@
   <link name="Hip">
     <inertial>
       <mass value="1.02338"/>
-      <inertia ixx="0.00502422" ixy="0" ixz="-2.54911e-05" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
+      <inertia ixx="0.00502422" ixy="0" ixz="0.00254911" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
       <origin rpy="0 0 0" xyz="0.00032 0 -0.06039"/>
     </inertial>
     <visual>
@@ -1913,7 +1913,7 @@
     <actuator name="HipRoll_Motor">
       <!-- Dummy Values -->
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>108.33</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="HipPitch_Transmission">
@@ -1924,7 +1924,7 @@
     <actuator name="HipPitch_Motor">
       <!-- Dummy Values -->
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>108.33</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="KneePitch_Transmission">
@@ -1935,7 +1935,7 @@
     <actuator name="KneePitch_Motor">
       <!-- Dummy Values -->
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>108.33</mechanicalReduction>
     </actuator>
   </transmission>
   <!-- XACRO -->
