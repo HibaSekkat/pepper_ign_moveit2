@@ -62,8 +62,8 @@
   </joint>
   <link name="Hip">
     <inertial>
-      <mass value="10.02338"/>
-      <inertia ixx="0.00502422" ixy="0" ixz="0.0254911" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
+      <mass value="1.02338"/>
+      <inertia ixx="0.00502422" ixy="0" ixz="0.00254911" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
       <origin rpy="0 0 0" xyz="0.00032 0 -0.06039"/>
     </inertial>
     <visual>
