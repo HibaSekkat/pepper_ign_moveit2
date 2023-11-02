@@ -109,8 +109,8 @@
         <joint name="LHand" value="0.98" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="LHand" parent_link="l_wrist" group="LHand" />
-    <end_effector name="RHand" parent_link="r_wrist" group="RHand" />
+    <end_effector group="RHand" name="RHand" parent_group="right_arm" parent_link="r_wrist" />
+    <end_effector group="LHand" name="LHand" parent_group="left_arm" parent_link="l_wrist"/>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="LFinger11" />
     <passive_joint name="LFinger12" />
