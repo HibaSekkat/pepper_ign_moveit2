@@ -133,26 +133,6 @@ planner_configs:
 left_arm:
   default_planner_config: RRTConnect
   planner_configs:
-    - AnytimePathShortening
-    - RRT
-    - RRTConnect
-    - RRTstar
-    - TRRT
-    - PRM
-    - PRMstar
-    - FMT
-    - BFMT
-    - PDST
-    - STRIDE
-    - BiTRRT
-    - LBTRRT
-    - BiEST
-    - ProjEST
-    - LazyPRM
-    - LazyPRMstar
-    - SPARS
-    - SPARStwo
-    - TrajOpt
   longest_valid_segment_fraction: 0.01
 
 right_arm:
