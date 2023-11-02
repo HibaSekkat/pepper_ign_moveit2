@@ -133,6 +133,7 @@ planner_configs:
 left_arm:
   default_planner_config: RRTConnect
   planner_configs:
+    -RRTConnect
   longest_valid_segment_fraction: 0.01
 
 right_arm:
