@@ -1232,65 +1232,65 @@
   <!-- Thumbs -->
   <!-- GAZEBO MATERIALS -->
   <gazebo reference="base_footprint">
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="base_link">
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="torso">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Neck">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Head">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="gaze">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <!-- ARMS -->
   <gazebo reference="LShoulder">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LBicep">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LElbow">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LForeArm">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="l_wrist">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="l_gripper">
     <mu1>0.5</mu1>
@@ -1302,31 +1302,31 @@
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RBicep">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RElbow">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RForeArm">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="r_wrist">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="r_gripper">
     <mu1>0.5</mu1>
@@ -1422,19 +1422,19 @@
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Pelvis">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Tibia">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFL_link">
     <mu1>1</mu1>
@@ -1443,7 +1443,7 @@
     <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
     <minDepth>0.003</minDepth>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelB_link">
     <mu1>0.5</mu1>
@@ -1452,7 +1452,7 @@
     <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
     <minDepth>0.003</minDepth>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFR_link">
     <mu1>0</mu1>
@@ -1461,7 +1461,7 @@
     <kd value="1.0"/>
     <fdir1 value="0 1 0"/>
     <minDepth>0.003</minDepth>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger11_link">
     <mu1>0.5</mu1>
@@ -1618,7 +1618,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-  <turnGravityOff>false</turnGravityOff>
+  <turnGravityOff>true</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
@@ -1635,7 +1635,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-  <turnGravityOff>false</turnGravityOff>
+  <turnGravityOff>true</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
@@ -1652,7 +1652,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-  <turnGravityOff>false</turnGravityOff>
+  <turnGravityOff>true</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
