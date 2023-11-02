@@ -1759,26 +1759,26 @@
     </plugin>
   </gazebo>
 
-  <!-- HEAD -->
+<!-- HEAD -->
   <transmission name="HeadYaw_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="HeadYaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="HeadYaw_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
       <mechanicalReduction>101.3</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="HeadPitch_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="HeadPitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="HeadPitch_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1787,120 +1787,120 @@
   <transmission name="LShoulderPitch_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="LShoulderPitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="LShoulderPitch_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>101.3</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="LShoulderRoll_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="LShoulderRoll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="LShoulderRoll_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="LElbowYaw_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="LElbowYaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="LElbowYaw_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>101.3</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="LElbowRoll_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="LElbowRoll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="LElbowRoll_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="LWristYaw_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="LWristYaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="LWristYaw_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="LHand_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="LHand">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="LHand_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>36.24</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="RShoulderPitch_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="RShoulderPitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="RShoulderPitch_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>101.3</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="RShoulderRoll_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="RShoulderRoll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="RShoulderRoll_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="RElbowYaw_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="RElbowYaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="RElbowYaw_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>101.3</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="RElbowRoll_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="RElbowRoll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="RElbowRoll_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="RWristYaw_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="RWristYaw">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="RWristYaw_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>118.1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="RHand_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="RHand">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="RHand_Motor">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>36.24</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1908,33 +1908,33 @@
   <transmission name="HipRoll_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="HipRoll">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="HipRoll_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>108.33</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="HipPitch_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="HipPitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="HipPitch_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>108.33</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="KneePitch_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="KneePitch">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="KneePitch_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>108.33</mechanicalReduction>
     </actuator>
   </transmission>
@@ -1942,33 +1942,33 @@
   <transmission name="WheelFL_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="WheelFL">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
     <actuator name="WheelFL_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       <mechanicalReduction>25.0</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="WheelB_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="WheelB">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
     <actuator name="WheelB_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       <mechanicalReduction>25.0</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="WheelFR_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="WheelFR">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
     </joint>
     <actuator name="WheelFR_Motor">
       <!-- Dummy Values -->
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       <mechanicalReduction>25.0</mechanicalReduction>
     </actuator>
   </transmission>
