@@ -42,7 +42,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
@@ -106,7 +106,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
@@ -170,7 +170,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
@@ -234,7 +234,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
@@ -298,7 +298,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadPitch' type='revolute'>
@@ -362,7 +362,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
@@ -426,7 +426,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderRoll' type='revolute'>
@@ -490,7 +490,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LElbowYaw' type='revolute'>
@@ -554,7 +554,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LElbowRoll' type='revolute'>
@@ -618,7 +618,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LWristYaw' type='revolute'>
@@ -682,7 +682,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger11' type='revolute'>
@@ -1649,7 +1649,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderRoll' type='revolute'>
@@ -1713,7 +1713,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RElbowYaw' type='revolute'>
@@ -1777,7 +1777,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RElbowRoll' type='revolute'>
@@ -1841,7 +1841,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RWristYaw' type='revolute'>
@@ -1905,7 +1905,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger11' type='revolute'>
@@ -2877,7 +2877,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
     </link>
     <joint name='WheelFL' type='revolute'>
       <pose relative_to='base_footprint'>0.09 0.155 0.07 0 -0 1.07517</pose>
@@ -2945,7 +2945,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
     </link>
     <joint name='WheelFR' type='revolute'>
       <pose relative_to='base_footprint'>0.09 -0.155 0.07 0 0 -1.07517</pose>
@@ -3013,7 +3013,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
     </link>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <left_joint>WheelFL</left_joint>
