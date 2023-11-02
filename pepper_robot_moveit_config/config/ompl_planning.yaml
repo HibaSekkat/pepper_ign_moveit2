@@ -131,7 +131,7 @@ planner_configs:
     type: geometric::TrajOpt
 
 left_arm:
-  default_planner_config: RRTConnect
+  default_planner_config: RRT
   planner_configs:
     - AnytimePathShortening
     - SBL
