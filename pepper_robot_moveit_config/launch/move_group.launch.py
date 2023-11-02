@@ -460,7 +460,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "gazebo_joint_trajectory_controller",
-            default_value="true",
+            default_value="false",
             description="Flag to enable JointTrajectoryController Gazebo plugin for manipulator.",
         ),
         DeclareLaunchArgument(
@@ -490,7 +490,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "use_sim_time",
-            default_value="true",
+            default_value="false",
             description="If true, use simulated clock.",
         ),
         DeclareLaunchArgument(
