@@ -1913,7 +1913,7 @@
     <actuator name="HipRoll_Motor">
       <!-- Dummy Values -->
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>500</mechanicalReduction>
+      <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="HipPitch_Transmission">
@@ -1924,7 +1924,7 @@
     <actuator name="HipPitch_Motor">
       <!-- Dummy Values -->
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>500</mechanicalReduction>
+      <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="KneePitch_Transmission">
@@ -1935,7 +1935,7 @@
     <actuator name="KneePitch_Motor">
       <!-- Dummy Values -->
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>500</mechanicalReduction>
+      <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
   <!-- XACRO -->
