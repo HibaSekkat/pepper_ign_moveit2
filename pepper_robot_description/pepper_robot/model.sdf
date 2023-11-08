@@ -133,12 +133,12 @@
         <pose>0.00032 0 -0.06039 0 -0 0</pose>
         <mass>1.02338</mass>
         <inertia>
-          <ixx>0.11624</ixx>
-          <ixy>0.001087</ixy>
-          <ixz>0.045467</ixz>
-          <iyy>0.292848</iyy>
-          <iyz>-0.00153</iyz>
-          <izz>0.332963</izz>
+          <ixx>0.00502422</ixx>
+          <ixy>0</ixy>
+          <ixz>0.00254911</ixz>
+          <iyy>0.00640971</iyy>
+          <iyz>0.000159449</iyz>
+          <izz>0.00441082</izz>
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
