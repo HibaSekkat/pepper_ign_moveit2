@@ -2,15 +2,15 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.002205 0 0.148271 0 -0 0</pose>
+        <pose>0.002205 0.185729 0.334 0 -0 0</pose>
         <mass>11.6015</mass>
         <inertia>
           <ixx>0.129229</ixx>
-          <ixy>-0.000401943</ixy>
-          <ixz>0.00048556</ixz>
-          <iyy>0.122839</iyy>
-          <iyz>-1.01666e-08</iyz>
-          <izz>0.108168</izz>
+          <ixy>-0.000485559</ixy>
+          <ixz>-0.000401945</ixz>
+          <iyy>0.108168</iyy>
+          <iyz>-4.3723e-08</iyz>
+          <izz>0.122839</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
