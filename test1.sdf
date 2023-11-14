@@ -14,7 +14,7 @@
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
-        <pose>0 0 0.334 1.5708 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -34,7 +34,7 @@
         </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__Tibia_visual'>
-        <pose>0 0 0.334 1.5708 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0.00237 0.09654 0 1.5708 -0 0</pose>
         <mass>2.45917</mass>
         <inertia>
           <ixx>0.034351</ixx>
@@ -78,7 +78,7 @@
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
-        <pose>0 0 0.268 1.5708 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -98,7 +98,7 @@
         </surface>
       </collision>
       <visual name='Pelvis_visual'>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -142,7 +142,7 @@
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
-        <pose>0 0 0 -5e-06 -1.5708 0</pose>
+        <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -162,7 +162,7 @@
         </surface>
       </collision>
       <visual name='Hip_visual'>
-        <pose>0 0 0 -5e-06 -1.5708 0</pose>
+        <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -206,7 +206,7 @@
         </inertia>
       </inertial>
       <collision name='torso_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -226,7 +226,7 @@
         </surface>
       </collision>
       <visual name='torso_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -354,7 +354,7 @@
         </surface>
       </collision>
       <visual name='Head_visual'>
-        <pose>0 0 0 1.5708 -0 1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -398,7 +398,7 @@
         </inertia>
       </inertial>
       <collision name='LShoulder_collision'>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -418,7 +418,7 @@
         </surface>
       </collision>
       <visual name='LShoulder_visual'>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -462,7 +462,7 @@
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -482,7 +482,7 @@
         </surface>
       </collision>
       <visual name='LBicep_visual'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -526,7 +526,7 @@
         </inertia>
       </inertial>
       <collision name='LElbow_collision'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -546,7 +546,7 @@
         </surface>
       </collision>
       <visual name='LElbow_visual'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -590,7 +590,7 @@
         </inertia>
       </inertial>
       <collision name='LForeArm_collision'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -610,7 +610,7 @@
         </surface>
       </collision>
       <visual name='LForeArm_visual'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -654,7 +654,7 @@
         </inertia>
       </inertial>
       <collision name='l_wrist_collision'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -674,7 +674,7 @@
         </surface>
       </collision>
       <visual name='l_wrist_visual'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1621,7 +1621,7 @@
         </inertia>
       </inertial>
       <collision name='RShoulder_collision'>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1641,7 +1641,7 @@
         </surface>
       </collision>
       <visual name='RShoulder_visual'>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1685,7 +1685,7 @@
         </inertia>
       </inertial>
       <collision name='RBicep_collision'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1705,7 +1705,7 @@
         </surface>
       </collision>
       <visual name='RBicep_visual'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1749,7 +1749,7 @@
         </inertia>
       </inertial>
       <collision name='RElbow_collision'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1769,7 +1769,7 @@
         </surface>
       </collision>
       <visual name='RElbow_visual'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1813,7 +1813,7 @@
         </inertia>
       </inertial>
       <collision name='RForeArm_collision'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1833,7 +1833,7 @@
         </surface>
       </collision>
       <visual name='RForeArm_visual'>
-        <pose>0 0 0 0 0 -1.5708</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1877,7 +1877,7 @@
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1897,7 +1897,7 @@
         </surface>
       </collision>
       <visual name='r_wrist_visual'>
-        <pose>0 0 0 -1.5708 -1.5708 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
