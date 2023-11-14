@@ -386,7 +386,7 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>0.00018 -0.01856 0.00099 0 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
           <ixx>0.000361198</ixx>
