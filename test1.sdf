@@ -450,7 +450,7 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.01284 -0.08151 -0.01017 0 0 -1.5708</pose>
+        <pose>0.08151 0.01284 -0.01017 0 0 -1.5708</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
