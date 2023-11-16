@@ -386,7 +386,7 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00018 -0.00099 -0.01856 1.5708 -0 0</pose>
+        <pose>0 0 0 1.5708 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
           <ixx>0.000361198</ixx>
@@ -450,7 +450,7 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.08151 0.01284 -0.01017 0 0 -1.5708</pose>
+        <pose>0.902599 0.162518 -0.006112 0 0 -1.5708</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
@@ -1609,7 +1609,7 @@
     <link name='RShoulder'>
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00018 0.01856 0.00099 0 -0 0</pose>
+        <pose>0 0 0 1.5708 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
           <ixx>0.000361198</ixx>
@@ -1673,7 +1673,7 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.08151 -0.01284 -0.01017 0 -0 0</pose>
+        <pose>0.902599 0.162518 -0.006112 0 0 -1.5708</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
