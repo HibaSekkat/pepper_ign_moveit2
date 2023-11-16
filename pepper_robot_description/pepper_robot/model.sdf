@@ -2,15 +2,15 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.002205 0.185729 0.334 0 -0 0</pose>
+        <pose>0.00022 0.018573 0.3341 0 -0 0</pose>
         <mass>11.6015</mass>
         <inertia>
           <ixx>0.129229</ixx>
-          <ixy>-0.000485559</ixy>
-          <ixz>-0.000401945</ixz>
-          <iyy>0.108168</iyy>
-          <iyz>-4.3723e-08</iyz>
-          <izz>0.122839</izz>
+          <ixy>-0.000472953</ixy>
+          <ixz>0.000416704</ixz>
+          <iyy>0.12248</iyy>
+          <iyz>0.00226679</iyz>
+          <izz>0.108527</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00237 0.09654 0 1.5708 -0 0</pose>
+        <pose>0.000237 0.009654 5.2e-05 0.15708 -0 0</pose>
         <mass>2.45917</mass>
         <inertia>
           <ixx>0.034351</ixx>
@@ -130,7 +130,7 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.06039 0 0.00032 -3e-06 -1.57079 -3e-06</pose>
+        <pose>0.006039 0 3.2e-05 0.314159 -0.15708 0.314159</pose>
         <mass>1.02338</mass>
         <inertia>
           <ixx>0.00502422</ixx>
@@ -194,7 +194,7 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00322 0 -0.01029 0 -0 0</pose>
+        <pose>0.000322 0 -0.001029 0 -0 0</pose>
         <mass>3.99533</mass>
         <inertia>
           <ixx>0.0452761</ixx>
@@ -237,134 +237,6 @@
       <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
-    <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
-      <parent>torso</parent>
-      <child>Neck</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-2.08567</lower>
-          <upper>2.08567</upper>
-          <effort>5.428</effort>
-          <velocity>7.33998</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='Neck'>
-      <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>-0.00207 0 -0.02636 0 -0 0</pose>
-        <mass>0.27391</mass>
-        <inertia>
-          <ixx>0.000343501</ixx>
-          <ixy>0</ixy>
-          <ixz>-1.88563e-05</ixz>
-          <iyy>0.000493898</iyy>
-          <iyz>2.09863e-06</iyz>
-          <izz>0.000215252</izz>
-        </inertia>
-      </inertial>
-      <collision name='Neck_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadYaw_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='Neck_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadYaw.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='HeadPitch' type='revolute'>
-      <pose relative_to='Neck'>0 0 0 0 -0 0</pose>
-      <parent>Neck</parent>
-      <child>Head</child>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-0.706858</lower>
-          <upper>0.4451</upper>
-          <effort>2.666</effort>
-          <velocity>9.22756</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='Head'>
-      <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0.00312 0 0.11152 1.5708 -0 1.5708</pose>
-        <mass>1.51893</mass>
-        <inertia>
-          <ixx>0.00597209</ixx>
-          <ixy>0</ixy>
-          <ixz>0.000125138</ixz>
-          <iyy>0.0059054</iyy>
-          <iyz>4.3428e-07</iyz>
-          <izz>0.00570374</izz>
-        </inertia>
-      </inertial>
-      <collision name='Head_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadPitch_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='Head_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadPitch.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
     <joint name='LShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
       <parent>torso</parent>
@@ -386,7 +258,7 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>1.8e-05 -9.9e-05 -0.001856 0.15708 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
           <ixx>0.000361198</ixx>
@@ -450,7 +322,7 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.902599 0.162518 -0.006112 0 0 -1.5708</pose>
+        <pose>0.001284 -0.008151 -0.001017 0 0 -0.15708</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
@@ -514,7 +386,7 @@
     <link name='LElbow'>
       <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.02297 -0.00019 0.00119 1.57079 -1.57079 -3.14159</pose>
+        <pose>-1.9e-05 0.000119 -0.002297 -0.15708 -0.15708 0.000294</pose>
         <mass>0.27495</mass>
         <inertia>
           <ixx>0.000122971</ixx>
@@ -578,7 +450,7 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.0593 0.00271 -0.01014 0 0 -1.5708</pose>
+        <pose>0.000271 -0.00593 -0.001014 0 0 -0.15708</pose>
         <mass>0.16579</mass>
         <inertia>
           <ixx>0.00156513</ixx>
@@ -642,7 +514,7 @@
     <link name='l_wrist'>
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.03536 -0.00072 -0.00207 1.57079 -1.57079 -3.14159</pose>
+        <pose>-7.2e-05 -0.000207 0.003536 -0.15708 -0.15708 0.000294</pose>
         <mass>0.27555</mass>
         <inertia>
           <ixx>0.000151643</ixx>
@@ -1609,7 +1481,7 @@
     <link name='RShoulder'>
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 1.5708 -0 0</pose>
+        <pose>1.8e-05 -9.9e-05 0.001856 0.15708 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
           <ixx>0.000361198</ixx>
@@ -1673,7 +1545,7 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.902599 0.162518 -0.006112 0 0 -1.5708</pose>
+        <pose>-0.001284 -0.008151 -0.001017 0 0 -0.15708</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
@@ -1737,7 +1609,7 @@
     <link name='RElbow'>
       <pose relative_to='RElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.02297 0.00019 0.00119 0 -0 0</pose>
+        <pose>1.9e-05 0.000119 -0.002297 -0.15708 -0.15708 0.000294</pose>
         <mass>0.27495</mass>
         <inertia>
           <ixx>0.000122971</ixx>
@@ -1801,7 +1673,7 @@
     <link name='RForeArm'>
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.0593 -0.00271 -0.01014 0 -0 0</pose>
+        <pose>-0.000271 -0.00593 -0.001014 0 0 -0.15708</pose>
         <mass>0.16579</mass>
         <inertia>
           <ixx>0.00156513</ixx>
@@ -1865,7 +1737,7 @@
     <link name='r_wrist'>
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.03536 0.00072 -0.00207 0 -0 0</pose>
+        <pose>7.2e-05 -0.000207 0.003536 -0.15708 -0.15708 0.000294</pose>
         <mass>0.27555</mass>
         <inertia>
           <ixx>0.000151643</ixx>
