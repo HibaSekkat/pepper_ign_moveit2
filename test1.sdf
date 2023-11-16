@@ -237,6 +237,134 @@
       <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
+    <joint name='HeadYaw' type='revolute'>
+      <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
+      <parent>torso</parent>
+      <child>Neck</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-2.08567</lower>
+          <upper>2.08567</upper>
+          <effort>5.428</effort>
+          <velocity>7.33998</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Neck'>
+      <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.00207 0 -0.02636 0 -0 0</pose>
+        <mass>0.27391</mass>
+        <inertia>
+          <ixx>0.000343501</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.88563e-05</ixz>
+          <iyy>0.000493898</iyy>
+          <iyz>2.09863e-06</iyz>
+          <izz>0.000215252</izz>
+        </inertia>
+      </inertial>
+      <collision name='Neck_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadYaw_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Neck_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadYaw.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+    </link>
+    <joint name='HeadPitch' type='revolute'>
+      <pose relative_to='Neck'>0 0 0 0 -0 0</pose>
+      <parent>Neck</parent>
+      <child>Head</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.706858</lower>
+          <upper>0.4451</upper>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Head'>
+      <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.00312 0 0.11152 1.5708 -0 1.5708</pose>
+        <mass>1.51893</mass>
+        <inertia>
+          <ixx>0.00597209</ixx>
+          <ixy>0</ixy>
+          <ixz>0.000125138</ixz>
+          <iyy>0.0059054</iyy>
+          <iyz>4.3428e-07</iyz>
+          <izz>0.00570374</izz>
+        </inertia>
+      </inertial>
+      <collision name='Head_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadPitch_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Head_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadPitch.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+    </link>
     <joint name='LShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
       <parent>torso</parent>
