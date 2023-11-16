@@ -386,7 +386,7 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00018 -0.00099 -0.01856 1.5708 -0 0</pose>
+        <pose>-0.008 0.0009 -0.005 0 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
           <ixx>0.000361198</ixx>
@@ -450,7 +450,7 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.08151 0.01284 -0.01017 0 0 -1.5708</pose>
+        <pose>0.08151 0.01284 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
@@ -514,7 +514,7 @@
     <link name='LElbow'>
       <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.02297 -0.00019 0.00119 1.57079 -1.57079 -3.14159</pose>
+        <pose>-0.02297 -0.00019 0.00119 0 -0 0</pose>
         <mass>0.27495</mass>
         <inertia>
           <ixx>0.000122971</ixx>
@@ -578,7 +578,7 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.0593 0.00271 -0.01014 0 0 -1.5708</pose>
+        <pose>0.0593 0.00271 -0.01014 0 -0 0</pose>
         <mass>0.16579</mass>
         <inertia>
           <ixx>0.00156513</ixx>
@@ -642,7 +642,7 @@
     <link name='l_wrist'>
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.03536 -0.00072 -0.00207 1.57079 -1.57079 -3.14159</pose>
+        <pose>0.03536 -0.00072 -0.00207 0 -0 0</pose>
         <mass>0.27555</mass>
         <inertia>
           <ixx>0.000151643</ixx>
