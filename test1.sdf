@@ -258,7 +258,7 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.00207 0 -0.02636 0 -0 0</pose>
+        <pose>-0.000207 0 -0.002636 0 -0 0</pose>
         <mass>0.27391</mass>
         <inertia>
           <ixx>0.000343501</ixx>
