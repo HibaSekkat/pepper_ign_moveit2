@@ -1450,15 +1450,15 @@
     <link name='l_gripper'>
       <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
+        <pose>0.110379 -0.0272187 0.0250071 0 0 0</pose>
+        <mass>0.13408981948425908</mass>
         <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
+          <ixx>0.007559579842892875</ixx>
+          <iyy>0.024442226274605388</iyy>
+          <izz>0.02601333008280038</izz>
+          <ixy>0.000528205480164163</ixy>
+          <ixz>-0.002145507773452288</ixz>
+          <iyz>-9.641527961376876e-05</iyz>
         </inertia>
       </inertial>
       <gravity>0</gravity>
@@ -2673,15 +2673,15 @@
     <link name='r_gripper'>
       <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
+        <pose>0.110379 0.0272187 0.0250071 0 0 0</pose>
+        <mass>0.13408981948425902</mass>
         <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
+          <ixx>0.007559579842892873</ixx>
+          <iyy>0.024442226274605388</iyy>
+          <izz>0.02601333008280038</izz>
+          <ixy>-0.0005282054801641629</ixy>
+          <ixz>-0.0021455077734522884</ixz>
+          <iyz>9.641527961376875e-05</iyz>
         </inertia>
       </inertial>
       <gravity>0</gravity>
