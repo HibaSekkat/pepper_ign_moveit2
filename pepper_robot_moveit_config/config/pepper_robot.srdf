@@ -32,7 +32,7 @@
         <link name="RFinger41_link" />
         <link name="RFinger42_link" />
         <link name="RFinger43_link" />
-        <link name="RHand" />
+        <link name="r_gripper" />
         <link name="RThumb1_link" />
         <link name="RThumb2_link" />
         <joint name="RHand" />
@@ -50,7 +50,7 @@
         <link name="LFinger41_link" />
         <link name="LFinger42_link" />
         <link name="LFinger43_link" />
-        <link name="LHand" />
+        <link name="l_gripper" />
         <link name="LThumb1_link" />
         <link name="LThumb2_link" />
         <joint name="LHand" />

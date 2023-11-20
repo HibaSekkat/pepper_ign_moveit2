@@ -280,15 +280,19 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <link name="LHand">
-  </link>
   <joint name="LHand" type="revolute">
     <parent link="l_wrist"/>
-    <child link="LHand"/>
+    <child link="l_gripper"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
     <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
+  <link name="l_gripper">
+    <inertial>
+      <mass value="2e-06"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+    </inertial>
+  </link>
   <joint name="RShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="RShoulder"/>
@@ -419,15 +423,19 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <link name="RHand">
-  </link>
   <joint name="RHand" type="revolute">
     <parent link="r_wrist"/>
-    <child link="RHand"/>
+    <child link="r_gripper"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
     <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
+  <link name="r_gripper">
+    <inertial>
+      <mass value="2e-06"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+    </inertial>
+  </link>
   <link name="RFinger41_link">
     <inertial>
       <mass value="2e-06"/>
@@ -1275,7 +1283,7 @@
     <selfCollide>false</selfCollide>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="LHand">
+  <gazebo reference="l_gripper">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
@@ -1311,7 +1319,7 @@
     <selfCollide>false</selfCollide>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
-  <gazebo reference="RHand">
+  <gazebo reference="r_gripper">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
