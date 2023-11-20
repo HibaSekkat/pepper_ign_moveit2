@@ -56,7 +56,7 @@ def main():
         meshes[link_name] = trimesh.load(mesh_path, force="mesh", ignore_materials=True)
 
     # Compute the total volume of the robot in order to estimate the required density
-    total_volume = 0.0
+    total_volume = 0.24696
     for link_name in meshes:
         mesh = meshes[link_name]
         print("Volume estimate of %s: %f m^3" % (link_name, mesh.volume))
