@@ -175,11 +175,11 @@ Visualization Manager:
         Value: false
       camera_body:
         Value: false
-      l_gripper:
+      LHand:
         Value: false
       l_wrist:
         Value: false
-      r_gripper:
+      RHand:
         Value: false
       r_wrist:
         Value: false
@@ -217,7 +217,7 @@ Visualization Manager:
                               LFinger43_link: {}
                           LThumb1_link:
                             LThumb2_link: {}
-                          l_gripper: {}
+                          LHand: {}
                 Neck:
                   Head:
                     CameraTop_frame:
@@ -242,7 +242,7 @@ Visualization Manager:
                               RFinger43_link: {}
                           RThumb1_link:
                             RThumb2_link: {}
-                          r_gripper: {}
+                          RHand: {}
           WheelB_link: {}
           WheelFL_link: {}
           WheelFR_link: {}
@@ -622,7 +622,7 @@ Visualization Manager:
         Alpha: 1
         Show Axes: false
         Show Trail: false
-      l_gripper:
+      LHand:
         Alpha: 1
         Show Axes: false
         Show Trail: false
@@ -631,7 +631,7 @@ Visualization Manager:
         Show Axes: false
         Show Trail: false
         Value: true
-      r_gripper:
+      RHand:
         Alpha: 1
         Show Axes: false
         Show Trail: false

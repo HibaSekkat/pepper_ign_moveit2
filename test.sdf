@@ -1432,7 +1432,7 @@
     <joint name='LHand' type='revolute'>
       <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
       <parent>l_wrist</parent>
-      <child>l_gripper</child>
+      <child>LHand</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -1447,7 +1447,7 @@
         </dynamics>
       </axis>
     </joint>
-    <link name='l_gripper'>
+    <link name='LHand'>
       <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
@@ -2655,7 +2655,7 @@
     <joint name='RHand' type='revolute'>
       <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
       <parent>r_wrist</parent>
-      <child>r_gripper</child>
+      <child>RHand</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -2670,7 +2670,7 @@
         </dynamics>
       </axis>
     </joint>
-    <link name='r_gripper'>
+    <link name='RHand'>
       <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
