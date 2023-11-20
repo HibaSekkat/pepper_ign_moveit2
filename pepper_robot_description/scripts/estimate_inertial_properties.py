@@ -15,7 +15,7 @@ def main():
 
     # Total mass taken from datasheet (given as ~18.0kg)
     # You can also use your own estimate of total mass if you managed to weigh pepper_robot yourself :)
-    total_mass = 18.0
+    total_mass = 28.0
     if len(sys.argv) > 1:
         if float(sys.argv[1]) > 0.0:
             total_mass = float(sys.argv[1])
@@ -77,7 +77,7 @@ def main():
     for link_name in meshes:
         mesh = meshes[link_name]
         mesh.density = average_density
-        mass[link_name] = max(mesh.mass, 1e-10)
+        mass[link_name] = mesh.mass
         inertia[link_name] = mesh.moment_inertia
         centre_of_mass[link_name] = mesh.center_mass
 
