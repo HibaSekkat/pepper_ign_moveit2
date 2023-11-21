@@ -2,15 +2,15 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0 0 0.334 0 -0 0</pose>
-        <mass>11.6015</mass>
+        <pose>-0.033367 -5.8e-05 -1.66002 0 -0 0</pose>
+        <mass>12.3442</mass>
         <inertia>
-          <ixx>0.129229</ixx>
-          <ixy>-0.000401943</ixy>
-          <ixz>0.00048556</ixz>
-          <iyy>0.122839</iyy>
-          <iyz>-1.01666e-08</iyz>
-          <izz>0.108168</izz>
+          <ixx>20.1378</ixx>
+          <ixy>-0.00115739</ixy>
+          <ixz>0.663369</ixz>
+          <iyy>18.0553</iyy>
+          <iyz>-0.000609302</iyz>
+          <izz>21.8199</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
@@ -66,15 +66,15 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2.45917</mass>
+        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
+        <mass>3.79554</mass>
         <inertia>
-          <ixx>0.034351</ixx>
-          <ixy>0</ixy>
-          <ixz>0.000223034</ixz>
-          <iyy>0.0303122</iyy>
-          <iyz>-8.37542e-05</iyz>
-          <izz>0.0143771</izz>
+          <ixx>3.68321</ixx>
+          <ixy>0.00041889</ixy>
+          <ixz>0.0226034</ixz>
+          <iyy>2.90788</iyy>
+          <iyz>0.000500697</iyz>
+          <izz>1.85072</izz>
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
@@ -130,15 +130,15 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>1.02338</mass>
+        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
+        <mass>1.0074</mass>
         <inertia>
-          <ixx>0.00502422</ixx>
-          <ixy>0</ixy>
-          <ixz>-2.54911e-05</ixz>
-          <iyy>0.00640971</iyy>
-          <iyz>0.000159449</iyz>
-          <izz>0.00441082</izz>
+          <ixx>0.256894</ixx>
+          <ixy>-9.09696e-05</ixy>
+          <ixz>0.00405599</ixz>
+          <iyy>0.352957</iyy>
+          <iyz>-0.00129704</iyz>
+          <izz>0.180785</izz>
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
@@ -194,15 +194,15 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>3.99533</mass>
+        <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
+        <mass>4.89482</mass>
         <inertia>
-          <ixx>0.0452761</ixx>
-          <ixy>0</ixy>
-          <ixz>0.00499091</ixz>
-          <iyy>0.0432702</iyy>
-          <iyz>-0.000266886</iyz>
-          <izz>0.0258881</izz>
+          <ixx>4.56661</ixx>
+          <ixy>6.29596e-05</ixy>
+          <ixz>0.665651</ixz>
+          <iyy>4.04754</iyy>
+          <iyz>-0.000197904</iyz>
+          <izz>3.38319</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
@@ -258,15 +258,15 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27391</mass>
+        <pose>-0.012261 -1e-06 0.029234 0 -0 0</pose>
+        <mass>0.0914657</mass>
         <inertia>
-          <ixx>0.000343501</ixx>
-          <ixy>0</ixy>
-          <ixz>-1.88563e-05</ixz>
-          <iyy>0.000493898</iyy>
-          <iyz>2.09863e-06</iyz>
-          <izz>0.000215252</izz>
+          <ixx>0.00439416</ixx>
+          <ixy>-2.22749e-10</ixy>
+          <ixz>0.00011852</ixz>
+          <iyy>0.00467964</iyy>
+          <iyz>1.45725e-09</iyz>
+          <izz>0.00438414</izz>
         </inertia>
       </inertial>
       <collision name='Neck_collision'>
@@ -322,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>1.51893</mass>
+        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
+        <mass>3.79554</mass>
         <inertia>
-          <ixx>0.00597209</ixx>
-          <ixy>0</ixy>
-          <ixz>0.000125138</ixz>
-          <iyy>0.0059054</iyy>
-          <iyz>4.3428e-07</iyz>
-          <izz>0.00570374</izz>
+          <ixx>3.68321</ixx>
+          <ixy>0.00041889</ixy>
+          <ixz>0.0226034</ixz>
+          <iyy>2.90788</iyy>
+          <iyz>0.000500697</iyz>
+          <izz>1.85072</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
@@ -386,15 +386,15 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.3125</mass>
+        <pose>-0 -0 -0 0 -0 0</pose>
+        <mass>0.140715</mass>
         <inertia>
-          <ixx>0.000361198</ixx>
-          <ixy>-1.98347e-06</ixy>
-          <ixz>6.35907e-07</ixz>
-          <iyy>0.000137229</iyy>
-          <iyz>-5.68878e-06</iyz>
-          <izz>0.000399194</izz>
+          <ixx>0.00853247</ixx>
+          <ixy>-1.92187e-09</ixy>
+          <ixz>6.35445e-10</ixz>
+          <iyy>0.00853246</iyy>
+          <iyz>-2.07166e-09</iyz>
+          <izz>0.0102528</izz>
         </inertia>
       </inertial>
       <collision name='LShoulder_collision'>
@@ -429,1130 +429,6 @@
       <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
-    <joint name='LShoulderRoll' type='revolute'>
-      <pose relative_to='LShoulder'>0 0 0 0 -0 0</pose>
-      <parent>LShoulder</parent>
-      <child>LBicep</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>0.00872665</lower>
-          <upper>1.56207</upper>
-          <effort>2.666</effort>
-          <velocity>9.22756</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LBicep'>
-      <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.50527</mass>
-        <inertia>
-          <ixx>0.000500872</ixx>
-          <ixy>-3.55918e-05</ixy>
-          <ixz>8.51263e-05</ixz>
-          <iyy>0.00126284</iyy>
-          <iyz>9.06813e-06</iyz>
-          <izz>0.00115718</izz>
-        </inertia>
-      </inertial>
-      <collision name='LBicep_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderRoll_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LBicep_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderRoll.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LElbowYaw' type='revolute'>
-      <pose relative_to='LBicep'>0.1812 0.015 0.00013 0 -0.157079 0</pose>
-      <parent>LBicep</parent>
-      <child>LElbow</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>-2.08567</lower>
-          <upper>2.08567</upper>
-          <effort>5.428</effort>
-          <velocity>7.33998</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LElbow'>
-      <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27495</mass>
-        <inertia>
-          <ixx>0.000122971</ixx>
-          <ixy>9.86024e-07</ixy>
-          <ixz>-2.55838e-05</ixz>
-          <iyy>0.000331766</iyy>
-          <iyz>-1.98925e-06</iyz>
-          <izz>0.000303047</izz>
-        </inertia>
-      </inertial>
-      <collision name='LElbow_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowYaw_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LElbow_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowYaw.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LElbowRoll' type='revolute'>
-      <pose relative_to='LElbow'>0 0 0 0 -0 0</pose>
-      <parent>LElbow</parent>
-      <child>LForeArm</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1.56207</lower>
-          <upper>-0.00872665</upper>
-          <effort>2.666</effort>
-          <velocity>9.22756</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LForeArm'>
-      <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.16579</mass>
-        <inertia>
-          <ixx>0.00156513</ixx>
-          <ixy>1.47517e-05</ixy>
-          <ixz>-6.05746e-05</ixz>
-          <iyy>0.00173219</iyy>
-          <iyz>-1.7619e-07</iyz>
-          <izz>0.000273081</izz>
-        </inertia>
-      </inertial>
-      <collision name='LForeArm_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowRoll_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LForeArm_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowRoll.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LWristYaw' type='revolute'>
-      <pose relative_to='LForeArm'>0.15 0 0 0 -0 0</pose>
-      <parent>LForeArm</parent>
-      <child>l_wrist</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>-1.82387</lower>
-          <upper>1.82387</upper>
-          <effort>0.2014</effort>
-          <velocity>17.3835</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='l_wrist'>
-      <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27555</mass>
-        <inertia>
-          <ixx>0.000151643</ixx>
-          <ixy>1.06629e-05</ixy>
-          <ixz>2.89509e-06</ixz>
-          <iyy>0.000431099</iyy>
-          <iyz>-3.13715e-06</iyz>
-          <izz>0.000456172</izz>
-        </inertia>
-      </inertial>
-      <collision name='l_wrist_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LWristYaw_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='l_wrist_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger11' type='revolute'>
-      <pose relative_to='l_wrist'>0.0821 -0.0268 0.004 1.74402 1.04064 -0.033434</pose>
-      <parent>l_wrist</parent>
-      <child>LFinger11_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger11_link'>
-      <pose relative_to='LFinger11'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger11_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger11_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger11_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger11.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger12' type='revolute'>
-      <pose relative_to='LFinger11_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger11_link</parent>
-      <child>LFinger12_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger12_link'>
-      <pose relative_to='LFinger12'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger12_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger12_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger12_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger12.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger13' type='revolute'>
-      <pose relative_to='LFinger12_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger12_link</parent>
-      <child>LFinger13_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger13_link'>
-      <pose relative_to='LFinger13'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger13_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger13_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger13_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger13.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger21' type='revolute'>
-      <pose relative_to='l_wrist'>0.0873 -0.0073 0.006 1.5708 1.0472 -0.061086</pose>
-      <parent>l_wrist</parent>
-      <child>LFinger21_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger21_link'>
-      <pose relative_to='LFinger21'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger21_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger21_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger21_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger21.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger22' type='revolute'>
-      <pose relative_to='LFinger21_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger21_link</parent>
-      <child>LFinger22_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger22_link'>
-      <pose relative_to='LFinger22'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger22_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger22_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger22_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger22.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger23' type='revolute'>
-      <pose relative_to='LFinger22_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger22_link</parent>
-      <child>LFinger23_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger23_link'>
-      <pose relative_to='LFinger23'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger23_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger23_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger23_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger23.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger31' type='revolute'>
-      <pose relative_to='l_wrist'>0.0833 0.0123 0.004 1.46636 1.04483 -0.029314</pose>
-      <parent>l_wrist</parent>
-      <child>LFinger31_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger31_link'>
-      <pose relative_to='LFinger31'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger31_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger31_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger31_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger31.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger32' type='revolute'>
-      <pose relative_to='LFinger31_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger31_link</parent>
-      <child>LFinger32_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger32_link'>
-      <pose relative_to='LFinger32'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger32_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger32_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger32_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger32.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger33' type='revolute'>
-      <pose relative_to='LFinger32_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger32_link</parent>
-      <child>LFinger33_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger33_link'>
-      <pose relative_to='LFinger33'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger33_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger33_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger33_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger33.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger41' type='revolute'>
-      <pose relative_to='l_wrist'>0.074 0.0309 0 1.39757 1.04064 0.068339</pose>
-      <parent>l_wrist</parent>
-      <child>LFinger41_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger41_link'>
-      <pose relative_to='LFinger41'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger41_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger41_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger41_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger41.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger42' type='revolute'>
-      <pose relative_to='LFinger41_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger41_link</parent>
-      <child>LFinger42_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger42_link'>
-      <pose relative_to='LFinger42'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger42_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger42_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger42_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger42.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LFinger43' type='revolute'>
-      <pose relative_to='LFinger42_link'>0.018 0 0 0 0 -1.0472</pose>
-      <parent>LFinger42_link</parent>
-      <child>LFinger43_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LFinger43_link'>
-      <pose relative_to='LFinger43'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LFinger43_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger43_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LFinger43_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger43.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LThumb1' type='revolute'>
-      <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -1.95836 0.60626 0.533978</pose>
-      <parent>l_wrist</parent>
-      <child>LThumb1_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LThumb1_link'>
-      <pose relative_to='LThumb1'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LThumb1_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb1_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LThumb1_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb1.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='LThumb2' type='revolute'>
-      <pose relative_to='LThumb1_link'>0.022 0 0 0 0 -1.0472</pose>
-      <parent>LThumb1_link</parent>
-      <child>LThumb2_link</child>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='LThumb2_link'>
-      <pose relative_to='LThumb2'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2e-06</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-      <collision name='LThumb2_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb2_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='LThumb2_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb2.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
     <joint name='RShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 -0.14974 0.22582 0 -0 0</pose>
       <parent>torso</parent>
@@ -1574,15 +450,15 @@
     <link name='RShoulder'>
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.3125</mass>
+        <pose>-0 -0 -0 0 -0 0</pose>
+        <mass>0.140715</mass>
         <inertia>
-          <ixx>0.000361198</ixx>
-          <ixy>1.98347e-06</ixy>
-          <ixz>6.35907e-07</ixz>
-          <iyy>0.000137229</iyy>
-          <iyz>5.68878e-06</iyz>
-          <izz>0.000399194</izz>
+          <ixx>0.00853247</ixx>
+          <ixy>-1.92187e-09</ixy>
+          <ixz>6.35445e-10</ixz>
+          <iyy>0.00853246</iyy>
+          <iyz>-2.07166e-09</iyz>
+          <izz>0.0102528</izz>
         </inertia>
       </inertial>
       <collision name='RShoulder_collision'>
@@ -1638,15 +514,15 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.50527</mass>
+        <pose>0.902599 -0.162517 -0.006112 0 -0 0</pose>
+        <mass>0.313703</mass>
         <inertia>
-          <ixx>0.000500872</ixx>
-          <ixy>3.55918e-05</ixy>
-          <ixz>8.51263e-05</ixz>
-          <iyy>0.00126284</iyy>
-          <iyz>-9.06813e-06</iyz>
-          <izz>0.00115718</izz>
+          <ixx>0.0246985</ixx>
+          <ixy>0.00128179</ixy>
+          <ixz>0.00170294</ixz>
+          <iyy>0.0716735</iyy>
+          <iyz>6.87453e-05</iyz>
+          <izz>0.0676636</izz>
         </inertia>
       </inertial>
       <collision name='RBicep_collision'>
@@ -1702,15 +578,15 @@
     <link name='RElbow'>
       <pose relative_to='RElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27495</mass>
+        <pose>-0 0 -0 0 -0 0</pose>
+        <mass>0.0738046</mass>
         <inertia>
-          <ixx>0.000122971</ixx>
-          <ixy>-9.86024e-07</ixy>
-          <ixz>-2.55838e-05</ixz>
-          <iyy>0.000331766</iyy>
-          <iyz>1.98925e-06</iyz>
-          <izz>0.000303047</izz>
+          <ixx>0.0029965</ixx>
+          <ixy>-1.0388e-10</ixy>
+          <ixz>-4.20025e-12</ixz>
+          <iyy>0.00302767</iyy>
+          <iyz>-2.99368e-10</iyz>
+          <izz>0.00302767</izz>
         </inertia>
       </inertial>
       <collision name='RElbow_collision'>
@@ -1766,15 +642,15 @@
     <link name='RForeArm'>
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.16579</mass>
+        <pose>0.470716 -0.036756 -0.001069 0 -0 0</pose>
+        <mass>0.133211</mass>
         <inertia>
-          <ixx>0.00156513</ixx>
-          <ixy>-1.47517e-05</ixy>
-          <ixz>-6.05746e-05</ixz>
-          <iyy>0.00173219</iyy>
-          <iyz>1.7619e-07</iyz>
-          <izz>0.000273081</izz>
+          <ixx>0.00715736</ixx>
+          <ixy>-0.00112756</ixy>
+          <ixz>4.27306e-05</ixz>
+          <iyy>0.00991492</iyy>
+          <iyz>-1.76731e-06</iyz>
+          <izz>0.00962229</izz>
         </inertia>
       </inertial>
       <collision name='RForeArm_collision'>
@@ -1830,15 +706,15 @@
     <link name='r_wrist'>
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <pose>0.110379 0.027219 0.025007 0 -0 0</pose>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>0.000151643</ixx>
-          <ixy>-1.06629e-05</ixy>
-          <ixz>2.89509e-06</ixz>
-          <iyy>0.000431099</iyy>
-          <iyz>3.13715e-06</iyz>
-          <izz>0.000456172</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>-0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
@@ -2617,6 +1493,41 @@
       <gravity>0</gravity>
       <self_collide>0</self_collide>
     </link>
+    <joint name='RHand' type='revolute'>
+      <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
+      <parent>r_wrist</parent>
+      <child>r_gripper</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0.02</lower>
+          <upper>0.98</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='r_gripper'>
+      <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>2e-06</mass>
+        <inertia>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
+        </inertia>
+      </inertial>
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+    </link>
     <joint name='RThumb1' type='revolute'>
       <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -1.18323 0.60626 -0.533978</pose>
       <parent>r_wrist</parent>
@@ -2762,15 +1673,15 @@
     <link name='WheelB_link'>
       <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>1.58028</mass>
+        <pose>1e-06 -0 0 0 -0 0</pose>
+        <mass>0.757569</mass>
         <inertia>
-          <ixx>0.00299756</ixx>
-          <ixy>6.3068e-07</ixy>
-          <ixz>5.56903e-06</ixz>
-          <iyy>0.00303229</iyy>
-          <iyz>-9.0408e-07</iyz>
-          <izz>0.00296585</izz>
+          <ixx>0.146668</ixx>
+          <ixy>2.16464e-09</ixy>
+          <ixz>-1.60429e-08</ixz>
+          <iyy>0.145462</iyy>
+          <iyz>9.68642e-10</iyz>
+          <izz>0.146668</izz>
         </inertia>
       </inertial>
       <collision name='WheelB_link_collision'>
@@ -2830,15 +1741,15 @@
     <link name='WheelFL_link'>
       <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>1.58028</mass>
+        <pose>-1e-06 1e-06 0 0 -0 0</pose>
+        <mass>0.757569</mass>
         <inertia>
-          <ixx>0.00299756</ixx>
-          <ixy>6.3068e-07</ixy>
-          <ixz>5.56903e-06</ixz>
-          <iyy>0.00303229</iyy>
-          <iyz>-9.0408e-07</iyz>
-          <izz>0.00296585</izz>
+          <ixx>0.146668</ixx>
+          <ixy>1.38949e-09</ixy>
+          <ixz>-1.84774e-08</ixz>
+          <iyy>0.145462</iyy>
+          <iyz>-1.68256e-10</iyz>
+          <izz>0.146668</izz>
         </inertia>
       </inertial>
       <collision name='WheelFL_link_collision'>
@@ -2898,15 +1809,15 @@
     <link name='WheelFR_link'>
       <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>1.58028</mass>
+        <pose>0 -1e-06 0 0 -0 0</pose>
+        <mass>0.757569</mass>
         <inertia>
-          <ixx>0.00299756</ixx>
-          <ixy>6.3068e-07</ixy>
-          <ixz>5.56903e-06</ixz>
-          <iyy>0.00303229</iyy>
-          <iyz>-9.0408e-07</iyz>
-          <izz>0.00296585</izz>
+          <ixx>0.146668</ixx>
+          <ixy>-1.29746e-09</ixy>
+          <ixz>-1.74594e-08</ixz>
+          <iyy>0.145462</iyy>
+          <iyz>2.19765e-10</iyz>
+          <izz>0.146668</izz>
         </inertia>
       </inertial>
       <collision name='WheelFR_link_collision'>
