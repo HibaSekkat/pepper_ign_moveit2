@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/KneePitch_0.10.stl</uri>
+            <uri>meshes/KneePitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -38,7 +38,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/KneePitch.dae</uri>
+            <uri>meshes/KneePitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -82,7 +82,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HipPitch_0.10.stl</uri>
+            <uri>meshes/HipPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -102,7 +102,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HipPitch.dae</uri>
+            <uri>meshes/HipPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -146,7 +146,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HipRoll_0.10.stl</uri>
+            <uri>meshes/HipRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -166,7 +166,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HipRoll.dae</uri>
+            <uri>meshes/HipRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -210,7 +210,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/Torso_0.10.stl</uri>
+            <uri>meshes/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -230,7 +230,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/Torso.dae</uri>
+            <uri>meshes/Torso.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -274,7 +274,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HeadYaw_0.10.stl</uri>
+            <uri>meshes/HeadYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -294,7 +294,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HeadYaw.dae</uri>
+            <uri>meshes/HeadYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -338,7 +338,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HeadPitch_0.10.stl</uri>
+            <uri>meshes/HeadPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -358,7 +358,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/HeadPitch.dae</uri>
+            <uri>meshes/HeadPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -402,7 +402,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/LShoulderPitch_0.10.stl</uri>
+            <uri>meshes/LShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -422,7 +422,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/LShoulderPitch.dae</uri>
+            <uri>meshes/LShoulderPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -466,7 +466,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RShoulderPitch_0.10.stl</uri>
+            <uri>meshes/RShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -486,7 +486,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RShoulderPitch.dae</uri>
+            <uri>meshes/RShoulderPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -530,7 +530,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RShoulderRoll_0.10.stl</uri>
+            <uri>meshes/RShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -550,7 +550,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RShoulderRoll.dae</uri>
+            <uri>meshes/RShoulderRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -594,7 +594,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RElbowYaw_0.10.stl</uri>
+            <uri>meshes/RElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -614,7 +614,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RElbowYaw.dae</uri>
+            <uri>meshes/RElbowYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -658,7 +658,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RElbowRoll_0.10.stl</uri>
+            <uri>meshes/RElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -678,7 +678,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RElbowRoll.dae</uri>
+            <uri>meshes/RElbowRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -722,7 +722,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RWristYaw_0.10.stl</uri>
+            <uri>meshes/RWristYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -742,7 +742,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RWristYaw.dae</uri>
+            <uri>meshes/RWristYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -784,7 +784,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger11_0.10.stl</uri>
+            <uri>meshes/RFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -804,7 +804,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger11.dae</uri>
+            <uri>meshes/RFinger11.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -846,7 +846,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger12_0.10.stl</uri>
+            <uri>meshes/RFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -866,7 +866,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger12.dae</uri>
+            <uri>meshes/RFinger12.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -908,7 +908,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger13_0.10.stl</uri>
+            <uri>meshes/RFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -928,7 +928,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger13.dae</uri>
+            <uri>meshes/RFinger13.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -970,7 +970,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger21_0.10.stl</uri>
+            <uri>meshes/RFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -990,7 +990,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger21.dae</uri>
+            <uri>meshes/RFinger21.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1032,7 +1032,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger22_0.10.stl</uri>
+            <uri>meshes/RFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1052,7 +1052,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger22.dae</uri>
+            <uri>meshes/RFinger22.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1094,7 +1094,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger23_0.10.stl</uri>
+            <uri>meshes/RFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1114,7 +1114,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger23.dae</uri>
+            <uri>meshes/RFinger23.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1156,7 +1156,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger31_0.10.stl</uri>
+            <uri>meshes/RFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1176,7 +1176,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger31.dae</uri>
+            <uri>meshes/RFinger31.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1218,7 +1218,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger32_0.10.stl</uri>
+            <uri>meshes/RFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1238,7 +1238,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger32.dae</uri>
+            <uri>meshes/RFinger32.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1280,7 +1280,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger33_0.10.stl</uri>
+            <uri>meshes/RFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1300,7 +1300,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger33.dae</uri>
+            <uri>meshes/RFinger33.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1342,7 +1342,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger41_0.10.stl</uri>
+            <uri>meshes/RFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1362,7 +1362,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger41.dae</uri>
+            <uri>meshes/RFinger41.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1404,7 +1404,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger42_0.10.stl</uri>
+            <uri>meshes/RFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1424,7 +1424,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger42.dae</uri>
+            <uri>meshes/RFinger42.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1466,7 +1466,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger43_0.10.stl</uri>
+            <uri>meshes/RFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1486,7 +1486,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RFinger43.dae</uri>
+            <uri>meshes/RFinger43.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1563,7 +1563,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RThumb1_0.10.stl</uri>
+            <uri>meshes/RThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1583,7 +1583,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RThumb1.dae</uri>
+            <uri>meshes/RThumb1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1625,7 +1625,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RThumb2_0.10.stl</uri>
+            <uri>meshes/RThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1645,7 +1645,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/RThumb2.dae</uri>
+            <uri>meshes/RThumb2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1689,7 +1689,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/WheelB_0.10.stl</uri>
+            <uri>meshes/WheelB_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1714,7 +1714,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/WheelB.dae</uri>
+            <uri>meshes/WheelB.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1757,7 +1757,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/WheelFL_0.10.stl</uri>
+            <uri>meshes/WheelFL_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1782,7 +1782,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/WheelFL.dae</uri>
+            <uri>meshes/WheelFL.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1825,7 +1825,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/WheelFR_0.10.stl</uri>
+            <uri>meshes/WheelFR_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1850,7 +1850,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>RHanmeshes/WheelFR.dae</uri>
+            <uri>meshes/WheelFR.dae</uri>
           </mesh>
         </geometry>
       </visual>
