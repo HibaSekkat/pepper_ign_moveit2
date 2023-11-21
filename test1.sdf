@@ -894,11 +894,11 @@
         <mass>0.0017342</mass>
         <inertia>
           <ixx>3.46781e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
+          <ixy>-3.25906e-08</ixy>
+          <ixz>-1.77572e-07</ixz>
           <iyy>9.06796e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <iyz>-5.0427e-08</iyz>
+          <izz>9.98141e-06</izz>
         </inertia>
       </inertial>
       <collision name='LFinger21_link_collision'>
@@ -2117,11 +2117,11 @@
         <mass>0.0017342</mass>
         <inertia>
           <ixx>3.46781e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
+          <ixy>-3.25906e-08</ixy>
+          <ixz>-1.77572e-07</ixz>
           <iyy>9.06796e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <iyz>-5.0427e-08</iyz>
+          <izz>9.98141e-06</izz>
         </inertia>
       </inertial>
       <collision name='RFinger21_link_collision'>
