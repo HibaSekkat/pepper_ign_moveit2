@@ -134,7 +134,7 @@
         <mass>1.0074</mass>
         <inertia>
           <ixx>0.256894</ixx>
-          <ixy>-9.09696e-05</ixy>
+          <ixy>0</ixy>
           <ixz>0.00405599</ixz>
           <iyy>0.352957</iyy>
           <iyz>-0.00129704</iyz>
