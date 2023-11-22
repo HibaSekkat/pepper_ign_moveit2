@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/KneePitch_0.10.stl</uri>
+            <uri>meshes/KneePitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -38,7 +38,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/KneePitch.dae</uri>
+            <uri>meshes/KneePitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -82,7 +82,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HipPitch_0.10.stl</uri>
+            <uri>meshes/HipPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -102,7 +102,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HipPitch.dae</uri>
+            <uri>meshes/HipPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -146,7 +146,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HipRoll_0.10.stl</uri>
+            <uri>meshes/HipRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -166,7 +166,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HipRoll.dae</uri>
+            <uri>meshes/HipRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -210,7 +210,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/Torso_0.10.stl</uri>
+            <uri>meshes/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -230,7 +230,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/Torso.dae</uri>
+            <uri>meshes/Torso.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -274,7 +274,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HeadYaw_0.10.stl</uri>
+            <uri>meshes/HeadYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -294,7 +294,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HeadYaw.dae</uri>
+            <uri>meshes/HeadYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -338,7 +338,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HeadPitch_0.10.stl</uri>
+            <uri>meshes/HeadPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -358,7 +358,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/HeadPitch.dae</uri>
+            <uri>meshes/HeadPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -402,7 +402,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LShoulderPitch_0.10.stl</uri>
+            <uri>meshes/LShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -422,7 +422,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LShoulderPitch.dae</uri>
+            <uri>meshes/LShoulderPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -466,7 +466,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LShoulderRoll_0.10.stl</uri>
+            <uri>meshes/LShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -486,7 +486,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LShoulderRoll.dae</uri>
+            <uri>meshes/LShoulderRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -530,7 +530,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LElbowYaw_0.10.stl</uri>
+            <uri>meshes/LElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -550,7 +550,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LElbowYaw.dae</uri>
+            <uri>meshes/LElbowYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -594,7 +594,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LElbowRoll_0.10.stl</uri>
+            <uri>meshes/LElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -614,7 +614,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LElbowRoll.dae</uri>
+            <uri>meshes/LElbowRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -658,7 +658,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LWristYaw_0.10.stl</uri>
+            <uri>meshes/LWristYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -678,7 +678,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LWristYaw.dae</uri>
+            <uri>meshes/LWristYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -720,7 +720,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger11_0.10.stl</uri>
+            <uri>meshes/LFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -740,7 +740,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger11.dae</uri>
+            <uri>meshes/LFinger11.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -782,7 +782,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger12_0.10.stl</uri>
+            <uri>meshes/LFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -802,7 +802,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger12.dae</uri>
+            <uri>meshes/LFinger12.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -844,7 +844,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger13_0.10.stl</uri>
+            <uri>meshes/LFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -864,7 +864,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger13.dae</uri>
+            <uri>meshes/LFinger13.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -906,7 +906,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger21_0.10.stl</uri>
+            <uri>meshes/LFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -926,7 +926,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger21.dae</uri>
+            <uri>meshes/LFinger21.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -968,7 +968,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger22_0.10.stl</uri>
+            <uri>meshes/LFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -988,7 +988,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger22.dae</uri>
+            <uri>meshes/LFinger22.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1030,7 +1030,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger23_0.10.stl</uri>
+            <uri>meshes/LFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1050,7 +1050,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger23.dae</uri>
+            <uri>meshes/LFinger23.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1092,7 +1092,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger31_0.10.stl</uri>
+            <uri>meshes/LFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1112,7 +1112,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger31.dae</uri>
+            <uri>meshes/LFinger31.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1154,7 +1154,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger32_0.10.stl</uri>
+            <uri>meshes/LFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1174,7 +1174,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger32.dae</uri>
+            <uri>meshes/LFinger32.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1216,7 +1216,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger33_0.10.stl</uri>
+            <uri>meshes/LFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1236,7 +1236,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger33.dae</uri>
+            <uri>meshes/LFinger33.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1278,7 +1278,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger41_0.10.stl</uri>
+            <uri>meshes/LFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1298,7 +1298,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger41.dae</uri>
+            <uri>meshes/LFinger41.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1340,7 +1340,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger42_0.10.stl</uri>
+            <uri>meshes/LFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1360,7 +1360,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger42.dae</uri>
+            <uri>meshes/LFinger42.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1402,7 +1402,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger43_0.10.stl</uri>
+            <uri>meshes/LFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1422,7 +1422,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LFinger43.dae</uri>
+            <uri>meshes/LFinger43.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1499,7 +1499,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LThumb1_0.10.stl</uri>
+            <uri>meshes/LThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1519,7 +1519,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LThumb1.dae</uri>
+            <uri>meshes/LThumb1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1561,7 +1561,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LThumb2_0.10.stl</uri>
+            <uri>meshes/LThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1581,7 +1581,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/LThumb2.dae</uri>
+            <uri>meshes/LThumb2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1625,7 +1625,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RShoulderPitch_0.10.stl</uri>
+            <uri>meshes/RShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1645,7 +1645,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RShoulderPitch.dae</uri>
+            <uri>meshes/RShoulderPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1689,7 +1689,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RShoulderRoll_0.10.stl</uri>
+            <uri>meshes/RShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1709,7 +1709,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RShoulderRoll.dae</uri>
+            <uri>meshes/RShoulderRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1753,7 +1753,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RElbowYaw_0.10.stl</uri>
+            <uri>meshes/RElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1773,7 +1773,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RElbowYaw.dae</uri>
+            <uri>meshes/RElbowYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1817,7 +1817,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RElbowRoll_0.10.stl</uri>
+            <uri>meshes/RElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1837,7 +1837,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RElbowRoll.dae</uri>
+            <uri>meshes/RElbowRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1881,7 +1881,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RWristYaw_0.10.stl</uri>
+            <uri>meshes/RWristYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1901,7 +1901,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RWristYaw.dae</uri>
+            <uri>meshes/RWristYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1943,7 +1943,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger11_0.10.stl</uri>
+            <uri>meshes/RFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1963,7 +1963,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger11.dae</uri>
+            <uri>meshes/RFinger11.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2005,7 +2005,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger12_0.10.stl</uri>
+            <uri>meshes/RFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2025,7 +2025,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger12.dae</uri>
+            <uri>meshes/RFinger12.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2067,7 +2067,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger13_0.10.stl</uri>
+            <uri>meshes/RFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2087,7 +2087,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger13.dae</uri>
+            <uri>meshes/RFinger13.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2129,7 +2129,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger21_0.10.stl</uri>
+            <uri>meshes/RFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2149,7 +2149,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger21.dae</uri>
+            <uri>meshes/RFinger21.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2191,7 +2191,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger22_0.10.stl</uri>
+            <uri>meshes/RFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2211,7 +2211,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger22.dae</uri>
+            <uri>meshes/RFinger22.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2253,7 +2253,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger23_0.10.stl</uri>
+            <uri>meshes/RFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2273,7 +2273,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger23.dae</uri>
+            <uri>meshes/RFinger23.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2315,7 +2315,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger31_0.10.stl</uri>
+            <uri>meshes/RFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2335,7 +2335,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger31.dae</uri>
+            <uri>meshes/RFinger31.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2377,7 +2377,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger32_0.10.stl</uri>
+            <uri>meshes/RFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2397,7 +2397,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger32.dae</uri>
+            <uri>meshes/RFinger32.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2439,7 +2439,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger33_0.10.stl</uri>
+            <uri>meshes/RFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2459,7 +2459,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger33.dae</uri>
+            <uri>meshes/RFinger33.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2501,7 +2501,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger41_0.10.stl</uri>
+            <uri>meshes/RFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2521,7 +2521,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger41.dae</uri>
+            <uri>meshes/RFinger41.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2563,7 +2563,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger42_0.10.stl</uri>
+            <uri>meshes/RFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2583,7 +2583,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger42.dae</uri>
+            <uri>meshes/RFinger42.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2625,7 +2625,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger43_0.10.stl</uri>
+            <uri>meshes/RFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2645,7 +2645,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RFinger43.dae</uri>
+            <uri>meshes/RFinger43.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2722,7 +2722,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RThumb1_0.10.stl</uri>
+            <uri>meshes/RThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2742,7 +2742,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RThumb1.dae</uri>
+            <uri>meshes/RThumb1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2784,7 +2784,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RThumb2_0.10.stl</uri>
+            <uri>meshes/RThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2804,7 +2804,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/RThumb2.dae</uri>
+            <uri>meshes/RThumb2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2848,7 +2848,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/WheelB_0.10.stl</uri>
+            <uri>meshes/WheelB_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2873,7 +2873,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/WheelB.dae</uri>
+            <uri>meshes/WheelB.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2916,7 +2916,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/WheelFL_0.10.stl</uri>
+            <uri>meshes/WheelFL_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2941,7 +2941,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/WheelFL.dae</uri>
+            <uri>meshes/WheelFL.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2984,7 +2984,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/WheelFR_0.10.stl</uri>
+            <uri>meshes/WheelFR_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -3009,7 +3009,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>antiwindup: falsmeshes/WheelFR.dae</uri>
+            <uri>meshes/WheelFR.dae</uri>
           </mesh>
         </geometry>
       </visual>
