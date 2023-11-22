@@ -2,6 +2,198 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
+        <pose>-0.033367 -5.8e-05 -1.66002 0 -0 0</pose>
+        <mass>12.3442</mass>
+        <inertia>
+          <ixx>20.1378</ixx>
+          <ixy>-0.00115739</ixy>
+          <ixz>0.663369</ixz>
+          <iyy>18.0553</iyy>
+          <iyz>-0.000609302</iyz>
+          <izz>21.8199</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__Tibia_collision'>
+        <pose>0 0 0.334 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/KneePitch_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_fixed_joint_lump__Tibia_visual'>
+        <pose>0 0 0.334 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/KneePitch.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+    </link>
+    <joint name='KneePitch' type='revolute'>
+      <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>Pelvis</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-0.514872</lower>
+          <upper>0.514872</upper>
+          <effort>27.702</effort>
+          <velocity>2.93276</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Pelvis'>
+      <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
+        <mass>3.79554</mass>
+        <inertia>
+          <ixx>3.68321</ixx>
+          <ixy>0.00041889</ixy>
+          <ixz>0.0226034</ixz>
+          <iyy>2.90788</iyy>
+          <iyz>0.000500697</iyz>
+          <izz>1.85072</izz>
+        </inertia>
+      </inertial>
+      <collision name='Pelvis_collision'>
+        <pose>0 0 0.268 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/HipPitch_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Pelvis_visual'>
+        <pose>0 0 0.268 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/HipPitch.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+    </link>
+    <joint name='HipPitch' type='revolute'>
+      <pose relative_to='Pelvis'>0 0 0.268 0 -0 0</pose>
+      <parent>Pelvis</parent>
+      <child>Hip</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-1.03847</lower>
+          <upper>1.03847</upper>
+          <effort>19.787</effort>
+          <velocity>2.93276</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='Hip'>
+      <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
+        <mass>1.0074</mass>
+        <inertia>
+          <ixx>0.256894</ixx>
+          <ixy>-9.09696e-05</ixy>
+          <ixz>0.00405599</ixz>
+          <iyy>0.352957</iyy>
+          <iyz>-0.00129704</iyz>
+          <izz>0.180785</izz>
+        </inertia>
+      </inertial>
+      <collision name='Hip_collision'>
+        <pose>0 0 0.079 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/HipRoll_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Hip_visual'>
+        <pose>0 0 0.079 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/HipRoll.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+    </link>
+    <joint name='HipRoll' type='revolute'>
+      <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
+      <parent>Hip</parent>
+      <child>torso</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-0.514872</lower>
+          <upper>0.514872</upper>
+          <effort>10.1884</effort>
+          <velocity>2.27032</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='torso'>
+      <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
+      <inertial>
         <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
         <mass>4.89482</mass>
         <inertia>
@@ -13,8 +205,8 @@
           <izz>3.38319</izz>
         </inertia>
       </inertial>
-      <collision name='base_link_fixed_joint_lump__torso_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+      <collision name='torso_collision'>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -33,8 +225,8 @@
           </friction>
         </surface>
       </collision>
-      <visual name='base_link_fixed_joint_lump__torso_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+      <visual name='torso_visual'>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -42,12 +234,12 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='base_link'>-0.038 0 0.1699 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
+      <parent>torso</parent>
       <child>Neck</child>
       <axis>
         <xyz>0 0 1</xyz>
@@ -106,7 +298,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadPitch' type='revolute'>
@@ -117,7 +309,7 @@
         <xyz>0 1 0</xyz>
         <limit>
           <lower>-0.706858</lower>
-          <upper>0.637045</upper>
+          <upper>0.4451</upper>
           <effort>2.666</effort>
           <velocity>9.22756</velocity>
         </limit>
@@ -170,519 +362,12 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
-      <sensor name='CameraBottom' type='camera'>
-        <update_rate>5</update_rate>
-        <camera name='camera_bottom'>
-          <horizontal_fov>1</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.05</near>
-            <far>500</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
-        <pose>0.09262 0 0.06177 0 0.698132 0</pose>
-      </sensor>
-      <sensor name='CameraDepth_frame_sensor' type='depth'>
-        <always_on>1</always_on>
-        <update_rate>20</update_rate>
-        <camera>
-          <horizontal_fov>1.01229</horizontal_fov>
-          <image>
-            <format>B8G8R8</format>
-            <width>320</width>
-            <height>240</height>
-          </image>
-          <clip>
-            <near>0.4</near>
-            <far>8</far>
-          </clip>
-        </camera>
-        <pose>0.05138 0.039 0.1194 0 -0 0</pose>
-      </sensor>
-      <sensor name='CameraTop' type='camera'>
-        <update_rate>5</update_rate>
-        <camera name='camera_top'>
-          <horizontal_fov>1</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.3</near>
-            <far>500</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
-        <pose>0.08601 0 0.16284 0 -0 0</pose>
-      </sensor>
-    </link>
-    <joint name='HipRoll' type='revolute'>
-      <pose relative_to='base_link'>2e-05 0 -0.139 0 -0 0</pose>
-      <parent>base_link</parent>
-      <child>Hip</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>-0.514872</lower>
-          <upper>0.514872</upper>
-          <effort>10.1884</effort>
-          <velocity>2.27032</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='Hip'>
-      <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
-        <mass>1.0074</mass>
-        <inertia>
-          <ixx>0.256894</ixx>
-          <ixy>-9.09696e-05</ixy>
-          <ixz>0.00405599</ixz>
-          <iyy>0.352957</iyy>
-          <iyz>-0.00129704</iyz>
-          <izz>0.180785</izz>
-        </inertia>
-      </inertial>
-      <collision name='Hip_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipRoll_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='Hip_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipRoll.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='HipPitch' type='revolute'>
-      <pose relative_to='Hip'>0 0 -0.079 0 -0 0</pose>
-      <parent>Hip</parent>
-      <child>Pelvis</child>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1.03847</lower>
-          <upper>1.03847</upper>
-          <effort>19.787</effort>
-          <velocity>2.93276</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='Pelvis'>
-      <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
-        <mass>3.79554</mass>
-        <inertia>
-          <ixx>3.68321</ixx>
-          <ixy>0.00041889</ixy>
-          <ixz>0.0226034</ixz>
-          <iyy>2.90788</iyy>
-          <iyz>0.000500697</iyz>
-          <izz>1.85072</izz>
-        </inertia>
-      </inertial>
-      <collision name='Pelvis_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipPitch_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='Pelvis_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipPitch.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-    </link>
-    <joint name='KneePitch' type='revolute'>
-      <pose relative_to='Pelvis'>0 0 -0.268 0 -0 0</pose>
-      <parent>Pelvis</parent>
-      <child>Tibia</child>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-0.514872</lower>
-          <upper>0.514872</upper>
-          <effort>27.702</effort>
-          <velocity>2.93276</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='Tibia'>
-      <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>-0.033367 -5.8e-05 -1.99402 0 -0 0</pose>
-        <mass>12.3442</mass>
-        <inertia>
-          <ixx>20.1378</ixx>
-          <ixy>-0.00115739</ixy>
-          <ixz>0.663369</ixz>
-          <iyy>18.0553</iyy>
-          <iyz>-0.000609302</iyz>
-          <izz>21.8199</izz>
-        </inertia>
-      </inertial>
-      <collision name='Tibia_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/KneePitch_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='Tibia_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/KneePitch.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-      <self_collide>0</self_collide>
-      <sensor name='SonarBack' type='ray'>
-        <update_rate>20</update_rate>
-        <visualize>0</visualize>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </horizontal>
-            <vertical>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </vertical>
-          </scan>
-          <range>
-            <min>0</min>
-            <max>5</max>
-            <resolution>3</resolution>
-          </range>
-        </ray>
-        <pose>-0.0718 0 -0.0534 -0 -0.209438 -3.14159</pose>
-      </sensor>
-      <sensor name='SonarFront' type='ray'>
-        <update_rate>20</update_rate>
-        <visualize>0</visualize>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </horizontal>
-            <vertical>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </vertical>
-          </scan>
-          <range>
-            <min>0</min>
-            <max>5</max>
-            <resolution>3</resolution>
-          </range>
-        </ray>
-        <pose>0.0699 0 -0.1023 0 -0.322858 0</pose>
-      </sensor>
-    </link>
-    <joint name='WheelB' type='revolute'>
-      <pose relative_to='Tibia'>-0.17 0 -0.264 0 0 -3.14159</pose>
-      <parent>Tibia</parent>
-      <child>WheelB_link</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <effort>3.25</effort>
-          <velocity>6.28319</velocity>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='WheelB_link'>
-      <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>1e-06 -0 0 0 -0 0</pose>
-        <mass>0.757569</mass>
-        <inertia>
-          <ixx>0.146668</ixx>
-          <ixy>2.16464e-09</ixy>
-          <ixz>-1.60429e-08</ixz>
-          <iyy>0.145462</iyy>
-          <iyz>9.68642e-10</iyz>
-          <izz>0.146668</izz>
-        </inertia>
-      </inertial>
-      <collision name='WheelB_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelB_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode>
-              <kp>1e+07</kp>
-              <kd>1</kd>
-              <min_depth>0.003</min_depth>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-              <fdir1>1 0 0</fdir1>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='WheelB_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelB.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-    </link>
-    <joint name='WheelFL' type='revolute'>
-      <pose relative_to='Tibia'>0.09 0.155 -0.264 0 -0 1.07517</pose>
-      <parent>Tibia</parent>
-      <child>WheelFL_link</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <effort>3.25</effort>
-          <velocity>6.28319</velocity>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='WheelFL_link'>
-      <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>-1e-06 1e-06 0 0 -0 0</pose>
-        <mass>0.757569</mass>
-        <inertia>
-          <ixx>0.146668</ixx>
-          <ixy>1.38949e-09</ixy>
-          <ixz>-1.84774e-08</ixz>
-          <iyy>0.145462</iyy>
-          <iyz>-1.68256e-10</iyz>
-          <izz>0.146668</izz>
-        </inertia>
-      </inertial>
-      <collision name='WheelFL_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFL_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode>
-              <kp>1e+07</kp>
-              <kd>1</kd>
-              <min_depth>0.003</min_depth>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>1</mu>
-              <mu2>0</mu2>
-              <fdir1>1 0 0</fdir1>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='WheelFL_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFL.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
-    </link>
-    <joint name='WheelFR' type='revolute'>
-      <pose relative_to='Tibia'>0.09 -0.155 -0.264 0 0 -1.07517</pose>
-      <parent>Tibia</parent>
-      <child>WheelFR_link</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <effort>3.25</effort>
-          <velocity>6.28319</velocity>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='WheelFR_link'>
-      <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 -1e-06 0 0 -0 0</pose>
-        <mass>0.757569</mass>
-        <inertia>
-          <ixx>0.146668</ixx>
-          <ixy>-1.29746e-09</ixy>
-          <ixz>-1.74594e-08</ixz>
-          <iyy>0.145462</iyy>
-          <iyz>2.19765e-10</iyz>
-          <izz>0.146668</izz>
-        </inertia>
-      </inertial>
-      <collision name='WheelFR_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFR_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode>
-              <kp>1e+07</kp>
-              <kd>1</kd>
-              <min_depth>0.003</min_depth>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0</mu>
-              <mu2>1</mu2>
-              <fdir1>0 1 0</fdir1>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <visual name='WheelFR_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFR.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <gravity>0</gravity>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
-      <pose relative_to='base_link'>-0.057 0.14974 0.08682 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
+      <parent>torso</parent>
       <child>LShoulder</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -741,7 +426,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderRoll' type='revolute'>
@@ -805,7 +490,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LElbowYaw' type='revolute'>
@@ -869,7 +554,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LElbowRoll' type='revolute'>
@@ -933,7 +618,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LWristYaw' type='revolute'>
@@ -997,7 +682,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger11' type='revolute'>
@@ -1059,7 +744,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger12' type='revolute'>
@@ -1121,7 +806,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger13' type='revolute'>
@@ -1183,7 +868,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger21' type='revolute'>
@@ -1245,7 +930,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger22' type='revolute'>
@@ -1307,7 +992,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger23' type='revolute'>
@@ -1369,7 +1054,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger31' type='revolute'>
@@ -1431,7 +1116,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger32' type='revolute'>
@@ -1493,7 +1178,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger33' type='revolute'>
@@ -1555,7 +1240,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger41' type='revolute'>
@@ -1617,7 +1302,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger42' type='revolute'>
@@ -1679,7 +1364,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger43' type='revolute'>
@@ -1741,7 +1426,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LHand' type='revolute'>
@@ -1776,7 +1461,7 @@
           <izz>0.0402727</izz>
         </inertia>
       </inertial>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LThumb1' type='revolute'>
@@ -1838,7 +1523,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LThumb2' type='revolute'>
@@ -1900,12 +1585,12 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
-      <pose relative_to='base_link'>-0.057 -0.14974 0.08682 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='torso'>-0.057 -0.14974 0.22582 0 -0 0</pose>
+      <parent>torso</parent>
       <child>RShoulder</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -1964,7 +1649,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderRoll' type='revolute'>
@@ -2028,7 +1713,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RElbowYaw' type='revolute'>
@@ -2092,7 +1777,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RElbowRoll' type='revolute'>
@@ -2156,7 +1841,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RWristYaw' type='revolute'>
@@ -2220,7 +1905,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger11' type='revolute'>
@@ -2282,7 +1967,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger12' type='revolute'>
@@ -2344,7 +2029,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger13' type='revolute'>
@@ -2406,7 +2091,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger21' type='revolute'>
@@ -2468,7 +2153,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger22' type='revolute'>
@@ -2530,7 +2215,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger23' type='revolute'>
@@ -2592,7 +2277,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger31' type='revolute'>
@@ -2654,7 +2339,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger32' type='revolute'>
@@ -2716,7 +2401,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger33' type='revolute'>
@@ -2778,7 +2463,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger41' type='revolute'>
@@ -2840,7 +2525,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger42' type='revolute'>
@@ -2902,7 +2587,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger43' type='revolute'>
@@ -2964,7 +2649,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RHand' type='revolute'>
@@ -2999,7 +2684,7 @@
           <izz>0.0402727</izz>
         </inertia>
       </inertial>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RThumb1' type='revolute'>
@@ -3061,7 +2746,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RThumb2' type='revolute'>
@@ -3123,8 +2808,212 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>0</gravity>
+      <gravity>1</gravity>
       <self_collide>0</self_collide>
+    </link>
+    <joint name='WheelB' type='revolute'>
+      <pose relative_to='base_link'>-0.17 0 0.07 0 0 -3.14159</pose>
+      <parent>base_link</parent>
+      <child>WheelB_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WheelB_link'>
+      <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>1e-06 -0 0 0 -0 0</pose>
+        <mass>0.757569</mass>
+        <inertia>
+          <ixx>0.146668</ixx>
+          <ixy>2.16464e-09</ixy>
+          <ixz>-1.60429e-08</ixz>
+          <iyy>0.145462</iyy>
+          <iyz>9.68642e-10</iyz>
+          <izz>0.146668</izz>
+        </inertia>
+      </inertial>
+      <collision name='WheelB_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/WheelB_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+              <min_depth>0.003</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+              <fdir1>1 0 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WheelB_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/WheelB.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+    <joint name='WheelFL' type='revolute'>
+      <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
+      <parent>base_link</parent>
+      <child>WheelFL_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WheelFL_link'>
+      <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1e-06 1e-06 0 0 -0 0</pose>
+        <mass>0.757569</mass>
+        <inertia>
+          <ixx>0.146668</ixx>
+          <ixy>1.38949e-09</ixy>
+          <ixz>-1.84774e-08</ixz>
+          <iyy>0.145462</iyy>
+          <iyz>-1.68256e-10</iyz>
+          <izz>0.146668</izz>
+        </inertia>
+      </inertial>
+      <collision name='WheelFL_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/WheelFL_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+              <min_depth>0.003</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>0</mu2>
+              <fdir1>1 0 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WheelFL_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/WheelFL.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+    <joint name='WheelFR' type='revolute'>
+      <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
+      <parent>base_link</parent>
+      <child>WheelFR_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WheelFR_link'>
+      <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -1e-06 0 0 -0 0</pose>
+        <mass>0.757569</mass>
+        <inertia>
+          <ixx>0.146668</ixx>
+          <ixy>-1.29746e-09</ixy>
+          <ixz>-1.74594e-08</ixz>
+          <iyy>0.145462</iyy>
+          <iyz>2.19765e-10</iyz>
+          <izz>0.146668</izz>
+        </inertia>
+      </inertial>
+      <collision name='WheelFR_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/WheelFR_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+              <min_depth>0.003</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>1</mu2>
+              <fdir1>0 1 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WheelFR_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>meshes/WheelFR.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
     </link>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <left_joint>WheelFL</left_joint>
