@@ -1,10 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="pepper_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <link name="base_link"/>
   <joint name="HeadYaw" type="revolute">
     <parent link="torso"/>
     <child link="Neck"/>
-    <origin rpy="0 0 0" xyz="-0.038 0 0.3089"/>
+    <origin rpy="0 0 0" xyz="-0.038 0 0.1699"/>
     <axis xyz="0 0 1.0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -32,7 +31,7 @@
     <child link="Head"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="2.666" lower="-0.706858" upper="0.4451" velocity="9.22756"/>
+    <limit effort="2.666" lower="-0.706858" upper="0.637045" velocity="9.22756"/>
   </joint>
   <link name="Head">
     <inertial>
@@ -54,10 +53,10 @@
     </collision>
   </link>
   <joint name="HipRoll" type="revolute">
-    <parent link="Hip"/>
-    <child link="torso"/>
-    <origin rpy="0 0 0" xyz="0 0 0.079"/>
-    <axis xyz="-1.0 0 0"/>
+    <parent link="torso"/>
+    <child link="Hip"/>
+    <origin rpy="0 0 0" xyz="2e-05 0 -0.139"/>
+    <axis xyz="1.0 0 0"/>
     <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
@@ -70,20 +69,20 @@
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.079"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.079"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
   <joint name="HipPitch" type="revolute">
-    <parent link="Pelvis"/>
-    <child link="Hip"/>
-    <origin rpy="0 0 0" xyz="0 0 0.268"/>
-    <axis xyz="0 -1.0 0"/>
+    <parent link="Hip"/>
+    <child link="Pelvis"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.079"/>
+    <axis xyz="0 1.0 0"/>
     <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
@@ -96,20 +95,20 @@
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.268"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.268"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
   <joint name="KneePitch" type="revolute">
-    <parent link="Tibia"/>
-    <child link="Pelvis"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-    <axis xyz="0 -1.0 0"/>
+    <parent link="Pelvis"/>
+    <child link="Tibia"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.268"/>
+    <axis xyz="0 1.0 0"/>
     <limit effort="27.702" lower="-0.514872" upper="0.514872" velocity="2.93276"/>
   </joint>
   <link name="Tibia">
@@ -131,6 +130,19 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="base_footprint"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.334"/>
+  </joint>
+  <link name="base_footprint"/>
+  <link name="base_link"/>
+  <joint name="base_link_fixedjoint" type="fixed">
+    <parent link="base_link"/>
+    <child link="torso"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
   <link name="torso">
     <inertial>
       <mass value="4.89481724014063"/>
@@ -141,19 +153,19 @@
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="2e-05 0 0.139"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="2e-05 0 0.139"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
   <joint name="LShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="LShoulder"/>
-    <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
+    <origin rpy="0 0 0" xyz="-0.057 0.14974 0.08682"/>
     <axis xyz="0 1.0 0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -296,7 +308,7 @@
   <joint name="RShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="RShoulder"/>
-    <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.22582"/>
+    <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.08682"/>
     <axis xyz="0 1.0 0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -436,6 +448,227 @@
       <inertia ixx="0.011703404133435853" ixy="-0.0008177441509091997" ixz="-0.0033215793821857907" iyy="0.0378403638770384" iyz="0.0001492658329442748" izz="0.04027267667550336"/>
     </inertial>
   </link>
+  <link name="SonarBack_frame"/>
+  <joint name="Sonar/Back_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SonarBack_frame"/>
+    <origin rpy="-1.81761e-08 -0.209438 -3.14159" xyz="-0.0718 0 -0.0534"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="CameraBottom_optical_frame"/>
+  <joint name="CameraBottom_optical_frame_fixedjoint" type="fixed">
+    <parent link="CameraBottom_frame"/>
+    <child link="CameraBottom_optical_frame"/>
+    <origin rpy="-1.57079632679 0 -1.57079632679" xyz="0 0 0"/>
+  </joint>
+  <link name="CameraDepth_optical_frame"/>
+  <joint name="CameraDepth_optical_frame_fixedjoint" type="fixed">
+    <parent link="CameraDepth_frame"/>
+    <child link="CameraDepth_optical_frame"/>
+    <origin rpy="-1.57079632679 0 -1.57079632679" xyz="0 0 0"/>
+  </joint>
+  <link name="LHandTouchBack_frame"/>
+  <joint name="LHand/Touch/Back_sensor_fixedjoint" type="fixed">
+    <parent link="l_wrist"/>
+    <child link="LHandTouchBack_frame"/>
+    <origin rpy="1.5708 -1.5708 -3.14159" xyz="0.0523 0 0.0304"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="VerticalLeftLaser_frame"/>
+  <joint name="LaserSensor/VerticalLeft_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="VerticalLeftLaser_frame"/>
+    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SurroundingFrontLaser_device_frame"/>
+  <joint name="LaserSensor/Front_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SurroundingFrontLaser_device_frame"/>
+    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="BumperB_frame"/>
+  <joint name="Bumper/Back_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="BumperB_frame"/>
+    <origin rpy="0 0 -3.14159" xyz="-0.251 0 -0.264"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SurroundingLeftLaser_frame"/>
+  <joint name="LaserSensor/Left_projected_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SurroundingLeftLaser_frame"/>
+    <origin rpy="0 0 1.75728" xyz="-0.018 0.0899 -0.334"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="ShovelLaser_frame"/>
+  <joint name="LaserSensor/Shovel_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="ShovelLaser_frame"/>
+    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="ImuTorsoAccelerometer_frame"/>
+  <joint name="Accelerometer_sensor_fixedjoint" type="fixed">
+    <parent link="torso"/>
+    <child link="ImuTorsoAccelerometer_frame"/>
+    <origin rpy="0 0 0" xyz="0.00239 -0.03575 0.00626"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="RSpeaker_frame"/>
+  <joint name="SpeakerRight_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="RSpeaker_frame"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SurroundingRightLaser_device_frame"/>
+  <joint name="LaserSensor/Right_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SurroundingRightLaser_device_frame"/>
+    <origin rpy="0 0.349066 -1.5708" xyz="-0.018 -0.0899 -0.0759"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="LSpeaker_frame"/>
+  <joint name="SpeakerLeft_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="LSpeaker_frame"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="RHandTouchBack_frame"/>
+  <joint name="RHand/Touch/Back_sensor_fixedjoint" type="fixed">
+    <parent link="r_wrist"/>
+    <child link="RHandTouchBack_frame"/>
+    <origin rpy="1.5708 -1.5708 -3.14159" xyz="0.0523 0 0.0304"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="CameraTop_frame"/>
+  <joint name="CameraTop_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="CameraTop_frame"/>
+    <origin rpy="0 0 0" xyz="0.08601 0 0.16284"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SurroundingLeftLaser_device_frame"/>
+  <joint name="LaserSensor/Left_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SurroundingLeftLaser_device_frame"/>
+    <origin rpy="0 0.349066 1.5708" xyz="-0.018 0.0899 -0.0759"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="CameraDepth_frame"/>
+  <joint name="CameraDepth_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="CameraDepth_frame"/>
+    <origin rpy="0 0 0" xyz="0.05138 0.039 0.1194"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SurroundingRightLaser_frame"/>
+  <joint name="LaserSensor/Right_projected_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SurroundingRightLaser_frame"/>
+    <origin rpy="0 0 -1.75728" xyz="-0.018 -0.0899 -0.334"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="HeadTouchFront_frame"/>
+  <joint name="Head/Touch/Front_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="HeadTouchFront_frame"/>
+    <origin rpy="0 0.20944 0" xyz="0.028175 0 0.21267"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="VerticalRightLaser_frame"/>
+  <joint name="LaserSensor/VerticalRight_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="VerticalRightLaser_frame"/>
+    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SonarFront_frame"/>
+  <joint name="Sonar/Front_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SonarFront_frame"/>
+    <origin rpy="0 -0.322858 0" xyz="0.0699 0 -0.1023"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="BumperFL_frame"/>
+  <joint name="Bumper/FrontLeft_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="BumperFL_frame"/>
+    <origin rpy="0 0 0.48886" xyz="0.129 0.227 -0.264"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="CameraBottom_frame"/>
+  <joint name="CameraBottom_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="CameraBottom_frame"/>
+    <origin rpy="0 0.698132 0" xyz="0.09262 0 0.06177"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="CameraTop_optical_frame"/>
+  <joint name="CameraTop_optical_frame_fixedjoint" type="fixed">
+    <parent link="CameraTop_frame"/>
+    <child link="CameraTop_optical_frame"/>
+    <origin rpy="-1.57079632679 0 -1.57079632679" xyz="0 0 0"/>
+  </joint>
+  <link name="ImuBaseAccelerometer_frame"/>
+  <joint name="AccelerometerBase_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="ImuBaseAccelerometer_frame"/>
+    <origin rpy="0 0 0" xyz="0.0147 -0.0017 -0.26319"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="ImuTorsoGyrometer_frame"/>
+  <joint name="Gyrometer_sensor_fixedjoint" type="fixed">
+    <parent link="torso"/>
+    <child link="ImuTorsoGyrometer_frame"/>
+    <origin rpy="0 0 0" xyz="0.00204 -0.03491 -0.00959"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="Tablet_frame"/>
+  <joint name="Tablet_sensor_fixedjoint" type="fixed">
+    <parent link="torso"/>
+    <child link="Tablet_frame"/>
+    <origin rpy="0 -0.523599 0" xyz="0.0839249 0 0.06251"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="HeadTouchRear_frame"/>
+  <joint name="Head/Touch/Rear_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="HeadTouchRear_frame"/>
+    <origin rpy="0 -0.314159 0" xyz="-0.03376 0 0.21052"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="BumperFR_frame"/>
+  <joint name="Bumper/FrontRight_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="BumperFR_frame"/>
+    <origin rpy="0 0 -0.48886" xyz="0.129 -0.227 -0.264"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="SurroundingFrontLaser_frame"/>
+  <joint name="LaserSensor/Front_projected_sensor_fixedjoint" type="fixed">
+    <parent link="Tibia"/>
+    <child link="SurroundingFrontLaser_frame"/>
+    <origin rpy="0 0 0" xyz="0.0562 0 -0.334"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="ChestButton_frame"/>
+  <joint name="ChestBoard/Button_sensor_fixedjoint" type="fixed">
+    <parent link="torso"/>
+    <child link="ChestButton_frame"/>
+    <origin rpy="0 0 0" xyz="0.049871 0.001588 0.055163"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="HeadTouchMiddle_frame"/>
+  <joint name="Head/Touch/Middle_sensor_fixedjoint" type="fixed">
+    <parent link="Head"/>
+    <child link="HeadTouchMiddle_frame"/>
+    <origin rpy="0 -0.0349066 0" xyz="0.0041 0 0.2159"/>
+    <axis xyz="0 0 0"/>
+  </joint>
   <link name="RFinger41_link">
     <inertial>
       <mass value="0.0017342022888397826"/>
@@ -1214,218 +1447,212 @@
     <axis xyz="1.0 0 0"/>
     <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
   </joint>
-  <joint name="base_link_fixedjoint" type="fixed">
-    <parent link="base_link"/>
-    <child link="Tibia"/>
-    <origin rpy="0 0 0" xyz="0 0 0.334"/>
-    <axis xyz="0 0 0"/>
-  </joint>
   <!-- MACROS FOR DISABLE LINKS -->
   <!-- MACROS FOR MIMIC JOINTS -->
   <!-- Fingers -->
   <!-- Thumbs -->
   <!-- GAZEBO MATERIALS -->
   <gazebo reference="base_link">
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="torso">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Neck">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Head">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="gaze">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <!-- ARMS -->
   <gazebo reference="LShoulder">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LBicep">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LElbow">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LForeArm">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="l_wrist">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="l_gripper">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RShoulder">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RBicep">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RElbow">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RForeArm">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="r_wrist">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="r_gripper">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger11_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger12_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger13_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger21_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger22_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger23_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger31_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger32_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger33_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger41_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger42_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger43_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LThumb1_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="LThumb2_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Hip">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Pelvis">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="Tibia">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFL_link">
     <mu1>1</mu1>
@@ -1434,7 +1661,7 @@
     <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
     <minDepth>0.003</minDepth>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelB_link">
     <mu1>0.5</mu1>
@@ -1443,7 +1670,7 @@
     <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
     <minDepth>0.003</minDepth>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFR_link">
     <mu1>0</mu1>
@@ -1452,91 +1679,91 @@
     <kd value="1.0"/>
     <fdir1 value="0 1 0"/>
     <minDepth>0.003</minDepth>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger11_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger12_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger13_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger21_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger22_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger23_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger31_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger32_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger33_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger41_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger42_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger43_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RThumb1_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="RThumb2_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-    <turnGravityOff>false</turnGravityOff>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <!--
         RGB CAMERAS
@@ -1609,7 +1836,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-  <turnGravityOff>false</turnGravityOff>
+  <turnGravityOff>true</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
@@ -1626,7 +1853,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-  <turnGravityOff>false</turnGravityOff>
+  <turnGravityOff>true</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
@@ -1643,7 +1870,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-  <turnGravityOff>false</turnGravityOff>
+  <turnGravityOff>true</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
