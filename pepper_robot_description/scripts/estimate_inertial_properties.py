@@ -15,7 +15,7 @@ def main():
 
     # Total mass taken from datasheet (given as ~18.0kg)
     # You can also use your own estimate of total mass if you managed to weigh pepper_robot yourself :)
-    total_mass = 29.0
+    total_mass = 29.6
     if len(sys.argv) > 1:
         if float(sys.argv[1]) > 0.0:
             total_mass = float(sys.argv[1])
