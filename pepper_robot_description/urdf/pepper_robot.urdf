@@ -53,7 +53,7 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="HipRoll" type="fixed">
+  <joint name="HipRoll" type="continuous">
     <parent link="Hip"/>
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>

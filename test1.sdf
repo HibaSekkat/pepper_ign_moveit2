@@ -130,15 +130,15 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.210089 -0.000233 0.279359 0 -0 0</pose>
-        <mass>5.90222</mass>
+        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
+        <mass>1.0074</mass>
         <inertia>
-          <ixx>5.87472</ixx>
-          <ixy>0.000315019</ixy>
-          <ixz>0.91955</ixz>
-          <iyy>5.51109</iyy>
-          <iyz>-0.00293824</iyz>
-          <izz>3.62336</izz>
+          <ixx>0.256894</ixx>
+          <ixy>-9.09696e-05</ixy>
+          <ixz>0.00405599</ixz>
+          <iyy>0.352957</iyy>
+          <iyz>-0.00129704</iyz>
+          <izz>0.180785</izz>
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
@@ -147,26 +147,6 @@
           <mesh>
             <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
-            </ode>
-          </friction>
-        </surface>
-      </collision>
-      <collision name='Hip_fixed_joint_lump__torso_collision_1'>
-        <pose>2e-05 0 0.218 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -190,8 +170,63 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name='Hip_fixed_joint_lump__torso_visual_1'>
-        <pose>2e-05 0 0.218 0 -0 0</pose>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+    </link>
+    <joint name='HipRoll' type='revolute'>
+      <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
+      <parent>Hip</parent>
+      <child>torso</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <effort>10.1884</effort>
+          <velocity>2.27032</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='torso'>
+      <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
+        <mass>4.89482</mass>
+        <inertia>
+          <ixx>4.56661</ixx>
+          <ixy>6.29596e-05</ixy>
+          <ixz>0.665651</ixz>
+          <iyy>4.04754</iyy>
+          <iyz>-0.000197904</iyz>
+          <izz>3.38319</izz>
+        </inertia>
+      </inertial>
+      <collision name='torso_collision'>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='torso_visual'>
+        <pose>2e-05 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -203,8 +238,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='Hip'>-0.038 0 0.3879 0 -0 0</pose>
-      <parent>Hip</parent>
+      <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
+      <parent>torso</parent>
       <child>Neck</child>
       <axis>
         <xyz>0 0 1</xyz>
@@ -331,8 +366,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
-      <pose relative_to='Hip'>-0.057 0.14974 0.30482 0 -0 0</pose>
-      <parent>Hip</parent>
+      <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
+      <parent>torso</parent>
       <child>LShoulder</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -1554,8 +1589,8 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
-      <pose relative_to='Hip'>-0.057 -0.14974 0.30482 0 -0 0</pose>
-      <parent>Hip</parent>
+      <pose relative_to='torso'>-0.057 -0.14974 0.22582 0 -0 0</pose>
+      <parent>torso</parent>
       <child>RShoulder</child>
       <axis>
         <xyz>0 1 0</xyz>
