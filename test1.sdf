@@ -6,8 +6,8 @@
         <mass>15.485</mass>
         <inertia>
           <ixx>0.869776</ixx>
-          <ixy>0.000401788</ixy>
-          <ixz>-0.00866522</ixz>
+          <ixy>-0.000401788</ixy>
+          <ixz>0.00866522</ixz>
           <iyy>0.859641</iyy>
           <iyz>0</iyz>
           <izz>0.235316</izz>
@@ -71,9 +71,9 @@
         <inertia>
           <ixx>0.0572704</ixx>
           <ixy>0</ixy>
-          <ixz>-0.000785692</ixz>
+          <ixz>0.000785692</ixz>
           <iyy>0.0532455</iyy>
-          <iyz>8.37542e-05</iyz>
+          <iyz>-8.37542e-05</iyz>
           <izz>0.0143909</izz>
         </inertia>
       </inertial>
@@ -135,9 +135,9 @@
         <inertia>
           <ixx>0.00875644</ixx>
           <ixy>0</ixy>
-          <ixz>5.71451e-06</ixz>
+          <ixz>-5.71451e-06</ixz>
           <iyy>0.010142</iyy>
-          <iyz>-0.000159449</iyz>
+          <iyz>0.000159449</iyz>
           <izz>0.00441092</izz>
         </inertia>
       </inertial>
