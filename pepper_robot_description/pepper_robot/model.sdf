@@ -3027,11 +3027,11 @@
     </plugin>
     <static>0</static>
     <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
-      <use_pose_vector_msg>1</use_pose_vector_msg>
-      <publish_nested_model_pose>1</publish_nested_model_pose>
-      <publish_link_pose>0</publish_link_pose>
-      <publish_collision_pose>0</publish_collision_pose>
-      <publish_visual_pose>0</publish_visual_pose>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <publish_nested_model_pose>true</publish_nested_model_pose>
+      <publish_link_pose>false</publish_link_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
     </plugin>
   </model>
 </sdf>
