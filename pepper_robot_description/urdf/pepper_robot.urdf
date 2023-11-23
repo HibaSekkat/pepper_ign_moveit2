@@ -58,7 +58,7 @@
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>
     <axis xyz="-1.0 0 0"/>
-    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
+    <limit effort="10.1884" lower="-0.5149" upper="0.5149" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
@@ -84,7 +84,7 @@
     <child link="Hip"/>
     <origin rpy="0 0 0" xyz="0 0 0.268"/>
     <axis xyz="0 -1.0 0"/>
-    <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
+    <limit effort="19.787" lower="-1.0385" upper="1.0385" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
     <inertial>
@@ -110,7 +110,7 @@
     <child link="Pelvis"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 -1.0 0"/>
-    <limit effort="27.702" lower="-0.514872" upper="0.514872" velocity="2.93276"/>
+    <limit effort="27.702" lower="-0.5149" upper="0.5149" velocity="2.93276"/>
   </joint>
   <link name="Tibia">
     <inertial>
@@ -376,7 +376,7 @@
     <child link="RForeArm"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="2.666" lower="0.00872665" upper="1.56207" velocity="9.22756"/>
+    <limit effort="2.666" lower="0.0087" upper="1.5620" velocity="9.22756"/>
   </joint>
   <link name="RForeArm">
     <inertial>
@@ -402,7 +402,7 @@
     <child link="r_wrist"/>
     <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="17.3835"/>
+    <limit effort="0.2014" lower="-1.8239" upper="1.8239" velocity="17.3835"/>
   </joint>
   <link name="r_wrist">
     <inertial>
