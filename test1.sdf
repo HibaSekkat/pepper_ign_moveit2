@@ -195,14 +195,14 @@
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
-        <mass>5.19926</mass>
+        <mass>4.89482</mass>
         <inertia>
-          <ixx>4.85064</ixx>
-          <ixy>6.68754e-05</ixy>
-          <ixz>0.707052</ixz>
-          <iyy>4.29928</iyy>
-          <iyz>-0.000210213</iyz>
-          <izz>3.59361</izz>
+          <ixx>4.56661</ixx>
+          <ixy>6.29596e-05</ixy>
+          <ixz>0.665651</ixz>
+          <iyy>4.04754</iyy>
+          <iyz>-0.000197904</iyz>
+          <izz>3.38319</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
@@ -259,14 +259,14 @@
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.012261 -1e-06 0.029234 0 -0 0</pose>
-        <mass>0.0971545</mass>
+        <mass>0.0914657</mass>
         <inertia>
-          <ixx>0.00466746</ixx>
-          <ixy>-2.36603e-10</ixy>
-          <ixz>0.000125891</ixz>
-          <iyy>0.0049707</iyy>
-          <iyz>1.54788e-09</iyz>
-          <izz>0.00465682</izz>
+          <ixx>0.00439416</ixx>
+          <ixy>-2.22749e-10</ixy>
+          <ixz>0.00011852</ixz>
+          <iyy>0.00467964</iyy>
+          <iyz>1.45725e-09</iyz>
+          <izz>0.00438414</izz>
         </inertia>
       </inertial>
       <collision name='Neck_collision'>
@@ -322,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.04127 -0.000245 1.18841 0 -0 0</pose>
-        <mass>2.45017</mass>
+        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
+        <mass>3.79554</mass>
         <inertia>
-          <ixx>0.981079</ixx>
-          <ixy>0.000619658</ixy>
-          <ixz>0.04145</ixz>
-          <iyy>0.966227</iyy>
-          <iyz>5.41088e-06</iyz>
-          <izz>1.00742</izz>
+          <ixx>3.68321</ixx>
+          <ixy>0.00041889</ixy>
+          <ixz>0.0226034</ixz>
+          <iyy>2.90788</iyy>
+          <iyz>0.000500697</iyz>
+          <izz>1.85072</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
