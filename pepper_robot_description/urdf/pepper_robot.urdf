@@ -58,11 +58,11 @@
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>
     <axis xyz="-1.0 0 0"/>
-    <limit effort="0" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
+    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
-      <mass value="1.007402858772892"/>
+      <mass value="3"/>
       <inertia ixx="0.2568937774115777" ixy="-9.096957334768854e-05" ixz="0.004055986689177799" iyy="0.35295735919431726" iyz="-0.0012970391194746071" izz="0.18078541923077684"/>
       <origin rpy="0 0 0" xyz="0.0110062 -0.00150986 -0.650903"/>
     </inertial>
@@ -84,7 +84,7 @@
     <child link="Hip"/>
     <origin rpy="0 0 0" xyz="0 0 0.268"/>
     <axis xyz="0 -1.0 0"/>
-    <limit effort="0" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
+    <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
     <inertial>
@@ -155,7 +155,7 @@
     <child link="LShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="LShoulder">
     <inertial>
@@ -298,7 +298,7 @@
     <child link="RShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="RShoulder">
     <inertial>

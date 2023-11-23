@@ -118,7 +118,7 @@
         <limit>
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
-          <effort>0</effort>
+          <effort>19.787</effort>
           <velocity>2.93276</velocity>
         </limit>
         <dynamics>
@@ -131,7 +131,7 @@
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
-        <mass>1.0074</mass>
+        <mass>3</mass>
         <inertia>
           <ixx>0.256894</ixx>
           <ixy>-9.09696e-05</ixy>
@@ -182,7 +182,7 @@
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
-          <effort>0</effort>
+          <effort>10.1884</effort>
           <velocity>2.27032</velocity>
         </limit>
         <dynamics>
@@ -374,7 +374,7 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
+          <effort>5.428</effort>
           <velocity>7.33998</velocity>
         </limit>
         <dynamics>
@@ -1597,7 +1597,7 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
+          <effort>5.428</effort>
           <velocity>7.33998</velocity>
         </limit>
         <dynamics>
