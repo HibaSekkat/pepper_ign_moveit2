@@ -131,7 +131,7 @@
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
-        <mass>3</mass>
+        <mass>5</mass>
         <inertia>
           <ixx>0.256894</ixx>
           <ixy>-9.09696e-05</ixy>
