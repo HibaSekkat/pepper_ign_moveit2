@@ -137,7 +137,7 @@
           <ixy>-9.09696e-05</ixy>
           <ixz>0.00405599</ixz>
           <iyy>0.352957</iyy>
-          <iyz>-0.00129704</iyz>
+          <iyz>0.00129704</iyz>
           <izz>0.180785</izz>
         </inertia>
       </inertial>
