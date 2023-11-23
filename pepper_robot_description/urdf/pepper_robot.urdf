@@ -58,7 +58,7 @@
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>
     <axis xyz="-1.0 0 0"/>
-    <limit effort="10.1884" lower="-15" upper="15" velocity="2.27032"/>
+    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
@@ -155,7 +155,7 @@
     <child link="LShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="5.428" lower="-10" upper="10" velocity="2"/>
+    <limit effort="5.428" lower="-0.08567" upper="0.08567" velocity="7.33998"/>
   </joint>
   <link name="LShoulder">
     <inertial>
@@ -298,7 +298,7 @@
     <child link="RShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="5.428" lower="-10" upper="10" velocity="2"/>
+    <limit effort="5.428" lower="-0.08567" upper="0.08567" velocity="7.33998"/>
   </joint>
   <link name="RShoulder">
     <inertial>

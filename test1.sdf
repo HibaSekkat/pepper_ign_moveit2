@@ -180,8 +180,8 @@
       <axis>
         <xyz>-1 0 0</xyz>
         <limit>
-          <lower>-15</lower>
-          <upper>15</upper>
+          <lower>-0.514872</lower>
+          <upper>0.514872</upper>
           <effort>10.1884</effort>
           <velocity>2.27032</velocity>
         </limit>
@@ -372,10 +372,10 @@
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-10</lower>
-          <upper>10</upper>
+          <lower>-0.08567</lower>
+          <upper>0.08567</upper>
           <effort>5.428</effort>
-          <velocity>2</velocity>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1595,10 +1595,10 @@
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-10</lower>
-          <upper>10</upper>
+          <lower>-0.08567</lower>
+          <upper>0.08567</upper>
           <effort>5.428</effort>
-          <velocity>2</velocity>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
