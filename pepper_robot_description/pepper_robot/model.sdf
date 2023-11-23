@@ -1,4 +1,4 @@
-<sdf version='1.9'>
+<sdf version='1.7'>
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
@@ -67,7 +67,7 @@
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
-        <mass>5</mass>
+        <mass>3.79554</mass>
         <inertia>
           <ixx>3.68321</ixx>
           <ixy>0.00041889</ixy>
@@ -119,7 +119,7 @@
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
           <effort>19.787</effort>
-          <velocity>0</velocity>
+          <velocity>2.93276</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -131,7 +131,7 @@
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
-        <mass>10</mass>
+        <mass>1.0074</mass>
         <inertia>
           <ixx>0.256894</ixx>
           <ixy>-9.09696e-05</ixy>
@@ -183,7 +183,7 @@
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
           <effort>10.1884</effort>
-          <velocity>0</velocity>
+          <velocity>2.27032</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>

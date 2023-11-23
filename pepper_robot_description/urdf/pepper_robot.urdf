@@ -58,11 +58,11 @@
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>
     <axis xyz="-1.0 0 0"/>
-    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="0"/>
+    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
-      <mass value="10"/>
+      <mass value="1.007402858772892"/>
       <inertia ixx="0.2568937774115777" ixy="-9.096957334768854e-05" ixz="0.004055986689177799" iyy="0.35295735919431726" iyz="-0.0012970391194746071" izz="0.18078541923077684"/>
       <origin rpy="0 0 0" xyz="0.0110062 -0.00150986 -0.650903"/>
     </inertial>
@@ -84,11 +84,11 @@
     <child link="Hip"/>
     <origin rpy="0 0 0" xyz="0 0 0.268"/>
     <axis xyz="0 -1.0 0"/>
-    <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="0"/>
+    <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
     <inertial>
-      <mass value="5"/>
+      <mass value="3.7955398538315377"/>
       <inertia ixx="3.683208656428616" ixy="0.00041889033001187904" ixz="0.022603422116371886" iyy="2.9078796995709886" iyz="0.0005006966355005746" izz="1.8507243925959245"/>
       <origin rpy="0 0 0" xyz="0.0908328 0.000167721 -1.0109"/>
     </inertial>
