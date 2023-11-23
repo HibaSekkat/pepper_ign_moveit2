@@ -67,7 +67,7 @@
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
-        <mass>3.79554</mass>
+        <mass>5</mass>
         <inertia>
           <ixx>3.68321</ixx>
           <ixy>0.00041889</ixy>
@@ -131,7 +131,7 @@
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
-        <mass>5</mass>
+        <mass>7</mass>
         <inertia>
           <ixx>0.256894</ixx>
           <ixy>-9.09696e-05</ixy>
