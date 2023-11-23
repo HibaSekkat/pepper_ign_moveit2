@@ -322,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00312 0 0.11152 0 -0 0</pose>
-        <mass>1.5189</mass>
+        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
+        <mass>1.79554</mass>
         <inertia>
-          <ixx>0.0248626</ixx>
-          <ixy>0</ixy>
-          <ixz>0.000403362</ixz>
-          <iyy>0.0248107</iyy>
-          <iyz>-4.3428e-07</iyz>
-          <izz>0.00571852</izz>
+          <ixx>3.68321</ixx>
+          <ixy>0.00041889</ixy>
+          <ixz>0.0226034</ixz>
+          <iyy>2.90788</iyy>
+          <iyz>0.000500697</iyz>
+          <izz>1.85072</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
