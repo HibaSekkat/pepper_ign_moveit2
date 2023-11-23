@@ -2811,6 +2811,210 @@
       <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
+    <joint name='WheelB' type='revolute'>
+      <pose relative_to='base_link'>-0.17 0 0.07 0 0 -3.14159</pose>
+      <parent>base_link</parent>
+      <child>WheelB_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WheelB_link'>
+      <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.00257659</ixx>
+          <ixy>-1.63442e-06</ixy>
+          <ixz>-4.10097e-05</ixz>
+          <iyy>0.00266064</iyy>
+          <iyz>-1.8153e-07</iyz>
+          <izz>0.00242983</izz>
+        </inertia>
+      </inertial>
+      <collision name='WheelB_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelB_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+              <min_depth>0.003</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+              <fdir1>1 0 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WheelB_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelB.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+    <joint name='WheelFL' type='revolute'>
+      <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
+      <parent>base_link</parent>
+      <child>WheelFL_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WheelFL_link'>
+      <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.00257659</ixx>
+          <ixy>-1.63442e-06</ixy>
+          <ixz>-4.10097e-05</ixz>
+          <iyy>0.00266064</iyy>
+          <iyz>-1.8153e-07</iyz>
+          <izz>0.00242983</izz>
+        </inertia>
+      </inertial>
+      <collision name='WheelFL_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFL_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+              <min_depth>0.003</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>0</mu2>
+              <fdir1>1 0 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WheelFL_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFL.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+    <joint name='WheelFR' type='revolute'>
+      <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
+      <parent>base_link</parent>
+      <child>WheelFR_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WheelFR_link'>
+      <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.00257659</ixx>
+          <ixy>-1.63442e-06</ixy>
+          <ixz>-4.10097e-05</ixz>
+          <iyy>0.00266064</iyy>
+          <iyz>-1.8153e-07</iyz>
+          <izz>0.00242983</izz>
+        </inertia>
+      </inertial>
+      <collision name='WheelFR_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFR_0.10.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+              <min_depth>0.003</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>1</mu2>
+              <fdir1>0 1 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WheelFR_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFR.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <left_joint>WheelFL</left_joint>
       <right_joint>WheelFR</right_joint>
