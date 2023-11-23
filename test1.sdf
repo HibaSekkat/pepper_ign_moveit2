@@ -2833,7 +2833,7 @@
       <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
-        <mass>0.1</mass>
+        <mass>0.05872</mass>
         <inertia>
           <ixx>0.00257659</ixx>
           <ixy>-1.63442e-06</ixy>
@@ -2901,7 +2901,7 @@
       <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
-        <mass>0.1</mass>
+        <mass>0.05872</mass>
         <inertia>
           <ixx>0.00257659</ixx>
           <ixy>-1.63442e-06</ixy>
@@ -2969,7 +2969,7 @@
       <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
-        <mass>0.1</mass>
+        <mass>0.05872</mass>
         <inertia>
           <ixx>0.00257659</ixx>
           <ixy>-1.63442e-06</ixy>
