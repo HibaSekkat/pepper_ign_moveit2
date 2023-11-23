@@ -195,7 +195,7 @@
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
-        <mass>4.89482</mass>
+        <mass>3.89482</mass>
         <inertia>
           <ixx>4.56661</ixx>
           <ixy>6.29596e-05</ixy>
