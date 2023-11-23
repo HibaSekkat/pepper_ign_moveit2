@@ -15,7 +15,7 @@ def main():
 
     # Total mass taken from datasheet (given as ~18.0kg)
     # You can also use your own estimate of total mass if you managed to weigh pepper_robot yourself :)
-    total_mass = 28.0
+    total_mass = 29.0
     if len(sys.argv) > 1:
         if float(sys.argv[1]) > 0.0:
             total_mass = float(sys.argv[1])
@@ -56,7 +56,7 @@ def main():
         meshes[link_name] = trimesh.load(mesh_path, force="mesh", ignore_materials=True)
 
     # Compute the total volume of the robot in order to estimate the required density
-    total_volume = 0.24696
+    total_volume = 0
     for link_name in meshes:
         mesh = meshes[link_name]
         print("Volume estimate of %s: %f m^3" % (link_name, mesh.volume))
