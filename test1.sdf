@@ -180,7 +180,7 @@
       <axis>
         <xyz>-1 0 0</xyz>
         <limit>
-          <lower>0.214872</lower>
+          <lower>-0.514872</lower>
           <upper>0.514872</upper>
           <effort>10.1884</effort>
           <velocity>2.27032</velocity>
