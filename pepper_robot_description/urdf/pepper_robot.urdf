@@ -58,7 +58,7 @@
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>
     <axis xyz="-1.0 0 0"/>
-    <limit effort="2.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
+    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
