@@ -195,7 +195,7 @@
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
-        <mass>3.89482</mass>
+        <mass>4.89482</mass>
         <inertia>
           <ixx>4.56661</ixx>
           <ixy>6.29596e-05</ixy>
@@ -323,7 +323,7 @@
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
-        <mass>1.79554</mass>
+        <mass>3.79554</mass>
         <inertia>
           <ixx>3.68321</ixx>
           <ixy>0.00041889</ixy>

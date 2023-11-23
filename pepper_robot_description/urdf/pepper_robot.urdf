@@ -36,7 +36,7 @@
   </joint>
   <link name="Head">
     <inertial>
-      <mass value="1.7955398538315377"/>
+      <mass value="3.7955398538315377"/>
       <inertia ixx="3.683208656428616" ixy="0.00041889033001187904" ixz="0.022603422116371886" iyy="2.9078796995709886" iyz="0.0005006966355005746" izz="1.8507243925959245"/>
       <origin rpy="0 0 0" xyz="0.0908328 0.000167721 -1.0109"/>
     </inertial>
@@ -133,7 +133,7 @@
   </link>
   <link name="torso">
     <inertial>
-      <mass value="3.89481724014063"/>
+      <mass value="4.89481724014063"/>
       <inertia ixx="4.566611207207986" ixy="6.295958647287147e-05" ixz="0.6656507041876883" iyy="4.047538877310803" iyz="-0.0001979039690338895" izz="3.383191376734822"/>
       <origin rpy="0 0 0" xyz="-0.255593 3.02341e-05 0.391816"/>
     </inertial>
@@ -1975,7 +1975,7 @@
       <state_interface name="effort"/>
     </joint>
     <joint name="LShoulderRoll">
-      <param name="initial_position">3.141592653589793</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -1989,7 +1989,7 @@
       <state_interface name="effort"/>
     </joint>
     <joint name="LElbowRoll">
-      <param name="initial_position">4.71238898038469</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -2015,7 +2015,7 @@
       <state_interface name="effort"/>
     </joint>
     <joint name="RShoulderRoll">
-      <param name="initial_position">3.141592653589793</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -2029,7 +2029,7 @@
       <state_interface name="effort"/>
     </joint>
     <joint name="RElbowRoll">
-      <param name="initial_position">4.71238898038469</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -2055,7 +2055,7 @@
       <state_interface name="effort"/>
     </joint>
     <joint name="HeadPitch">
-      <param name="initial_position">3.141592653589793</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -2074,14 +2074,14 @@
       <state_interface name="effort"/>
     </joint>
     <joint name="HipPitch">
-      <param name="initial_position">3.141592653589793</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
     </joint>
     <joint name="KneePitch">
-      <param name="initial_position">3.141592653589793</param>
+      <param name="initial_position">0.0</param>
       <command_interface name="effort"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
