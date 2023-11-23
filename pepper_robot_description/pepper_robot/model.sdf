@@ -180,10 +180,10 @@
       <axis>
         <xyz>-1 0 0</xyz>
         <limit>
+          <lower>0.214872</lower>
+          <upper>0.514872</upper>
           <effort>10.1884</effort>
           <velocity>2.27032</velocity>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
