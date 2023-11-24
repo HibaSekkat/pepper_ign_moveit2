@@ -643,7 +643,7 @@
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.110379 -0.027219 0.025007 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <mass>0.103796</mass>
         <inertia>
           <ixx>0.0117034</ixx>
           <ixy>0.000817744</ixy>
@@ -1451,7 +1451,7 @@
       <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <mass>0.103796</mass>
         <inertia>
           <ixx>0.0117034</ixx>
           <ixy>0.000817744</ixy>
@@ -1866,7 +1866,7 @@
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.110379 0.027219 0.025007 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <mass>0.103796</mass>
         <inertia>
           <ixx>0.0117034</ixx>
           <ixy>-0.000817744</ixy>
@@ -2674,7 +2674,7 @@
       <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <mass>0.103796</mass>
         <inertia>
           <ixx>0.0117034</ixx>
           <ixy>-0.000817744</ixy>
