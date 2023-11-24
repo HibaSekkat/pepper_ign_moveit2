@@ -130,11 +130,11 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.011006 0.00151 -0.650903 0 -0 0</pose>
+        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
         <mass>1.0074</mass>
         <inertia>
           <ixx>0.256894</ixx>
-          <ixy>9.09696e-05</ixy>
+          <ixy>-9.09696e-05</ixy>
           <ixz>0.00405599</ixz>
           <iyy>0.352957</iyy>
           <iyz>-0.00129704</iyz>
@@ -1429,41 +1429,6 @@
       <gravity>1</gravity>
       <self_collide>false</self_collide>
     </link>
-    <joint name='LHand' type='revolute'>
-      <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
-      <parent>l_wrist</parent>
-      <child>l_gripper</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>0.02</lower>
-          <upper>0.98</upper>
-          <effort>0.144</effort>
-          <velocity>12.56</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='l_gripper'>
-      <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.207592</mass>
-        <inertia>
-          <ixx>0.0117034</ixx>
-          <ixy>0.000817744</ixy>
-          <ixz>-0.00332158</ixz>
-          <iyy>0.0378404</iyy>
-          <iyz>-0.000149266</iyz>
-          <izz>0.0402727</izz>
-        </inertia>
-      </inertial>
-      <gravity>1</gravity>
-      <self_collide>false</self_collide>
-    </link>
     <joint name='LThumb1' type='revolute'>
       <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -1.95836 0.60626 0.533978</pose>
       <parent>l_wrist</parent>
@@ -2649,41 +2614,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
-      <self_collide>false</self_collide>
-    </link>
-    <joint name='RHand' type='revolute'>
-      <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
-      <parent>r_wrist</parent>
-      <child>r_gripper</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>0.02</lower>
-          <upper>0.98</upper>
-          <effort>0.144</effort>
-          <velocity>12.56</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='r_gripper'>
-      <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.207592</mass>
-        <inertia>
-          <ixx>0.0117034</ixx>
-          <ixy>-0.000817744</ixy>
-          <ixz>-0.00332158</ixz>
-          <iyy>0.0378404</iyy>
-          <iyz>0.000149266</iyz>
-          <izz>0.0402727</izz>
-        </inertia>
-      </inertial>
       <gravity>1</gravity>
       <self_collide>false</self_collide>
     </link>
