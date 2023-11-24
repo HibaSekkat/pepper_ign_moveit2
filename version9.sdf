@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/KneePitch_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/KneePitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -38,12 +38,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/KneePitch.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/KneePitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
       <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
@@ -82,7 +82,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipPitch_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -102,12 +102,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipPitch.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HipPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
       <pose relative_to='Pelvis'>0 0 0.268 0 -0 0</pose>
@@ -146,7 +146,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipRoll_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -166,12 +166,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipRoll.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HipRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
       <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
@@ -210,7 +210,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/Torso_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -230,12 +230,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/Torso.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/Torso.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
       <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
@@ -274,7 +274,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadYaw_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -294,12 +294,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadYaw.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HeadPitch' type='revolute'>
       <pose relative_to='Neck'>0 0 0 0 -0 0</pose>
@@ -338,7 +338,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadPitch_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -358,12 +358,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadPitch.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/HeadPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
@@ -402,7 +402,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderPitch_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -422,12 +422,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderPitch.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderRoll' type='revolute'>
       <pose relative_to='LShoulder'>0 0 0 0 -0 0</pose>
@@ -466,7 +466,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderRoll_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -486,12 +486,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderRoll.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LElbowYaw' type='revolute'>
       <pose relative_to='LBicep'>0.1812 0.015 0.00013 0 -0.157079 0</pose>
@@ -530,7 +530,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowYaw_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -550,12 +550,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowYaw.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LElbowRoll' type='revolute'>
       <pose relative_to='LElbow'>0 0 0 0 -0 0</pose>
@@ -594,7 +594,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowRoll_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -614,12 +614,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowRoll.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LWristYaw' type='revolute'>
       <pose relative_to='LForeArm'>0.15 0 0 0 -0 0</pose>
@@ -658,7 +658,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LWristYaw_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LWristYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -678,12 +678,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LWristYaw.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger11' type='revolute'>
       <pose relative_to='l_wrist'>0.0821 -0.0268 0.004 1.74402 1.04064 -0.033434</pose>
@@ -720,7 +720,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger11_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -740,12 +740,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger11.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger11.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger12' type='revolute'>
       <pose relative_to='LFinger11_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -782,7 +782,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger12_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -802,12 +802,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger12.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger12.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger13' type='revolute'>
       <pose relative_to='LFinger12_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -844,7 +844,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger13_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -864,12 +864,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger13.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger13.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger21' type='revolute'>
       <pose relative_to='l_wrist'>0.0873 -0.0073 0.006 1.5708 1.0472 -0.061086</pose>
@@ -906,7 +906,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger21_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -926,12 +926,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger21.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger21.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger22' type='revolute'>
       <pose relative_to='LFinger21_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -968,7 +968,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger22_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -988,12 +988,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger22.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger22.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger23' type='revolute'>
       <pose relative_to='LFinger22_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1030,7 +1030,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger23_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1050,12 +1050,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger23.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger23.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger31' type='revolute'>
       <pose relative_to='l_wrist'>0.0833 0.0123 0.004 1.46636 1.04483 -0.029314</pose>
@@ -1092,7 +1092,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger31_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1112,12 +1112,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger31.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger31.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger32' type='revolute'>
       <pose relative_to='LFinger31_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1154,7 +1154,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger32_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1174,12 +1174,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger32.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger32.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger33' type='revolute'>
       <pose relative_to='LFinger32_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1216,7 +1216,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger33_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1236,12 +1236,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger33.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger33.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger41' type='revolute'>
       <pose relative_to='l_wrist'>0.074 0.0309 0 1.39757 1.04064 0.068339</pose>
@@ -1278,7 +1278,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger41_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1298,12 +1298,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger41.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger41.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger42' type='revolute'>
       <pose relative_to='LFinger41_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1340,7 +1340,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger42_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1360,12 +1360,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger42.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger42.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger43' type='revolute'>
       <pose relative_to='LFinger42_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1402,7 +1402,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger43_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1422,12 +1422,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger43.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger43.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LHand' type='revolute'>
       <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
@@ -1462,7 +1462,7 @@
         </inertia>
       </inertial>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LThumb1' type='revolute'>
       <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -1.95836 0.60626 0.533978</pose>
@@ -1499,7 +1499,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb1_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1519,12 +1519,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb1.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb1.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LThumb2' type='revolute'>
       <pose relative_to='LThumb1_link'>0.022 0 0 0 0 -1.0472</pose>
@@ -1561,7 +1561,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb2_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1581,12 +1581,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb2.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb2.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 -0.14974 0.22582 0 -0 0</pose>
@@ -1625,7 +1625,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderPitch_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1645,12 +1645,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderPitch.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderPitch.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderRoll' type='revolute'>
       <pose relative_to='RShoulder'>0 0 0 0 -0 0</pose>
@@ -1689,7 +1689,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderRoll_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1709,12 +1709,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderRoll.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RElbowYaw' type='revolute'>
       <pose relative_to='RBicep'>0.1812 -0.015 0.00013 0 -0.157079 0</pose>
@@ -1753,7 +1753,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowYaw_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1773,12 +1773,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowYaw.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RElbowRoll' type='revolute'>
       <pose relative_to='RElbow'>0 0 0 0 -0 0</pose>
@@ -1817,7 +1817,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowRoll_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1837,12 +1837,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowRoll.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowRoll.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RWristYaw' type='revolute'>
       <pose relative_to='RForeArm'>0.15 0 0 0 -0 0</pose>
@@ -1881,7 +1881,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RWristYaw_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RWristYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1901,12 +1901,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RWristYaw.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RWristYaw.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger11' type='revolute'>
       <pose relative_to='r_wrist'>0.0821 0.0268 0.004 1.39757 1.04064 0.033433</pose>
@@ -1943,7 +1943,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger11_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1963,12 +1963,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger11.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger11.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger12' type='revolute'>
       <pose relative_to='RFinger11_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2005,7 +2005,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger12_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2025,12 +2025,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger12.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger12.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger13' type='revolute'>
       <pose relative_to='RFinger12_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2067,7 +2067,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger13_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2087,12 +2087,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger13.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger13.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger21' type='revolute'>
       <pose relative_to='r_wrist'>0.0873 0.0073 0.006 1.5708 1.0472 0.061086</pose>
@@ -2129,7 +2129,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger21_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2149,12 +2149,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger21.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger21.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger22' type='revolute'>
       <pose relative_to='RFinger21_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2191,7 +2191,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger22_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2211,12 +2211,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger22.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger22.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger23' type='revolute'>
       <pose relative_to='RFinger22_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2253,7 +2253,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger23_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2273,12 +2273,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger23.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger23.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger31' type='revolute'>
       <pose relative_to='r_wrist'>0.0833 -0.0123 0.004 1.67523 1.04483 0.029316</pose>
@@ -2315,7 +2315,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger31_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2335,12 +2335,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger31.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger31.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger32' type='revolute'>
       <pose relative_to='RFinger31_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2377,7 +2377,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger32_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2397,12 +2397,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger32.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger32.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger33' type='revolute'>
       <pose relative_to='RFinger32_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2439,7 +2439,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger33_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2459,12 +2459,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger33.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger33.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger41' type='revolute'>
       <pose relative_to='r_wrist'>0.074 -0.0309 0 1.74402 1.04064 -0.068339</pose>
@@ -2501,7 +2501,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger41_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2521,12 +2521,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger41.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger41.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger42' type='revolute'>
       <pose relative_to='RFinger41_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2563,7 +2563,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger42_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2583,12 +2583,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger42.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger42.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger43' type='revolute'>
       <pose relative_to='RFinger42_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2625,7 +2625,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger43_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2645,12 +2645,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger43.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger43.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RHand' type='revolute'>
       <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
@@ -2685,7 +2685,7 @@
         </inertia>
       </inertial>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RThumb1' type='revolute'>
       <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -1.18323 0.60626 -0.533978</pose>
@@ -2722,7 +2722,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb1_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2742,12 +2742,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb1.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb1.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RThumb2' type='revolute'>
       <pose relative_to='RThumb1_link'>0.022 0 0 0 0 -1.0472</pose>
@@ -2784,7 +2784,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb2_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2804,12 +2804,12 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb2.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb2.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
-      <self_collide>false</self_collide>
+      <self_collide>0</self_collide>
     </link>
     <joint name='WheelB' type='revolute'>
       <pose relative_to='base_link'>-0.17 0 0.07 0 0 -3.14159</pose>
@@ -2848,7 +2848,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelB_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelB_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2873,7 +2873,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelB.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelB.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2916,7 +2916,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFL_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFL_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2941,7 +2941,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFL.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFL.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2984,7 +2984,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFR_0.10.stl</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFR_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -3009,7 +3009,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFR.dae</uri>
+            <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFR.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -3025,13 +3025,13 @@
     <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>
       <parameters>/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
-    <static>false</static>
+    <static>0</static>
     <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
-      <use_pose_vector_msg>true</use_pose_vector_msg>
-      <publish_nested_model_pose>true</publish_nested_model_pose>
-      <publish_link_pose>false</publish_link_pose>
-      <publish_collision_pose>false</publish_collision_pose>
-      <publish_visual_pose>false</publish_visual_pose>
+      <use_pose_vector_msg>1</use_pose_vector_msg>
+      <publish_nested_model_pose>1</publish_nested_model_pose>
+      <publish_link_pose>0</publish_link_pose>
+      <publish_collision_pose>0</publish_collision_pose>
+      <publish_visual_pose>0</publish_visual_pose>
     </plugin>
   </model>
 </sdf>
