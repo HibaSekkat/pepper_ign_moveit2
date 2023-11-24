@@ -287,7 +287,12 @@
     <axis xyz="1.0 0 0"/>
     <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
-  <link name="l_gripper"/>
+  <link name="l_gripper">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
   <joint name="RShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="RShoulder"/>
@@ -425,7 +430,12 @@
     <axis xyz="1.0 0 0"/>
     <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
-  <link name="r_gripper"/>
+  <link name="r_gripper">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
   <link name="RFinger41_link">
     <inertial>
       <mass value="0.0017342022888397826"/>
