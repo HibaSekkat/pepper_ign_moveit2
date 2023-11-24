@@ -642,15 +642,15 @@
     <link name='l_wrist'>
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.110379 0.027219 0.025007 0 -0 0</pose>
-        <mass>0.103796</mass>
+        <pose>0.110379 -0.027219 0.025007 0 -0 0</pose>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>6.3979e-05</ixx>
-          <ixy>-3.0137e-06</ixy>
-          <ixz>-2.7086e-06</ixz>
-          <iyy>0.00064646</iyy>
-          <iyz>-4.7594e-06</iyz>
-          <izz>0.00064458</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>-0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <collision name='l_wrist_collision'>
@@ -1451,14 +1451,14 @@
       <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.103796</mass>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>6.3979e-05</ixx>
-          <ixy>-3.0137e-06</ixy>
-          <ixz>-2.7086e-06</ixz>
-          <iyy>0.00064646</iyy>
-          <iyz>-4.7594e-06</iyz>
-          <izz>0.00064458</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>-0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <gravity>1</gravity>
@@ -1866,14 +1866,14 @@
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.110379 0.027219 0.025007 0 -0 0</pose>
-        <mass>0.103796</mass>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>6.3979e-05</ixx>
-          <ixy>-3.0137e-06</ixy>
-          <ixz>-2.7086e-06</ixz>
-          <iyy>0.00064646</iyy>
-          <iyz>-4.7594e-06</iyz>
-          <izz>0.00064458</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>-0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
@@ -2674,14 +2674,14 @@
       <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.103796</mass>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>6.3979e-05</ixx>
-          <ixy>-3.0137e-06</ixy>
-          <ixz>-2.7086e-06</ixz>
-          <iyy>0.00064646</iyy>
-          <iyz>-4.7594e-06</iyz>
-          <izz>0.00064458</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>-0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <gravity>1</gravity>

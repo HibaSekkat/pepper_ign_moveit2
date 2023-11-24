@@ -212,3 +212,18 @@
     max_velocity: 17.3835
     has_acceleration_limits: true
     max_acceleration: 52.1505
+  HipRoll:
+    has_velocity_limits: true
+    max_velocity: 2.27032
+    has_acceleration_limits: true
+    max_acceleration: 6.8797
+  HipPitch:
+    has_velocity_limits: true
+    max_velocity: 2.93276
+    has_acceleration_limits: true
+    max_acceleration: 8.8871
+  KneePitch:
+    has_velocity_limits: true
+    max_velocity: 2.93276
+    has_acceleration_limits: true
+    max_acceleration: 8.8871
