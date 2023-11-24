@@ -127,7 +127,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "ign_verbosity",
-            default_value="4",
+            default_value="1",
             description="Verbosity level for Ignition Gazebo (0~4).",
         ),
         DeclareLaunchArgument(
