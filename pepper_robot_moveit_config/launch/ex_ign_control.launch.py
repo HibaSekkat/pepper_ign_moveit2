@@ -122,7 +122,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "use_sim_time",
-            default_value="false",
+            default_value="true",
             description="If true, use simulated clock.",
         ),
         DeclareLaunchArgument(
