@@ -6,7 +6,7 @@
     <child link="Neck"/>
     <origin rpy="0 0 0" xyz="-0.038 0 0.3089"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="0"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="Neck">
     <inertial>
@@ -32,7 +32,7 @@
     <child link="Head"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="0" lower="-0.706858" upper="0.4451" velocity="0"/>
+    <limit effort="2.666" lower="-0.706858" upper="0.4451" velocity="9.22756"/>
   </joint>
   <link name="Head">
     <inertial>
@@ -58,7 +58,7 @@
     <child link="torso"/>
     <origin rpy="0 0 0" xyz="0 0 0.079"/>
     <axis xyz="-1.0 0 0"/>
-    <limit effort="0" lower="-0.514872" upper="0.514872" velocity="0"/>
+    <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
@@ -84,7 +84,7 @@
     <child link="Hip"/>
     <origin rpy="0 0 0" xyz="0 0 0.268"/>
     <axis xyz="0 -1.0 0"/>
-    <limit effort="0" lower="-1.03847" upper="1.03847" velocity="0"/>
+    <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
     <inertial>
@@ -110,7 +110,7 @@
     <child link="Pelvis"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 -1.0 0"/>
-    <limit effort="0" lower="-0.514872" upper="0.514872" velocity="0"/>
+    <limit effort="27.702" lower="-0.514872" upper="0.514872" velocity="2.93276"/>
   </joint>
   <link name="Tibia">
     <inertial>
@@ -155,7 +155,7 @@
     <child link="LShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="0"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="LShoulder">
     <inertial>
@@ -181,7 +181,7 @@
     <child link="LBicep"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="0" lower="0.00872665" upper="1.56207" velocity="0"/>
+    <limit effort="2.666" lower="0.00872665" upper="1.56207" velocity="9.22756"/>
   </joint>
   <link name="LBicep">
     <inertial>
@@ -207,7 +207,7 @@
     <child link="LElbow"/>
     <origin rpy="0 -0.157079 0" xyz="0.1812 0.015 0.00013"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="0"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="LElbow">
     <inertial>
@@ -233,7 +233,7 @@
     <child link="LForeArm"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="0" lower="-1.56207" upper="-0.00872665" velocity="0"/>
+    <limit effort="2.666" lower="-1.56207" upper="-0.00872665" velocity="9.22756"/>
   </joint>
   <link name="LForeArm">
     <inertial>
@@ -259,7 +259,7 @@
     <child link="l_wrist"/>
     <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="-1.82387" upper="1.82387" velocity="0"/>
+    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="17.3835"/>
   </joint>
   <link name="l_wrist">
     <inertial>
@@ -285,7 +285,7 @@
     <child link="l_gripper"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="0.02" upper="0.98" velocity="0"/>
+    <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
   <link name="l_gripper">
     <inertial>
@@ -298,7 +298,7 @@
     <child link="RShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="0"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="RShoulder">
     <inertial>
@@ -324,7 +324,7 @@
     <child link="RBicep"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="0" lower="-1.56207" upper="-0.00872665" velocity="0"/>
+    <limit effort="2.666" lower="-1.56207" upper="-0.00872665" velocity="9.22756"/>
   </joint>
   <link name="RBicep">
     <inertial>
@@ -350,7 +350,7 @@
     <child link="RElbow"/>
     <origin rpy="0 -0.157079 0" xyz="0.1812 -0.015 0.00013"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="-2.08567" upper="2.08567" velocity="0"/>
+    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="RElbow">
     <inertial>
@@ -376,7 +376,7 @@
     <child link="RForeArm"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="0" lower="0.00872665" upper="1.56207" velocity="0"/>
+    <limit effort="2.666" lower="0.00872665" upper="1.56207" velocity="9.22756"/>
   </joint>
   <link name="RForeArm">
     <inertial>
@@ -402,7 +402,7 @@
     <child link="r_wrist"/>
     <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="-1.82387" upper="1.82387" velocity="0"/>
+    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="17.3835"/>
   </joint>
   <link name="r_wrist">
     <inertial>
@@ -428,7 +428,7 @@
     <child link="r_gripper"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="0.02" upper="0.98" velocity="0"/>
+    <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
   <link name="r_gripper">
     <inertial>
@@ -1160,7 +1160,7 @@
     <child link="WheelFL_link"/>
     <origin rpy="0 0 1.07517" xyz="0.09 0.155 -0.264"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
   </joint>
   <link name="WheelB_link">
     <inertial>
@@ -1186,7 +1186,7 @@
     <child link="WheelB_link"/>
     <origin rpy="0 0 -3.14159" xyz="-0.17 0 -0.264"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
   </joint>
   <link name="WheelFR_link">
     <inertial>
@@ -1212,7 +1212,7 @@
     <child link="WheelFR_link"/>
     <origin rpy="0 0 -1.07517" xyz="0.09 -0.155 -0.264"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0" lower="0" upper="0" velocity="0"/>
+    <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
   </joint>
   <joint name="base_link_fixedjoint" type="fixed">
     <parent link="base_link"/>

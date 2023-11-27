@@ -53,8 +53,8 @@
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>27.702</effort>
+          <velocity>2.93276</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -116,8 +116,8 @@
         <limit>
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>19.787</effort>
+          <velocity>2.93276</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -179,8 +179,8 @@
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>10.1884</effort>
+          <velocity>2.27032</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -242,8 +242,8 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>5.428</effort>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -305,8 +305,8 @@
         <limit>
           <lower>-0.706858</lower>
           <upper>0.4451</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -368,8 +368,8 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>5.428</effort>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -431,8 +431,8 @@
         <limit>
           <lower>0.00872665</lower>
           <upper>1.56207</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -494,8 +494,8 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>5.428</effort>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -557,8 +557,8 @@
         <limit>
           <lower>-1.56207</lower>
           <upper>-0.00872665</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -620,8 +620,8 @@
         <limit>
           <lower>-1.82387</lower>
           <upper>1.82387</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>0.2014</effort>
+          <velocity>17.3835</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1415,8 +1415,8 @@
         <limit>
           <lower>0.02</lower>
           <upper>0.98</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1571,8 +1571,8 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>5.428</effort>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1634,8 +1634,8 @@
         <limit>
           <lower>-1.56207</lower>
           <upper>-0.00872665</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1697,8 +1697,8 @@
         <limit>
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>5.428</effort>
+          <velocity>7.33998</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1760,8 +1760,8 @@
         <limit>
           <lower>0.00872665</lower>
           <upper>1.56207</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1823,8 +1823,8 @@
         <limit>
           <lower>-1.82387</lower>
           <upper>1.82387</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>0.2014</effort>
+          <velocity>17.3835</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2618,8 +2618,8 @@
         <limit>
           <lower>0.02</lower>
           <upper>0.98</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2772,8 +2772,8 @@
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
@@ -2839,8 +2839,8 @@
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
@@ -2906,8 +2906,8 @@
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
-          <effort>0</effort>
-          <velocity>0</velocity>
+          <effort>3.25</effort>
+          <velocity>6.28319</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
