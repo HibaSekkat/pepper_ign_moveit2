@@ -702,14 +702,14 @@
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.00018 -0.01856 0.00099 0 -0 0</pose>
-        <mass>0.3125</mass>
+        <mass>0.140715</mass>
         <inertia>
-          <ixx>0.000469152</ixx>
-          <ixy>9.3947e-07</ixy>
-          <ixz>-5.8022e-07</ixz>
-          <iyy>0.000137546</iyy>
-          <iyz>-5.322e-08</iyz>
-          <izz>0.000506852</izz>
+          <ixx>0.00853247</ixx>
+          <ixy>-1.92187e-09</ixy>
+          <ixz>6.35445e-10</ixz>
+          <iyy>0.00853246</iyy>
+          <iyz>-2.07166e-09</iyz>
+          <izz>0.0102528</izz>
         </inertia>
       </inertial>
       <collision name='LShoulder_collision'>
@@ -766,14 +766,14 @@
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.08151 0.01284 -0.01017 0 -0 0</pose>
-        <mass>0.50527</mass>
+        <mass>0.313703</mass>
         <inertia>
-          <ixx>0.000636433</ixx>
-          <ixy>0.000564402</ixy>
-          <ixz>-0.000503973</ixz>
-          <iyy>0.00467205</iyy>
-          <iyz>-7.50477e-05</iyz>
-          <izz>0.00459743</izz>
+          <ixx>0.0246985</ixx>
+          <ixy>0.00128179</ixy>
+          <ixz>0.00170294</ixz>
+          <iyy>0.0716735</iyy>
+          <iyz>6.87453e-05</iyz>
+          <izz>0.0676636</izz>
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
@@ -830,14 +830,14 @@
       <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.02297 -0.00019 0.00119 0 -0 0</pose>
-        <mass>0.27495</mass>
+        <mass>0.0738046</mass>
         <inertia>
-          <ixx>0.00012337</ixx>
-          <ixy>2.1394e-07</ixy>
-          <ixz>1.80682e-05</ixz>
-          <iyy>0.000477224</iyy>
-          <iyz>1.92708e-06</iyz>
-          <izz>0.000448126</izz>
+          <ixx>0.0029965</ixx>
+          <ixy>-1.0388e-10</ixy>
+          <ixz>-4.20025e-12</ixz>
+          <iyy>0.00302767</iyy>
+          <iyz>-2.99368e-10</iyz>
+          <izz>0.00302767</izz>
         </inertia>
       </inertial>
       <collision name='LElbow_collision'>
@@ -894,14 +894,14 @@
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.0593 0.00271 -0.01014 0 -0 0</pose>
-        <mass>0.16579</mass>
+        <mass>0.133211</mass>
         <inertia>
-          <ixx>0.0015834</ixx>
-          <ixy>1.18913e-05</ixy>
-          <ixz>-3.91152e-05</ixz>
-          <iyy>0.00233224</iyy>
-          <iyz>-4.37962e-06</iyz>
-          <izz>0.000857298</izz>
+          <ixx>0.00715736</ixx>
+          <ixy>0.00112756</ixy>
+          <ixz>4.27306e-05</ixz>
+          <iyy>0.00991492</iyy>
+          <iyz>1.76731e-06</iyz>
+          <izz>0.00962229</izz>
         </inertia>
       </inertial>
       <collision name='LForeArm_collision'>
@@ -958,14 +958,14 @@
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.03536 -0.00072 -0.00207 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>0.000152966</ixx>
-          <ixy>-1.76782e-05</ixy>
-          <ixz>-2.3064e-05</ixz>
-          <iyy>0.000776808</iyy>
-          <iyz>3.54783e-06</iyz>
-          <izz>0.000800843</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>-0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <collision name='l_wrist_collision'>
@@ -1925,14 +1925,14 @@
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.00018 0.01856 0.00099 0 -0 0</pose>
-        <mass>0.3125</mass>
+        <mass>0.140715</mass>
         <inertia>
-          <ixx>0.000469152</ixx>
-          <ixy>-9.3947e-07</ixy>
-          <ixz>-5.8022e-07</ixz>
-          <iyy>0.000137546</iyy>
-          <iyz>5.322e-08</iyz>
-          <izz>0.000506852</izz>
+          <ixx>0.00853247</ixx>
+          <ixy>-1.92187e-09</ixy>
+          <ixz>6.35445e-10</ixz>
+          <iyy>0.00853246</iyy>
+          <iyz>-2.07166e-09</iyz>
+          <izz>0.0102528</izz>
         </inertia>
       </inertial>
       <collision name='RShoulder_collision'>
@@ -1989,14 +1989,14 @@
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.08151 -0.01284 -0.01017 0 -0 0</pose>
-        <mass>0.50527</mass>
+        <mass>0.313703</mass>
         <inertia>
-          <ixx>0.000636433</ixx>
-          <ixy>-0.000564402</ixy>
-          <ixz>-0.000503973</ixz>
-          <iyy>0.00467205</iyy>
-          <iyz>7.50477e-05</iyz>
-          <izz>0.00459743</izz>
+          <ixx>0.0246985</ixx>
+          <ixy>0.00128179</ixy>
+          <ixz>0.00170294</ixz>
+          <iyy>0.0716735</iyy>
+          <iyz>6.87453e-05</iyz>
+          <izz>0.0676636</izz>
         </inertia>
       </inertial>
       <collision name='RBicep_collision'>
@@ -2053,14 +2053,14 @@
       <pose relative_to='RElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0.02297 0.00019 0.00119 0 -0 0</pose>
-        <mass>0.27495</mass>
+        <mass>0.0738046</mass>
         <inertia>
-          <ixx>0.00012337</ixx>
-          <ixy>-2.1394e-07</ixy>
-          <ixz>1.80682e-05</ixz>
-          <iyy>0.000477224</iyy>
-          <iyz>-1.92708e-06</iyz>
-          <izz>0.000448126</izz>
+          <ixx>0.0029965</ixx>
+          <ixy>-1.0388e-10</ixy>
+          <ixz>-4.20025e-12</ixz>
+          <iyy>0.00302767</iyy>
+          <iyz>-2.99368e-10</iyz>
+          <izz>0.00302767</izz>
         </inertia>
       </inertial>
       <collision name='RElbow_collision'>
@@ -2117,14 +2117,14 @@
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.0593 -0.00271 -0.01014 0 -0 0</pose>
-        <mass>0.16579</mass>
+        <mass>0.133211</mass>
         <inertia>
-          <ixx>0.0015834</ixx>
-          <ixy>-1.18913e-05</ixy>
-          <ixz>-3.91152e-05</ixz>
-          <iyy>0.00233224</iyy>
-          <iyz>4.37962e-06</iyz>
-          <izz>0.000857298</izz>
+          <ixx>0.00715736</ixx>
+          <ixy>-0.00112756</ixy>
+          <ixz>4.27306e-05</ixz>
+          <iyy>0.00991492</iyy>
+          <iyz>-1.76731e-06</iyz>
+          <izz>0.00962229</izz>
         </inertia>
       </inertial>
       <collision name='RForeArm_collision'>
@@ -2181,14 +2181,14 @@
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.03536 0.00072 -0.00207 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <mass>0.207592</mass>
         <inertia>
-          <ixx>0.000152966</ixx>
-          <ixy>1.76782e-05</ixy>
-          <ixz>-2.3064e-05</ixz>
-          <iyy>0.000776808</iyy>
-          <iyz>-3.54783e-06</iyz>
-          <izz>0.000800843</izz>
+          <ixx>0.0117034</ixx>
+          <ixy>-0.000817744</ixy>
+          <ixz>-0.00332158</ixz>
+          <iyy>0.0378404</iyy>
+          <iyz>0.000149266</iyz>
+          <izz>0.0402727</izz>
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
