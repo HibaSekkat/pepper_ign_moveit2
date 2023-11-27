@@ -1,4 +1,4 @@
-<sdf version='1.7'>
+<sdf version='1.9'>
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
