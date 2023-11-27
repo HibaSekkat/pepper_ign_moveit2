@@ -1,16 +1,18 @@
+<?xml version="1.0" ?>
 <robot name="pepper_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="base_link"/>
   <joint name="HeadYaw" type="revolute">
     <parent link="torso"/>
     <child link="Neck"/>
-    <origin rpy="0 0 0" xyz="-0.038 0 0.1699"/>
+    <origin rpy="0 0 0" xyz="-0.038 0 0.3089"/>
     <axis xyz="0 0 1.0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
   <link name="Neck">
     <inertial>
-      <mass value="0.27391"/>
-      <inertia ixx="0.00053382734768" ixy="0" ixz="3.3802258258e-05" iyy="0.00068539753556" iyz="-2.0986299205e-06" izz="0.00021642596403"/>
-      <origin rpy="0 0 0" xyz="-0.00207 0 -0.02636"/>
+      <mass value="0.09146568603258816"/>
+      <inertia ixx="0.004394158568586095" ixy="-2.227492593175832e-10" ixz="0.00011851972636433963" iyy="0.004679644492310061" iyz="1.457247778434002e-09" izz="0.0043841432021901015"/>
+      <origin rpy="0 0 0" xyz="-0.0122611 -8.25641e-07 0.0292341"/>
     </inertial>
     <visual>
       <geometry>
@@ -30,13 +32,13 @@
     <child link="Head"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="2.666" lower="-0.706858" upper="0.637045" velocity="9.22756"/>
+    <limit effort="2.666" lower="-0.706858" upper="0.4451" velocity="9.22756"/>
   </joint>
   <link name="Head">
     <inertial>
-      <mass value="1.5189"/>
-      <inertia ixx="0.024862580001" ixy="0" ixz="0.0004033621517" iyy="0.024810679257" iyz="-4.3427999685e-07" izz="0.0057185231708"/>
-      <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
+      <mass value="3.7955398538315377"/>
+      <inertia ixx="3.683208656428616" ixy="0.00041889033001187904" ixz="0.022603422116371886" iyy="2.9078796995709886" iyz="0.0005006966355005746" izz="1.8507243925959245"/>
+      <origin rpy="0 0 0" xyz="0.0908328 0.000167721 -1.0109"/>
     </inertial>
     <visual>
       <geometry>
@@ -52,69 +54,69 @@
     </collision>
   </link>
   <joint name="HipRoll" type="revolute">
-    <parent link="torso"/>
-    <child link="Hip"/>
-    <origin rpy="0 0 0" xyz="2e-05 0 -0.139"/>
-    <axis xyz="1.0 0 0"/>
+    <parent link="Hip"/>
+    <child link="torso"/>
+    <origin rpy="0 0 0" xyz="0 0 0.079"/>
+    <axis xyz="-1.0 0 0"/>
     <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
-      <mass value="1.0234"/>
-      <inertia ixx="0.0087564364076" ixy="0" ixz="-5.7145098253e-06" iyy="0.010142030194" iyz="0.000159449075" izz="0.0044109211303"/>
-      <origin rpy="0 0 0" xyz="0.00032 0 -0.06039"/>
+      <mass value="1.007402858772892"/>
+      <inertia ixx="0.2568937774115777" ixy="-9.096957334768854e-05" ixz="0.004055986689177799" iyy="0.35295735919431726" iyz="-0.0012970391194746071" izz="0.18078541923077684"/>
+      <origin rpy="0 0 0" xyz="0.0110062 -0.00150986 -0.650903"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </collision>
   </link>
   <joint name="HipPitch" type="revolute">
-    <parent link="Hip"/>
-    <child link="Pelvis"/>
-    <origin rpy="0 0 0" xyz="0 0 -0.079"/>
-    <axis xyz="0 1.0 0"/>
+    <parent link="Pelvis"/>
+    <child link="Hip"/>
+    <origin rpy="0 0 0" xyz="0 0 0.268"/>
+    <axis xyz="0 -1.0 0"/>
     <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
     <inertial>
-      <mass value="2.4592"/>
-      <inertia ixx="0.057270400226" ixy="0" ixz="0.00078569183825" iyy="0.053245455027" iyz="-8.3754159277e-05" izz="0.014390878379"/>
-      <origin rpy="0 0 0" xyz="0.00237 0 -0.09654"/>
+      <mass value="3.7955398538315377"/>
+      <inertia ixx="3.683208656428616" ixy="0.00041889033001187904" ixz="0.022603422116371886" iyy="2.9078796995709886" iyz="0.0005006966355005746" izz="1.8507243925959245"/>
+      <origin rpy="0 0 0" xyz="0.0908328 0.000167721 -1.0109"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </collision>
   </link>
   <joint name="KneePitch" type="revolute">
-    <parent link="Pelvis"/>
-    <child link="Tibia"/>
-    <origin rpy="0 0 0" xyz="0 0 -0.268"/>
-    <axis xyz="0 1.0 0"/>
+    <parent link="Tibia"/>
+    <child link="Pelvis"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 -1.0 0"/>
     <limit effort="27.702" lower="-0.514872" upper="0.514872" velocity="2.93276"/>
   </joint>
   <link name="Tibia">
     <inertial>
-      <mass value="15.485"/>
-      <inertia ixx="0.86977553368" ixy="-0.00040178798372" ixz="0.0086652245373" iyy="0.85964071751" iyz="0" izz="0.23531636596"/>
-      <origin rpy="0 0 0" xyz="0.00249 0 -0.20536"/>
+      <mass value="12.344158152172728"/>
+      <inertia ixx="20.137807259762987" ixy="-0.0011573869694506639" ixz="0.6633694744426599" iyy="18.055269240696504" iyz="-0.0006093016165113692" izz="21.81987274144166"/>
+      <origin rpy="0 0 0" xyz="-0.0333667 -5.76754e-05 -1.99402"/>
     </inertial>
     <visual>
       <geometry>
@@ -129,42 +131,29 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="base_footprint_joint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="base_footprint"/>
-    <origin rpy="0 0 0" xyz="0 0 -0.334"/>
-  </joint>
-  <link name="base_footprint"/>
-  <link name="base_link"/>
-  <joint name="base_link_fixedjoint" type="fixed">
-    <parent link="base_link"/>
-    <child link="torso"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-    <axis xyz="0 0 0"/>
-  </joint>
   <link name="torso">
     <inertial>
-      <mass value="3.9953"/>
-      <inertia ixx="0.045699130744" ixy="0" ixz="-0.0051232860424" iyy="0.04373466596" iyz="0.00026688593789" izz="0.02592952922"/>
-      <origin rpy="0 0 0" xyz="0.00322 0 -0.01029"/>
+      <mass value="4.89481724014063"/>
+      <inertia ixx="4.566611207207986" ixy="6.295958647287147e-05" ixz="0.6656507041876883" iyy="4.047538877310803" iyz="-0.0001979039690338895" izz="3.383191376734822"/>
+      <origin rpy="0 0 0" xyz="-0.255593 3.02341e-05 0.391816"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="2e-05 0 0.139"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="2e-05 0 0.139"/>
     </collision>
   </link>
   <joint name="LShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="LShoulder"/>
-    <origin rpy="0 0 0" xyz="-0.057 0.14974 0.08682"/>
+    <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -172,7 +161,7 @@
     <inertial>
       <mass value="0.1407150721615769"/>
       <inertia ixx="0.008532465294919685" ixy="-1.921871257281156e-09" ixz="6.354448667623257e-10" iyy="0.008532463936418763" iyz="-2.0716583314902065e-09" izz="0.010252750793533655"/>
-      <origin rpy="0 0 0" xyz="0.00018 -0.01856 0.00099"/>
+      <origin rpy="0 0 0" xyz="-7.40285e-08 -7.32303e-08 -1.30517e-07"/>
     </inertial>
     <visual>
       <geometry>
@@ -198,7 +187,7 @@
     <inertial>
       <mass value="0.3137032437994389"/>
       <inertia ixx="0.0246985312391643" ixy="0.0012817864835498575" ixz="0.0017029391719427644" iyy="0.07167351354785373" iyz="6.874532266960408e-05" izz="0.06766357853335765"/>
-      <origin rpy="0 0 0" xyz="0.08151 0.01284 -0.01017"/>
+      <origin rpy="0 0 0" xyz="0.902599 -0.162517 -0.0061116"/>
     </inertial>
     <visual>
       <geometry>
@@ -224,7 +213,7 @@
     <inertial>
       <mass value="0.07380464672624755"/>
       <inertia ixx="0.0029965021096465144" ixy="-1.0388008758299257e-10" ixz="-4.2002518090263296e-12" iyy="0.0030276726644025737" iyz="-2.993681557885386e-10" izz="0.003027671062092063"/>
-      <origin rpy="0 0 0" xyz="-0.02297 -0.00019 0.00119"/>
+      <origin rpy="0 0 0" xyz="-7.34206e-08 1.48077e-09 -4.87585e-08"/>
     </inertial>
     <visual>
       <geometry>
@@ -250,7 +239,7 @@
     <inertial>
       <mass value="0.13321114815783727"/>
       <inertia ixx="0.007157363843746049" ixy="0.0011275611019520542" ixz="4.27305683742527e-05" iyy="0.009914916199350478" iyz="1.7673061298494217e-06" izz="0.009622293474477288"/>
-      <origin rpy="0 0 0" xyz="0.0593 0.00271 -0.01014"/>
+      <origin rpy="0 0 0" xyz="0.470716 0.0367563 -0.00106886"/>
     </inertial>
     <visual>
       <geometry>
@@ -276,7 +265,7 @@
     <inertial>
       <mass value="0.207591874180564"/>
       <inertia ixx="0.011703404133435855" ixy="0.0008177441509091999" ixz="-0.0033215793821857902" iyy="0.0378403638770384" iyz="-0.00014926583294427482" izz="0.04027267667550336"/>
-      <origin rpy="0 0 0" xyz="0.03536 -0.00072 -0.00207"/>
+      <origin rpy="0 0 0" xyz="0.110379 -0.0272187 0.0250071"/>
     </inertial>
     <visual>
       <geometry>
@@ -307,7 +296,7 @@
   <joint name="RShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="RShoulder"/>
-    <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.08682"/>
+    <origin rpy="0 0 0" xyz="-0.057 -0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -315,7 +304,7 @@
     <inertial>
       <mass value="0.1407150721615769"/>
       <inertia ixx="0.008532465294919685" ixy="-1.921871257281156e-09" ixz="6.354448667623257e-10" iyy="0.008532463936418763" iyz="-2.0716583314902065e-09" izz="0.010252750793533655"/>
-      <origin rpy="0 0 0" xyz="0.00018 0.01856 0.00099"/>
+      <origin rpy="0 0 0" xyz="-7.40285e-08 -7.32303e-08 -1.30517e-07"/>
     </inertial>
     <visual>
       <geometry>
@@ -341,7 +330,7 @@
     <inertial>
       <mass value="0.3137032437994389"/>
       <inertia ixx="0.0246985312391643" ixy="0.0012817864835498575" ixz="0.0017029391719427644" iyy="0.07167351354785373" iyz="6.874532266960408e-05" izz="0.06766357853335765"/>
-      <origin rpy="0 0 0" xyz="0.08151 -0.01284 -0.01017"/>
+      <origin rpy="0 0 0" xyz="0.902599 -0.162517 -0.0061116"/>
     </inertial>
     <visual>
       <geometry>
@@ -367,7 +356,7 @@
     <inertial>
       <mass value="0.07380464672624755"/>
       <inertia ixx="0.0029965021096465144" ixy="-1.0388008758299257e-10" ixz="-4.2002518090263296e-12" iyy="0.0030276726644025737" iyz="-2.993681557885386e-10" izz="0.003027671062092063"/>
-      <origin rpy="0 0 0" xyz="-0.02297 0.00019 0.00119"/>
+      <origin rpy="0 0 0" xyz="-7.34206e-08 1.48077e-09 -4.87585e-08"/>
     </inertial>
     <visual>
       <geometry>
@@ -393,7 +382,7 @@
     <inertial>
       <mass value="0.13321114815783727"/>
       <inertia ixx="0.0071573638437460495" ixy="-0.0011275611019520536" ixz="4.273056837425241e-05" iyy="0.009914916199350471" iyz="-1.7673061298494556e-06" izz="0.009622293474477281"/>
-      <origin rpy="0 0 0" xyz="0.0593 -0.00271 -0.01014"/>
+      <origin rpy="0 0 0" xyz="0.470716 -0.0367563 -0.00106886"/>
     </inertial>
     <visual>
       <geometry>
@@ -419,7 +408,7 @@
     <inertial>
       <mass value="0.20759187418056393"/>
       <inertia ixx="0.011703404133435853" ixy="-0.0008177441509091997" ixz="-0.0033215793821857907" iyy="0.0378403638770384" iyz="0.0001492658329442748" izz="0.04027267667550336"/>
-      <origin rpy="0 0 0" xyz="0.03536 0.00072 -0.00207"/>
+      <origin rpy="0 0 0" xyz="0.110379 0.0272187 0.0250071"/>
     </inertial>
     <visual>
       <geometry>
@@ -1370,9 +1359,9 @@
   </joint>
   <link name="WheelFL_link">
     <inertial>
-      <mass value="0.05872"/>
-      <inertia ixx="0.0025765921455" ixy="-1.6344199594e-06" ixz="-4.1009738197e-05" iyy="0.0026606358588" iyz="-1.8152999814e-07" izz="0.0024298275821"/>
-      <origin rpy="0 0 0" xyz="-0.00058 -0.00063 0.0001"/>
+      <mass value="0.7575690379154867"/>
+      <inertia ixx="0.1466676495397822" ixy="1.3894893658227998e-09" ixz="-1.847742164822289e-08" iyy="0.14546237703524983" iyz="-1.6825643126483954e-10" izz="0.1466676444244662"/>
+      <origin rpy="0 0 0" xyz="-6.00045e-07 6.99637e-07 9.85261e-08"/>
     </inertial>
     <visual>
       <geometry>
@@ -1396,9 +1385,9 @@
   </joint>
   <link name="WheelB_link">
     <inertial>
-      <mass value="0.05872"/>
-      <inertia ixx="0.0025765921455" ixy="-1.6344199594e-06" ixz="-4.1009738197e-05" iyy="0.0026606358588" iyz="-1.8152999814e-07" izz="0.0024298275821"/>
-      <origin rpy="0 0 0" xyz="-0.00058 -0.00063 0.0001"/>
+      <mass value="0.7575690266305116"/>
+      <inertia ixx="0.14666764930611684" ixy="2.1646351782621925e-09" ixz="-1.604289224924931e-08" iyy="0.14546237484295663" iyz="9.686419820854266e-10" izz="0.1466676359065566"/>
+      <origin rpy="0 0 0" xyz="1.19122e-06 -8.10876e-08 1.02822e-07"/>
     </inertial>
     <visual>
       <geometry>
@@ -1422,9 +1411,9 @@
   </joint>
   <link name="WheelFR_link">
     <inertial>
-      <mass value="0.05872"/>
-      <inertia ixx="0.0025765921455" ixy="-1.6344199594e-06" ixz="-4.1009738197e-05" iyy="0.0026606358588" iyz="-1.8152999814e-07" izz="0.0024298275821"/>
-      <origin rpy="0 0 0" xyz="-0.00058 -0.00063 0.0001"/>
+      <mass value="0.75756900450011"/>
+      <inertia ixx="0.1466676370557516" ixy="-1.2974614176969171e-09" ixz="-1.745944386185611e-08" iyy="0.14546236874613427" iyz="2.1976487590695156e-10" izz="0.14666763285273135"/>
+      <origin rpy="0 0 0" xyz="1.47446e-07 -8.33076e-07 9.57624e-08"/>
     </inertial>
     <visual>
       <geometry>
@@ -1445,6 +1434,12 @@
     <origin rpy="0 0 -1.07517" xyz="0.09 -0.155 -0.264"/>
     <axis xyz="1.0 0 0"/>
     <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
+  </joint>
+  <joint name="base_link_fixedjoint" type="fixed">
+    <parent link="base_link"/>
+    <child link="Tibia"/>
+    <origin rpy="0 0 0" xyz="0 0 0.334"/>
+    <axis xyz="0 0 0"/>
   </joint>
   <!-- MACROS FOR DISABLE LINKS -->
   <!-- MACROS FOR MIMIC JOINTS -->
