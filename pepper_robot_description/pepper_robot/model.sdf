@@ -26,7 +26,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -90,7 +90,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -154,7 +154,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -218,7 +218,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -282,7 +282,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -346,7 +346,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -410,7 +410,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -474,7 +474,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -538,7 +538,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -602,7 +602,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -666,7 +666,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -728,7 +728,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -790,7 +790,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -852,7 +852,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -914,7 +914,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -976,7 +976,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1038,7 +1038,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1100,7 +1100,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1162,7 +1162,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1224,7 +1224,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1286,7 +1286,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1348,7 +1348,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1410,7 +1410,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1507,7 +1507,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1569,7 +1569,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1633,7 +1633,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1697,7 +1697,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1761,7 +1761,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1825,7 +1825,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1889,7 +1889,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -1951,7 +1951,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2013,7 +2013,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2075,7 +2075,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2137,7 +2137,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2199,7 +2199,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2261,7 +2261,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2323,7 +2323,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2385,7 +2385,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2447,7 +2447,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2509,7 +2509,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2571,7 +2571,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2633,7 +2633,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2730,7 +2730,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2792,7 +2792,7 @@
             <dart/>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
             </dart>
@@ -2853,14 +2853,14 @@
         </geometry>
         <surface>
           <contact>
-            <ode>
+            <dart>
               <kp>1e+07</kp>
               <kd>1</kd>
               <min_depth>0.003</min_depth>
             </dart>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0.5</mu>
               <mu2>0.5</mu2>
               <fdir1>1 0 0</fdir1>
@@ -2921,14 +2921,14 @@
         </geometry>
         <surface>
           <contact>
-            <ode>
+            <dart>
               <kp>1e+07</kp>
               <kd>1</kd>
               <min_depth>0.003</min_depth>
             </dart>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>1</mu>
               <mu2>0</mu2>
               <fdir1>1 0 0</fdir1>
@@ -2989,14 +2989,14 @@
         </geometry>
         <surface>
           <contact>
-            <ode>
+            <dart>
               <kp>1e+07</kp>
               <kd>1</kd>
               <min_depth>0.003</min_depth>
             </dart>
           </contact>
           <friction>
-            <ode>
+            <dart>
               <mu>0</mu>
               <mu2>1</mu2>
               <fdir1>0 1 0</fdir1>
