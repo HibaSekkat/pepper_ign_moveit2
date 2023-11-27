@@ -155,7 +155,7 @@
     <child link="LShoulder"/>
     <origin rpy="0 0 0" xyz="-0.057 0.14974 0.22582"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
+    <limit effort="5.428" lower="-2.0857" upper="2.0857" velocity="7.33998"/>
   </joint>
   <link name="LShoulder">
     <inertial>
@@ -181,7 +181,7 @@
     <child link="LBicep"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="2.666" lower="0.00872665" upper="1.56207" velocity="9.22756"/>
+    <limit effort="2.666" lower="0.0087" upper="1.56207" velocity="9.22756"/>
   </joint>
   <link name="LBicep">
     <inertial>
@@ -207,7 +207,7 @@
     <child link="LElbow"/>
     <origin rpy="0 -0.157079 0" xyz="0.1812 0.015 0.00013"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
+    <limit effort="5.428" lower="-2.0857" upper="2.0857" velocity="7.33998"/>
   </joint>
   <link name="LElbow">
     <inertial>
@@ -233,7 +233,7 @@
     <child link="LForeArm"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1.0"/>
-    <limit effort="2.666" lower="-1.56207" upper="-0.00872665" velocity="9.22756"/>
+    <limit effort="2.666" lower="-1.5620" upper="-0.0087" velocity="9.22756"/>
   </joint>
   <link name="LForeArm">
     <inertial>
@@ -259,7 +259,7 @@
     <child link="l_wrist"/>
     <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="17.3835"/>
+    <limit effort="0.2014" lower="-1.8239" upper="1.8239" velocity="17.3835"/>
   </joint>
   <link name="l_wrist">
     <inertial>
