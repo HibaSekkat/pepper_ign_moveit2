@@ -289,8 +289,8 @@
   </joint>
   <link name="l_gripper">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.207591874180564"/>
+      <inertia ixx="0.011703404133435855" ixy="0.0008177441509091999" ixz="-0.0033215793821857902" iyy="0.0378403638770384" iyz="-0.00014926583294427482" izz="0.04027267667550336"/>
     </inertial>
   </link>
   <joint name="RShoulderPitch" type="revolute">
@@ -432,235 +432,14 @@
   </joint>
   <link name="r_gripper">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.20759187418056393"/>
+      <inertia ixx="0.011703404133435853" ixy="-0.0008177441509091997" ixz="-0.0033215793821857907" iyy="0.0378403638770384" iyz="0.0001492658329442748" izz="0.04027267667550336"/>
     </inertial>
   </link>
-  <link name="SonarBack_frame"/>
-  <joint name="Sonar/Back_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SonarBack_frame"/>
-    <origin rpy="-1.81761e-08 -0.209438 -3.14159" xyz="-0.0718 0 -0.0534"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="CameraBottom_optical_frame"/>
-  <joint name="CameraBottom_optical_frame_fixedjoint" type="fixed">
-    <parent link="CameraBottom_frame"/>
-    <child link="CameraBottom_optical_frame"/>
-    <origin rpy="-1.57079632679 0 -1.57079632679" xyz="0 0 0"/>
-  </joint>
-  <link name="CameraDepth_optical_frame"/>
-  <joint name="CameraDepth_optical_frame_fixedjoint" type="fixed">
-    <parent link="CameraDepth_frame"/>
-    <child link="CameraDepth_optical_frame"/>
-    <origin rpy="-1.57079632679 0 -1.57079632679" xyz="0 0 0"/>
-  </joint>
-  <link name="LHandTouchBack_frame"/>
-  <joint name="LHand/Touch/Back_sensor_fixedjoint" type="fixed">
-    <parent link="l_wrist"/>
-    <child link="LHandTouchBack_frame"/>
-    <origin rpy="1.5708 -1.5708 -3.14159" xyz="0.0523 0 0.0304"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="VerticalLeftLaser_frame"/>
-  <joint name="LaserSensor/VerticalLeft_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="VerticalLeftLaser_frame"/>
-    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SurroundingFrontLaser_device_frame"/>
-  <joint name="LaserSensor/Front_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SurroundingFrontLaser_device_frame"/>
-    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="BumperB_frame"/>
-  <joint name="Bumper/Back_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="BumperB_frame"/>
-    <origin rpy="0 0 -3.14159" xyz="-0.251 0 -0.264"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SurroundingLeftLaser_frame"/>
-  <joint name="LaserSensor/Left_projected_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SurroundingLeftLaser_frame"/>
-    <origin rpy="0 0 1.75728" xyz="-0.018 0.0899 -0.334"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="ShovelLaser_frame"/>
-  <joint name="LaserSensor/Shovel_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="ShovelLaser_frame"/>
-    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="ImuTorsoAccelerometer_frame"/>
-  <joint name="Accelerometer_sensor_fixedjoint" type="fixed">
-    <parent link="torso"/>
-    <child link="ImuTorsoAccelerometer_frame"/>
-    <origin rpy="0 0 0" xyz="0.00239 -0.03575 0.00626"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="RSpeaker_frame"/>
-  <joint name="SpeakerRight_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="RSpeaker_frame"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SurroundingRightLaser_device_frame"/>
-  <joint name="LaserSensor/Right_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SurroundingRightLaser_device_frame"/>
-    <origin rpy="0 0.349066 -1.5708" xyz="-0.018 -0.0899 -0.0759"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="LSpeaker_frame"/>
-  <joint name="SpeakerLeft_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="LSpeaker_frame"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="RHandTouchBack_frame"/>
-  <joint name="RHand/Touch/Back_sensor_fixedjoint" type="fixed">
-    <parent link="r_wrist"/>
-    <child link="RHandTouchBack_frame"/>
-    <origin rpy="1.5708 -1.5708 -3.14159" xyz="0.0523 0 0.0304"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="CameraTop_frame"/>
-  <joint name="CameraTop_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="CameraTop_frame"/>
-    <origin rpy="0 0 0" xyz="0.08601 0 0.16284"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SurroundingLeftLaser_device_frame"/>
-  <joint name="LaserSensor/Left_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SurroundingLeftLaser_device_frame"/>
-    <origin rpy="0 0.349066 1.5708" xyz="-0.018 0.0899 -0.0759"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="CameraDepth_frame"/>
-  <joint name="CameraDepth_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="CameraDepth_frame"/>
-    <origin rpy="0 0 0" xyz="0.05138 0.039 0.1194"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SurroundingRightLaser_frame"/>
-  <joint name="LaserSensor/Right_projected_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SurroundingRightLaser_frame"/>
-    <origin rpy="0 0 -1.75728" xyz="-0.018 -0.0899 -0.334"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="HeadTouchFront_frame"/>
-  <joint name="Head/Touch/Front_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="HeadTouchFront_frame"/>
-    <origin rpy="0 0.20944 0" xyz="0.028175 0 0.21267"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="VerticalRightLaser_frame"/>
-  <joint name="LaserSensor/VerticalRight_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="VerticalRightLaser_frame"/>
-    <origin rpy="0 0.349066 0" xyz="0.0562 0 -0.0692"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SonarFront_frame"/>
-  <joint name="Sonar/Front_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SonarFront_frame"/>
-    <origin rpy="0 -0.322858 0" xyz="0.0699 0 -0.1023"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="BumperFL_frame"/>
-  <joint name="Bumper/FrontLeft_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="BumperFL_frame"/>
-    <origin rpy="0 0 0.48886" xyz="0.129 0.227 -0.264"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="CameraBottom_frame"/>
-  <joint name="CameraBottom_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="CameraBottom_frame"/>
-    <origin rpy="0 0.698132 0" xyz="0.09262 0 0.06177"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="CameraTop_optical_frame"/>
-  <joint name="CameraTop_optical_frame_fixedjoint" type="fixed">
-    <parent link="CameraTop_frame"/>
-    <child link="CameraTop_optical_frame"/>
-    <origin rpy="-1.57079632679 0 -1.57079632679" xyz="0 0 0"/>
-  </joint>
-  <link name="ImuBaseAccelerometer_frame"/>
-  <joint name="AccelerometerBase_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="ImuBaseAccelerometer_frame"/>
-    <origin rpy="0 0 0" xyz="0.0147 -0.0017 -0.26319"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="ImuTorsoGyrometer_frame"/>
-  <joint name="Gyrometer_sensor_fixedjoint" type="fixed">
-    <parent link="torso"/>
-    <child link="ImuTorsoGyrometer_frame"/>
-    <origin rpy="0 0 0" xyz="0.00204 -0.03491 -0.00959"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="Tablet_frame"/>
-  <joint name="Tablet_sensor_fixedjoint" type="fixed">
-    <parent link="torso"/>
-    <child link="Tablet_frame"/>
-    <origin rpy="0 -0.523599 0" xyz="0.0839249 0 0.06251"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="HeadTouchRear_frame"/>
-  <joint name="Head/Touch/Rear_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="HeadTouchRear_frame"/>
-    <origin rpy="0 -0.314159 0" xyz="-0.03376 0 0.21052"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="BumperFR_frame"/>
-  <joint name="Bumper/FrontRight_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="BumperFR_frame"/>
-    <origin rpy="0 0 -0.48886" xyz="0.129 -0.227 -0.264"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="SurroundingFrontLaser_frame"/>
-  <joint name="LaserSensor/Front_projected_sensor_fixedjoint" type="fixed">
-    <parent link="Tibia"/>
-    <child link="SurroundingFrontLaser_frame"/>
-    <origin rpy="0 0 0" xyz="0.0562 0 -0.334"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="ChestButton_frame"/>
-  <joint name="ChestBoard/Button_sensor_fixedjoint" type="fixed">
-    <parent link="torso"/>
-    <child link="ChestButton_frame"/>
-    <origin rpy="0 0 0" xyz="0.049871 0.001588 0.055163"/>
-    <axis xyz="0 0 0"/>
-  </joint>
-  <link name="HeadTouchMiddle_frame"/>
-  <joint name="Head/Touch/Middle_sensor_fixedjoint" type="fixed">
-    <parent link="Head"/>
-    <child link="HeadTouchMiddle_frame"/>
-    <origin rpy="0 -0.0349066 0" xyz="0.0041 0 0.2159"/>
-    <axis xyz="0 0 0"/>
-  </joint>
   <link name="RFinger41_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022888397826"/>
+      <inertia ixx="3.4678131817764306e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959870196139e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -684,8 +463,8 @@
   </joint>
   <link name="LFinger42_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022167828866"/>
+      <inertia ixx="3.4678129025584815e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959511713518e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -709,8 +488,8 @@
   </joint>
   <link name="RFinger12_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001734202280194698"/>
+      <inertia ixx="3.4678131132210503e-06" ixy="-3.2590542520134944e-08" ixz="-1.7757159744336223e-07" iyy="9.067959840882744e-06" iyz="-5.0426962301906756e-08" izz="9.981406511792481e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -734,8 +513,8 @@
   </joint>
   <link name="LFinger33_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0012119665608007826"/>
+      <inertia ixx="2.09223979628447e-06" ixy="-1.1457416792102813e-07" ixz="1.4168110404002701e-08" iyy="4.049992996669056e-06" iyz="-5.704190202736846e-09" izz="4.41653713434438e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -759,8 +538,8 @@
   </joint>
   <link name="RFinger31_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001734202271258544"/>
+      <inertia ixx="3.467813135465312e-06" ixy="-3.259050145806951e-08" ixz="-1.775715550954204e-07" iyy="9.067959615799793e-06" iyz="-5.0427022839883744e-08" izz="9.981406326737224e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -784,8 +563,8 @@
   </joint>
   <link name="LFinger21_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022480607796"/>
+      <inertia ixx="3.46781299004819e-06" ixy="-3.259062428110205e-08" ixz="-1.775715353345546e-07" iyy="9.067959876771903e-06" iyz="-5.0426968074891446e-08" izz="9.98140651315344e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -809,8 +588,8 @@
   </joint>
   <link name="RFinger32_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022235830492"/>
+      <inertia ixx="3.467812920370958e-06" ixy="-3.259059292999676e-08" ixz="-1.775716485588287e-07" iyy="9.067959555576335e-06" iyz="-5.042697998356888e-08" izz="9.981406185385655e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -834,8 +613,8 @@
   </joint>
   <link name="LFinger13_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001211966381471568"/>
+      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -859,8 +638,8 @@
   </joint>
   <link name="LFinger32_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022235830492"/>
+      <inertia ixx="3.467812920370958e-06" ixy="-3.259059292999676e-08" ixz="-1.775716485588287e-07" iyy="9.067959555576335e-06" iyz="-5.042697998356888e-08" izz="9.981406185385655e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -884,8 +663,8 @@
   </joint>
   <link name="LFinger11_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022611750378"/>
+      <inertia ixx="3.4678130376738107e-06" ixy="-3.259051008700385e-08" ixz="-1.7757161017490668e-07" iyy="9.067959783373034e-06" iyz="-5.042697811714405e-08" izz="9.981406489419801e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -909,8 +688,8 @@
   </joint>
   <link name="RFinger22_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001734202428057582"/>
+      <inertia ixx="3.4678136128088393e-06" ixy="-3.2591429893149244e-08" ixz="-1.775718802040381e-07" iyy="9.067962145044256e-06" iyz="-5.042709848652804e-08" izz="9.981409273765228e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -934,8 +713,8 @@
   </joint>
   <link name="RFinger13_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001211966381471568"/>
+      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -959,8 +738,8 @@
   </joint>
   <link name="LFinger22_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001734202428057582"/>
+      <inertia ixx="3.4678136128088393e-06" ixy="-3.2591429893149244e-08" ixz="-1.775718802040381e-07" iyy="9.067962145044256e-06" iyz="-5.042709848652804e-08" izz="9.981409273765228e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -984,8 +763,8 @@
   </joint>
   <link name="RFinger21_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022480607796"/>
+      <inertia ixx="3.46781299004819e-06" ixy="-3.259062428110205e-08" ixz="-1.775715353345546e-07" iyy="9.067959876771903e-06" iyz="-5.0426968074891446e-08" izz="9.98140651315344e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1009,8 +788,8 @@
   </joint>
   <link name="LFinger41_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022888397826"/>
+      <inertia ixx="3.4678131817764306e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959870196139e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1034,8 +813,8 @@
   </joint>
   <link name="LFinger12_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001734202280194698"/>
+      <inertia ixx="3.4678131132210503e-06" ixy="-3.2590542520134944e-08" ixz="-1.7757159744336223e-07" iyy="9.067959840882744e-06" iyz="-5.0426962301906756e-08" izz="9.981406511792481e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1059,8 +838,8 @@
   </joint>
   <link name="RFinger23_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0012119663699255415"/>
+      <inertia ixx="2.092239047891544e-06" ixy="-1.1457422969595025e-07" ixz="1.4167810663291497e-08" iyy="4.049992404946034e-06" iyz="-5.704156613549065e-09" izz="4.416536552898754e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1084,8 +863,8 @@
   </joint>
   <link name="RFinger11_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022611750378"/>
+      <inertia ixx="3.4678130376738107e-06" ixy="-3.259051008700385e-08" ixz="-1.7757161017490668e-07" iyy="9.067959783373034e-06" iyz="-5.042697811714405e-08" izz="9.981406489419801e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1109,8 +888,8 @@
   </joint>
   <link name="LFinger23_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0012119663699255415"/>
+      <inertia ixx="2.092239047891544e-06" ixy="-1.1457422969595025e-07" ixz="1.4167810663291497e-08" iyy="4.049992404946034e-06" iyz="-5.704156613549065e-09" izz="4.416536552898754e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1134,8 +913,8 @@
   </joint>
   <link name="LFinger43_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0012119663070476055"/>
+      <inertia ixx="2.0922389330114635e-06" ixy="-1.1457410213059722e-07" ixz="1.4168138791312868e-08" iyy="4.049991916493551e-06" iyz="-5.70412920072251e-09" izz="4.416536298698657e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1159,8 +938,8 @@
   </joint>
   <link name="RFinger43_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0012119663070476055"/>
+      <inertia ixx="2.0922389330114635e-06" ixy="-1.1457410213059722e-07" ixz="1.4168138791312868e-08" iyy="4.049991916493551e-06" iyz="-5.70412920072251e-09" izz="4.416536298698657e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1184,8 +963,8 @@
   </joint>
   <link name="RFinger42_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022167828866"/>
+      <inertia ixx="3.4678129025584815e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959511713518e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1209,8 +988,8 @@
   </joint>
   <link name="LFinger31_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001734202271258544"/>
+      <inertia ixx="3.467813135465312e-06" ixy="-3.259050145806951e-08" ixz="-1.775715550954204e-07" iyy="9.067959615799793e-06" iyz="-5.0427022839883744e-08" izz="9.981406326737224e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1234,8 +1013,8 @@
   </joint>
   <link name="RFinger33_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0012119665608007826"/>
+      <inertia ixx="2.09223979628447e-06" ixy="-1.1457416792102813e-07" ixz="1.4168110404002701e-08" iyy="4.049992996669056e-06" iyz="-5.704190202736846e-09" izz="4.41653713434438e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1259,8 +1038,8 @@
   </joint>
   <link name="LThumb1_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022979805805"/>
+      <inertia ixx="3.4678131551882413e-06" ixy="-3.2590509182655974e-08" ixz="-1.775715494652515e-07" iyy="9.067960211714726e-06" iyz="-5.0426946362754553e-08" izz="9.981406956932862e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1284,8 +1063,8 @@
   </joint>
   <link name="RThumb2_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001211966381471568"/>
+      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1309,8 +1088,8 @@
   </joint>
   <link name="RThumb1_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.0017342022979805805"/>
+      <inertia ixx="3.4678131551882413e-06" ixy="-3.2590509182655974e-08" ixz="-1.775715494652515e-07" iyy="9.067960211714726e-06" iyz="-5.0426946362754553e-08" izz="9.981406956932862e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1334,8 +1113,8 @@
   </joint>
   <link name="LThumb2_link">
     <inertial>
-      <mass value="2e-06"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <mass value="0.001211966381471568"/>
+      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
     </inertial>
     <visual>
       <geometry>
@@ -1447,206 +1226,206 @@
   <!-- Thumbs -->
   <!-- GAZEBO MATERIALS -->
   <gazebo reference="base_link">
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="torso">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="Neck">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="Head">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="gaze">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <!-- ARMS -->
   <gazebo reference="LShoulder">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LBicep">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LElbow">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LForeArm">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="l_wrist">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="l_gripper">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RShoulder">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RBicep">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RElbow">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RForeArm">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="r_wrist">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="r_gripper">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger11_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger12_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger13_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger21_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger22_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger23_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger31_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger32_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger33_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger41_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger42_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LFinger43_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LThumb1_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="LThumb2_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="Hip">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="Pelvis">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="Tibia">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFL_link">
     <mu1>1</mu1>
@@ -1655,7 +1434,7 @@
     <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
     <minDepth>0.003</minDepth>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelB_link">
     <mu1>0.5</mu1>
@@ -1664,7 +1443,7 @@
     <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
     <minDepth>0.003</minDepth>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFR_link">
     <mu1>0</mu1>
@@ -1673,91 +1452,91 @@
     <kd value="1.0"/>
     <fdir1 value="0 1 0"/>
     <minDepth>0.003</minDepth>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger11_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger12_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger13_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger21_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger22_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger23_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger31_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger32_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger33_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger41_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger42_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger43_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RThumb1_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RThumb2_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
     <selfCollide>false</selfCollide>
-
+    <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <!--
         RGB CAMERAS
@@ -1830,7 +1609,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-
+  <turnGravityOff>false</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
@@ -1847,7 +1626,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-
+  <turnGravityOff>false</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
@@ -1864,7 +1643,7 @@
   <mu1>0.5</mu1>
   <mu2>0.5</mu2>
   <selfCollide>false</selfCollide>
-
+  <turnGravityOff>false</turnGravityOff>
   <fdir1>1 0 0</fdir1>
   <maxVel>0.1</maxVel>
   <minDepth>0.003</minDepth>
