@@ -42,7 +42,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
@@ -55,7 +54,7 @@
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
           <effort>27.702</effort>
-          <velocity>2.93276</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -106,7 +105,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
@@ -119,7 +117,7 @@
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
           <effort>19.787</effort>
-          <velocity>2.93276</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -170,7 +168,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
@@ -183,7 +180,7 @@
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
           <effort>10.1884</effort>
-          <velocity>2.27032</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -194,7 +191,7 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00322 0 -0.01029 0 -0 0</pose>
+        <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
         <mass>4.89482</mass>
         <inertia>
           <ixx>4.56661</ixx>
@@ -234,7 +231,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
@@ -247,7 +243,7 @@
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
           <effort>5.428</effort>
-          <velocity>7.33998</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -298,7 +294,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadPitch' type='revolute'>
@@ -311,7 +306,7 @@
           <lower>-0.706858</lower>
           <upper>0.4451</upper>
           <effort>2.666</effort>
-          <velocity>9.22756</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -362,7 +357,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
@@ -375,7 +369,7 @@
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
           <effort>5.428</effort>
-          <velocity>7.33998</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -426,7 +420,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderRoll' type='revolute'>
@@ -439,7 +432,7 @@
           <lower>0.00872665</lower>
           <upper>1.56207</upper>
           <effort>2.666</effort>
-          <velocity>9.22756</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -490,7 +483,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LElbowYaw' type='revolute'>
@@ -503,7 +495,7 @@
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
           <effort>5.428</effort>
-          <velocity>7.33998</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -554,7 +546,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LElbowRoll' type='revolute'>
@@ -567,7 +558,7 @@
           <lower>-1.56207</lower>
           <upper>-0.00872665</upper>
           <effort>2.666</effort>
-          <velocity>9.22756</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -618,7 +609,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LWristYaw' type='revolute'>
@@ -631,7 +621,7 @@
           <lower>-1.82387</lower>
           <upper>1.82387</upper>
           <effort>0.2014</effort>
-          <velocity>17.3835</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -682,7 +672,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger11' type='revolute'>
@@ -744,7 +733,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger12' type='revolute'>
@@ -806,7 +794,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger13' type='revolute'>
@@ -868,7 +855,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger21' type='revolute'>
@@ -930,7 +916,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger22' type='revolute'>
@@ -992,7 +977,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger23' type='revolute'>
@@ -1054,7 +1038,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger31' type='revolute'>
@@ -1116,7 +1099,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger32' type='revolute'>
@@ -1178,7 +1160,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger33' type='revolute'>
@@ -1240,7 +1221,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger41' type='revolute'>
@@ -1302,7 +1282,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger42' type='revolute'>
@@ -1364,7 +1343,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LFinger43' type='revolute'>
@@ -1426,7 +1404,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LHand' type='revolute'>
@@ -1439,7 +1416,7 @@
           <lower>0.02</lower>
           <upper>0.98</upper>
           <effort>0.144</effort>
-          <velocity>12.56</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1461,7 +1438,6 @@
           <izz>0.0402727</izz>
         </inertia>
       </inertial>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LThumb1' type='revolute'>
@@ -1523,7 +1499,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='LThumb2' type='revolute'>
@@ -1585,7 +1560,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
@@ -1598,7 +1572,7 @@
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
           <effort>5.428</effort>
-          <velocity>7.33998</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1649,7 +1623,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderRoll' type='revolute'>
@@ -1662,7 +1635,7 @@
           <lower>-1.56207</lower>
           <upper>-0.00872665</upper>
           <effort>2.666</effort>
-          <velocity>9.22756</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1713,7 +1686,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RElbowYaw' type='revolute'>
@@ -1726,7 +1698,7 @@
           <lower>-2.08567</lower>
           <upper>2.08567</upper>
           <effort>5.428</effort>
-          <velocity>7.33998</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1777,7 +1749,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RElbowRoll' type='revolute'>
@@ -1790,7 +1761,7 @@
           <lower>0.00872665</lower>
           <upper>1.56207</upper>
           <effort>2.666</effort>
-          <velocity>9.22756</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1841,7 +1812,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RWristYaw' type='revolute'>
@@ -1854,7 +1824,7 @@
           <lower>-1.82387</lower>
           <upper>1.82387</upper>
           <effort>0.2014</effort>
-          <velocity>17.3835</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1905,7 +1875,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger11' type='revolute'>
@@ -1967,7 +1936,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger12' type='revolute'>
@@ -2029,7 +1997,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger13' type='revolute'>
@@ -2091,7 +2058,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger21' type='revolute'>
@@ -2153,7 +2119,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger22' type='revolute'>
@@ -2215,7 +2180,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger23' type='revolute'>
@@ -2277,7 +2241,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger31' type='revolute'>
@@ -2339,7 +2302,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger32' type='revolute'>
@@ -2401,7 +2363,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger33' type='revolute'>
@@ -2463,7 +2424,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger41' type='revolute'>
@@ -2525,7 +2485,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger42' type='revolute'>
@@ -2587,7 +2546,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RFinger43' type='revolute'>
@@ -2649,7 +2607,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RHand' type='revolute'>
@@ -2662,7 +2619,7 @@
           <lower>0.02</lower>
           <upper>0.98</upper>
           <effort>0.144</effort>
-          <velocity>12.56</velocity>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2684,7 +2641,6 @@
           <izz>0.0402727</izz>
         </inertia>
       </inertial>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RThumb1' type='revolute'>
@@ -2746,7 +2702,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='RThumb2' type='revolute'>
@@ -2808,7 +2763,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
     <joint name='WheelB' type='revolute'>
@@ -2819,7 +2773,7 @@
         <xyz>1 0 0</xyz>
         <limit>
           <effort>3.25</effort>
-          <velocity>6.28319</velocity>
+          <velocity>0</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
@@ -2877,7 +2831,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
     </link>
     <joint name='WheelFL' type='revolute'>
       <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
@@ -2887,7 +2840,7 @@
         <xyz>1 0 0</xyz>
         <limit>
           <effort>3.25</effort>
-          <velocity>6.28319</velocity>
+          <velocity>0</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
@@ -2945,7 +2898,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
     </link>
     <joint name='WheelFR' type='revolute'>
       <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
@@ -2955,7 +2907,7 @@
         <xyz>1 0 0</xyz>
         <limit>
           <effort>3.25</effort>
-          <velocity>6.28319</velocity>
+          <velocity>0</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
@@ -3013,7 +2965,6 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>1</gravity>
     </link>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <left_joint>WheelFL</left_joint>
