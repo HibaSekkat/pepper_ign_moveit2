@@ -71,31 +71,31 @@ def main():
     print("Average density estimate: %f kg/m^3" % average_density)
 
     # Estimate inertial properties for each link
-    mass = {'HeadPitch': 1.5189, 'HeadYaw': 0.27391, 'HipPitch': 2.4592,
-     'HipRoll': 1.0234, 'KneePitch': 15.485, 'LElbowRoll': 0.16579,
-     'LElbowYaw': 0.27495, 'LFinger11': 2e-06, 'LFinger12': 2e-06,
-     'LFinger13': 2e-06, 'LFinger21': 2e-06, 'LFinger22': 2e-06,
-     'LFinger23': 2e-06, 'LFinger31': 2e-06, 'LFinger32': 2e-06,
-     'LFinger33': 2e-06, 'LFinger41': 2e-06, 'LFinger42': 2e-06,
-     'LFinger43': 2e-06, 'LShoulderPitch': 0.3125, 'LShoulderRoll': 0.50527,
-     'LThumb1': 2e-06, 'LThumb2': 2e-06, 'LWristYaw': 0.27555,
-     'RElbowRoll': 0.16579, 'RElbowYaw': 0.27495, 'RFinger11': 2e-06,
-     'RFinger12': 2e-06, 'RFinger13': 2e-06, 'RFinger21': 2e-06,
-     'RFinger22': 2e-06, 'RFinger23': 2e-06, 'RFinger31': 2e-06,
-     'RFinger32': 2e-06, 'RFinger33': 2e-06, 'RFinger41': 2e-06,
-     'RFinger42': 2e-06, 'RFinger43': 2e-06, 'RShoulderPitch': 0.3125,
-     'RShoulderRoll': 0.50527, 'RThumb1': 2e-06, 'RThumb2': 2e-06,
-     'RWristYaw': 0.27555, 'Torso': 3.9953, 'WheelB': 0.804686790979882,
-     'WheelFL': 0.8046868029667374, 'WheelFR': 0.804686767473058, 'd435': 2.0473328384380698e-05}
+    mass = {}
     inertia = {}
     centre_of_mass = {}
     for link_name in meshes:
         mesh = meshes[link_name]
         mesh.density = average_density
-        mass[link_name] = max(mesh.mass, 1e-10)
+        # mass[link_name] = max(mesh.mass, 1e-10)
         inertia[link_name] = mesh.moment_inertia
         centre_of_mass[link_name] = mesh.center_mass
-
+    mass = {'HeadPitch': 1.5189, 'HeadYaw': 0.27391, 'HipPitch': 2.4592,
+            'HipRoll': 1.0234, 'KneePitch': 15.485, 'LElbowRoll': 0.16579,
+            'LElbowYaw': 0.27495, 'LFinger11': 2e-06, 'LFinger12': 2e-06,
+            'LFinger13': 2e-06, 'LFinger21': 2e-06, 'LFinger22': 2e-06,
+            'LFinger23': 2e-06, 'LFinger31': 2e-06, 'LFinger32': 2e-06,
+            'LFinger33': 2e-06, 'LFinger41': 2e-06, 'LFinger42': 2e-06,
+            'LFinger43': 2e-06, 'LShoulderPitch': 0.3125, 'LShoulderRoll': 0.50527,
+            'LThumb1': 2e-06, 'LThumb2': 2e-06, 'LWristYaw': 0.27555,
+            'RElbowRoll': 0.16579, 'RElbowYaw': 0.27495, 'RFinger11': 2e-06,
+            'RFinger12': 2e-06, 'RFinger13': 2e-06, 'RFinger21': 2e-06,
+            'RFinger22': 2e-06, 'RFinger23': 2e-06, 'RFinger31': 2e-06,
+            'RFinger32': 2e-06, 'RFinger33': 2e-06, 'RFinger41': 2e-06,
+            'RFinger42': 2e-06, 'RFinger43': 2e-06, 'RShoulderPitch': 0.3125,
+            'RShoulderRoll': 0.50527, 'RThumb1': 2e-06, 'RThumb2': 2e-06,
+            'RWristYaw': 0.27555, 'Torso': 3.9953, 'WheelB': 0.804686790979882,
+            'WheelFL': 0.8046868029667374, 'WheelFR': 0.804686767473058, 'd435': 2.0473328384380698e-05}
     # Create a new SDF with one model
     sdf = SDF()
     sdf.add_model(name="pepper_robot")
