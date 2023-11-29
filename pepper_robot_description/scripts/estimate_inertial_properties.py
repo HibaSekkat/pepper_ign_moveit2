@@ -77,7 +77,7 @@ def main():
     for link_name in meshes:
         mesh = meshes[link_name]
         mesh.density = average_density
-        # mass[link_name] = max(mesh.mass, 1e-10)
+        mass[link_name] = max(mesh.mass, 1e-10)
         inertia[link_name] = mesh.moment_inertia
         centre_of_mass[link_name] = mesh.center_mass
     mass = {'HeadPitch': 1.5189, 'HeadYaw': 0.27391, 'HipPitch': 2.4592,
