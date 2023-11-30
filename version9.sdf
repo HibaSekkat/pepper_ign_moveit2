@@ -322,7 +322,7 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.04127 -0.000245 1.18841 0 -0 0</pose>
+        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
         <mass>1.5189</mass>
         <inertia>
           <ixx>0.928048</ixx>
