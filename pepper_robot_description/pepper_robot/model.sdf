@@ -1,16 +1,16 @@
-<sdf version='1.7'>
+<sdf version='1.9'>
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.00249 0 0.12864 0 -0 0</pose>
-        <mass>15.485</mass>
+        <pose>0.002205 0 0.148271 0 -0 0</pose>
+        <mass>11.6015</mass>
         <inertia>
-          <ixx>0.869776</ixx>
-          <ixy>0.000401788</ixy>
-          <ixz>-0.00866522</ixz>
-          <iyy>0.000401788</iyy>
-          <iyz>0.859641</iyz>
-          <izz>0</izz>
+          <ixx>0.129229</ixx>
+          <ixy>0.000401632</ixy>
+          <ixz>-0.0168449</ixz>
+          <iyy>0.122839</iyy>
+          <iyz>-1.01666e-08</iyz>
+          <izz>0.108168</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
@@ -42,8 +42,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
       <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
@@ -67,14 +67,14 @@
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.00237 0 -0.09654 0 -0 0</pose>
-        <mass>2.4592</mass>
+        <mass>2.45917</mass>
         <inertia>
-          <ixx>0.0572704</ixx>
+          <ixx>0.034351</ixx>
           <ixy>0</ixy>
-          <ixz>-0.000785692</ixz>
-          <iyy>0</iyy>
-          <iyz>0.0532455</iyz>
-          <izz>8.37542e-05</izz>
+          <ixz>-0.00134835</ixz>
+          <iyy>0.0303122</iyy>
+          <iyz>8.37542e-05</iyz>
+          <izz>0.0143771</izz>
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
@@ -106,8 +106,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
       <pose relative_to='Pelvis'>0 0 0.268 0 -0 0</pose>
@@ -131,14 +131,14 @@
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.00032 0 -0.06039 0 -0 0</pose>
-        <mass>1.0234</mass>
+        <mass>1.02338</mass>
         <inertia>
-          <ixx>0.00875644</ixx>
+          <ixx>0.00502422</ixx>
           <ixy>0</ixy>
-          <ixz>5.71451e-06</ixz>
-          <iyy>0</iyy>
-          <iyz>0.010142</iyz>
-          <izz>-0.000159449</izz>
+          <ixz>-1.40621e-05</ixz>
+          <iyy>0.00640971</iyy>
+          <iyz>-0.000159449</iyz>
+          <izz>0.00441082</izz>
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
@@ -170,8 +170,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
       <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
@@ -195,14 +195,14 @@
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.00322 0 -0.01029 0 -0 0</pose>
-        <mass>3.9953</mass>
+        <mass>3.99533</mass>
         <inertia>
-          <ixx>0.0456991</ixx>
+          <ixx>0.0452761</ixx>
           <ixy>0</ixy>
-          <ixz>-0.00512329</ixz>
-          <iyy>0</iyy>
-          <iyz>0.0437347</iyz>
-          <izz>0.000266886</izz>
+          <ixz>-0.00525567</ixz>
+          <iyy>0.0432702</iyy>
+          <iyz>0.000266886</iyz>
+          <izz>0.0258881</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
@@ -234,8 +234,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
       <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
@@ -261,12 +261,12 @@
         <pose>-0.00207 0 -0.02636 0 -0 0</pose>
         <mass>0.27391</mass>
         <inertia>
-          <ixx>0.000533827</ixx>
+          <ixx>0.000343501</ixx>
           <ixy>0</ixy>
-          <ixz>3.38023e-05</ixz>
-          <iyy>0</iyy>
-          <iyz>0.000685398</iyz>
-          <izz>-2.09863e-06</izz>
+          <ixz>4.87482e-05</ixz>
+          <iyy>0.000493898</iyy>
+          <iyz>-2.09863e-06</iyz>
+          <izz>0.000215252</izz>
         </inertia>
       </inertial>
       <collision name='Neck_collision'>
@@ -298,8 +298,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='HeadPitch' type='revolute'>
       <pose relative_to='Neck'>0 0 0 0 -0 0</pose>
@@ -323,14 +323,14 @@
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.00312 0 0.11152 0 -0 0</pose>
-        <mass>1.5189</mass>
+        <mass>1.51893</mass>
         <inertia>
-          <ixx>0.0248626</ixx>
+          <ixx>0.00597209</ixx>
           <ixy>0</ixy>
-          <ixz>0.000403362</ixz>
-          <iyy>0</iyy>
-          <iyz>0.0248107</iyz>
-          <izz>-4.3428e-07</izz>
+          <ixz>0.000931862</ixz>
+          <iyy>0.0059054</iyy>
+          <iyz>-4.3428e-07</iyz>
+          <izz>0.00570374</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
@@ -362,8 +362,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
@@ -389,12 +389,12 @@
         <pose>0.00018 -0.01856 0.00099 0 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
-          <ixx>0.000469152</ixx>
-          <ixy>9.3947e-07</ixy>
-          <ixz>-5.8022e-07</ixz>
-          <iyy>9.3947e-07</iyy>
-          <iyz>0.000137546</iyz>
-          <izz>-5.322e-08</izz>
+          <ixx>0.000361198</ixx>
+          <ixy>-1.0453e-07</ixy>
+          <ixz>-5.24532e-07</ixz>
+          <iyy>0.000137229</iyy>
+          <iyz>-5.79522e-06</iyz>
+          <izz>0.000399194</izz>
         </inertia>
       </inertial>
       <collision name='LShoulder_collision'>
@@ -426,8 +426,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LShoulderRoll' type='revolute'>
       <pose relative_to='LShoulder'>0 0 0 0 -0 0</pose>
@@ -453,12 +453,12 @@
         <pose>0.08151 0.01284 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
-          <ixx>0.000636433</ixx>
-          <ixy>0.000564402</ixy>
-          <ixz>-0.000503973</ixz>
-          <iyy>0.000564402</iyy>
-          <iyz>0.00467205</iyz>
-          <izz>-7.50477e-05</izz>
+          <ixx>0.000500872</ixx>
+          <ixy>0.00109321</ixy>
+          <ixz>-0.00092282</ixz>
+          <iyy>0.00126284</iyy>
+          <iyz>-0.000141027</iyz>
+          <izz>0.00115718</izz>
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
@@ -490,8 +490,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LElbowYaw' type='revolute'>
       <pose relative_to='LBicep'>0.1812 0.015 0.00013 0 -0.157079 0</pose>
@@ -517,12 +517,12 @@
         <pose>-0.02297 -0.00019 0.00119 0 -0 0</pose>
         <mass>0.27495</mass>
         <inertia>
-          <ixx>0.00012337</ixx>
-          <ixy>2.1394e-07</ixy>
-          <ixz>1.80682e-05</ixz>
-          <iyy>2.1394e-07</iyy>
-          <iyz>0.000477224</iyz>
-          <izz>1.92708e-06</izz>
+          <ixx>0.000122971</ixx>
+          <ixy>1.4139e-06</ixy>
+          <ixz>1.05526e-05</ixz>
+          <iyy>0.000331766</iyy>
+          <iyz>1.86491e-06</iyz>
+          <izz>0.000303047</izz>
         </inertia>
       </inertial>
       <collision name='LElbow_collision'>
@@ -554,8 +554,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LElbowRoll' type='revolute'>
       <pose relative_to='LElbow'>0 0 0 0 -0 0</pose>
@@ -581,12 +581,12 @@
         <pose>0.0593 0.00271 -0.01014 0 -0 0</pose>
         <mass>0.16579</mass>
         <inertia>
-          <ixx>0.0015834</ixx>
-          <ixy>1.18913e-05</ixy>
-          <ixz>-3.91152e-05</ixz>
-          <iyy>1.18913e-05</iyy>
-          <iyz>0.00233224</iyz>
-          <izz>-4.37962e-06</izz>
+          <ixx>0.00156513</ixx>
+          <ixy>3.85342e-05</ixy>
+          <ixz>-0.000138805</ixz>
+          <iyy>0.00173219</iyy>
+          <iyz>-8.93543e-06</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='LForeArm_collision'>
@@ -618,8 +618,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LWristYaw' type='revolute'>
       <pose relative_to='LForeArm'>0.15 0 0 0 -0 0</pose>
@@ -645,12 +645,12 @@
         <pose>0.03536 -0.00072 -0.00207 0 -0 0</pose>
         <mass>0.27555</mass>
         <inertia>
-          <ixx>0.000152966</ixx>
-          <ixy>-1.76782e-05</ixy>
-          <ixz>-2.3064e-05</ixz>
-          <iyy>-1.76782e-05</iyy>
-          <iyz>0.000776808</iyz>
-          <izz>3.54783e-06</izz>
+          <ixx>0.000151643</ixx>
+          <ixy>-2.46935e-05</ixy>
+          <ixz>-4.3233e-05</ixz>
+          <iyy>0.000431099</iyy>
+          <iyz>3.95851e-06</iyz>
+          <izz>0.000456172</izz>
         </inertia>
       </inertial>
       <collision name='l_wrist_collision'>
@@ -682,8 +682,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger11' type='revolute'>
       <pose relative_to='l_wrist'>0.0821 -0.0268 0.004 1.74402 1.04064 -0.033434</pose>
@@ -744,8 +744,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger12' type='revolute'>
       <pose relative_to='LFinger11_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -806,8 +806,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger13' type='revolute'>
       <pose relative_to='LFinger12_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -868,8 +868,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger21' type='revolute'>
       <pose relative_to='l_wrist'>0.0873 -0.0073 0.006 1.5708 1.0472 -0.061086</pose>
@@ -930,8 +930,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger22' type='revolute'>
       <pose relative_to='LFinger21_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -992,8 +992,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger23' type='revolute'>
       <pose relative_to='LFinger22_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1054,8 +1054,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger31' type='revolute'>
       <pose relative_to='l_wrist'>0.0833 0.0123 0.004 1.46636 1.04483 -0.029314</pose>
@@ -1116,8 +1116,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger32' type='revolute'>
       <pose relative_to='LFinger31_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1178,8 +1178,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger33' type='revolute'>
       <pose relative_to='LFinger32_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1240,8 +1240,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger41' type='revolute'>
       <pose relative_to='l_wrist'>0.074 0.0309 0 1.39757 1.04064 0.068339</pose>
@@ -1302,8 +1302,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger42' type='revolute'>
       <pose relative_to='LFinger41_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1364,8 +1364,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LFinger43' type='revolute'>
       <pose relative_to='LFinger42_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -1426,8 +1426,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LHand' type='revolute'>
       <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
@@ -1461,8 +1461,8 @@
           <izz>1.1e-09</izz>
         </inertia>
       </inertial>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LThumb1' type='revolute'>
       <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -1.95836 0.60626 0.533978</pose>
@@ -1523,8 +1523,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='LThumb2' type='revolute'>
       <pose relative_to='LThumb1_link'>0.022 0 0 0 0 -1.0472</pose>
@@ -1585,8 +1585,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 -0.14974 0.22582 0 -0 0</pose>
@@ -1612,12 +1612,12 @@
         <pose>0.00018 0.01856 0.00099 0 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
-          <ixx>0.000469152</ixx>
-          <ixy>-9.3947e-07</ixy>
-          <ixz>-5.8022e-07</ixz>
-          <iyy>-9.3947e-07</iyy>
-          <iyz>0.000137546</iyz>
-          <izz>5.322e-08</izz>
+          <ixx>0.000361198</ixx>
+          <ixy>1.0453e-07</ixy>
+          <ixz>-5.24532e-07</ixz>
+          <iyy>0.000137229</iyy>
+          <iyz>5.79522e-06</iyz>
+          <izz>0.000399194</izz>
         </inertia>
       </inertial>
       <collision name='RShoulder_collision'>
@@ -1649,8 +1649,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RShoulderRoll' type='revolute'>
       <pose relative_to='RShoulder'>0 0 0 0 -0 0</pose>
@@ -1676,12 +1676,12 @@
         <pose>0.08151 -0.01284 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
-          <ixx>0.000636433</ixx>
-          <ixy>-0.000564402</ixy>
-          <ixz>-0.000503973</ixz>
-          <iyy>-0.000564402</iyy>
-          <iyz>0.00467205</iyz>
-          <izz>7.50477e-05</izz>
+          <ixx>0.000500872</ixx>
+          <ixy>-0.00109321</ixy>
+          <ixz>-0.00092282</ixz>
+          <iyy>0.00126284</iyy>
+          <iyz>0.000141027</iyz>
+          <izz>0.00115718</izz>
         </inertia>
       </inertial>
       <collision name='RBicep_collision'>
@@ -1713,8 +1713,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RElbowYaw' type='revolute'>
       <pose relative_to='RBicep'>0.1812 -0.015 0.00013 0 -0.157079 0</pose>
@@ -1740,12 +1740,12 @@
         <pose>-0.02297 0.00019 0.00119 0 -0 0</pose>
         <mass>0.27495</mass>
         <inertia>
-          <ixx>0.00012337</ixx>
-          <ixy>-2.1394e-07</ixy>
-          <ixz>1.80682e-05</ixz>
-          <iyy>-2.1394e-07</iyy>
-          <iyz>0.000477224</iyz>
-          <izz>-1.92708e-06</izz>
+          <ixx>0.000122971</ixx>
+          <ixy>-1.4139e-06</ixy>
+          <ixz>1.05526e-05</ixz>
+          <iyy>0.000331766</iyy>
+          <iyz>-1.86491e-06</iyz>
+          <izz>0.000303047</izz>
         </inertia>
       </inertial>
       <collision name='RElbow_collision'>
@@ -1777,8 +1777,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RElbowRoll' type='revolute'>
       <pose relative_to='RElbow'>0 0 0 0 -0 0</pose>
@@ -1804,12 +1804,12 @@
         <pose>0.0593 -0.00271 -0.01014 0 -0 0</pose>
         <mass>0.16579</mass>
         <inertia>
-          <ixx>0.0015834</ixx>
-          <ixy>-1.18913e-05</ixy>
-          <ixz>-3.91152e-05</ixz>
-          <iyy>-1.18913e-05</iyy>
-          <iyz>0.00233224</iyz>
-          <izz>4.37962e-06</izz>
+          <ixx>0.00156513</ixx>
+          <ixy>-3.85342e-05</ixy>
+          <ixz>-0.000138805</ixz>
+          <iyy>0.00173219</iyy>
+          <iyz>8.93543e-06</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='RForeArm_collision'>
@@ -1841,8 +1841,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RWristYaw' type='revolute'>
       <pose relative_to='RForeArm'>0.15 0 0 0 -0 0</pose>
@@ -1868,12 +1868,12 @@
         <pose>0.03536 0.00072 -0.00207 0 -0 0</pose>
         <mass>0.27555</mass>
         <inertia>
-          <ixx>0.000152966</ixx>
-          <ixy>1.76782e-05</ixy>
-          <ixz>-2.3064e-05</ixz>
-          <iyy>1.76782e-05</iyy>
-          <iyz>0.000776808</iyz>
-          <izz>-3.54783e-06</izz>
+          <ixx>0.000151643</ixx>
+          <ixy>2.46935e-05</ixy>
+          <ixz>-4.3233e-05</ixz>
+          <iyy>0.000431099</iyy>
+          <iyz>-3.95851e-06</iyz>
+          <izz>0.000456172</izz>
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
@@ -1905,8 +1905,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger11' type='revolute'>
       <pose relative_to='r_wrist'>0.0821 0.0268 0.004 1.39757 1.04064 0.033433</pose>
@@ -1967,8 +1967,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger12' type='revolute'>
       <pose relative_to='RFinger11_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2029,8 +2029,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger13' type='revolute'>
       <pose relative_to='RFinger12_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2091,8 +2091,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger21' type='revolute'>
       <pose relative_to='r_wrist'>0.0873 0.0073 0.006 1.5708 1.0472 0.061086</pose>
@@ -2153,8 +2153,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger22' type='revolute'>
       <pose relative_to='RFinger21_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2215,8 +2215,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger23' type='revolute'>
       <pose relative_to='RFinger22_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2277,8 +2277,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger31' type='revolute'>
       <pose relative_to='r_wrist'>0.0833 -0.0123 0.004 1.67523 1.04483 0.029316</pose>
@@ -2339,8 +2339,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger32' type='revolute'>
       <pose relative_to='RFinger31_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2401,8 +2401,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger33' type='revolute'>
       <pose relative_to='RFinger32_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2463,8 +2463,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger41' type='revolute'>
       <pose relative_to='r_wrist'>0.074 -0.0309 0 1.74402 1.04064 -0.068339</pose>
@@ -2525,8 +2525,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger42' type='revolute'>
       <pose relative_to='RFinger41_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2587,8 +2587,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RFinger43' type='revolute'>
       <pose relative_to='RFinger42_link'>0.018 0 0 0 0 -1.0472</pose>
@@ -2649,8 +2649,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RHand' type='revolute'>
       <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
@@ -2684,8 +2684,8 @@
           <izz>1.1e-09</izz>
         </inertia>
       </inertial>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RThumb1' type='revolute'>
       <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -1.18323 0.60626 -0.533978</pose>
@@ -2746,8 +2746,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='RThumb2' type='revolute'>
       <pose relative_to='RThumb1_link'>0.022 0 0 0 0 -1.0472</pose>
@@ -2808,8 +2808,8 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
-      <self_collide>false</self_collide>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
     </link>
     <joint name='WheelB' type='revolute'>
       <pose relative_to='base_link'>-0.17 0 0.07 0 0 -3.14159</pose>
@@ -2832,15 +2832,15 @@
     <link name='WheelB_link'>
       <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
-        <mass>1.29464</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.00257659</ixx>
-          <ixy>-1.63442e-06</ixy>
-          <ixz>-4.10097e-05</ixz>
-          <iyy>-1.63442e-06</iyy>
-          <iyz>0.00266064</iyz>
-          <izz>-1.8153e-07</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>-6.3068e-07</ixy>
+          <ixz>-5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelB_link_collision'>
@@ -2877,7 +2877,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
+      <gravity>1</gravity>
     </link>
     <joint name='WheelFL' type='revolute'>
       <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
@@ -2900,15 +2900,15 @@
     <link name='WheelFL_link'>
       <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
-        <mass>1.29464</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.00257659</ixx>
-          <ixy>-1.63442e-06</ixy>
-          <ixz>-4.10097e-05</ixz>
-          <iyy>-1.63442e-06</iyy>
-          <iyz>0.00266064</iyz>
-          <izz>-1.8153e-07</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>-6.3068e-07</ixy>
+          <ixz>-5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelFL_link_collision'>
@@ -2945,7 +2945,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
+      <gravity>1</gravity>
     </link>
     <joint name='WheelFR' type='revolute'>
       <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
@@ -2968,15 +2968,15 @@
     <link name='WheelFR_link'>
       <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.00058 -0.00063 0.0001 0 -0 0</pose>
-        <mass>1.29464</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.00257659</ixx>
-          <ixy>-1.63442e-06</ixy>
-          <ixz>-4.10097e-05</ixz>
-          <iyy>-1.63442e-06</iyy>
-          <iyz>0.00266064</iyz>
-          <izz>-1.8153e-07</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>-6.3068e-07</ixy>
+          <ixz>-5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelFR_link_collision'>
@@ -3013,7 +3013,7 @@
           </mesh>
         </geometry>
       </visual>
-      <gravity>true</gravity>
+      <gravity>1</gravity>
     </link>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <left_joint>WheelFL</left_joint>
@@ -3025,13 +3025,13 @@
     <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>
       <parameters>/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
-    <static>false</static>
+    <static>0</static>
     <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
-      <use_pose_vector_msg>true</use_pose_vector_msg>
-      <publish_nested_model_pose>true</publish_nested_model_pose>
-      <publish_link_pose>false</publish_link_pose>
-      <publish_collision_pose>false</publish_collision_pose>
-      <publish_visual_pose>false</publish_visual_pose>
+      <use_pose_vector_msg>1</use_pose_vector_msg>
+      <publish_nested_model_pose>1</publish_nested_model_pose>
+      <publish_link_pose>0</publish_link_pose>
+      <publish_collision_pose>0</publish_collision_pose>
+      <publish_visual_pose>0</publish_visual_pose>
     </plugin>
   </model>
 </sdf>
