@@ -450,14 +450,14 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.08151 0.01284 -0.01017 0 -0 0</pose>
+        <pose>0.01284 -0.08151 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
-          <ixy>0.00109321</ixy>
-          <ixz>-0.00092282</ixz>
+          <ixy>-3.55918e-05</ixy>
+          <ixz>8.51263e-05</ixz>
           <iyy>0.00126284</iyy>
-          <iyz>-0.000141027</iyz>
+          <iyz>9.06813e-06</iyz>
           <izz>0.00115718</izz>
         </inertia>
       </inertial>
@@ -1673,14 +1673,14 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.08151 -0.01284 -0.01017 0 -0 0</pose>
+        <pose>-0.01284 -0.08151 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
           <ixx>0.000500872</ixx>
-          <ixy>-0.00109321</ixy>
-          <ixz>-0.00092282</ixz>
+          <ixy>3.55918e-05</ixy>
+          <ixz>8.51263e-05</ixz>
           <iyy>0.00126284</iyy>
-          <iyz>0.000141027</iyz>
+          <iyz>-9.06813e-06</iyz>
           <izz>0.00115718</izz>
         </inertia>
       </inertial>
