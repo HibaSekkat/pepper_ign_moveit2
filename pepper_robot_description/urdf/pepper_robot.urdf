@@ -186,8 +186,8 @@
   <link name="LBicep">
     <inertial>
       <mass value="0.3111478299474749"/>
-      <inertia ixx="-0.036712" ixy="-0.001983" ixz="-0.004585" iyy="-0.105678" iyz="0.000353" izz="-0.099887"/>
-      <origin rpy="0 0 0" xyz="0.911876 0.165381 0.001039"/>
+      <inertia ixx="0.036712" ixy="-0.001983" ixz="0.004585" iyy="0.105678" iyz="0.000353" izz="0.099887"/>
+      <origin rpy="0 0 0" xyz="0.911876 -0.165381 0.001039"/>
     </inertial>
     <visual>
       <geometry>

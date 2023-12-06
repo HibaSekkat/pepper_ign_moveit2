@@ -450,15 +450,15 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.911876 0.165381 0.001039 0 -0 0</pose>
+        <pose>0.911876 -0.165381 0.001039 0 -0 0</pose>
         <mass>0.311148</mass>
         <inertia>
-          <ixx>-0.036712</ixx>
+          <ixx>0.036712</ixx>
           <ixy>-0.001983</ixy>
-          <ixz>-0.004585</ixz>
-          <iyy>-0.105678</iyy>
+          <ixz>0.004585</ixz>
+          <iyy>0.105678</iyy>
           <iyz>0.000353</iyz>
-          <izz>-0.099887</izz>
+          <izz>0.099887</izz>
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
