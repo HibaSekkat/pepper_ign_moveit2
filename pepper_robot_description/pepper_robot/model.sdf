@@ -130,7 +130,7 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
+        <pose>-0.013895 -0.00151 -0.650903 0 -0 0</pose>
         <mass>0.999197</mass>
         <inertia>
           <ixx>0.254801</ixx>
@@ -322,7 +322,7 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.04127 -0.000245 1.18841 0 -0 0</pose>
+        <pose>-0.013895 -0.000836 0.06 0 -0 0</pose>
         <mass>2.28792</mass>
         <inertia>
           <ixx>0.916109</ixx>
