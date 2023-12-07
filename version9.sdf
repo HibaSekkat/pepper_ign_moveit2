@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
+        <pose>0.01 0.000168 -1.0109 0 -0 0</pose>
         <mass>3.76462</mass>
         <inertia>
           <ixx>3.65321</ixx>
@@ -118,7 +118,7 @@
         <limit>
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
-          <effort>19.787</effort>
+          <effort>0</effort>
           <velocity>2.93276</velocity>
         </limit>
         <dynamics>
@@ -182,7 +182,7 @@
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
-          <effort>10.1884</effort>
+          <effort>0</effort>
           <velocity>2.27032</velocity>
         </limit>
         <dynamics>
@@ -194,7 +194,7 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013895 -0.000836 0.01 0 -0 0</pose>
+        <pose>-0.05 -0.000836 0.03 0 -0 0</pose>
         <mass>4.85494</mass>
         <inertia>
           <ixx>4.52941</ixx>
@@ -310,7 +310,7 @@
         <limit>
           <lower>-0.706858</lower>
           <upper>0.4451</upper>
-          <effort>2.666</effort>
+          <effort>0</effort>
           <velocity>9.22756</velocity>
         </limit>
         <dynamics>
