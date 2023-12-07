@@ -130,7 +130,7 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013895 -0.00151 -0.650903 0 -0 0</pose>
+        <pose>-0.013895 -0.000836 -0.650903 0 -0 0</pose>
         <mass>0.999197</mass>
         <inertia>
           <ixx>0.254801</ixx>
@@ -194,7 +194,7 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013895 -0.000836 0 0 -0 0</pose>
+        <pose>-0.013895 -0.000836 0.01 0 -0 0</pose>
         <mass>4.85494</mass>
         <inertia>
           <ixx>4.52941</ixx>
