@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.01 0.000168 -1.0109 0 -0 0</pose>
+        <pose>0 0.000168 -1.0109 0 -0 0</pose>
         <mass>3.76462</mass>
         <inertia>
           <ixx>3.65321</ixx>
@@ -194,7 +194,7 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.05 -0.000836 0.03 0 -0 0</pose>
+        <pose>-0.05 -0.000836 0.4 0 -0 0</pose>
         <mass>4.85494</mass>
         <inertia>
           <ixx>4.52941</ixx>
