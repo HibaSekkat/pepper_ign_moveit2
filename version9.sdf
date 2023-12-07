@@ -2,7 +2,7 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>-0.033367 -5.8e-05 -1.66002 0 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <mass>12.2436</mass>
         <inertia>
           <ixx>19.9738</ixx>
@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0.000168 -1.0109 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>3.76462</mass>
         <inertia>
           <ixx>3.65321</ixx>
@@ -130,7 +130,7 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013895 -0.000836 -0.650903 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.999197</mass>
         <inertia>
           <ixx>0.254801</ixx>
@@ -258,7 +258,7 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013895 -0.000836 0.028546 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.0907206</mass>
         <inertia>
           <ixx>0.007666</ixx>
@@ -322,7 +322,7 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013895 -0.000836 0.06 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>2.28792</mass>
         <inertia>
           <ixx>0.916109</ixx>
@@ -386,7 +386,7 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 -0.000468 -0.000102 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.139569</mass>
         <inertia>
           <ixx>0.013811</ixx>
@@ -450,7 +450,7 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.911876 -0.165381 0.001039 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.311148</mass>
         <inertia>
           <ixx>0.036712</ixx>
@@ -514,7 +514,7 @@
     <link name='LElbow'>
       <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-1.8e-05 0.002575 0.001077 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.0732034</mass>
         <inertia>
           <ixx>0.004564</ixx>
@@ -578,7 +578,7 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.474169 0.035548 0.003732 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.132126</mass>
         <inertia>
           <ixx>0.011032</ixx>
@@ -642,7 +642,7 @@
     <link name='l_wrist'>
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.110379 -0.027219 0.025007 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.205901</mass>
         <inertia>
           <ixx>0.0116081</ixx>
@@ -1609,7 +1609,7 @@
     <link name='RShoulder'>
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 -0.000468 -0.000102 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.139569</mass>
         <inertia>
           <ixx>0.013811</ixx>
@@ -1673,7 +1673,7 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.911876 -0.165381 0.001039 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.311148</mass>
         <inertia>
           <ixx>0.036712</ixx>
@@ -1737,7 +1737,7 @@
     <link name='RElbow'>
       <pose relative_to='RElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-1.8e-05 0.002575 0.001077 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.0732034</mass>
         <inertia>
           <ixx>0.004564</ixx>
@@ -1801,7 +1801,7 @@
     <link name='RForeArm'>
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.470716 -0.036756 -0.001069 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.132126</mass>
         <inertia>
           <ixx>0.00709906</ixx>
@@ -2832,7 +2832,7 @@
     <link name='WheelB_link'>
       <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.002038 0.002465 -0.000449 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.751398</mass>
         <inertia>
           <ixx>0.247063</ixx>
@@ -2900,7 +2900,7 @@
     <link name='WheelFL_link'>
       <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.001231 -0.000593 0.000125 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.751398</mass>
         <inertia>
           <ixx>0.247495</ixx>
@@ -2968,7 +2968,7 @@
     <link name='WheelFR_link'>
       <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.001816 0.000235 -0.000774 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <mass>0.751398</mass>
         <inertia>
           <ixx>0.247765</ixx>
