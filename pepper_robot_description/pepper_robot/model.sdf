@@ -325,7 +325,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <mass>2.28792</mass>
         <inertia>
-          <ixx>0.916109</ixx>
+          <ixx>-0.916109</ixx>
           <ixy>0.000578623</ixy>
           <ixz>0.0387051</ixz>
           <iyy>0.902241</iyy>

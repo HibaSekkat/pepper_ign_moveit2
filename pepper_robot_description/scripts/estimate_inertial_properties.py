@@ -29,24 +29,24 @@ def main():
     )
 
     # ## Get path to all visual meshes (automatic mode)
-    visual_mesh_dir = path.join(
-         path.dirname(path.dirname(path.realpath(__file__))),
-         "pepper_robot",
-         "meshes",
-         "visual",
-    )
-    visual_mesh_basenames = listdir(visual_mesh_dir)
-    visual_mesh_basenames.sort()
+    #visual_mesh_dir = path.join(
+    #     path.dirname(path.dirname(path.realpath(__file__))),
+    #     "pepper_robot",
+    #     "meshes",
+    #     "visual",
+    #)
+    #visual_mesh_basenames = listdir(visual_mesh_dir)
+    #visual_mesh_basenames.sort()
 
     ## Get path to specific visual meshes (manual mode)
-    #visual_mesh_dir = path.join(
-    #    path.dirname(path.dirname(path.realpath(__file__))),
-    #    "pepper_robot",
-    #    "meshes",
-    #    "visual",
-    #)
-    #visual_mesh_basenames = ["file.dae"]
-    #visual_mesh_basenames.sort()
+    visual_mesh_dir = path.join(
+        path.dirname(path.dirname(path.realpath(__file__))),
+        "pepper_robot",
+        "meshes",
+        "visual",
+    )
+    visual_mesh_basenames = ["HeadPitch.dae"]
+    visual_mesh_basenames.sort()
 
     # Load all meshes
     meshes = {}
@@ -77,22 +77,8 @@ def main():
     for link_name in meshes:
         mesh = meshes[link_name]
         mesh.density = average_density
-        mass = {'HeadPitch': 1.5189, 'HeadYaw': 0.27391, 'HipPitch': 2.4592,
-                'HipRoll': 1.0234, 'KneePitch': 15.485, 'LElbowRoll': 0.16579,
-                'LElbowYaw': 0.27495, 'LFinger11': 2e-06, 'LFinger12': 2e-06,
-                'LFinger13': 2e-06, 'LFinger21': 2e-06, 'LFinger22': 2e-06,
-                'LFinger23': 2e-06, 'LFinger31': 2e-06, 'LFinger32': 2e-06,
-                'LFinger33': 2e-06, 'LFinger41': 2e-06, 'LFinger42': 2e-06,
-                'LFinger43': 2e-06, 'LShoulderPitch': 0.3125, 'LShoulderRoll': 0.50527,
-                'LThumb1': 2e-06, 'LThumb2': 2e-06, 'LWristYaw': 0.27555,
-                'RElbowRoll': 0.16579, 'RElbowYaw': 0.27495, 'RFinger11': 2e-06,
-                'RFinger12': 2e-06, 'RFinger13': 2e-06, 'RFinger21': 2e-06,
-                'RFinger22': 2e-06, 'RFinger23': 2e-06, 'RFinger31': 2e-06,
-                'RFinger32': 2e-06, 'RFinger33': 2e-06, 'RFinger41': 2e-06,
-                'RFinger42': 2e-06, 'RFinger43': 2e-06, 'RShoulderPitch': 0.3125,
-                'RShoulderRoll': 0.50527, 'RThumb1': 2e-06, 'RThumb2': 2e-06,
-                'RWristYaw': 0.27555, 'Torso': 3.9953, 'WheelB': 1.29464,
-                'WheelFL': 1.29464, 'WheelFR': 1.29464}
+        mass = {'HeadPitch': 1.5189}
+        centre_of_mass = {'HeadPitch': 4.71298e-02, -1.04194e-03, 1.17396e+00}
         #mass[link_name] = max(mesh.mass, 1e-10)
         inertia[link_name] = mesh.moment_inertia
         centre_of_mass[link_name] = mesh.center_mass
