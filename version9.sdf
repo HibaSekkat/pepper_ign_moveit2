@@ -311,7 +311,7 @@
           <lower>-0.706858</lower>
           <upper>0.4451</upper>
           <effort>0</effort>
-          <velocity>9.22756</velocity>
+          <velocity>0.1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
