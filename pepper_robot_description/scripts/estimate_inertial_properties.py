@@ -78,10 +78,11 @@ def main():
         mesh = meshes[link_name]
         mesh.density = average_density
         mass = {'HeadPitch': 1.5189}
-        centre_of_mass = {'HeadPitch': 4.71298e-02, -1.04194e-03, 1.17396e+00}
+        #centre_of_mass = {'HeadPitch': 4.71298e-02, -1.04194e-03, 1.17396e+00}
         #mass[link_name] = max(mesh.mass, 1e-10)
         inertia[link_name] = mesh.moment_inertia
         centre_of_mass[link_name] = mesh.center_mass
+        print(centre_of_mass)
     # Create a new SDF with one model
     sdf = SDF()
     sdf.add_model(name="pepper_robot")

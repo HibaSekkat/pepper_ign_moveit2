@@ -1,4 +1,4 @@
-<sdf version='1.7'>
+<sdf version='1.9'>
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
@@ -322,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>2.28792</mass>
+        <pose>0.04127 -0.000245 1.18841 0 -0 0</pose>
+        <mass>1.5189</mass>
         <inertia>
-          <ixx>-0.916109</ixx>
-          <ixy>0.000578623</ixy>
-          <ixz>0.0387051</ixz>
-          <iyy>0.902241</iyy>
-          <iyz>5.05255e-06</iyz>
-          <izz>0.940707</izz>
+          <ixx>11.2115</ixx>
+          <ixy>0.00708131</ixy>
+          <ixz>0.473681</ixz>
+          <iyy>11.0418</iyy>
+          <iyz>6.18342e-05</iyz>
+          <izz>11.5126</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
