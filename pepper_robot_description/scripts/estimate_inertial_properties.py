@@ -30,14 +30,14 @@ def main():
     )
 
     ## Get path to all visual meshes (automatic mode)
-    visual_mesh_dir = path.join(
-         path.dirname(path.dirname(path.realpath(__file__))),
-         "pepper_robot",
-         "meshes",
-         "visual",
-    )
-    visual_mesh_basenames = listdir(visual_mesh_dir)
-    visual_mesh_basenames.sort()
+    #visual_mesh_dir = path.join(
+    #     path.dirname(path.dirname(path.realpath(__file__))),
+    #     "pepper_robot",
+    #     "meshes",
+    #     "visual",
+    #)
+    #visual_mesh_basenames = listdir(visual_mesh_dir)
+    #visual_mesh_basenames.sort()
 
     ## Get path to specific visual meshes (manual mode)
     #visual_mesh_dir = path.join(
@@ -46,7 +46,7 @@ def main():
     #    "meshes",
     #    "visual",
     #)
-    #visual_mesh_basenames = ["HeadPitch.dae"]
+    #visual_mesh_basenames = ["Torso.dae"]
     #visual_mesh_basenames.sort()
 
     # Load all meshes
