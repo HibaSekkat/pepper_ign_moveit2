@@ -194,15 +194,15 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.304907 0.004527 0.396729 0 -0 0</pose>
-        <mass>3.9953</mass>
+        <pose>-0.021305 0.00566 0.6009 0 -0 0</pose>
+        <mass>8.28368</mass>
         <inertia>
-          <ixx>4.59559</ixx>
-          <ixy>6.33591e-05</ixy>
-          <ixz>0.669875</ixz>
-          <iyy>4.07322</iyy>
-          <iyz>-0.00019916</iyz>
-          <izz>3.40466</izz>
+          <ixx>23.4791</ixx>
+          <ixy>-0.249661</ixy>
+          <ixz>-7.25029</ixz>
+          <iyy>26.3173</iyy>
+          <iyz>-0.800135</iyz>
+          <izz>29.7163</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
