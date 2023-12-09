@@ -194,7 +194,7 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-28.7287 0.310916 9.46569 0 -0 0</pose>
+        <pose>2e-06 2e-06 2e-06 0 -0 0</pose>
         <mass>11.9061</mass>
         <inertia>
           <ixx>19.0413</ixx>
