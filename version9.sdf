@@ -258,15 +258,15 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0907206</mass>
+        <pose>-0.017221 -0.003164 -0.029471 0 -0 0</pose>
+        <mass>0.162123</mass>
         <inertia>
-          <ixx>0.007666</ixx>
-          <ixy>1.2e-05</ixy>
-          <ixz>0.00026</ixz>
-          <iyy>0.007988</iyy>
-          <iyz>4.5e-05</iyz>
-          <izz>0.007468</izz>
+          <ixx>70.9546</ixx>
+          <ixy>-0.249348</ixy>
+          <ixz>-3.38059</ixz>
+          <iyy>76.5704</iyy>
+          <iyz>2.61211</iyz>
+          <izz>53.6469</izz>
         </inertia>
       </inertial>
       <collision name='Neck_collision'>
@@ -322,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.04127 -0.000245 1.18841 0 -0 0</pose>
-        <mass>1.5189</mass>
+        <pose>0.233074 0.001352 1.18581 0 -0 0</pose>
+        <mass>4.19493</mass>
         <inertia>
-          <ixx>11.2115</ixx>
-          <ixy>0.00708131</ixy>
-          <ixz>0.473681</ixz>
-          <iyy>11.0418</iyy>
-          <iyz>6.18342e-05</iyz>
-          <izz>11.5126</izz>
+          <ixx>43.2956</ixx>
+          <ixy>-0.434548</ixy>
+          <ixz>-0.286176</ixz>
+          <iyy>43.3623</iyy>
+          <iyz>0.767213</iyz>
+          <izz>28.6343</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
