@@ -197,12 +197,12 @@
         <pose>-28.7287 0.310916 9.46569 0 -0 0</pose>
         <mass>11.9061</mass>
         <inertia>
-          <ixx>202.086</ixx>
-          <ixy>-2.81838</ixy>
-          <ixz>-47.6835</ixz>
-          <iyy>283.458</iyy>
-          <iyz>-1.61744</iyz>
-          <izz>157.152</izz>
+          <ixx>19.0413</ixx>
+          <ixy>-0.0977715</ixy>
+          <ixz>-5.8355</ixz>
+          <iyy>20.1415</iyy>
+          <iyz>-0.0374792</iyz>
+          <izz>24.326</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
