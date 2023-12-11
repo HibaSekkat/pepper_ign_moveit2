@@ -1,24 +1,24 @@
-<sdf version='1.9'>
+<sdf version='1.7'>
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>-0.0302 0.002192 -1.68079 0 -0 0</pose>
-        <mass>15.485</mass>
+        <pose>0.002205 0 0.416271 0 -0 0</pose>
+        <mass>11.6015</mass>
         <inertia>
-          <ixx>20.2656</ixx>
-          <ixy>-0.00116473</ixy>
-          <ixz>0.667579</ixz>
-          <iyy>18.1698</iyy>
-          <iyz>-0.000613168</iyz>
-          <izz>21.9583</izz>
+          <ixx>0.129229</ixx>
+          <ixy>-0.000401943</ixy>
+          <ixz>0.00048556</ixz>
+          <iyy>0.122839</iyy>
+          <iyz>-1.01666e-08</iyz>
+          <izz>0.108168</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
         <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/KneePitch_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/KneePitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -37,13 +37,74 @@
         <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/KneePitch.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/KneePitch_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__KneePitch_1_visual_1'>
+        <pose>0 0 0.334 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/KneePitch_1.obj</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
+      <sensor name='SonarBack' type='ray'>
+        <update_rate>20</update_rate>
+        <visualize>0</visualize>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>3</resolution>
+              <min_angle>-0.52</min_angle>
+              <max_angle>0.52</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>3</resolution>
+              <min_angle>-0.52</min_angle>
+              <max_angle>0.52</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0</min>
+            <max>5</max>
+            <resolution>3</resolution>
+          </range>
+        </ray>
+        <pose>-0.0718 0 0.2806 -0 -0.209438 -3.14159</pose>
+      </sensor>
+      <sensor name='SonarFront' type='ray'>
+        <update_rate>20</update_rate>
+        <visualize>0</visualize>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>5</samples>
+              <resolution>3</resolution>
+              <min_angle>-0.52</min_angle>
+              <max_angle>0.52</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>5</samples>
+              <resolution>3</resolution>
+              <min_angle>-0.52</min_angle>
+              <max_angle>0.52</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0</min>
+            <max>5</max>
+            <resolution>3</resolution>
+          </range>
+        </ray>
+        <pose>0.0699 0 0.2317 0 -0.322858 0</pose>
+      </sensor>
     </link>
     <joint name='KneePitch' type='revolute'>
       <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
@@ -66,23 +127,23 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.073618 0.001063 -0.966838 0 -0 0</pose>
-        <mass>2.4592</mass>
+        <pose>0.00237 0 -0.01754 0 -0 0</pose>
+        <mass>2.45917</mass>
         <inertia>
-          <ixx>3.70658</ixx>
-          <ixy>0.000421548</ixy>
-          <ixz>0.0227469</ixz>
-          <iyy>2.92633</iyy>
-          <iyz>0.000503874</iyz>
-          <izz>1.86247</izz>
+          <ixx>0.034351</ixx>
+          <ixy>0</ixy>
+          <ixz>0.000223034</ixz>
+          <iyy>0.0303122</iyy>
+          <iyz>-8.37542e-05</iyz>
+          <izz>0.0143771</izz>
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
         <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipPitch_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HipPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -101,8 +162,17 @@
         <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipPitch.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HipPitch_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='Pelvis_fixed_joint_lump__HipPitch_1_visual_1'>
+        <pose>0 0 0.268 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HipPitch_1.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -118,7 +188,7 @@
         <limit>
           <lower>-1.03847</lower>
           <upper>1.03847</upper>
-          <effort>0</effort>
+          <effort>19.787</effort>
           <velocity>2.93276</velocity>
         </limit>
         <dynamics>
@@ -130,23 +200,23 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.017775 -0.002762 -0.647289 0 -0 0</pose>
-        <mass>1.0234</mass>
+        <pose>0.00032 0 -0.07068 0 -0 0</pose>
+        <mass>1.02338</mass>
         <inertia>
-          <ixx>0.258524</ixx>
-          <ixy>-9.15468e-05</ixy>
-          <ixz>0.00408172</ixz>
-          <iyy>0.355197</iyy>
-          <iyz>-0.00130527</iyz>
-          <izz>0.181933</izz>
+          <ixx>0.00502422</ixx>
+          <ixy>0</ixy>
+          <ixz>-2.54911e-05</ixz>
+          <iyy>0.00640971</iyy>
+          <iyz>0.000159449</iyz>
+          <izz>0.00441082</izz>
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
         <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipRoll_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HipRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -165,8 +235,8 @@
         <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HipRoll.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HipRoll.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -174,7 +244,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
-      <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
+      <pose relative_to='Hip'>-2e-05 0 0.079 0 -0 0</pose>
       <parent>Hip</parent>
       <child>torso</child>
       <axis>
@@ -182,7 +252,7 @@
         <limit>
           <lower>-0.514872</lower>
           <upper>0.514872</upper>
-          <effort>0</effort>
+          <effort>10.1884</effort>
           <velocity>2.27032</velocity>
         </limit>
         <dynamics>
@@ -194,23 +264,23 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.304907 0.004527 0.396729 0 -0 0</pose>
-        <mass>3.9953</mass>
+        <pose>0.00322 0 0.12871 0 -0 0</pose>
+        <mass>3.99533</mass>
         <inertia>
-          <ixx>4.59559</ixx>
-          <ixy>6.33591e-05</ixy>
-          <ixz>0.669875</ixz>
-          <iyy>4.07322</iyy>
-          <iyz>-0.00019916</iyz>
-          <izz>3.40466</izz>
+          <ixx>0.0452761</ixx>
+          <ixy>0</ixy>
+          <ixz>0.00499091</ixz>
+          <iyy>0.0432702</iyy>
+          <iyz>-0.000266886</iyz>
+          <izz>0.0258881</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
-        <pose>2e-05 0 0.139 0 -0 0</pose>
+        <pose>0 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/Torso_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -226,11 +296,47 @@
         </surface>
       </collision>
       <visual name='torso_visual'>
-        <pose>2e-05 0 0.139 0 -0 0</pose>
+        <pose>0 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/Torso.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Torso_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='torso_fixed_joint_lump__Torso_1_visual_1'>
+        <pose>0 0 0.139 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Torso_1.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='torso_fixed_joint_lump__Torso_2_visual_2'>
+        <pose>0 0 0.139 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Torso_2.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='torso_fixed_joint_lump__Torso_3_visual_3'>
+        <pose>0 0 0.139 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Torso_3.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='torso_fixed_joint_lump__Torso_4_visual_4'>
+        <pose>0 0 0.139 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Torso_4.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -258,23 +364,23 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.013872 -0.000805 0.028009 0 -0 0</pose>
+        <pose>-0.00207 0 -0.02636 0 -0 0</pose>
         <mass>0.27391</mass>
         <inertia>
-          <ixx>0.00442204</ixx>
-          <ixy>-2.24163e-10</ixy>
-          <ixz>0.000119272</ixz>
-          <iyy>0.00470934</iyy>
-          <iyz>1.46649e-09</iyz>
-          <izz>0.00441196</izz>
+          <ixx>0.000343501</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.88563e-05</ixz>
+          <iyy>0.000493898</iyy>
+          <iyz>2.09863e-06</iyz>
+          <izz>0.000215252</izz>
         </inertia>
       </inertial>
       <collision name='Neck_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadYaw_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -293,8 +399,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadYaw.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadYaw.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -309,9 +415,9 @@
         <xyz>0 1 0</xyz>
         <limit>
           <lower>-0.706858</lower>
-          <upper>0.4451</upper>
-          <effort>0</effort>
-          <velocity>0.1</velocity>
+          <upper>0.637045</upper>
+          <effort>2.666</effort>
+          <velocity>9.22756</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -322,23 +428,23 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.04713 -0.001042 1.17396 0 -0 0</pose>
-        <mass>1.5189</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.51893</mass>
         <inertia>
-          <ixx>0.929494</ixx>
-          <ixy>0.000587077</ixy>
-          <ixz>0.0392706</ixz>
-          <iyy>0.915423</iyy>
-          <iyz>5.12637e-06</iyz>
-          <izz>0.954452</izz>
+          <ixx>nan</ixx>
+          <ixy>nan</ixy>
+          <ixz>nan</ixz>
+          <iyy>nan</iyy>
+          <iyz>nan</iyz>
+          <izz>nan</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadPitch_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -357,13 +463,108 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/HeadPitch.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadPitch_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='HeadPitch_1_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadPitch_1.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='HeadPitch_2_visual_2'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadPitch_2.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='HeadPitch_3_visual_3'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadPitch_3.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='HeadPitch_4_visual_4'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/HeadPitch_4.obj</uri>
           </mesh>
         </geometry>
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
+      <sensor name='CameraBottom' type='camera'>
+        <update_rate>5</update_rate>
+        <camera name='camera_bottom'>
+          <horizontal_fov>1</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>500</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <pose>0.09262 0 0.06177 0 0.698132 0</pose>
+      </sensor>
+      <sensor name='CameraDepth_frame_sensor' type='depth'>
+        <always_on>1</always_on>
+        <update_rate>20</update_rate>
+        <camera>
+          <horizontal_fov>1.01229</horizontal_fov>
+          <image>
+            <format>B8G8R8</format>
+            <width>320</width>
+            <height>240</height>
+          </image>
+          <clip>
+            <near>0.4</near>
+            <far>8</far>
+          </clip>
+        </camera>
+        <pose>0.05138 0.039 0.1194 0 -0 0</pose>
+      </sensor>
+      <sensor name='CameraTop' type='camera'>
+        <update_rate>5</update_rate>
+        <camera name='camera_top'>
+          <horizontal_fov>1</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.3</near>
+            <far>500</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <pose>0.08601 0 0.16284 0 -0 0</pose>
+      </sensor>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
@@ -386,23 +587,23 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>7.5e-05 -0.000487 -0.000251 0 -0 0</pose>
+        <pose>0.00018 -0.01856 0.00099 0 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
-          <ixx>0.00858661</ixx>
-          <ixy>-1.93407e-09</ixy>
-          <ixz>6.39477e-10</ixz>
-          <iyy>0.00858661</iyy>
-          <iyz>-2.0848e-09</iyz>
-          <izz>0.0103178</izz>
+          <ixx>0.000361198</ixx>
+          <ixy>-1.98347e-06</ixy>
+          <ixz>6.35907e-07</ixz>
+          <iyy>0.000137229</iyy>
+          <iyz>-5.68878e-06</iyz>
+          <izz>0.000399194</izz>
         </inertia>
       </inertial>
       <collision name='LShoulder_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderPitch_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -421,8 +622,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderPitch.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LShoulderPitch.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -450,23 +651,23 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.170866 0.074779 -0.003171 0 -0 0</pose>
+        <pose>0.08151 0.01284 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
-          <ixx>0.0248553</ixx>
-          <ixy>0.00128992</ixy>
-          <ixz>0.00171375</ixz>
-          <iyy>0.0721283</iyy>
-          <iyz>6.91816e-05</iyz>
-          <izz>0.0680929</izz>
+          <ixx>0.000500872</ixx>
+          <ixy>-3.55918e-05</ixy>
+          <ixz>8.51263e-05</ixz>
+          <iyy>0.00126284</iyy>
+          <iyz>9.06813e-06</iyz>
+          <izz>0.00115718</izz>
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderRoll_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -485,8 +686,17 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LShoulderRoll.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LShoulderRoll_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='LBicep_fixed_joint_lump__LShoulderRoll_1_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LShoulderRoll_1.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -514,23 +724,23 @@
     <link name='LElbow'>
       <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-1e-06 0.002573 0.001116 0 -0 0</pose>
+        <pose>-0.02297 -0.00019 0.00119 0 -0 0</pose>
         <mass>0.27495</mass>
         <inertia>
-          <ixx>0.00301552</ixx>
-          <ixy>-1.04539e-10</ixy>
-          <ixz>-4.22691e-12</ixz>
-          <iyy>0.00304689</iyy>
-          <iyz>-3.01268e-10</iyz>
-          <izz>0.00304688</izz>
+          <ixx>0.000122971</ixx>
+          <ixy>9.86024e-07</ixy>
+          <ixz>-2.55838e-05</ixz>
+          <iyy>0.000331766</iyy>
+          <iyz>-1.98925e-06</iyz>
+          <izz>0.000303047</izz>
         </inertia>
       </inertial>
       <collision name='LElbow_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowYaw_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -549,8 +759,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowYaw.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LElbowYaw.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -578,23 +788,23 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.474585 0.035389 0.003583 0 -0 0</pose>
+        <pose>0.0593 0.00271 -0.01014 0 -0 0</pose>
         <mass>0.16579</mass>
         <inertia>
-          <ixx>0.00720278</ixx>
-          <ixy>0.00113472</ixy>
-          <ixz>4.30017e-05</ixz>
-          <iyy>0.00997783</iyy>
-          <iyz>1.77852e-06</iyz>
-          <izz>0.00968335</izz>
+          <ixx>0.00156513</ixx>
+          <ixy>1.47517e-05</ixy>
+          <ixz>-6.05746e-05</ixz>
+          <iyy>0.00173219</iyy>
+          <iyz>-1.7619e-07</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='LForeArm_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowRoll_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -613,8 +823,17 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LElbowRoll.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LElbowRoll_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='LForeArm_fixed_joint_lump__LElbowRoll_1_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LElbowRoll_1.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -642,23 +861,23 @@
     <link name='l_wrist'>
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.105085 -0.024287 0.018005 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <pose>0.03561 -0.000715 -0.002185 0 -0 0</pose>
+        <mass>0.27755</mass>
         <inertia>
-          <ixx>0.0117777</ixx>
-          <ixy>0.000822933</ixy>
-          <ixz>-0.00334266</ixz>
-          <iyy>0.0380805</iyy>
-          <iyz>-0.000150213</iyz>
-          <izz>0.0405282</izz>
+          <ixx>0.00015215</ixx>
+          <ixy>1.06134e-05</ixy>
+          <ixz>3.99236e-06</ixz>
+          <iyy>0.000433988</iyy>
+          <iyz>-3.11434e-06</iyz>
+          <izz>0.000458557</izz>
         </inertia>
       </inertial>
       <collision name='l_wrist_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LWristYaw_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LWristYaw_vhacd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -677,8 +896,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LWristYaw.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/LWristYaw.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -692,8 +911,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -704,23 +925,23 @@
     <link name='LFinger11_link'>
       <pose relative_to='LFinger11'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger11_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger11_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -736,11 +957,11 @@
         </surface>
       </collision>
       <visual name='LFinger11_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger11.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -754,8 +975,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -766,23 +989,23 @@
     <link name='LFinger12_link'>
       <pose relative_to='LFinger12'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger12_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger12_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -798,11 +1021,11 @@
         </surface>
       </collision>
       <visual name='LFinger12_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger12.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -816,8 +1039,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -828,23 +1053,23 @@
     <link name='LFinger13_link'>
       <pose relative_to='LFinger13'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger13_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger13_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -860,11 +1085,11 @@
         </surface>
       </collision>
       <visual name='LFinger13_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger13.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -878,8 +1103,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -890,23 +1117,23 @@
     <link name='LFinger21_link'>
       <pose relative_to='LFinger21'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger21_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger21_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -922,11 +1149,11 @@
         </surface>
       </collision>
       <visual name='LFinger21_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger21.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -940,8 +1167,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -952,23 +1181,23 @@
     <link name='LFinger22_link'>
       <pose relative_to='LFinger22'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25914e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04271e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger22_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger22_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -984,11 +1213,11 @@
         </surface>
       </collision>
       <visual name='LFinger22_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger22.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1002,8 +1231,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1014,23 +1245,23 @@
     <link name='LFinger23_link'>
       <pose relative_to='LFinger23'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41678e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70416e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger23_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger23_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1046,11 +1277,11 @@
         </surface>
       </collision>
       <visual name='LFinger23_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger23.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1064,8 +1295,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1076,23 +1309,23 @@
     <link name='LFinger31_link'>
       <pose relative_to='LFinger31'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger31_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger31_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1108,11 +1341,11 @@
         </surface>
       </collision>
       <visual name='LFinger31_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger31.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1126,8 +1359,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1138,23 +1373,23 @@
     <link name='LFinger32_link'>
       <pose relative_to='LFinger32'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger32_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger32_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1170,11 +1405,11 @@
         </surface>
       </collision>
       <visual name='LFinger32_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger32.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1188,8 +1423,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1200,23 +1437,23 @@
     <link name='LFinger33_link'>
       <pose relative_to='LFinger33'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger33_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger33_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1232,11 +1469,11 @@
         </surface>
       </collision>
       <visual name='LFinger33_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger33.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1250,8 +1487,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1262,23 +1501,23 @@
     <link name='LFinger41_link'>
       <pose relative_to='LFinger41'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger41_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger41_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1294,11 +1533,11 @@
         </surface>
       </collision>
       <visual name='LFinger41_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger41.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1312,8 +1551,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1324,23 +1565,23 @@
     <link name='LFinger42_link'>
       <pose relative_to='LFinger42'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger42_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger42_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1356,11 +1597,11 @@
         </surface>
       </collision>
       <visual name='LFinger42_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger42.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1374,8 +1615,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1386,23 +1629,23 @@
     <link name='LFinger43_link'>
       <pose relative_to='LFinger43'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70413e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger43_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger43_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1418,11 +1661,11 @@
         </surface>
       </collision>
       <visual name='LFinger43_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LFinger43.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1432,7 +1675,7 @@
     <joint name='LHand' type='revolute'>
       <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
       <parent>l_wrist</parent>
-      <child>l_gripper</child>
+      <child>l_hand</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -1447,32 +1690,32 @@
         </dynamics>
       </axis>
     </joint>
-    <link name='l_gripper'>
+    <link name='l_hand'>
       <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>0.0117777</ixx>
-          <ixy>0.000822933</ixy>
-          <ixz>-0.00334266</ixz>
-          <iyy>0.0380805</iyy>
-          <iyz>-0.000150213</iyz>
-          <izz>0.0405282</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
-      <gravity>1</gravity>
-      <self_collide>0</self_collide>
     </link>
     <joint name='LThumb1' type='revolute'>
-      <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -1.95836 0.60626 0.533978</pose>
+      <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -2.55836 0.80626 0.533978</pose>
       <parent>l_wrist</parent>
       <child>LThumb1_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1483,23 +1726,23 @@
     <link name='LThumb1_link'>
       <pose relative_to='LThumb1'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04269e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LThumb1_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb1_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1515,11 +1758,11 @@
         </surface>
       </collision>
       <visual name='LThumb1_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb1.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1533,8 +1776,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1545,23 +1790,23 @@
     <link name='LThumb2_link'>
       <pose relative_to='LThumb2'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LThumb2_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb2_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1577,11 +1822,11 @@
         </surface>
       </collision>
       <visual name='LThumb2_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LThumb2.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1609,23 +1854,23 @@
     <link name='RShoulder'>
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>7.5e-05 -0.000487 -0.000251 0 -0 0</pose>
+        <pose>0.00018 0.01856 0.00099 0 -0 0</pose>
         <mass>0.3125</mass>
         <inertia>
-          <ixx>0.00858661</ixx>
-          <ixy>-1.93407e-09</ixy>
-          <ixz>6.39477e-10</ixz>
-          <iyy>0.00858661</iyy>
-          <iyz>-2.0848e-09</iyz>
-          <izz>0.0103178</izz>
+          <ixx>0.000361198</ixx>
+          <ixy>1.98347e-06</ixy>
+          <ixz>6.35907e-07</ixz>
+          <iyy>0.000137229</iyy>
+          <iyz>5.68878e-06</iyz>
+          <izz>0.000399194</izz>
         </inertia>
       </inertial>
       <collision name='RShoulder_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderPitch_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1644,8 +1889,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderPitch.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RShoulderPitch.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1673,23 +1918,23 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.913474 -0.165714 0.001045 0 -0 0</pose>
+        <pose>0.08151 -0.01284 -0.01017 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
-          <ixx>0.0248553</ixx>
-          <ixy>0.00128992</ixy>
-          <ixz>0.00171375</ixz>
-          <iyy>0.0721283</iyy>
-          <iyz>6.91816e-05</iyz>
-          <izz>0.0680929</izz>
+          <ixx>0.000500872</ixx>
+          <ixy>3.55918e-05</ixy>
+          <ixz>8.51263e-05</ixz>
+          <iyy>0.00126284</iyy>
+          <iyz>-9.06813e-06</iyz>
+          <izz>0.00115718</izz>
         </inertia>
       </inertial>
       <collision name='RBicep_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderRoll_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1708,8 +1953,17 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RShoulderRoll.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RShoulderRoll_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='RBicep_fixed_joint_lump__RShoulderRoll_1_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RShoulderRoll_1.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1737,23 +1991,23 @@
     <link name='RElbow'>
       <pose relative_to='RElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-1e-06 0.002573 0.001116 0 -0 0</pose>
+        <pose>-0.02297 0.00019 0.00119 0 -0 0</pose>
         <mass>0.27495</mass>
         <inertia>
-          <ixx>0.00301552</ixx>
-          <ixy>-1.04539e-10</ixy>
-          <ixz>-4.22691e-12</ixz>
-          <iyy>0.00304689</iyy>
-          <iyz>-3.01268e-10</iyz>
-          <izz>0.00304688</izz>
+          <ixx>0.000122971</ixx>
+          <ixy>-9.86024e-07</ixy>
+          <ixz>-2.55838e-05</ixz>
+          <iyy>0.000331766</iyy>
+          <iyz>1.98925e-06</iyz>
+          <izz>0.000303047</izz>
         </inertia>
       </inertial>
       <collision name='RElbow_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowYaw_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1772,8 +2026,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowYaw.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RElbowYaw.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1801,23 +2055,23 @@
     <link name='RForeArm'>
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.480719 -0.025038 -0.003296 0 -0 0</pose>
+        <pose>0.0593 -0.00271 -0.01014 0 -0 0</pose>
         <mass>0.16579</mass>
         <inertia>
-          <ixx>0.00720278</ixx>
-          <ixy>-0.00113472</ixy>
-          <ixz>4.30017e-05</ixz>
-          <iyy>0.00997783</iyy>
-          <iyz>-1.77852e-06</iyz>
-          <izz>0.00968335</izz>
+          <ixx>0.00156513</ixx>
+          <ixy>-1.47517e-05</ixy>
+          <ixz>-6.05746e-05</ixz>
+          <iyy>0.00173219</iyy>
+          <iyz>1.7619e-07</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='RForeArm_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowRoll_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1836,8 +2090,17 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RElbowRoll.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RElbowRoll_0.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='RForeArm_fixed_joint_lump__RElbowRoll_1_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RElbowRoll_1.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1865,23 +2128,23 @@
     <link name='r_wrist'>
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.094831 0.016332 0.027291 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <pose>0.03561 0.000715 -0.002185 0 -0 0</pose>
+        <mass>0.27755</mass>
         <inertia>
-          <ixx>0.0117777</ixx>
-          <ixy>-0.000822933</ixy>
-          <ixz>-0.00334266</ixz>
-          <iyy>0.0380805</iyy>
-          <iyz>0.000150213</iyz>
-          <izz>0.0405282</izz>
+          <ixx>0.00015215</ixx>
+          <ixy>-1.06134e-05</ixy>
+          <ixz>3.99236e-06</ixz>
+          <iyy>0.000433988</iyy>
+          <iyz>3.11434e-06</iyz>
+          <izz>0.000458557</izz>
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RWristYaw_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RWristYaw_vhacd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1900,8 +2163,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RWristYaw.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/RWristYaw.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1915,8 +2178,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1927,23 +2192,23 @@
     <link name='RFinger11_link'>
       <pose relative_to='RFinger11'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger11_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger11_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -1959,11 +2224,11 @@
         </surface>
       </collision>
       <visual name='RFinger11_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger11.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1977,8 +2242,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1989,23 +2256,23 @@
     <link name='RFinger12_link'>
       <pose relative_to='RFinger12'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger12_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger12_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2021,11 +2288,11 @@
         </surface>
       </collision>
       <visual name='RFinger12_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger12.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2039,8 +2306,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2051,23 +2320,23 @@
     <link name='RFinger13_link'>
       <pose relative_to='RFinger13'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger13_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger13_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2083,11 +2352,11 @@
         </surface>
       </collision>
       <visual name='RFinger13_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger13.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2101,8 +2370,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2113,23 +2384,23 @@
     <link name='RFinger21_link'>
       <pose relative_to='RFinger21'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger21_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger21_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2145,11 +2416,11 @@
         </surface>
       </collision>
       <visual name='RFinger21_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger21.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2163,8 +2434,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2175,23 +2448,23 @@
     <link name='RFinger22_link'>
       <pose relative_to='RFinger22'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25914e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04271e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger22_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger22_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2207,11 +2480,11 @@
         </surface>
       </collision>
       <visual name='RFinger22_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger22.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2225,8 +2498,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2237,23 +2512,23 @@
     <link name='RFinger23_link'>
       <pose relative_to='RFinger23'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41678e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70416e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger23_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger23_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2269,11 +2544,11 @@
         </surface>
       </collision>
       <visual name='RFinger23_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger23.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2287,8 +2562,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2299,23 +2576,23 @@
     <link name='RFinger31_link'>
       <pose relative_to='RFinger31'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger31_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger31_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2331,11 +2608,11 @@
         </surface>
       </collision>
       <visual name='RFinger31_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger31.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2349,8 +2626,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2361,23 +2640,23 @@
     <link name='RFinger32_link'>
       <pose relative_to='RFinger32'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger32_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger32_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2393,11 +2672,11 @@
         </surface>
       </collision>
       <visual name='RFinger32_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger32.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2411,8 +2690,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2423,23 +2704,23 @@
     <link name='RFinger33_link'>
       <pose relative_to='RFinger33'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger33_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger33_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2455,11 +2736,11 @@
         </surface>
       </collision>
       <visual name='RFinger33_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger33.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2473,8 +2754,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2485,23 +2768,23 @@
     <link name='RFinger41_link'>
       <pose relative_to='RFinger41'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger41_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger41_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2517,11 +2800,11 @@
         </surface>
       </collision>
       <visual name='RFinger41_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger41.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2535,8 +2818,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2547,23 +2832,23 @@
     <link name='RFinger42_link'>
       <pose relative_to='RFinger42'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger42_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger42_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2579,11 +2864,11 @@
         </surface>
       </collision>
       <visual name='RFinger42_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger42.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2597,8 +2882,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2609,23 +2896,23 @@
     <link name='RFinger43_link'>
       <pose relative_to='RFinger43'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70413e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger43_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger43_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2641,11 +2928,11 @@
         </surface>
       </collision>
       <visual name='RFinger43_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RFinger43.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2655,7 +2942,7 @@
     <joint name='RHand' type='revolute'>
       <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
       <parent>r_wrist</parent>
-      <child>r_gripper</child>
+      <child>r_hand</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -2670,32 +2957,32 @@
         </dynamics>
       </axis>
     </joint>
-    <link name='r_gripper'>
+    <link name='r_hand'>
       <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.27555</mass>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>0.0117777</ixx>
-          <ixy>-0.000822933</ixy>
-          <ixz>-0.00334266</ixz>
-          <iyy>0.0380805</iyy>
-          <iyz>0.000150213</iyz>
-          <izz>0.0405282</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
-      <gravity>1</gravity>
-      <self_collide>0</self_collide>
     </link>
     <joint name='RThumb1' type='revolute'>
-      <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -1.18323 0.60626 -0.533978</pose>
+      <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -0.58323 0.80626 -0.533978</pose>
       <parent>r_wrist</parent>
       <child>RThumb1_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2706,23 +2993,23 @@
     <link name='RThumb1_link'>
       <pose relative_to='RThumb1'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04269e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RThumb1_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb1_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2738,11 +3025,11 @@
         </surface>
       </collision>
       <visual name='RThumb1_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb1.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Phalax.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2756,8 +3043,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2768,23 +3057,23 @@
     <link name='RThumb2_link'>
       <pose relative_to='RThumb2'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RThumb2_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb2_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2800,11 +3089,11 @@
         </surface>
       </collision>
       <visual name='RThumb2_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/RThumb2.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/PhalaxEnd.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2832,23 +3121,23 @@
     <link name='WheelB_link'>
       <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.002008 0.00247 -0.000445 0 -0 0</pose>
-        <mass>1.29464</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.147598</ixx>
-          <ixy>1.39831e-09</ixy>
-          <ixz>-1.61447e-08</ixz>
-          <iyy>0.146385</iyy>
-          <iyz>9.74789e-10</iyz>
-          <izz>0.147598</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>6.3068e-07</ixy>
+          <ixz>5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>-9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelB_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelB_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Wheel_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2872,8 +3161,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelB.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Wheel.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2900,23 +3189,23 @@
     <link name='WheelFL_link'>
       <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.001246 -0.000588 0.000128 0 -0 0</pose>
-        <mass>1.29464</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.147598</ixx>
-          <ixy>1.39831e-09</ixy>
-          <ixz>-1.85947e-08</ixz>
-          <iyy>0.146385</iyy>
-          <iyz>-1.69324e-10</iyz>
-          <izz>0.147598</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>6.3068e-07</ixy>
+          <ixz>5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>-9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelFL_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFL_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Wheel_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -2940,8 +3229,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFL.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Wheel.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -2968,23 +3257,23 @@
     <link name='WheelFR_link'>
       <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 -1e-06 0 0 -0 0</pose>
-        <mass>1.29464</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.147598</ixx>
-          <ixy>-1.30569e-09</ixy>
-          <ixz>-1.75702e-08</ixz>
-          <iyy>0.146385</iyy>
-          <iyz>2.21159e-10</iyz>
-          <izz>0.147598</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>6.3068e-07</ixy>
+          <ixz>5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>-9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelFR_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFR_0.10.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Wheel_0.10.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -3008,8 +3297,8 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/WheelFR.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>meshes/pepper/Wheel.obj</uri>
           </mesh>
         </geometry>
       </visual>
