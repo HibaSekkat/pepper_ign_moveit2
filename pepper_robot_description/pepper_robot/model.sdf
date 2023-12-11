@@ -453,12 +453,12 @@
         <pose>0.170866 0.074779 -0.003171 0 -0 0</pose>
         <mass>0.50527</mass>
         <inertia>
-          <ixx>-0.0248553</ixx>
+          <ixx>0.0248553</ixx>
           <ixy>0.00128992</ixy>
-          <ixz>-0.00171375</ixz>
-          <iyy>-0.0721283</iyy>
+          <ixz>0.00171375</ixz>
+          <iyy>0.0721283</iyy>
           <iyz>6.91816e-05</iyz>
-          <izz>-0.0680929</izz>
+          <izz>0.0680929</izz>
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
