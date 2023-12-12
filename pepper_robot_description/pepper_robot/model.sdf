@@ -1,4 +1,4 @@
-<sdf version='1.9'>
+<sdf version='1.7'>
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
@@ -44,58 +44,6 @@
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
-      <sensor name='SonarBack' type='ray'>
-        <update_rate>20</update_rate>
-        <visualize>0</visualize>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </horizontal>
-            <vertical>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </vertical>
-          </scan>
-          <range>
-            <min>0</min>
-            <max>5</max>
-            <resolution>3</resolution>
-          </range>
-        </ray>
-        <pose>-0.0718 0 0.2806 -0 -0.209438 -3.14159</pose>
-      </sensor>
-      <sensor name='SonarFront' type='ray'>
-        <update_rate>20</update_rate>
-        <visualize>0</visualize>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </horizontal>
-            <vertical>
-              <samples>5</samples>
-              <resolution>3</resolution>
-              <min_angle>-0.52</min_angle>
-              <max_angle>0.52</max_angle>
-            </vertical>
-          </scan>
-          <range>
-            <min>0</min>
-            <max>5</max>
-            <resolution>3</resolution>
-          </range>
-        </ray>
-        <pose>0.0699 0 0.2317 0 -0.322858 0</pose>
-      </sensor>
     </link>
     <joint name='KneePitch' type='revolute'>
       <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
@@ -374,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0.00312 0 0.11152 0 -0 0</pose>
         <mass>1.51893</mass>
         <inertia>
-          <ixx>nan</ixx>
-          <ixy>nan</ixy>
-          <ixz>nan</ixz>
-          <iyy>nan</iyy>
-          <iyz>nan</iyz>
-          <izz>nan</izz>
+          <ixx>0.00597209</ixx>
+          <ixy>0</ixy>
+          <ixz>0.000125138</ixz>
+          <iyy>0.0059054</iyy>
+          <iyz>4.3428e-07</iyz>
+          <izz>0.00570374</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
@@ -416,65 +364,6 @@
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
-      <sensor name='CameraBottom' type='camera'>
-        <update_rate>5</update_rate>
-        <camera name='camera_bottom'>
-          <horizontal_fov>1</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.05</near>
-            <far>500</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
-        <pose>0.09262 0 0.06177 0 0.698132 0</pose>
-      </sensor>
-      <sensor name='CameraDepth_frame_sensor' type='depth'>
-        <always_on>1</always_on>
-        <update_rate>20</update_rate>
-        <camera>
-          <horizontal_fov>1.01229</horizontal_fov>
-          <image>
-            <format>B8G8R8</format>
-            <width>320</width>
-            <height>240</height>
-          </image>
-          <clip>
-            <near>0.4</near>
-            <far>8</far>
-          </clip>
-        </camera>
-        <pose>0.05138 0.039 0.1194 0 -0 0</pose>
-      </sensor>
-      <sensor name='CameraTop' type='camera'>
-        <update_rate>5</update_rate>
-        <camera name='camera_top'>
-          <horizontal_fov>1</horizontal_fov>
-          <image>
-            <width>640</width>
-            <height>480</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.3</near>
-            <far>500</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <mean>0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
-        <pose>0.08601 0 0.16284 0 -0 0</pose>
-      </sensor>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
       <pose relative_to='torso'>-0.057 0.14974 0.22582 0 -0 0</pose>
