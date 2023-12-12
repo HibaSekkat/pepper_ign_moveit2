@@ -14,7 +14,7 @@
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
-        <pose>0 0 0.602 0 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -34,7 +34,7 @@
         </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__Tibia_visual'>
-        <pose>0 0 0.602 0 -0 0</pose>
+        <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -46,7 +46,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
-      <pose relative_to='base_link'>0 0 0.602 0 -0 0</pose>
+      <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
       <parent>base_link</parent>
       <child>Pelvis</child>
       <axis>
@@ -78,7 +78,7 @@
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -98,7 +98,7 @@
         </surface>
       </collision>
       <visual name='Pelvis_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -110,7 +110,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
-      <pose relative_to='Pelvis'>0 0 0 0 -0 0</pose>
+      <pose relative_to='Pelvis'>0 0 0.268 0 -0 0</pose>
       <parent>Pelvis</parent>
       <child>Hip</child>
       <axis>
