@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <robot name="pepper_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <link name="base_link"/>
   <joint name="HeadYaw" type="revolute">
     <parent link="torso"/>
     <child link="Neck"/>
@@ -10,9 +9,9 @@
   </joint>
   <link name="Neck">
     <inertial>
-      <mass value="0.09146568603258816"/>
-      <inertia ixx="0.004394158568586095" ixy="-2.227492593175832e-10" ixz="0.00011851972636433963" iyy="0.004679644492310061" iyz="1.457247778434002e-09" izz="0.0043841432021901015"/>
-      <origin rpy="0 0 0" xyz="-0.0122611 -8.25641e-07 0.0292341"/>
+      <mass value="0.27391"/>
+      <inertia ixx="0.000343501" ixy="0" ixz="-1.88563e-05" iyy="0.000493898" iyz="2.09863e-06" izz="0.000215252"/>
+      <origin rpy="0 0 0" xyz="-0.00207 0 -0.02636"/>
     </inertial>
     <visual>
       <geometry>
@@ -27,18 +26,19 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+
   <joint name="HeadPitch" type="revolute">
     <parent link="Neck"/>
     <child link="Head"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="2.666" lower="-0.706858" upper="0.4451" velocity="9.22756"/>
+    <limit effort="2.666" lower="-0.706858" upper="0.637045" velocity="9.22756"/>
   </joint>
   <link name="Head">
     <inertial>
-      <mass value="3.7955398538315377"/>
-      <inertia ixx="3.683208656428616" ixy="0.00041889033001187904" ixz="0.022603422116371886" iyy="2.9078796995709886" iyz="0.0005006966355005746" izz="1.8507243925959245"/>
-      <origin rpy="0 0 0" xyz="0.0908328 0.000167721 -1.0109"/>
+      <mass value="1.51893"/>
+      <inertia ixx="0.00597209" ixy="0" ixz="0.000125138" iyy="0.0059054" iyz="4.3428e-07" izz="0.00570374"/>
+      <origin rpy="0 0 0" xyz="0.00312 0 0.11152"/>
     </inertial>
     <visual>
       <geometry>
@@ -53,18 +53,19 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+
   <joint name="HipRoll" type="revolute">
-    <parent link="Hip"/>
+    <origin rpy="0 0 0" xyz="-2e-05 0 0.079"/>
     <child link="torso"/>
-    <origin rpy="0 0 0" xyz="0 0 0.079"/>
+    <parent link="Hip"/>
     <axis xyz="-1.0 0 0"/>
     <limit effort="10.1884" lower="-0.514872" upper="0.514872" velocity="2.27032"/>
   </joint>
   <link name="Hip">
     <inertial>
-      <mass value="1.007402858772892"/>
-      <inertia ixx="0.2568937774115777" ixy="-9.096957334768854e-05" ixz="0.004055986689177799" iyy="0.35295735919431726" iyz="-0.0012970391194746071" izz="0.18078541923077684"/>
-      <origin rpy="0 0 0" xyz="0.0110062 -0.00150986 -0.650903"/>
+      <mass value="1.02338"/>
+      <inertia ixx="0.00502422" ixy="0" ixz="-2.54911e-05" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
+      <origin xyz="0.06039 0 0.000320003" rpy="3.14159 -1.5708 3.14159" />
     </inertial>
     <visual>
       <geometry>
@@ -79,18 +80,20 @@
       <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </collision>
   </link>
+
+  <!-- Create Pelvis link and additional link for texture -->
   <joint name="HipPitch" type="revolute">
-    <parent link="Pelvis"/>
-    <child link="Hip"/>
     <origin rpy="0 0 0" xyz="0 0 0.268"/>
+    <child link="Hip"/>
+    <parent link="Pelvis"/>
     <axis xyz="0 -1.0 0"/>
     <limit effort="19.787" lower="-1.03847" upper="1.03847" velocity="2.93276"/>
   </joint>
   <link name="Pelvis">
     <inertial>
-      <mass value="3.7955398538315377"/>
-      <inertia ixx="3.683208656428616" ixy="0.00041889033001187904" ixz="0.022603422116371886" iyy="2.9078796995709886" iyz="0.0005006966355005746" izz="1.8507243925959245"/>
-      <origin rpy="0 0 0" xyz="0.0908328 0.000167721 -1.0109"/>
+      <mass value="2.45917"/>
+      <inertia ixx="0.034351" ixy="0" ixz="0.000223034" iyy="0.0303122" iyz="-8.37542e-05" izz="0.0143771"/>
+      <origin xyz="0.00237 0.09654 4.2199e-09" rpy="1.5708 -0 0" />
     </inertial>
     <visual>
       <geometry>
@@ -105,18 +108,21 @@
       <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </collision>
   </link>
+  <!-- End Pelvis link -->
+
+  <!-- KneePitch and additional texture link -->
   <joint name="KneePitch" type="revolute">
-    <parent link="Tibia"/>
-    <child link="Pelvis"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
+    <child link="Pelvis"/>
+    <parent link="Tibia"/>
     <axis xyz="0 -1.0 0"/>
     <limit effort="27.702" lower="-0.514872" upper="0.514872" velocity="2.93276"/>
   </joint>
   <link name="Tibia">
     <inertial>
-      <mass value="12.344158152172728"/>
-      <inertia ixx="20.137807259762987" ixy="-0.0011573869694506639" ixz="0.6633694744426599" iyy="18.055269240696504" iyz="-0.0006093016165113692" izz="21.81987274144166"/>
-      <origin rpy="0 0 0" xyz="-0.0333667 -5.76754e-05 -1.99402"/>
+      <mass value="11.6015"/>
+      <inertia ixx="0.129229" ixy="-0.000401943" ixz="0.00048556" iyy="0.122839" iyz="-1.01666e-08" izz="0.108168"/>
+      <origin xyz="0.00220451 0.185729 8.11846e-09" rpy="1.5708 -0 0" />
     </inertial>
     <visual>
       <geometry>
@@ -131,25 +137,42 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <!-- End KneePitch link -->
+
+  <joint name="base_link_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <child link="base_footprint"/>
+    <parent link="base_link"/>
+  </joint>
+  <link name="base_link"/>
+  <joint name="base_footprint_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.334"/>
+    <child link="Tibia"/>
+    <parent link="base_footprint"/>
+  </joint>
+  <link name="base_footprint"/>
+  <!-- Add the torso link and additional texture links -->
   <link name="torso">
     <inertial>
-      <mass value="4.89481724014063"/>
-      <inertia ixx="4.566611207207986" ixy="6.295958647287147e-05" ixz="0.6656507041876883" iyy="4.047538877310803" iyz="-0.0001979039690338895" izz="3.383191376734822"/>
-      <origin rpy="0 0 0" xyz="-0.255593 3.02341e-05 0.391816"/>
+      <mass value="3.99533"/>
+      <inertia ixx="0.0452761" ixy="0" ixz="0.00499091" iyy="0.0432702" iyz="-0.000266886" izz="0.0258881"/>
+      <origin rpy="0 0 0" xyz="0.00322 0 0.12871"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="2e-05 0 0.139"/>
+      <origin rpy="0 0 0" xyz="0 0 0.139"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="2e-05 0 0.139"/>
+      <origin rpy="0 0 0" xyz="0 0 0.139"/>
     </collision>
   </link>
+  <!-- End torso links -->
+
   <joint name="LShoulderPitch" type="revolute">
     <parent link="torso"/>
     <child link="LShoulder"/>
@@ -159,9 +182,9 @@
   </joint>
   <link name="LShoulder">
     <inertial>
-      <mass value="0.1407150721615769"/>
-      <inertia ixx="0.008532465294919685" ixy="-1.921871257281156e-09" ixz="6.354448667623257e-10" iyy="0.008532463936418763" iyz="-2.0716583314902065e-09" izz="0.010252750793533655"/>
-      <origin rpy="0 0 0" xyz="-7.40285e-08 -7.32303e-08 -1.30517e-07"/>
+      <mass value="0.3125"/>
+      <inertia ixx="0.000361198" ixy="-1.98347e-06" ixz="6.35907e-07" iyy="0.000137229" iyz="-5.68878e-06" izz="0.000399194"/>
+      <origin rpy="0 0 0" xyz="0.00018 -0.01856 0.00099"/>
     </inertial>
     <visual>
       <geometry>
@@ -176,6 +199,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+
+  <!-- LShoulderRoll and additional texture link -->
   <joint name="LShoulderRoll" type="revolute">
     <parent link="LShoulder"/>
     <child link="LBicep"/>
@@ -185,9 +210,9 @@
   </joint>
   <link name="LBicep">
     <inertial>
-      <mass value="0.3137032437994389"/>
-      <inertia ixx="0.0246985312391643" ixy="0.0012817864835498575" ixz="0.0017029391719427644" iyy="0.07167351354785373" iyz="6.874532266960408e-05" izz="0.06766357853335765"/>
-      <origin rpy="0 0 0" xyz="0.902599 -0.162517 -0.0061116"/>
+      <mass value="0.50527"/>
+      <inertia ixx="0.000500872" ixy="-3.55918e-05" ixz="8.51263e-05" iyy="0.00126284" iyz="9.06813e-06" izz="0.00115718"/>
+      <origin rpy="0 0 0" xyz="0.08151 0.01284 -0.01017"/>
     </inertial>
     <visual>
       <geometry>
@@ -202,6 +227,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <!-- End LShoulderRoll -->
+
   <joint name="LElbowYaw" type="revolute">
     <parent link="LBicep"/>
     <child link="LElbow"/>
@@ -211,9 +238,9 @@
   </joint>
   <link name="LElbow">
     <inertial>
-      <mass value="0.07380464672624755"/>
-      <inertia ixx="0.0029965021096465144" ixy="-1.0388008758299257e-10" ixz="-4.2002518090263296e-12" iyy="0.0030276726644025737" iyz="-2.993681557885386e-10" izz="0.003027671062092063"/>
-      <origin rpy="0 0 0" xyz="-7.34206e-08 1.48077e-09 -4.87585e-08"/>
+      <mass value="0.27495"/>
+      <inertia ixx="0.000122971" ixy="9.86024e-07" ixz="-2.55838e-05" iyy="0.000331766" iyz="-1.98925e-06" izz="0.000303047"/>
+      <origin rpy="0 0 0" xyz="-0.02297 -0.00019 0.00119"/>
     </inertial>
     <visual>
       <geometry>
@@ -228,6 +255,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+
+  <!-- LElbowRoll link and additional texture  -->
   <joint name="LElbowRoll" type="revolute">
     <parent link="LElbow"/>
     <child link="LForeArm"/>
@@ -237,9 +266,9 @@
   </joint>
   <link name="LForeArm">
     <inertial>
-      <mass value="0.13321114815783727"/>
-      <inertia ixx="0.007157363843746049" ixy="0.0011275611019520542" ixz="4.27305683742527e-05" iyy="0.009914916199350478" iyz="1.7673061298494217e-06" izz="0.009622293474477288"/>
-      <origin rpy="0 0 0" xyz="0.470716 0.0367563 -0.00106886"/>
+      <mass value="0.16579"/>
+      <inertia ixx="0.00156513" ixy="1.47517e-05" ixz="-6.05746e-05" iyy="0.00173219" iyz="-1.7619e-07" izz="0.000273081"/>
+      <origin rpy="0 0 0" xyz="0.0593 0.00271 -0.01014"/>
     </inertial>
     <visual>
       <geometry>
@@ -254,6 +283,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <!-- End definition of LElbowRoll -->
+
   <joint name="LWristYaw" type="revolute">
     <parent link="LForeArm"/>
     <child link="l_wrist"/>
@@ -263,9 +294,9 @@
   </joint>
   <link name="l_wrist">
     <inertial>
-      <mass value="0.207591874180564"/>
-      <inertia ixx="0.011703404133435855" ixy="0.0008177441509091999" ixz="-0.0033215793821857902" iyy="0.0378403638770384" iyz="-0.00014926583294427482" izz="0.04027267667550336"/>
-      <origin rpy="0 0 0" xyz="0.110379 -0.0272187 0.0250071"/>
+      <mass value="0.27555"/>
+      <inertia ixx="0.000151643" ixy="1.06629e-05" ixz="2.89509e-06" iyy="0.000431099" iyz="-3.13715e-06" izz="0.000456172"/>
+      <origin rpy="0 0 0" xyz="0.03536 -0.00072 -0.00207"/>
     </inertial>
     <visual>
       <geometry>
@@ -275,22 +306,34 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LWristYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae" scale="0.1 0.1 0.1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LHand" type="revolute">
+  <joint name="LGripper" type="fixed">
     <parent link="l_wrist"/>
     <child link="l_gripper"/>
+    <origin rpy="-3.14 0.0 -1.57" xyz="0.07 0.0 -0.01802319018"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="l_gripper">
+    <inertial>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+    </inertial>
+  </link>
+  <joint name="LHand" type="revolute">
+    <parent link="l_wrist"/>
+    <child link="l_hand"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
     <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
-  <link name="l_gripper">
+  <link name="l_hand">
     <inertial>
-      <mass value="0.207591874180564"/>
-      <inertia ixx="0.011703404133435855" ixy="0.0008177441509091999" ixz="-0.0033215793821857902" iyy="0.0378403638770384" iyz="-0.00014926583294427482" izz="0.04027267667550336"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
     </inertial>
   </link>
   <joint name="RShoulderPitch" type="revolute">
@@ -302,9 +345,9 @@
   </joint>
   <link name="RShoulder">
     <inertial>
-      <mass value="0.1407150721615769"/>
-      <inertia ixx="0.008532465294919685" ixy="-1.921871257281156e-09" ixz="6.354448667623257e-10" iyy="0.008532463936418763" iyz="-2.0716583314902065e-09" izz="0.010252750793533655"/>
-      <origin rpy="0 0 0" xyz="-7.40285e-08 -7.32303e-08 -1.30517e-07"/>
+      <mass value="0.3125"/>
+      <inertia ixx="0.000361198" ixy="1.98347e-06" ixz="6.35907e-07" iyy="0.000137229" iyz="5.68878e-06" izz="0.000399194"/>
+      <origin rpy="0 0 0" xyz="0.00018 0.01856 0.00099"/>
     </inertial>
     <visual>
       <geometry>
@@ -319,6 +362,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+
+  <!-- RShoulderRoll and additional texture link -->
   <joint name="RShoulderRoll" type="revolute">
     <parent link="RShoulder"/>
     <child link="RBicep"/>
@@ -328,9 +373,9 @@
   </joint>
   <link name="RBicep">
     <inertial>
-      <mass value="0.3137032437994389"/>
-      <inertia ixx="0.0246985312391643" ixy="0.0012817864835498575" ixz="0.0017029391719427644" iyy="0.07167351354785373" iyz="6.874532266960408e-05" izz="0.06766357853335765"/>
-      <origin rpy="0 0 0" xyz="0.902599 -0.162517 -0.0061116"/>
+      <mass value="0.50527"/>
+      <inertia ixx="0.000500872" ixy="3.55918e-05" ixz="8.51263e-05" iyy="0.00126284" iyz="-9.06813e-06" izz="0.00115718"/>
+      <origin rpy="0 0 0" xyz="0.08151 -0.01284 -0.01017"/>
     </inertial>
     <visual>
       <geometry>
@@ -345,6 +390,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <!-- End RShoulderRoll -->
+
   <joint name="RElbowYaw" type="revolute">
     <parent link="RBicep"/>
     <child link="RElbow"/>
@@ -354,9 +401,9 @@
   </joint>
   <link name="RElbow">
     <inertial>
-      <mass value="0.07380464672624755"/>
-      <inertia ixx="0.0029965021096465144" ixy="-1.0388008758299257e-10" ixz="-4.2002518090263296e-12" iyy="0.0030276726644025737" iyz="-2.993681557885386e-10" izz="0.003027671062092063"/>
-      <origin rpy="0 0 0" xyz="-7.34206e-08 1.48077e-09 -4.87585e-08"/>
+      <mass value="0.27495"/>
+      <inertia ixx="0.000122971" ixy="-9.86024e-07" ixz="-2.55838e-05" iyy="0.000331766" iyz="1.98925e-06" izz="0.000303047"/>
+      <origin rpy="0 0 0" xyz="-0.02297 0.00019 0.00119"/>
     </inertial>
     <visual>
       <geometry>
@@ -371,6 +418,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+
+  <!-- RElbowRoll link and additional texture link -->
   <joint name="RElbowRoll" type="revolute">
     <parent link="RElbow"/>
     <child link="RForeArm"/>
@@ -380,9 +429,9 @@
   </joint>
   <link name="RForeArm">
     <inertial>
-      <mass value="0.13321114815783727"/>
-      <inertia ixx="0.0071573638437460495" ixy="-0.0011275611019520536" ixz="4.273056837425241e-05" iyy="0.009914916199350471" iyz="-1.7673061298494556e-06" izz="0.009622293474477281"/>
-      <origin rpy="0 0 0" xyz="0.470716 -0.0367563 -0.00106886"/>
+      <mass value="0.16579"/>
+      <inertia ixx="0.00156513" ixy="-1.47517e-05" ixz="-6.05746e-05" iyy="0.00173219" iyz="1.7619e-07" izz="0.000273081"/>
+      <origin rpy="0 0 0" xyz="0.0593 -0.00271 -0.01014"/>
     </inertial>
     <visual>
       <geometry>
@@ -397,6 +446,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
+  <!-- End RElbowRoll -->
+
   <joint name="RWristYaw" type="revolute">
     <parent link="RForeArm"/>
     <child link="r_wrist"/>
@@ -406,9 +457,9 @@
   </joint>
   <link name="r_wrist">
     <inertial>
-      <mass value="0.20759187418056393"/>
-      <inertia ixx="0.011703404133435853" ixy="-0.0008177441509091997" ixz="-0.0033215793821857907" iyy="0.0378403638770384" iyz="0.0001492658329442748" izz="0.04027267667550336"/>
-      <origin rpy="0 0 0" xyz="0.110379 0.0272187 0.0250071"/>
+      <mass value="0.27555"/>
+      <inertia ixx="0.000151643" ixy="-1.06629e-05" ixz="2.89509e-06" iyy="0.000431099" iyz="3.13715e-06" izz="0.000456172"/>
+      <origin rpy="0 0 0" xyz="0.03536 0.00072 -0.00207"/>
     </inertial>
     <visual>
       <geometry>
@@ -423,724 +474,794 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RHand" type="revolute">
+  <joint name="RGripper" type="fixed">
     <parent link="r_wrist"/>
     <child link="r_gripper"/>
+    <origin rpy="3.14 0 1.57" xyz="0.07 0.0 -0.01802319018"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <link name="r_gripper">
+    <inertial>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+    </inertial>
+  </link>
+  <joint name="RHand" type="revolute">
+    <parent link="r_wrist"/>
+    <child link="r_hand"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
     <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
-  <link name="r_gripper">
+  <link name="r_hand">
     <inertial>
-      <mass value="0.20759187418056393"/>
-      <inertia ixx="0.011703404133435853" ixy="-0.0008177441509091997" ixz="-0.0033215793821857907" iyy="0.0378403638770384" iyz="0.0001492658329442748" izz="0.04027267667550336"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
     </inertial>
   </link>
   <link name="RFinger41_link">
     <inertial>
-      <mass value="0.0017342022888397826"/>
-      <inertia ixx="3.4678131817764306e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959870196139e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger41.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger41" type="continuous">
+  <joint name="RFinger41" type="revolute">
     <parent link="r_wrist"/>
     <child link="RFinger41_link"/>
     <origin rpy="1.74402 1.04064 -0.0683394" xyz="0.074 -0.0309 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger42_link">
     <inertial>
-      <mass value="0.0017342022167828866"/>
-      <inertia ixx="3.4678129025584815e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959511713518e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger42.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger42" type="continuous">
+  <joint name="LFinger42" type="revolute">
     <parent link="LFinger41_link"/>
     <child link="LFinger42_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger12_link">
     <inertial>
-      <mass value="0.001734202280194698"/>
-      <inertia ixx="3.4678131132210503e-06" ixy="-3.2590542520134944e-08" ixz="-1.7757159744336223e-07" iyy="9.067959840882744e-06" iyz="-5.0426962301906756e-08" izz="9.981406511792481e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger12.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger12" type="continuous">
+  <joint name="RFinger12" type="revolute">
     <parent link="RFinger11_link"/>
     <child link="RFinger12_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger33_link">
     <inertial>
-      <mass value="0.0012119665608007826"/>
-      <inertia ixx="2.09223979628447e-06" ixy="-1.1457416792102813e-07" ixz="1.4168110404002701e-08" iyy="4.049992996669056e-06" iyz="-5.704190202736846e-09" izz="4.41653713434438e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger33.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger33" type="continuous">
+  <joint name="LFinger33" type="revolute">
     <parent link="LFinger32_link"/>
     <child link="LFinger33_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger31_link">
     <inertial>
-      <mass value="0.001734202271258544"/>
-      <inertia ixx="3.467813135465312e-06" ixy="-3.259050145806951e-08" ixz="-1.775715550954204e-07" iyy="9.067959615799793e-06" iyz="-5.0427022839883744e-08" izz="9.981406326737224e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger31.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger31" type="continuous">
+  <joint name="RFinger31" type="revolute">
     <parent link="r_wrist"/>
     <child link="RFinger31_link"/>
     <origin rpy="1.67523 1.04483 0.029316" xyz="0.0833 -0.0123 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger21_link">
     <inertial>
-      <mass value="0.0017342022480607796"/>
-      <inertia ixx="3.46781299004819e-06" ixy="-3.259062428110205e-08" ixz="-1.775715353345546e-07" iyy="9.067959876771903e-06" iyz="-5.0426968074891446e-08" izz="9.98140651315344e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger21.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger21" type="continuous">
+  <joint name="LFinger21" type="revolute">
     <parent link="l_wrist"/>
     <child link="LFinger21_link"/>
     <origin rpy="1.5708 1.0472 -0.061086" xyz="0.0873 -0.0073 0.006"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger32_link">
     <inertial>
-      <mass value="0.0017342022235830492"/>
-      <inertia ixx="3.467812920370958e-06" ixy="-3.259059292999676e-08" ixz="-1.775716485588287e-07" iyy="9.067959555576335e-06" iyz="-5.042697998356888e-08" izz="9.981406185385655e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger32.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger32" type="continuous">
+  <joint name="RFinger32" type="revolute">
     <parent link="RFinger31_link"/>
     <child link="RFinger32_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger13_link">
     <inertial>
-      <mass value="0.001211966381471568"/>
-      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger13.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger13" type="continuous">
+  <joint name="LFinger13" type="revolute">
     <parent link="LFinger12_link"/>
     <child link="LFinger13_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger32_link">
     <inertial>
-      <mass value="0.0017342022235830492"/>
-      <inertia ixx="3.467812920370958e-06" ixy="-3.259059292999676e-08" ixz="-1.775716485588287e-07" iyy="9.067959555576335e-06" iyz="-5.042697998356888e-08" izz="9.981406185385655e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger32.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger32" type="continuous">
+  <joint name="LFinger32" type="revolute">
     <parent link="LFinger31_link"/>
     <child link="LFinger32_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger11_link">
     <inertial>
-      <mass value="0.0017342022611750378"/>
-      <inertia ixx="3.4678130376738107e-06" ixy="-3.259051008700385e-08" ixz="-1.7757161017490668e-07" iyy="9.067959783373034e-06" iyz="-5.042697811714405e-08" izz="9.981406489419801e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger11.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger11" type="continuous">
+  <joint name="LFinger11" type="revolute">
     <parent link="l_wrist"/>
     <child link="LFinger11_link"/>
     <origin rpy="1.74402 1.04064 -0.0334335" xyz="0.0821 -0.0268 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger22_link">
     <inertial>
-      <mass value="0.001734202428057582"/>
-      <inertia ixx="3.4678136128088393e-06" ixy="-3.2591429893149244e-08" ixz="-1.775718802040381e-07" iyy="9.067962145044256e-06" iyz="-5.042709848652804e-08" izz="9.981409273765228e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger22.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger22" type="continuous">
+  <joint name="RFinger22" type="revolute">
     <parent link="RFinger21_link"/>
     <child link="RFinger22_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger13_link">
     <inertial>
-      <mass value="0.001211966381471568"/>
-      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger13.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger13" type="continuous">
+  <joint name="RFinger13" type="revolute">
     <parent link="RFinger12_link"/>
     <child link="RFinger13_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger22_link">
     <inertial>
-      <mass value="0.001734202428057582"/>
-      <inertia ixx="3.4678136128088393e-06" ixy="-3.2591429893149244e-08" ixz="-1.775718802040381e-07" iyy="9.067962145044256e-06" iyz="-5.042709848652804e-08" izz="9.981409273765228e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger22.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger22" type="continuous">
+  <joint name="LFinger22" type="revolute">
     <parent link="LFinger21_link"/>
     <child link="LFinger22_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger21_link">
     <inertial>
-      <mass value="0.0017342022480607796"/>
-      <inertia ixx="3.46781299004819e-06" ixy="-3.259062428110205e-08" ixz="-1.775715353345546e-07" iyy="9.067959876771903e-06" iyz="-5.0426968074891446e-08" izz="9.98140651315344e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger21.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger21" type="continuous">
+  <joint name="RFinger21" type="revolute">
     <parent link="r_wrist"/>
     <child link="RFinger21_link"/>
     <origin rpy="1.5708 1.0472 0.061086" xyz="0.0873 0.0073 0.006"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger41_link">
     <inertial>
-      <mass value="0.0017342022888397826"/>
-      <inertia ixx="3.4678131817764306e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959870196139e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger41.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger41" type="continuous">
+  <joint name="LFinger41" type="revolute">
     <parent link="l_wrist"/>
     <child link="LFinger41_link"/>
     <origin rpy="1.39757 1.04064 0.0683394" xyz="0.074 0.0309 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger12_link">
     <inertial>
-      <mass value="0.001734202280194698"/>
-      <inertia ixx="3.4678131132210503e-06" ixy="-3.2590542520134944e-08" ixz="-1.7757159744336223e-07" iyy="9.067959840882744e-06" iyz="-5.0426962301906756e-08" izz="9.981406511792481e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger12.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger12" type="continuous">
+  <joint name="LFinger12" type="revolute">
     <parent link="LFinger11_link"/>
     <child link="LFinger12_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger23_link">
     <inertial>
-      <mass value="0.0012119663699255415"/>
-      <inertia ixx="2.092239047891544e-06" ixy="-1.1457422969595025e-07" ixz="1.4167810663291497e-08" iyy="4.049992404946034e-06" iyz="-5.704156613549065e-09" izz="4.416536552898754e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger23.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger23" type="continuous">
+  <joint name="RFinger23" type="revolute">
     <parent link="RFinger22_link"/>
     <child link="RFinger23_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger11_link">
     <inertial>
-      <mass value="0.0017342022611750378"/>
-      <inertia ixx="3.4678130376738107e-06" ixy="-3.259051008700385e-08" ixz="-1.7757161017490668e-07" iyy="9.067959783373034e-06" iyz="-5.042697811714405e-08" izz="9.981406489419801e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger11.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger11" type="continuous">
+  <joint name="RFinger11" type="revolute">
     <parent link="r_wrist"/>
     <child link="RFinger11_link"/>
     <origin rpy="1.39757 1.04064 0.0334335" xyz="0.0821 0.0268 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger23_link">
     <inertial>
-      <mass value="0.0012119663699255415"/>
-      <inertia ixx="2.092239047891544e-06" ixy="-1.1457422969595025e-07" ixz="1.4167810663291497e-08" iyy="4.049992404946034e-06" iyz="-5.704156613549065e-09" izz="4.416536552898754e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger23.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger23" type="continuous">
+  <joint name="LFinger23" type="revolute">
     <parent link="LFinger22_link"/>
     <child link="LFinger23_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger43_link">
     <inertial>
-      <mass value="0.0012119663070476055"/>
-      <inertia ixx="2.0922389330114635e-06" ixy="-1.1457410213059722e-07" ixz="1.4168138791312868e-08" iyy="4.049991916493551e-06" iyz="-5.70412920072251e-09" izz="4.416536298698657e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger43.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger43" type="continuous">
+  <joint name="LFinger43" type="revolute">
     <parent link="LFinger42_link"/>
     <child link="LFinger43_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger43_link">
     <inertial>
-      <mass value="0.0012119663070476055"/>
-      <inertia ixx="2.0922389330114635e-06" ixy="-1.1457410213059722e-07" ixz="1.4168138791312868e-08" iyy="4.049991916493551e-06" iyz="-5.70412920072251e-09" izz="4.416536298698657e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger43.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger43" type="continuous">
+  <joint name="RFinger43" type="revolute">
     <parent link="RFinger42_link"/>
     <child link="RFinger43_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger42_link">
     <inertial>
-      <mass value="0.0017342022167828866"/>
-      <inertia ixx="3.4678129025584815e-06" ixy="-3.2590475824677086e-08" ixz="-1.7757160450735597e-07" iyy="9.067959511713518e-06" iyz="-5.042702138748998e-08" izz="9.981406591519867e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger42.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger42" type="continuous">
+  <joint name="RFinger42" type="revolute">
     <parent link="RFinger41_link"/>
     <child link="RFinger42_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger31_link">
     <inertial>
-      <mass value="0.001734202271258544"/>
-      <inertia ixx="3.467813135465312e-06" ixy="-3.259050145806951e-08" ixz="-1.775715550954204e-07" iyy="9.067959615799793e-06" iyz="-5.0427022839883744e-08" izz="9.981406326737224e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger31.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LFinger31" type="continuous">
+  <joint name="LFinger31" type="revolute">
     <parent link="l_wrist"/>
     <child link="LFinger31_link"/>
     <origin rpy="1.46636 1.04483 -0.029314" xyz="0.0833 0.0123 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger33_link">
     <inertial>
-      <mass value="0.0012119665608007826"/>
-      <inertia ixx="2.09223979628447e-06" ixy="-1.1457416792102813e-07" ixz="1.4168110404002701e-08" iyy="4.049992996669056e-06" iyz="-5.704190202736846e-09" izz="4.41653713434438e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger33.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RFinger33" type="continuous">
+  <joint name="RFinger33" type="revolute">
     <parent link="RFinger32_link"/>
     <child link="RFinger33_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LThumb1_link">
     <inertial>
-      <mass value="0.0017342022979805805"/>
-      <inertia ixx="3.4678131551882413e-06" ixy="-3.2590509182655974e-08" ixz="-1.775715494652515e-07" iyy="9.067960211714726e-06" iyz="-5.0426946362754553e-08" izz="9.981406956932862e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb1.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LThumb1" type="continuous">
+  <joint name="LThumb1" type="revolute">
     <parent link="l_wrist"/>
     <child link="LThumb1_link"/>
-    <origin rpy="-1.95836 0.60626 0.533978" xyz="0.0482 -0.0357 -0.0199"/>
+    <!-- <origin rpy="-1.95836 0.60626 0.533978" xyz="0.0482 -0.0357 -0.0199"/> -->
+    <origin rpy="-2.55836 0.80626 0.533978" xyz="0.0482 -0.0357 -0.0199"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RThumb2_link">
     <inertial>
-      <mass value="0.001211966381471568"/>
-      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb2.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RThumb2" type="continuous">
+  <joint name="RThumb2" type="revolute">
     <parent link="RThumb1_link"/>
     <child link="RThumb2_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.022 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RThumb1_link">
     <inertial>
-      <mass value="0.0017342022979805805"/>
-      <inertia ixx="3.4678131551882413e-06" ixy="-3.2590509182655974e-08" ixz="-1.775715494652515e-07" iyy="9.067960211714726e-06" iyz="-5.0426946362754553e-08" izz="9.981406956932862e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb1.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-    </visual>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
+    </visual>s
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RThumb1" type="continuous">
+  <joint name="RThumb1" type="revolute">
     <parent link="r_wrist"/>
     <child link="RThumb1_link"/>
-    <origin rpy="-1.18323 0.60626 -0.533978" xyz="0.0482 0.0357 -0.0199"/>
+    <!-- <origin rpy="-1.18323 0.60626 -0.533978" xyz="0.0482 0.0357 -0.0199"/> -->
+    <origin rpy="-0.58323 0.80626 -0.533978" xyz="0.0482 0.0357 -0.0199"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LThumb2_link">
     <inertial>
-      <mass value="0.001211966381471568"/>
-      <inertia ixx="2.0922392266947087e-06" ixy="-1.1457419844015851e-07" ixz="1.4167922235814148e-08" iyy="4.049992160501547e-06" iyz="-5.704188035340379e-09" izz="4.416536573576023e-06"/>
+      <mass value="2e-03"/>
+      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb2.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LThumb2" type="continuous">
+  <joint name="LThumb2" type="revolute">
     <parent link="LThumb1_link"/>
     <child link="LThumb2_link"/>
     <origin rpy="0 0 -1.0472" xyz="0.022 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="WheelFL_link">
     <inertial>
-      <mass value="0.7575690379154867"/>
-      <inertia ixx="0.1466676495397822" ixy="1.3894893658227998e-09" ixz="-1.847742164822289e-08" iyy="0.14546237703524983" iyz="-1.6825643126483954e-10" izz="0.1466676444244662"/>
-      <origin rpy="0 0 0" xyz="-6.00045e-07 6.99637e-07 9.85261e-08"/>
+      <mass value="1.58028"/>
+      <inertia ixx="0.00299756" ixy="6.3068e-07" ixz="5.56903e-06" iyy="0.00303229" iyz="-9.0408e-07" izz="0.00296585"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
@@ -1159,14 +1280,14 @@
     <parent link="Tibia"/>
     <child link="WheelFL_link"/>
     <origin rpy="0 0 1.07517" xyz="0.09 0.155 -0.264"/>
-    <axis xyz="1.0 0 0"/>
+    <axis xyz="1.0 0.0 0.0"/>
     <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
   </joint>
   <link name="WheelB_link">
     <inertial>
-      <mass value="0.7575690266305116"/>
-      <inertia ixx="0.14666764930611684" ixy="2.1646351782621925e-09" ixz="-1.604289224924931e-08" iyy="0.14546237484295663" iyz="9.686419820854266e-10" izz="0.1466676359065566"/>
-      <origin rpy="0 0 0" xyz="1.19122e-06 -8.10876e-08 1.02822e-07"/>
+      <mass value="1.58028"/>
+      <inertia ixx="0.00299756" ixy="6.3068e-07" ixz="5.56903e-06" iyy="0.00303229" iyz="-9.0408e-07" izz="0.00296585"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
@@ -1190,9 +1311,9 @@
   </joint>
   <link name="WheelFR_link">
     <inertial>
-      <mass value="0.75756900450011"/>
-      <inertia ixx="0.1466676370557516" ixy="-1.2974614176969171e-09" ixz="-1.745944386185611e-08" iyy="0.14546236874613427" iyz="2.1976487590695156e-10" izz="0.14666763285273135"/>
-      <origin rpy="0 0 0" xyz="1.47446e-07 -8.33076e-07 9.57624e-08"/>
+      <mass value="1.58028"/>
+      <inertia ixx="0.00299756" ixy="6.3068e-07" ixz="5.56903e-06" iyy="0.00303229" iyz="-9.0408e-07" izz="0.00296585"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
@@ -1211,14 +1332,8 @@
     <parent link="Tibia"/>
     <child link="WheelFR_link"/>
     <origin rpy="0 0 -1.07517" xyz="0.09 -0.155 -0.264"/>
-    <axis xyz="1.0 0 0"/>
+    <axis xyz="1.0 0.0 0.0"/>
     <limit effort="3.25" lower="0" upper="0" velocity="6.28319"/>
-  </joint>
-  <joint name="base_link_fixedjoint" type="fixed">
-    <parent link="base_link"/>
-    <child link="Tibia"/>
-    <origin rpy="0 0 0" xyz="0 0 0.334"/>
-    <axis xyz="0 0 0"/>
   </joint>
   <!-- MACROS FOR DISABLE LINKS -->
   <!-- MACROS FOR MIMIC JOINTS -->
