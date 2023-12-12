@@ -2,15 +2,15 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>-0.033367 -5.8e-05 -1.66002 0 -0 0</pose>
-        <mass>12.3442</mass>
+        <pose>0.002205 0 0.416271 0 -0 0</pose>
+        <mass>11.6015</mass>
         <inertia>
-          <ixx>20.1378</ixx>
-          <ixy>-0.00115739</ixy>
-          <ixz>0.663369</ixz>
-          <iyy>18.0553</iyy>
-          <iyz>-0.000609302</iyz>
-          <izz>21.8199</izz>
+          <ixx>0.129229</ixx>
+          <ixy>-0.000401943</ixy>
+          <ixz>0.00048556</ixz>
+          <iyy>0.122839</iyy>
+          <iyz>-1.01666e-08</iyz>
+          <izz>0.108168</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__Tibia_collision'>
@@ -66,15 +66,15 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
-        <mass>3.79554</mass>
+        <pose>0.00237 0 -0.01754 0 -0 0</pose>
+        <mass>2.45917</mass>
         <inertia>
-          <ixx>3.68321</ixx>
-          <ixy>0.00041889</ixy>
-          <ixz>0.0226034</ixz>
-          <iyy>2.90788</iyy>
-          <iyz>0.000500697</iyz>
-          <izz>1.85072</izz>
+          <ixx>0.034351</ixx>
+          <ixy>0</ixy>
+          <ixz>0.000223034</ixz>
+          <iyy>0.0303122</iyy>
+          <iyz>-8.37542e-05</iyz>
+          <izz>0.0143771</izz>
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
@@ -130,15 +130,15 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.011006 -0.00151 -0.650903 0 -0 0</pose>
-        <mass>1.0074</mass>
+        <pose>0.00032 0 -0.07068 0 -0 0</pose>
+        <mass>1.02338</mass>
         <inertia>
-          <ixx>0.256894</ixx>
-          <ixy>-9.09696e-05</ixy>
-          <ixz>0.00405599</ixz>
-          <iyy>0.352957</iyy>
-          <iyz>-0.00129704</iyz>
-          <izz>0.180785</izz>
+          <ixx>0.00502422</ixx>
+          <ixy>0</ixy>
+          <ixz>-2.54911e-05</ixz>
+          <iyy>0.00640971</iyy>
+          <iyz>0.000159449</iyz>
+          <izz>0.00441082</izz>
         </inertia>
       </inertial>
       <collision name='Hip_collision'>
@@ -174,7 +174,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
-      <pose relative_to='Hip'>0 0 0.079 0 -0 0</pose>
+      <pose relative_to='Hip'>-2e-05 0 0.079 0 -0 0</pose>
       <parent>Hip</parent>
       <child>torso</child>
       <axis>
@@ -194,19 +194,19 @@
     <link name='torso'>
       <pose relative_to='HipRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.255593 3e-05 0.391816 0 -0 0</pose>
-        <mass>4.89482</mass>
+        <pose>0.00322 0 0.12871 0 -0 0</pose>
+        <mass>3.99533</mass>
         <inertia>
-          <ixx>4.56661</ixx>
-          <ixy>6.29596e-05</ixy>
-          <ixz>0.665651</ixz>
-          <iyy>4.04754</iyy>
-          <iyz>-0.000197904</iyz>
-          <izz>3.38319</izz>
+          <ixx>0.0452761</ixx>
+          <ixy>0</ixy>
+          <ixz>0.00499091</ixz>
+          <iyy>0.0432702</iyy>
+          <iyz>-0.000266886</iyz>
+          <izz>0.0258881</izz>
         </inertia>
       </inertial>
       <collision name='torso_collision'>
-        <pose>2e-05 0 0.139 0 -0 0</pose>
+        <pose>0 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -226,7 +226,7 @@
         </surface>
       </collision>
       <visual name='torso_visual'>
-        <pose>2e-05 0 0.139 0 -0 0</pose>
+        <pose>0 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -258,15 +258,15 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.012261 -1e-06 0.029234 0 -0 0</pose>
-        <mass>0.0914657</mass>
+        <pose>-0.00207 0 -0.02636 0 -0 0</pose>
+        <mass>0.27391</mass>
         <inertia>
-          <ixx>0.00439416</ixx>
-          <ixy>-2.22749e-10</ixy>
-          <ixz>0.00011852</ixz>
-          <iyy>0.00467964</iyy>
-          <iyz>1.45725e-09</iyz>
-          <izz>0.00438414</izz>
+          <ixx>0.000343501</ixx>
+          <ixy>0</ixy>
+          <ixz>-1.88563e-05</ixz>
+          <iyy>0.000493898</iyy>
+          <iyz>2.09863e-06</iyz>
+          <izz>0.000215252</izz>
         </inertia>
       </inertial>
       <collision name='Neck_collision'>
@@ -309,7 +309,7 @@
         <xyz>0 1 0</xyz>
         <limit>
           <lower>-0.706858</lower>
-          <upper>0.4451</upper>
+          <upper>0.637045</upper>
           <effort>2.666</effort>
           <velocity>9.22756</velocity>
         </limit>
@@ -322,15 +322,15 @@
     <link name='Head'>
       <pose relative_to='HeadPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.090833 0.000168 -1.0109 0 -0 0</pose>
-        <mass>3.79554</mass>
+        <pose>0.00312 0 0.11152 0 -0 0</pose>
+        <mass>1.51893</mass>
         <inertia>
-          <ixx>3.68321</ixx>
-          <ixy>0.00041889</ixy>
-          <ixz>0.0226034</ixz>
-          <iyy>2.90788</iyy>
-          <iyz>0.000500697</iyz>
-          <izz>1.85072</izz>
+          <ixx>0.00597209</ixx>
+          <ixy>0</ixy>
+          <ixz>0.000125138</ixz>
+          <iyy>0.0059054</iyy>
+          <iyz>4.3428e-07</iyz>
+          <izz>0.00570374</izz>
         </inertia>
       </inertial>
       <collision name='Head_collision'>
@@ -386,15 +386,15 @@
     <link name='LShoulder'>
       <pose relative_to='LShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 -0 -0 0 -0 0</pose>
-        <mass>0.140715</mass>
+        <pose>0.00018 -0.01856 0.00099 0 -0 0</pose>
+        <mass>0.3125</mass>
         <inertia>
-          <ixx>0.00853247</ixx>
-          <ixy>-1.92187e-09</ixy>
-          <ixz>6.35445e-10</ixz>
-          <iyy>0.00853246</iyy>
-          <iyz>-2.07166e-09</iyz>
-          <izz>0.0102528</izz>
+          <ixx>0.000361198</ixx>
+          <ixy>-1.98347e-06</ixy>
+          <ixz>6.35907e-07</ixz>
+          <iyy>0.000137229</iyy>
+          <iyz>-5.68878e-06</iyz>
+          <izz>0.000399194</izz>
         </inertia>
       </inertial>
       <collision name='LShoulder_collision'>
@@ -450,15 +450,15 @@
     <link name='LBicep'>
       <pose relative_to='LShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.902599 -0.162517 -0.006112 0 -0 0</pose>
-        <mass>0.313703</mass>
+        <pose>0.08151 0.01284 -0.01017 0 -0 0</pose>
+        <mass>0.50527</mass>
         <inertia>
-          <ixx>0.0246985</ixx>
-          <ixy>0.00128179</ixy>
-          <ixz>0.00170294</ixz>
-          <iyy>0.0716735</iyy>
-          <iyz>6.87453e-05</iyz>
-          <izz>0.0676636</izz>
+          <ixx>0.000500872</ixx>
+          <ixy>-3.55918e-05</ixy>
+          <ixz>8.51263e-05</ixz>
+          <iyy>0.00126284</iyy>
+          <iyz>9.06813e-06</iyz>
+          <izz>0.00115718</izz>
         </inertia>
       </inertial>
       <collision name='LBicep_collision'>
@@ -514,15 +514,15 @@
     <link name='LElbow'>
       <pose relative_to='LElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 0 -0 0 -0 0</pose>
-        <mass>0.0738046</mass>
+        <pose>-0.02297 -0.00019 0.00119 0 -0 0</pose>
+        <mass>0.27495</mass>
         <inertia>
-          <ixx>0.0029965</ixx>
-          <ixy>-1.0388e-10</ixy>
-          <ixz>-4.20025e-12</ixz>
-          <iyy>0.00302767</iyy>
-          <iyz>-2.99368e-10</iyz>
-          <izz>0.00302767</izz>
+          <ixx>0.000122971</ixx>
+          <ixy>9.86024e-07</ixy>
+          <ixz>-2.55838e-05</ixz>
+          <iyy>0.000331766</iyy>
+          <iyz>-1.98925e-06</iyz>
+          <izz>0.000303047</izz>
         </inertia>
       </inertial>
       <collision name='LElbow_collision'>
@@ -578,15 +578,15 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.470716 0.036756 -0.001069 0 -0 0</pose>
-        <mass>0.133211</mass>
+        <pose>0.0593 0.00271 -0.01014 0 -0 0</pose>
+        <mass>0.16579</mass>
         <inertia>
-          <ixx>0.00715736</ixx>
-          <ixy>0.00112756</ixy>
-          <ixz>4.27306e-05</ixz>
-          <iyy>0.00991492</iyy>
-          <iyz>1.76731e-06</iyz>
-          <izz>0.00962229</izz>
+          <ixx>0.00156513</ixx>
+          <ixy>1.47517e-05</ixy>
+          <ixz>-6.05746e-05</ixz>
+          <iyy>0.00173219</iyy>
+          <iyz>-1.7619e-07</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='LForeArm_collision'>
@@ -642,15 +642,15 @@
     <link name='l_wrist'>
       <pose relative_to='LWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.110379 -0.027219 0.025007 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <pose>0.03561 -0.000715 -0.002185 0 -0 0</pose>
+        <mass>0.27755</mass>
         <inertia>
-          <ixx>0.0117034</ixx>
-          <ixy>0.000817744</ixy>
-          <ixz>-0.00332158</ixz>
-          <iyy>0.0378404</iyy>
-          <iyz>-0.000149266</iyz>
-          <izz>0.0402727</izz>
+          <ixx>0.00015215</ixx>
+          <ixy>1.06134e-05</ixy>
+          <ixz>3.99236e-06</ixz>
+          <iyy>0.000433988</iyy>
+          <iyz>-3.11434e-06</iyz>
+          <izz>0.000458557</izz>
         </inertia>
       </inertial>
       <collision name='l_wrist_collision'>
@@ -658,7 +658,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>meshes/LWristYaw_0.10.stl</uri>
+            <uri>meshes/LWristYaw.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -692,8 +692,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -704,19 +706,19 @@
     <link name='LFinger11_link'>
       <pose relative_to='LFinger11'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger11_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -736,7 +738,7 @@
         </surface>
       </collision>
       <visual name='LFinger11_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -754,8 +756,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -766,19 +770,19 @@
     <link name='LFinger12_link'>
       <pose relative_to='LFinger12'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger12_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -798,7 +802,7 @@
         </surface>
       </collision>
       <visual name='LFinger12_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -816,8 +820,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -828,19 +834,19 @@
     <link name='LFinger13_link'>
       <pose relative_to='LFinger13'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger13_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -860,7 +866,7 @@
         </surface>
       </collision>
       <visual name='LFinger13_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -878,8 +884,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -890,19 +898,19 @@
     <link name='LFinger21_link'>
       <pose relative_to='LFinger21'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger21_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -922,7 +930,7 @@
         </surface>
       </collision>
       <visual name='LFinger21_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -940,8 +948,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -952,19 +962,19 @@
     <link name='LFinger22_link'>
       <pose relative_to='LFinger22'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25914e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04271e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger22_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -984,7 +994,7 @@
         </surface>
       </collision>
       <visual name='LFinger22_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1002,8 +1012,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1014,19 +1026,19 @@
     <link name='LFinger23_link'>
       <pose relative_to='LFinger23'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41678e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70416e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger23_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1046,7 +1058,7 @@
         </surface>
       </collision>
       <visual name='LFinger23_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1064,8 +1076,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1076,19 +1090,19 @@
     <link name='LFinger31_link'>
       <pose relative_to='LFinger31'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger31_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1108,7 +1122,7 @@
         </surface>
       </collision>
       <visual name='LFinger31_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1126,8 +1140,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1138,19 +1154,19 @@
     <link name='LFinger32_link'>
       <pose relative_to='LFinger32'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger32_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1170,7 +1186,7 @@
         </surface>
       </collision>
       <visual name='LFinger32_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1188,8 +1204,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1200,19 +1218,19 @@
     <link name='LFinger33_link'>
       <pose relative_to='LFinger33'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger33_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1232,7 +1250,7 @@
         </surface>
       </collision>
       <visual name='LFinger33_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1250,8 +1268,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1262,19 +1282,19 @@
     <link name='LFinger41_link'>
       <pose relative_to='LFinger41'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger41_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1294,7 +1314,7 @@
         </surface>
       </collision>
       <visual name='LFinger41_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1312,8 +1332,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1324,19 +1346,19 @@
     <link name='LFinger42_link'>
       <pose relative_to='LFinger42'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger42_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1356,7 +1378,7 @@
         </surface>
       </collision>
       <visual name='LFinger42_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1374,8 +1396,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1386,19 +1410,19 @@
     <link name='LFinger43_link'>
       <pose relative_to='LFinger43'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70413e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LFinger43_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1418,7 +1442,7 @@
         </surface>
       </collision>
       <visual name='LFinger43_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1432,7 +1456,7 @@
     <joint name='LHand' type='revolute'>
       <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
       <parent>l_wrist</parent>
-      <child>l_gripper</child>
+      <child>l_hand</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -1447,32 +1471,32 @@
         </dynamics>
       </axis>
     </joint>
-    <link name='l_gripper'>
+    <link name='l_hand'>
       <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>0.0117034</ixx>
-          <ixy>0.000817744</ixy>
-          <ixz>-0.00332158</ixz>
-          <iyy>0.0378404</iyy>
-          <iyz>-0.000149266</iyz>
-          <izz>0.0402727</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
-      <gravity>1</gravity>
-      <self_collide>0</self_collide>
     </link>
     <joint name='LThumb1' type='revolute'>
-      <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -1.95836 0.60626 0.533978</pose>
+      <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -2.55836 0.80626 0.533978</pose>
       <parent>l_wrist</parent>
       <child>LThumb1_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1483,19 +1507,19 @@
     <link name='LThumb1_link'>
       <pose relative_to='LThumb1'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04269e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LThumb1_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1515,7 +1539,7 @@
         </surface>
       </collision>
       <visual name='LThumb1_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1533,8 +1557,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1545,19 +1571,19 @@
     <link name='LThumb2_link'>
       <pose relative_to='LThumb2'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='LThumb2_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1577,7 +1603,7 @@
         </surface>
       </collision>
       <visual name='LThumb2_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1609,15 +1635,15 @@
     <link name='RShoulder'>
       <pose relative_to='RShoulderPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 -0 -0 0 -0 0</pose>
-        <mass>0.140715</mass>
+        <pose>0.00018 0.01856 0.00099 0 -0 0</pose>
+        <mass>0.3125</mass>
         <inertia>
-          <ixx>0.00853247</ixx>
-          <ixy>-1.92187e-09</ixy>
-          <ixz>6.35445e-10</ixz>
-          <iyy>0.00853246</iyy>
-          <iyz>-2.07166e-09</iyz>
-          <izz>0.0102528</izz>
+          <ixx>0.000361198</ixx>
+          <ixy>1.98347e-06</ixy>
+          <ixz>6.35907e-07</ixz>
+          <iyy>0.000137229</iyy>
+          <iyz>5.68878e-06</iyz>
+          <izz>0.000399194</izz>
         </inertia>
       </inertial>
       <collision name='RShoulder_collision'>
@@ -1673,15 +1699,15 @@
     <link name='RBicep'>
       <pose relative_to='RShoulderRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.902599 -0.162517 -0.006112 0 -0 0</pose>
-        <mass>0.313703</mass>
+        <pose>0.08151 -0.01284 -0.01017 0 -0 0</pose>
+        <mass>0.50527</mass>
         <inertia>
-          <ixx>0.0246985</ixx>
-          <ixy>0.00128179</ixy>
-          <ixz>0.00170294</ixz>
-          <iyy>0.0716735</iyy>
-          <iyz>6.87453e-05</iyz>
-          <izz>0.0676636</izz>
+          <ixx>0.000500872</ixx>
+          <ixy>3.55918e-05</ixy>
+          <ixz>8.51263e-05</ixz>
+          <iyy>0.00126284</iyy>
+          <iyz>-9.06813e-06</iyz>
+          <izz>0.00115718</izz>
         </inertia>
       </inertial>
       <collision name='RBicep_collision'>
@@ -1737,15 +1763,15 @@
     <link name='RElbow'>
       <pose relative_to='RElbowYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 0 -0 0 -0 0</pose>
-        <mass>0.0738046</mass>
+        <pose>-0.02297 0.00019 0.00119 0 -0 0</pose>
+        <mass>0.27495</mass>
         <inertia>
-          <ixx>0.0029965</ixx>
-          <ixy>-1.0388e-10</ixy>
-          <ixz>-4.20025e-12</ixz>
-          <iyy>0.00302767</iyy>
-          <iyz>-2.99368e-10</iyz>
-          <izz>0.00302767</izz>
+          <ixx>0.000122971</ixx>
+          <ixy>-9.86024e-07</ixy>
+          <ixz>-2.55838e-05</ixz>
+          <iyy>0.000331766</iyy>
+          <iyz>1.98925e-06</iyz>
+          <izz>0.000303047</izz>
         </inertia>
       </inertial>
       <collision name='RElbow_collision'>
@@ -1801,15 +1827,15 @@
     <link name='RForeArm'>
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.470716 -0.036756 -0.001069 0 -0 0</pose>
-        <mass>0.133211</mass>
+        <pose>0.0593 -0.00271 -0.01014 0 -0 0</pose>
+        <mass>0.16579</mass>
         <inertia>
-          <ixx>0.00715736</ixx>
-          <ixy>-0.00112756</ixy>
-          <ixz>4.27306e-05</ixz>
-          <iyy>0.00991492</iyy>
-          <iyz>-1.76731e-06</iyz>
-          <izz>0.00962229</izz>
+          <ixx>0.00156513</ixx>
+          <ixy>-1.47517e-05</ixy>
+          <ixz>-6.05746e-05</ixz>
+          <iyy>0.00173219</iyy>
+          <iyz>1.7619e-07</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='RForeArm_collision'>
@@ -1865,15 +1891,15 @@
     <link name='r_wrist'>
       <pose relative_to='RWristYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.110379 0.027219 0.025007 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <pose>0.03561 0.000715 -0.002185 0 -0 0</pose>
+        <mass>0.27755</mass>
         <inertia>
-          <ixx>0.0117034</ixx>
-          <ixy>-0.000817744</ixy>
-          <ixz>-0.00332158</ixz>
-          <iyy>0.0378404</iyy>
-          <iyz>0.000149266</iyz>
-          <izz>0.0402727</izz>
+          <ixx>0.00015215</ixx>
+          <ixy>-1.06134e-05</ixy>
+          <ixz>3.99236e-06</ixz>
+          <iyy>0.000433988</iyy>
+          <iyz>3.11434e-06</iyz>
+          <izz>0.000458557</izz>
         </inertia>
       </inertial>
       <collision name='r_wrist_collision'>
@@ -1915,8 +1941,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1927,19 +1955,19 @@
     <link name='RFinger11_link'>
       <pose relative_to='RFinger11'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger11_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1959,7 +1987,7 @@
         </surface>
       </collision>
       <visual name='RFinger11_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -1977,8 +2005,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1989,19 +2019,19 @@
     <link name='RFinger12_link'>
       <pose relative_to='RFinger12'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger12_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2021,7 +2051,7 @@
         </surface>
       </collision>
       <visual name='RFinger12_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2039,8 +2069,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2051,19 +2083,19 @@
     <link name='RFinger13_link'>
       <pose relative_to='RFinger13'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger13_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2083,7 +2115,7 @@
         </surface>
       </collision>
       <visual name='RFinger13_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2101,8 +2133,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2113,19 +2147,19 @@
     <link name='RFinger21_link'>
       <pose relative_to='RFinger21'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger21_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2145,7 +2179,7 @@
         </surface>
       </collision>
       <visual name='RFinger21_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2163,8 +2197,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2175,19 +2211,19 @@
     <link name='RFinger22_link'>
       <pose relative_to='RFinger22'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25914e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04271e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger22_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2207,7 +2243,7 @@
         </surface>
       </collision>
       <visual name='RFinger22_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2225,8 +2261,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2237,19 +2275,19 @@
     <link name='RFinger23_link'>
       <pose relative_to='RFinger23'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41678e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70416e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger23_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2269,7 +2307,7 @@
         </surface>
       </collision>
       <visual name='RFinger23_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2287,8 +2325,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2299,19 +2339,19 @@
     <link name='RFinger31_link'>
       <pose relative_to='RFinger31'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger31_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2331,7 +2371,7 @@
         </surface>
       </collision>
       <visual name='RFinger31_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2349,8 +2389,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2361,19 +2403,19 @@
     <link name='RFinger32_link'>
       <pose relative_to='RFinger32'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25906e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger32_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2393,7 +2435,7 @@
         </surface>
       </collision>
       <visual name='RFinger32_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2411,8 +2453,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2423,19 +2467,19 @@
     <link name='RFinger33_link'>
       <pose relative_to='RFinger33'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger33_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2455,7 +2499,7 @@
         </surface>
       </collision>
       <visual name='RFinger33_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2473,8 +2517,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2485,19 +2531,19 @@
     <link name='RFinger41_link'>
       <pose relative_to='RFinger41'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger41_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2517,7 +2563,7 @@
         </surface>
       </collision>
       <visual name='RFinger41_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2535,8 +2581,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2547,19 +2595,19 @@
     <link name='RFinger42_link'>
       <pose relative_to='RFinger42'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.0427e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger42_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2579,7 +2627,7 @@
         </surface>
       </collision>
       <visual name='RFinger42_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2597,8 +2645,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2609,19 +2659,19 @@
     <link name='RFinger43_link'>
       <pose relative_to='RFinger43'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41681e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70413e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RFinger43_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2641,7 +2691,7 @@
         </surface>
       </collision>
       <visual name='RFinger43_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2655,7 +2705,7 @@
     <joint name='RHand' type='revolute'>
       <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
       <parent>r_wrist</parent>
-      <child>r_gripper</child>
+      <child>r_hand</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -2670,32 +2720,32 @@
         </dynamics>
       </axis>
     </joint>
-    <link name='r_gripper'>
+    <link name='r_hand'>
       <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
-        <mass>0.207592</mass>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>0.0117034</ixx>
-          <ixy>-0.000817744</ixy>
-          <ixz>-0.00332158</ixz>
-          <iyy>0.0378404</iyy>
-          <iyz>0.000149266</iyz>
-          <izz>0.0402727</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
-      <gravity>1</gravity>
-      <self_collide>0</self_collide>
     </link>
     <joint name='RThumb1' type='revolute'>
-      <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -1.18323 0.60626 -0.533978</pose>
+      <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -0.58323 0.80626 -0.533978</pose>
       <parent>r_wrist</parent>
       <child>RThumb1_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2706,19 +2756,19 @@
     <link name='RThumb1_link'>
       <pose relative_to='RThumb1'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.0017342</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>3.46781e-06</ixx>
-          <ixy>-3.25905e-08</ixy>
-          <ixz>-1.77572e-07</ixz>
-          <iyy>9.06796e-06</iyy>
-          <iyz>-5.04269e-08</iyz>
-          <izz>9.98141e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RThumb1_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2738,7 +2788,7 @@
         </surface>
       </collision>
       <visual name='RThumb1_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2756,8 +2806,10 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>0</lower>
+          <upper>0.872665</upper>
+          <effort>0.144</effort>
+          <velocity>12.56</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -2768,19 +2820,19 @@
     <link name='RThumb2_link'>
       <pose relative_to='RThumb2'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.00121197</mass>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.002</mass>
         <inertia>
-          <ixx>2.09224e-06</ixx>
-          <ixy>-1.14574e-07</ixy>
-          <ixz>1.41679e-08</ixz>
-          <iyy>4.04999e-06</iyy>
-          <iyz>-5.70419e-09</iyz>
-          <izz>4.41654e-06</izz>
+          <ixx>1.1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1.1e-09</izz>
         </inertia>
       </inertial>
       <collision name='RThumb2_link_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2800,7 +2852,7 @@
         </surface>
       </collision>
       <visual name='RThumb2_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -2832,15 +2884,15 @@
     <link name='WheelB_link'>
       <pose relative_to='WheelB'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>1e-06 -0 0 0 -0 0</pose>
-        <mass>0.757569</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.146668</ixx>
-          <ixy>2.16464e-09</ixy>
-          <ixz>-1.60429e-08</ixz>
-          <iyy>0.145462</iyy>
-          <iyz>9.68642e-10</iyz>
-          <izz>0.146668</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>6.3068e-07</ixy>
+          <ixz>5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>-9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelB_link_collision'>
@@ -2900,15 +2952,15 @@
     <link name='WheelFL_link'>
       <pose relative_to='WheelFL'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-1e-06 1e-06 0 0 -0 0</pose>
-        <mass>0.757569</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.146668</ixx>
-          <ixy>1.38949e-09</ixy>
-          <ixz>-1.84774e-08</ixz>
-          <iyy>0.145462</iyy>
-          <iyz>-1.68256e-10</iyz>
-          <izz>0.146668</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>6.3068e-07</ixy>
+          <ixz>5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>-9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelFL_link_collision'>
@@ -2968,15 +3020,15 @@
     <link name='WheelFR_link'>
       <pose relative_to='WheelFR'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0 -1e-06 0 0 -0 0</pose>
-        <mass>0.757569</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.58028</mass>
         <inertia>
-          <ixx>0.146668</ixx>
-          <ixy>-1.29746e-09</ixy>
-          <ixz>-1.74594e-08</ixz>
-          <iyy>0.145462</iyy>
-          <iyz>2.19765e-10</iyz>
-          <izz>0.146668</izz>
+          <ixx>0.00299756</ixx>
+          <ixy>6.3068e-07</ixy>
+          <ixz>5.56903e-06</ixz>
+          <iyy>0.00303229</iyy>
+          <iyz>-9.0408e-07</iyz>
+          <izz>0.00296585</izz>
         </inertia>
       </inertial>
       <collision name='WheelFR_link_collision'>
