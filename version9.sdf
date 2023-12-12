@@ -17,7 +17,7 @@
         <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/KneePitch_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -37,7 +37,7 @@
         <pose>0 0 0.334 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/KneePitch.dae</uri>
           </mesh>
         </geometry>
@@ -81,7 +81,7 @@
         <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -101,7 +101,7 @@
         <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HipPitch.dae</uri>
           </mesh>
         </geometry>
@@ -145,7 +145,7 @@
         <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -165,7 +165,7 @@
         <pose>0 0 0.079 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HipRoll.dae</uri>
           </mesh>
         </geometry>
@@ -209,7 +209,7 @@
         <pose>0 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -229,7 +229,7 @@
         <pose>0 0 0.139 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/Torso.dae</uri>
           </mesh>
         </geometry>
@@ -273,7 +273,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HeadYaw_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -293,7 +293,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HeadYaw.dae</uri>
           </mesh>
         </geometry>
@@ -337,7 +337,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HeadPitch_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -357,7 +357,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/HeadPitch.dae</uri>
           </mesh>
         </geometry>
@@ -401,7 +401,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -421,7 +421,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderPitch.dae</uri>
           </mesh>
         </geometry>
@@ -465,7 +465,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -485,7 +485,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LShoulderRoll.dae</uri>
           </mesh>
         </geometry>
@@ -529,7 +529,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -549,7 +549,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowYaw.dae</uri>
           </mesh>
         </geometry>
@@ -593,7 +593,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -613,7 +613,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LElbowRoll.dae</uri>
           </mesh>
         </geometry>
@@ -657,7 +657,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae</uri>
           </mesh>
         </geometry>
@@ -677,7 +677,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae</uri>
           </mesh>
         </geometry>
@@ -721,7 +721,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -741,7 +741,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger11.dae</uri>
           </mesh>
         </geometry>
@@ -785,7 +785,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -805,7 +805,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger12.dae</uri>
           </mesh>
         </geometry>
@@ -849,7 +849,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -869,7 +869,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger13.dae</uri>
           </mesh>
         </geometry>
@@ -913,7 +913,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -933,7 +933,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger21.dae</uri>
           </mesh>
         </geometry>
@@ -977,7 +977,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -997,7 +997,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger22.dae</uri>
           </mesh>
         </geometry>
@@ -1041,7 +1041,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1061,7 +1061,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger23.dae</uri>
           </mesh>
         </geometry>
@@ -1105,7 +1105,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1125,7 +1125,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger31.dae</uri>
           </mesh>
         </geometry>
@@ -1169,7 +1169,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1189,7 +1189,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger32.dae</uri>
           </mesh>
         </geometry>
@@ -1233,7 +1233,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1253,7 +1253,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger33.dae</uri>
           </mesh>
         </geometry>
@@ -1297,7 +1297,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1317,7 +1317,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger41.dae</uri>
           </mesh>
         </geometry>
@@ -1361,7 +1361,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1381,7 +1381,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger42.dae</uri>
           </mesh>
         </geometry>
@@ -1425,7 +1425,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1445,7 +1445,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LFinger43.dae</uri>
           </mesh>
         </geometry>
@@ -1522,7 +1522,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1542,7 +1542,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb1.dae</uri>
           </mesh>
         </geometry>
@@ -1586,7 +1586,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1606,7 +1606,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/LThumb2.dae</uri>
           </mesh>
         </geometry>
@@ -1650,7 +1650,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderPitch_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1670,7 +1670,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderPitch.dae</uri>
           </mesh>
         </geometry>
@@ -1714,7 +1714,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderRoll_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1734,7 +1734,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RShoulderRoll.dae</uri>
           </mesh>
         </geometry>
@@ -1778,7 +1778,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowYaw_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1798,7 +1798,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowYaw.dae</uri>
           </mesh>
         </geometry>
@@ -1842,7 +1842,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowRoll_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1862,7 +1862,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RElbowRoll.dae</uri>
           </mesh>
         </geometry>
@@ -1906,7 +1906,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RWristYaw_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1926,7 +1926,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RWristYaw.dae</uri>
           </mesh>
         </geometry>
@@ -1970,7 +1970,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger11_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -1990,7 +1990,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger11.dae</uri>
           </mesh>
         </geometry>
@@ -2034,7 +2034,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger12_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2054,7 +2054,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger12.dae</uri>
           </mesh>
         </geometry>
@@ -2098,7 +2098,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger13_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2118,7 +2118,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger13.dae</uri>
           </mesh>
         </geometry>
@@ -2162,7 +2162,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger21_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2182,7 +2182,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger21.dae</uri>
           </mesh>
         </geometry>
@@ -2226,7 +2226,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger22_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2246,7 +2246,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger22.dae</uri>
           </mesh>
         </geometry>
@@ -2290,7 +2290,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger23_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2310,7 +2310,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger23.dae</uri>
           </mesh>
         </geometry>
@@ -2354,7 +2354,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger31_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2374,7 +2374,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger31.dae</uri>
           </mesh>
         </geometry>
@@ -2418,7 +2418,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger32_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2438,7 +2438,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger32.dae</uri>
           </mesh>
         </geometry>
@@ -2482,7 +2482,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger33_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2502,7 +2502,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger33.dae</uri>
           </mesh>
         </geometry>
@@ -2546,7 +2546,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger41_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2566,7 +2566,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger41.dae</uri>
           </mesh>
         </geometry>
@@ -2610,7 +2610,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger42_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2630,7 +2630,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger42.dae</uri>
           </mesh>
         </geometry>
@@ -2674,7 +2674,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger43_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2694,7 +2694,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RFinger43.dae</uri>
           </mesh>
         </geometry>
@@ -2771,7 +2771,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb1_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2791,7 +2791,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb1.dae</uri>
           </mesh>
         </geometry>
@@ -2835,7 +2835,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb2_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2855,7 +2855,7 @@
         <pose>0 0 0 -1.57 0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/RThumb2.dae</uri>
           </mesh>
         </geometry>
@@ -2899,7 +2899,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/WheelB_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2924,7 +2924,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/WheelB.dae</uri>
           </mesh>
         </geometry>
@@ -2967,7 +2967,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFL_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -2992,7 +2992,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFL.dae</uri>
           </mesh>
         </geometry>
@@ -3035,7 +3035,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFR_0.10.stl</uri>
           </mesh>
         </geometry>
@@ -3060,7 +3060,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.1 0.1 0.1</scale>
             <uri>model://pepper_robot_description/pepper_robot/meshes/WheelFR.dae</uri>
           </mesh>
         </geometry>
