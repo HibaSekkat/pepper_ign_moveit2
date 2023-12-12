@@ -1453,39 +1453,6 @@
       <gravity>1</gravity>
       <self_collide>0</self_collide>
     </link>
-    <joint name='LHand' type='revolute'>
-      <pose relative_to='l_wrist'>0.025 0 0 0 -0 0</pose>
-      <parent>l_wrist</parent>
-      <child>l_hand</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>0.02</lower>
-          <upper>0.98</upper>
-          <effort>0.144</effort>
-          <velocity>12.56</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='l_hand'>
-      <pose relative_to='LHand'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.002</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
-    </link>
     <joint name='LThumb1' type='revolute'>
       <pose relative_to='l_wrist'>0.0482 -0.0357 -0.0199 -2.55836 0.80626 0.533978</pose>
       <parent>l_wrist</parent>
@@ -2701,39 +2668,6 @@
       </visual>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
-    </link>
-    <joint name='RHand' type='revolute'>
-      <pose relative_to='r_wrist'>0.025 0 0 0 -0 0</pose>
-      <parent>r_wrist</parent>
-      <child>r_hand</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>0.02</lower>
-          <upper>0.98</upper>
-          <effort>0.144</effort>
-          <velocity>12.56</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-      </axis>
-    </joint>
-    <link name='r_hand'>
-      <pose relative_to='RHand'>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>0.002</mass>
-        <inertia>
-          <ixx>1.1e-09</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1.1e-09</iyy>
-          <iyz>0</iyz>
-          <izz>1.1e-09</izz>
-        </inertia>
-      </inertial>
     </link>
     <joint name='RThumb1' type='revolute'>
       <pose relative_to='r_wrist'>0.0482 0.0357 -0.0199 -0.58323 0.80626 -0.533978</pose>

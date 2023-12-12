@@ -144,25 +144,13 @@
     <child link="base_footprint"/>
     <parent link="base_link"/>
   </joint>
-  <link name="base_link">
-    <inertial>
-      <mass value="0"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-    </inertial>
-  </link>
+  <link name="base_link"/>
   <joint name="base_footprint_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0.334"/>
     <child link="Tibia"/>
     <parent link="base_footprint"/>
   </joint>
-  <link name="base_footprint">
-    <inertial>
-      <mass value="0"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-    </inertial>
-  </link>
+  <link name="base_footprint"/>
   <!-- Add the torso link and additional texture links -->
   <link name="torso">
     <inertial>
@@ -323,26 +311,13 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="LGripper" type="fixed">
+  <joint name="LHand" type="fixed">
     <parent link="l_wrist"/>
     <child link="l_gripper"/>
     <origin rpy="-3.14 0.0 -1.57" xyz="0.07 0.0 -0.01802319018"/>
     <axis xyz="0 0 0"/>
   </joint>
   <link name="l_gripper">
-    <inertial>
-      <mass value="2e-03"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
-    </inertial>
-  </link>
-  <joint name="LHand" type="revolute">
-    <parent link="l_wrist"/>
-    <child link="l_hand"/>
-    <origin rpy="0 0 0" xyz="0.025 0 0"/>
-    <axis xyz="1.0 0 0"/>
-    <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
-  </joint>
-  <link name="l_hand">
     <inertial>
       <mass value="2e-03"/>
       <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
@@ -486,26 +461,13 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="RGripper" type="fixed">
+  <joint name="RHand" type="fixed">
     <parent link="r_wrist"/>
     <child link="r_gripper"/>
     <origin rpy="3.14 0 1.57" xyz="0.07 0.0 -0.01802319018"/>
     <axis xyz="0 0 0"/>
   </joint>
   <link name="r_gripper">
-    <inertial>
-      <mass value="2e-03"/>
-      <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
-    </inertial>
-  </link>
-  <joint name="RHand" type="revolute">
-    <parent link="r_wrist"/>
-    <child link="r_hand"/>
-    <origin rpy="0 0 0" xyz="0.025 0 0"/>
-    <axis xyz="1.0 0 0"/>
-    <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
-  </joint>
-  <link name="r_hand">
     <inertial>
       <mass value="2e-03"/>
       <inertia ixx="1.1e-09" ixy="0" ixz="0" iyy="1.1e-09" iyz="0" izz="1.1e-09"/>
