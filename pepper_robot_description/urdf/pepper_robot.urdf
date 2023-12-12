@@ -15,13 +15,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadYaw.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadYaw.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadYaw_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -42,13 +42,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadPitch.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadPitch.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HeadPitch_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -69,13 +69,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipRoll_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.079"/>
     </collision>
@@ -97,13 +97,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </collision>
@@ -126,13 +126,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/KneePitch.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/KneePitch.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/KneePitch_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/KneePitch_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -160,13 +160,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.139"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/Torso_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0.139"/>
     </collision>
@@ -188,13 +188,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderPitch.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderPitch.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderPitch_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -216,13 +216,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderRoll.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderRoll.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LShoulderRoll_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -244,13 +244,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowYaw.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowYaw.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowYaw_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -272,13 +272,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowRoll.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowRoll.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LElbowRoll_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -300,13 +300,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LWristYaw.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -351,13 +351,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderPitch.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderPitch.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderPitch_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderPitch_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -379,13 +379,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderRoll.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderRoll.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RShoulderRoll_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -407,13 +407,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowYaw.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowYaw.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowYaw_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -435,13 +435,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowRoll.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowRoll.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowRoll_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RElbowRoll_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -463,13 +463,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RWristYaw.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RWristYaw.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RWristYaw_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RWristYaw_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -507,13 +507,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger41.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger41.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger41_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -534,13 +534,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger42.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger42.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger42_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -561,13 +561,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger12.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger12.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger12_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -588,13 +588,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger33.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger33.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger33_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -615,13 +615,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger31.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger31.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger31_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -642,13 +642,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger21.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger21.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger21_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -669,13 +669,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger32.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger32.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger32_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -696,13 +696,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger13.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger13.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger13_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -723,13 +723,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger32.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger32.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger32_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger32_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -750,13 +750,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger11.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger11.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger11_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -777,13 +777,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger22.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger22.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger22_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -804,13 +804,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger13.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger13.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger13_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger13_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -831,13 +831,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger22.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger22.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger22_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger22_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -858,13 +858,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger21.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger21.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger21_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger21_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -885,13 +885,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger41.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger41.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger41_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger41_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -912,13 +912,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger12.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger12.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger12_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger12_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -939,13 +939,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger23.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger23.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger23_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -966,13 +966,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger11.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger11.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger11_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger11_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -993,13 +993,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger23.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger23.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger23_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger23_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1020,13 +1020,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger43.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger43.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger43_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1047,13 +1047,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger43.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger43.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger43_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger43_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1074,13 +1074,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger42.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger42.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger42_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger42_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1101,13 +1101,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger31.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger31.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger31_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LFinger31_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1128,13 +1128,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger33.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger33.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger33_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RFinger33_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1155,13 +1155,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb1.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb1.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb1_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1183,13 +1183,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb2.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb2.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb2_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1210,13 +1210,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb1.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb1.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>s
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb1_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/RThumb1_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1238,13 +1238,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb2.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb2.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb2_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/LThumb2_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="-1.57 0 0" xyz="0 0 0"/>
     </collision>
@@ -1265,13 +1265,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFL.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFL.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFL_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFL_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -1291,13 +1291,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelB.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelB.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelB_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelB_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -1317,13 +1317,13 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFR.dae" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFR.dae" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFR_0.10.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://pepper_robot_description/pepper_robot/meshes/WheelFR_0.10.stl" scale="1 1 1"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
