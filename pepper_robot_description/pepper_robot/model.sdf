@@ -2,7 +2,7 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.002205 0 0.416271 0 -0 0</pose>
+        <pose>0 0 0.30646 0 -0 0</pose>
         <mass>11.6015</mass>
         <inertia>
           <ixx>0.129229</ixx>
@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00237 0 -0.01754 0 -0 0</pose>
+        <pose>0.00237 0 0.102271 0 -0 0</pose>
         <mass>2.45917</mass>
         <inertia>
           <ixx>0.034351</ixx>
