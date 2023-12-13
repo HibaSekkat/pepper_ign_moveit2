@@ -65,7 +65,7 @@
     <inertial>
       <mass value="1.02338"/>
       <inertia ixx="0.00502422" ixy="0" ixz="-2.54911e-05" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
-      <origin rpy="1.5708 -0 0.3926" xyz="0.00032 0 -0.003416125"/>
+      <origin rpy="1.5708 -0 0.7853" xyz="0.00032 0 -0.003416125"/>
     </inertial>
     <visual>
       <geometry>
