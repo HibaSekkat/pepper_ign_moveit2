@@ -32,7 +32,7 @@
     <child link="Head"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 1.0 0"/>
-    <limit effort="2.666" lower="-0.706858" upper="0.637045" velocity="9.22756"/>
+    <limit effort="2.666" lower="-0.706858" upper="0.4451" velocity="9.22756"/>
   </joint>
   <link name="Head">
     <inertial>
@@ -65,7 +65,7 @@
     <inertial>
       <mass value="1.02338"/>
       <inertia ixx="0.00502422" ixy="0" ixz="-2.54911e-05" iyy="0.00640971" iyz="0.000159449" izz="0.00441082"/>
-      <origin rpy="0 0 0" xyz="0.00032 0 -0.07068"/>
+      <origin rpy="0 0 0" xyz="0.00032 0 -0.06039"/>
     </inertial>
     <visual>
       <geometry>
@@ -83,7 +83,7 @@
 
   <!-- Create Pelvis link and additional link for texture -->
   <joint name="HipPitch" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.268"/>
     <child link="Hip"/>
     <parent link="Pelvis"/>
     <axis xyz="0 -1.0 0"/>
@@ -93,26 +93,26 @@
     <inertial>
       <mass value="2.45917"/>
       <inertia ixx="0.034351" ixy="0" ixz="0.000223034" iyy="0.0303122" iyz="-8.37542e-05" izz="0.0143771"/>
-      <origin rpy="0 0 0" xyz="0.00237 0 -0.01754"/>
+      <origin rpy="0 0 0" xyz="0.00237 0 -0.09654"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </collision>
   </link>
   <!-- End Pelvis link -->
 
   <!-- KneePitch and additional texture link -->
   <joint name="KneePitch" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.268"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <child link="Pelvis"/>
     <parent link="Tibia"/>
     <axis xyz="0 -1.0 0"/>
@@ -122,19 +122,19 @@
     <inertial>
       <mass value="11.6015"/>
       <inertia ixx="0.129229" ixy="-0.000401943" ixz="0.00048556" iyy="0.122839" iyz="-1.01666e-08" izz="0.108168"/>
-      <origin rpy="0 0 0" xyz="0.00220451 0 0.082271"/>
+      <origin rpy="0 0 0" xyz="0.00220451 0 0.185729"/>
     </inertial>
     <visual>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/KneePitch.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.268"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/KneePitch_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.268"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
   <!-- End KneePitch link -->
