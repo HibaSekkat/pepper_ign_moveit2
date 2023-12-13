@@ -46,7 +46,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
-      <pose relative_to='base_link'>0 0 0.07 0 -0 0</pose>
+      <pose relative_to='base_link'>0 0 0.334 0 -0 0</pose>
       <parent>base_link</parent>
       <child>Pelvis</child>
       <axis>

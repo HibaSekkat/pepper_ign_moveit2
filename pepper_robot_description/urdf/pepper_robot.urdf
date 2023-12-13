@@ -112,7 +112,7 @@
 
   <!-- KneePitch and additional texture link -->
   <joint name="KneePitch" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 -0.264"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <child link="Pelvis"/>
     <parent link="Tibia"/>
     <axis xyz="0 -1.0 0"/>
