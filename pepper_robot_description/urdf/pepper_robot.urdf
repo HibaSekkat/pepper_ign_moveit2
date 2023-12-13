@@ -3,7 +3,7 @@
   <joint name="HeadYaw" type="revolute">
     <parent link="torso"/>
     <child link="Neck"/>
-    <origin rpy="0 0 0" xyz="-0.038 0 0.1699"/>
+    <origin rpy="0 0 0" xyz="-0.038 0 0.3089"/>
     <axis xyz="0 0 1.0"/>
     <limit effort="5.428" lower="-2.08567" upper="2.08567" velocity="7.33998"/>
   </joint>
@@ -55,7 +55,7 @@
   </link>
 
   <joint name="HipRoll" type="revolute">
-    <origin rpy="0 0 0" xyz="-2e-05 0 0.139"/>
+    <origin rpy="0 0 0" xyz="-2e-05 0 0.079"/>
     <child link="torso"/>
     <parent link="Hip"/>
     <axis xyz="-1.0 0 0"/>
@@ -83,7 +83,7 @@
 
   <!-- Create Pelvis link and additional link for texture -->
   <joint name="HipPitch" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.079"/>
+    <origin rpy="0 0 0" xyz="0 0 0.268"/>
     <child link="Hip"/>
     <parent link="Pelvis"/>
     <axis xyz="0 -1.0 0"/>
@@ -99,20 +99,20 @@
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch.dae" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://pepper_robot_description/pepper_robot/meshes/HipPitch_0.10.stl" scale="0.1 0.1 0.1"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.268"/>
     </collision>
   </link>
   <!-- End Pelvis link -->
 
   <!-- KneePitch and additional texture link -->
   <joint name="KneePitch" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.268"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.264"/>
     <child link="Pelvis"/>
     <parent link="Tibia"/>
     <axis xyz="0 -1.0 0"/>

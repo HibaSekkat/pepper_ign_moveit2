@@ -46,7 +46,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
-      <pose relative_to='base_link'>0 0 0.602 0 -0 0</pose>
+      <pose relative_to='base_link'>0 0 0.07 0 -0 0</pose>
       <parent>base_link</parent>
       <child>Pelvis</child>
       <axis>
@@ -78,7 +78,7 @@
         </inertia>
       </inertial>
       <collision name='Pelvis_collision'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -98,7 +98,7 @@
         </surface>
       </collision>
       <visual name='Pelvis_visual'>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0.268 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
@@ -110,7 +110,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
-      <pose relative_to='Pelvis'>0 0 0.079 0 -0 0</pose>
+      <pose relative_to='Pelvis'>0 0 0.268 0 -0 0</pose>
       <parent>Pelvis</parent>
       <child>Hip</child>
       <axis>
@@ -174,7 +174,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
-      <pose relative_to='Hip'>-2e-05 0 0.139 0 -0 0</pose>
+      <pose relative_to='Hip'>-2e-05 0 0.079 0 -0 0</pose>
       <parent>Hip</parent>
       <child>torso</child>
       <axis>
@@ -238,7 +238,7 @@
       <self_collide>0</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
-      <pose relative_to='torso'>-0.038 0 0.1699 0 -0 0</pose>
+      <pose relative_to='torso'>-0.038 0 0.3089 0 -0 0</pose>
       <parent>torso</parent>
       <child>Neck</child>
       <axis>
