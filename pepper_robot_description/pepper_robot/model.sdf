@@ -578,7 +578,7 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.0593 0.00271 -0.01014 0 0 -1.5708</pose>
+        <pose>0.0593 0.00271 -0.01014 3.14159 -1.57079 3.14159</pose>
         <mass>0.16579</mass>
         <inertia>
           <ixx>0.000156513</ixx>
