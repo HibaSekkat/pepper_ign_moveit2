@@ -578,7 +578,7 @@
     <link name='LForeArm'>
       <pose relative_to='LElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.0593 0.00271 -0.01014 0 -0.7854 0</pose>
+        <pose>0.0593 0.00271 -0.01014 0 0.3927 0</pose>
         <mass>0.16579</mass>
         <inertia>
           <ixx>0.000156513</ixx>
@@ -1827,13 +1827,13 @@
     <link name='RForeArm'>
       <pose relative_to='RElbowRoll'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.0593 -0.00271 -0.01014 0 -0 0</pose>
+        <pose>0.0593 -0.00271 -0.01014 0 0.3927 0</pose>
         <mass>0.16579</mass>
         <inertia>
-          <ixx>0.00156513</ixx>
+          <ixx>0.000156513</ixx>
           <ixy>-1.47517e-05</ixy>
           <ixz>-6.05746e-05</ixz>
-          <iyy>0.00173219</iyy>
+          <iyy>0.000173219</iyy>
           <iyz>1.7619e-07</iyz>
           <izz>0.000273081</izz>
         </inertia>
