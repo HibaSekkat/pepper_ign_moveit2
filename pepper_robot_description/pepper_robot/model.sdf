@@ -2,7 +2,7 @@
   <model name='pepper_robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.00237 0 0.31646 0 -0 0</pose>
+        <pose>0.002205 0 0.23746 0 -0 0</pose>
         <mass>11.6015</mass>
         <inertia>
           <ixx>0.129229</ixx>
@@ -66,7 +66,7 @@
     <link name='Pelvis'>
       <pose relative_to='KneePitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.002205 0 0.082271 0 -0 0</pose>
+        <pose>0.00237 0 0.185729 0 -0 0</pose>
         <mass>2.45917</mass>
         <inertia>
           <ixx>0.034351</ixx>
@@ -130,7 +130,7 @@
     <link name='Hip'>
       <pose relative_to='HipPitch'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.00032 0 -0.02929 0 -0 0</pose>
+        <pose>0.00032 0 -0.04971 0 -0 0</pose>
         <mass>1.02338</mass>
         <inertia>
           <ixx>0.00502422</ixx>
@@ -258,7 +258,7 @@
     <link name='Neck'>
       <pose relative_to='HeadYaw'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.00207 0 0.18019 0 -0 0</pose>
+        <pose>-0.00207 0 -0.01318 0 -0 0</pose>
         <mass>0.27391</mass>
         <inertia>
           <ixx>0.000343501</ixx>
