@@ -581,12 +581,12 @@
         <pose>0.0593 0.00271 -0.01014 0 -0 0</pose>
         <mass>0.16579</mass>
         <inertia>
-          <ixx>0.0015834</ixx>
-          <ixy>1.18913e-05</ixy>
-          <ixz>-3.91152e-05</ixz>
-          <iyy>0.00233224</iyy>
-          <iyz>-4.37962e-06</iyz>
-          <izz>0.000857298</izz>
+          <ixx>0.000156513</ixx>
+          <ixy>1.47517e-05</ixy>
+          <ixz>-6.05746e-05</ixz>
+          <iyy>0.000173219</iyy>
+          <iyz>-1.7619e-07</iyz>
+          <izz>0.000273081</izz>
         </inertia>
       </inertial>
       <collision name='LForeArm_collision'>
