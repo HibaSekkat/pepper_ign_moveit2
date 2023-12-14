@@ -250,7 +250,7 @@ def generate_launch_description():
                 {"use_sim_time": use_sim_time},
             ],
             condition=IfCondition(servo),
-           ),
+        ),
         # rviz2
         Node(
             package="rviz2",
@@ -475,9 +475,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         # Miscellaneous
         DeclareLaunchArgument(
-            "enable_rviz",
-            default_value="true",
-            description="Flag to enable RViz2."
+            "enable_rviz", default_value="true", description="Flag to enable RViz2."
         ),
         DeclareLaunchArgument(
             "rviz_config",
