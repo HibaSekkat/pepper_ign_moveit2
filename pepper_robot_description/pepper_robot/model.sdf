@@ -42,7 +42,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='KneePitch' type='revolute'>
@@ -106,7 +106,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='HipPitch' type='revolute'>
@@ -170,7 +170,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='HipRoll' type='revolute'>
@@ -234,7 +234,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='HeadYaw' type='revolute'>
@@ -298,7 +298,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='HeadPitch' type='revolute'>
@@ -362,7 +362,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LShoulderPitch' type='revolute'>
@@ -426,7 +426,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LShoulderRoll' type='revolute'>
@@ -490,7 +490,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LElbowYaw' type='revolute'>
@@ -554,7 +554,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LElbowRoll' type='revolute'>
@@ -618,7 +618,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LWristYaw' type='revolute'>
@@ -682,7 +682,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger11' type='revolute'>
@@ -746,7 +746,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger12' type='revolute'>
@@ -810,7 +810,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger13' type='revolute'>
@@ -874,7 +874,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger21' type='revolute'>
@@ -938,7 +938,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger22' type='revolute'>
@@ -1002,7 +1002,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger23' type='revolute'>
@@ -1066,7 +1066,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger31' type='revolute'>
@@ -1130,7 +1130,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger32' type='revolute'>
@@ -1194,7 +1194,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger33' type='revolute'>
@@ -1258,7 +1258,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger41' type='revolute'>
@@ -1322,7 +1322,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger42' type='revolute'>
@@ -1386,7 +1386,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LFinger43' type='revolute'>
@@ -1450,7 +1450,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LHand' type='revolute'>
@@ -1547,7 +1547,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='LThumb2' type='revolute'>
@@ -1611,7 +1611,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RShoulderPitch' type='revolute'>
@@ -1675,7 +1675,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RShoulderRoll' type='revolute'>
@@ -1739,7 +1739,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RElbowYaw' type='revolute'>
@@ -1803,7 +1803,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RElbowRoll' type='revolute'>
@@ -1867,7 +1867,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RWristYaw' type='revolute'>
@@ -1931,7 +1931,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger11' type='revolute'>
@@ -1995,7 +1995,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger12' type='revolute'>
@@ -2059,7 +2059,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger13' type='revolute'>
@@ -2123,7 +2123,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger21' type='revolute'>
@@ -2187,7 +2187,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger22' type='revolute'>
@@ -2251,7 +2251,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger23' type='revolute'>
@@ -2315,7 +2315,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger31' type='revolute'>
@@ -2379,7 +2379,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger32' type='revolute'>
@@ -2443,7 +2443,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger33' type='revolute'>
@@ -2507,7 +2507,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger41' type='revolute'>
@@ -2571,7 +2571,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger42' type='revolute'>
@@ -2635,7 +2635,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RFinger43' type='revolute'>
@@ -2699,7 +2699,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RHand' type='revolute'>
@@ -2796,7 +2796,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='RThumb2' type='revolute'>
@@ -2860,7 +2860,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
       <self_collide>false</self_collide>
     </link>
     <joint name='WheelB' type='revolute'>
@@ -2929,7 +2929,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
     </link>
     <joint name='WheelFL' type='revolute'>
       <pose relative_to='base_link'>0.09 0.155 0.07 0 -0 1.07517</pose>
@@ -2997,7 +2997,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
     </link>
     <joint name='WheelFR' type='revolute'>
       <pose relative_to='base_link'>0.09 -0.155 0.07 0 0 -1.07517</pose>
@@ -3065,7 +3065,7 @@
           </mesh>
         </geometry>
       </visual>
-      <<gravity>true</gravity>ity>1</<gravity>true</gravity>ity>
+     <gravity>true</gravity>
     </link>
     <plugin name='ignition::gazebo::systems::DiffDrive' filename='ignition-gazebo-diff-drive-system'>
       <left_joint>WheelFL</left_joint>
