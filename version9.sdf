@@ -631,7 +631,7 @@
           <lower>-1.8238700000000001</lower>
           <upper>1.8238700000000001</upper>
           <effort>0.2014</effort>
-          <velocity>17.383500000000002</velocity>
+          <velocity>7.3834999999999997</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -1880,7 +1880,7 @@
           <lower>-1.8238700000000001</lower>
           <upper>1.8238700000000001</upper>
           <effort>0.2014</effort>
-          <velocity>17.383500000000002</velocity>
+          <velocity>7.3834999999999997</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
