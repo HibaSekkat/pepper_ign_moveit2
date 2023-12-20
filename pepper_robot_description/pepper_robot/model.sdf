@@ -1,5 +1,5 @@
 <sdf version='1.9'>
-  <model name='pepper_robot'>
+  <model name=''>
     <link name='base_link'>
       <inertial>
         <pose>-0.00247 0 0.195 0 0 0</pose>
@@ -3063,7 +3063,7 @@
       <wheel_radius>0.07</wheel_radius>
     </plugin>
     <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>
-      <parameters>/root/ws/src/pepper_ign_moveit2/pepper_robot_moveit_config/config/controllers_effort.yaml</parameters>
+      <parameters>/root/ws/src/pepper_ign_moveit2/_moveit_config/config/controllers_effort.yaml</parameters>
     </plugin>
     <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
       <use_pose_vector_msg>true</use_pose_vector_msg>
