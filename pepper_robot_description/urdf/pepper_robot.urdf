@@ -290,7 +290,7 @@
     <child link="l_wrist"/>
     <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="7.3835"/>
+    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="17.3835"/>
   </joint>
   <link name="l_wrist">
     <inertial>
@@ -328,7 +328,7 @@
     <child link="l_hand"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0.144" lower="0.02" upper="0.98" velocity="1.0"/>
+    <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
   <link name="l_hand">
     <inertial>
@@ -453,7 +453,7 @@
     <child link="r_wrist"/>
     <origin rpy="0 0 0" xyz="0.15 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="7.3835"/>
+    <limit effort="0.2014" lower="-1.82387" upper="1.82387" velocity="17.3835"/>
   </joint>
   <link name="r_wrist">
     <inertial>
@@ -491,7 +491,7 @@
     <child link="r_hand"/>
     <origin rpy="0 0 0" xyz="0.025 0 0"/>
     <axis xyz="1.0 0 0"/>
-    <limit effort="0.144" lower="0.02" upper="0.98" velocity="1.0"/>
+    <limit effort="0.144" lower="0.02" upper="0.98" velocity="12.56"/>
   </joint>
   <link name="r_hand">
     <inertial>
@@ -524,7 +524,7 @@
     <origin rpy="1.74402 1.04064 -0.0683394" xyz="0.074 -0.0309 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger42_link">
     <inertial>
@@ -551,7 +551,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger12_link">
     <inertial>
@@ -578,7 +578,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger33_link">
     <inertial>
@@ -605,7 +605,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger31_link">
     <inertial>
@@ -632,7 +632,7 @@
     <origin rpy="1.67523 1.04483 0.029316" xyz="0.0833 -0.0123 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger21_link">
     <inertial>
@@ -659,7 +659,7 @@
     <origin rpy="1.5708 1.0472 -0.061086" xyz="0.0873 -0.0073 0.006"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger32_link">
     <inertial>
@@ -686,7 +686,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger13_link">
     <inertial>
@@ -713,7 +713,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger32_link">
     <inertial>
@@ -740,7 +740,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger11_link">
     <inertial>
@@ -767,7 +767,7 @@
     <origin rpy="1.74402 1.04064 -0.0334335" xyz="0.0821 -0.0268 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger22_link">
     <inertial>
@@ -794,7 +794,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger13_link">
     <inertial>
@@ -821,7 +821,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger22_link">
     <inertial>
@@ -848,7 +848,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger21_link">
     <inertial>
@@ -875,7 +875,7 @@
     <origin rpy="1.5708 1.0472 0.061086" xyz="0.0873 0.0073 0.006"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger41_link">
     <inertial>
@@ -902,7 +902,7 @@
     <origin rpy="1.39757 1.04064 0.0683394" xyz="0.074 0.0309 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger12_link">
     <inertial>
@@ -929,7 +929,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger23_link">
     <inertial>
@@ -956,7 +956,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger11_link">
     <inertial>
@@ -983,7 +983,7 @@
     <origin rpy="1.39757 1.04064 0.0334335" xyz="0.0821 0.0268 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger23_link">
     <inertial>
@@ -1010,7 +1010,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger43_link">
     <inertial>
@@ -1037,7 +1037,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger43_link">
     <inertial>
@@ -1064,7 +1064,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger42_link">
     <inertial>
@@ -1091,7 +1091,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LFinger31_link">
     <inertial>
@@ -1118,7 +1118,7 @@
     <origin rpy="1.46636 1.04483 -0.029314" xyz="0.0833 0.0123 0.004"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RFinger33_link">
     <inertial>
@@ -1145,7 +1145,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.018 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LThumb1_link">
     <inertial>
@@ -1173,7 +1173,7 @@
     <origin rpy="-2.55836 0.80626 0.533978" xyz="0.0482 -0.0357 -0.0199"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RThumb2_link">
     <inertial>
@@ -1200,7 +1200,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.022 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="RThumb1_link">
     <inertial>
@@ -1228,7 +1228,7 @@
     <origin rpy="-0.58323 0.80626 -0.533978" xyz="0.0482 0.0357 -0.0199"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="RHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="LThumb2_link">
     <inertial>
@@ -1255,7 +1255,7 @@
     <origin rpy="0 0 -1.0472" xyz="0.022 0 0"/>
     <axis xyz="0 0 1.0"/>
     <mimic joint="LHand" multiplier="0.872665" offset="0"/>
-    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="1.0"/>
+    <limit effort="0.144" lower="0.0" upper="0.872665" velocity="12.56"/>
   </joint>
   <link name="WheelFL_link">
     <inertial>
@@ -1545,19 +1545,28 @@
   <gazebo reference="WheelFL_link">
     <mu1>1</mu1>
     <mu2>0</mu2>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
+    <minDepth>0.003</minDepth>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelB_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
+    <minDepth>0.003</minDepth>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFR_link">
     <mu1>0</mu1>
     <mu2>1</mu2>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
     <fdir1 value="0 1 0"/>
+    <minDepth>0.003</minDepth>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger11_link">
