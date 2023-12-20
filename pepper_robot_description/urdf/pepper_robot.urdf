@@ -1545,28 +1545,19 @@
   <gazebo reference="WheelFL_link">
     <mu1>1</mu1>
     <mu2>0</mu2>
-    <kp value="10000000.0"/>
-    <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
-    <minDepth>0.003</minDepth>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelB_link">
     <mu1>0.5</mu1>
     <mu2>0.5</mu2>
-    <kp value="10000000.0"/>
-    <kd value="1.0"/>
     <fdir1 value="1 0 0"/>
-    <minDepth>0.003</minDepth>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="WheelFR_link">
     <mu1>0</mu1>
     <mu2>1</mu2>
-    <kp value="10000000.0"/>
-    <kd value="1.0"/>
     <fdir1 value="0 1 0"/>
-    <minDepth>0.003</minDepth>
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <gazebo reference="RFinger11_link">

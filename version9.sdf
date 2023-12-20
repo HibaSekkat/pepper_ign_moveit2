@@ -2905,11 +2905,7 @@
         </geometry>
         <surface>
           <contact>
-            <ode>
-              <kp>10000000</kp>
-              <kd>1</kd>
-              <min_depth>0.0030000000000000001</min_depth>
-            </ode>
+            <ode/>
           </contact>
           <friction>
             <ode>
@@ -2973,11 +2969,7 @@
         </geometry>
         <surface>
           <contact>
-            <ode>
-              <kp>10000000</kp>
-              <kd>1</kd>
-              <min_depth>0.0030000000000000001</min_depth>
-            </ode>
+            <ode/>
           </contact>
           <friction>
             <ode>
@@ -3041,11 +3033,7 @@
         </geometry>
         <surface>
           <contact>
-            <ode>
-              <kp>10000000</kp>
-              <kd>1</kd>
-              <min_depth>0.0030000000000000001</min_depth>
-            </ode>
+            <ode/>
           </contact>
           <friction>
             <ode>
