@@ -3,7 +3,7 @@
 URDF and SDF description of pepper_robot.
 
 <p align="left" float="middle">
-  <img width="60%" src="../vid/view.gif" alt="pepper_robot_description view.launch.py"/>
+  <img width="100%" src="../vid/view.gif" alt="pepper_robot_description view.launch.py"/>
 </p>
 
 ## Instructions
