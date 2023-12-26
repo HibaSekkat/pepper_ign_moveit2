@@ -3,7 +3,7 @@
 URDF and SDF description of pepper_robot.
 
 <p align="left" float="middle">
-  <img width="50.0%" src="https://github.com/jrl-umi3218/pepper_description/raw/master/doc/pepper_description.png" alt="Visualisation of pepper_robot"/>
+  <img width="60%" src="../vid/view.gif" alt="pepper_robot_description view.launch.py"/>
 </p>
 
 ## Instructions
@@ -19,7 +19,9 @@ ros2 launch pepper_robot_description view.launch.py
 ```
 
 ### SDF
-
+<p align="left" float="middle">
+  <img width="60%" src="../vid/view_ign.png" alt="pepper_robot_description view.launch.py"/>
+</p>
 For SDF, please use the included [xacro2sdf.bash](./scripts/xacro2sdf.bash) script with the desired arguments. This script makes sure that a correct relative path is used to locate all assets.
 
 To visualise SDF with Gazebo, included [view_ign.launch.py](./launch/view_ign.launch.py) script can be used.

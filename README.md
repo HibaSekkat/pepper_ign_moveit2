@@ -2,8 +2,11 @@
 
 Software packages for the humanoid robot pepper that enable manipulation with MoveIt 2 inside Gazebo. 
 <p align="left" float="middle">
-  <img width="50.0%" src="https://i.makeagif.com/media/4-03-2018/C9ukTX.gif" alt="SoftBank Robotics Meet Pepper on Make"/>
+  <img width="30%" src="vid/readme1.gif" alt="Your First GIF"/>
+  <img width="30%" src="vid/readme2.gif" alt="Your Second GIF"/>
+  <img width="30%" src="vid/readme3.gif" alt="Your Third GIF"/>
 </p>
+
 
 ## Overview
 

@@ -3071,7 +3071,7 @@
       <left_joint>WheelFL</left_joint>
       <right_joint>WheelFR</right_joint>
       <back_joint>WheelB</back_joint>
-      <wheel_separation>0.170</wheel_separation>
+      <wheel_separation>0.310</wheel_separation>
       <wheel_radius>0.07</wheel_radius>
     </plugin>
     <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>

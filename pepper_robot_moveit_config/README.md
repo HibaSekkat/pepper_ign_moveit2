@@ -1,7 +1,9 @@
 # pepper_robot_moveit_config
 
 MoveIt configuration for manipulators that can be attached to pepper_robot.
-
+<p align="left" float="middle">
+  <img width="50%" src="../vid/move_group.gif" alt="left arm random valid"/>
+</p>
 ## Instructions
 
 ### move_group
