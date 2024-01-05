@@ -14,55 +14,42 @@ from launch.substitutions import (
     PathJoinSubstitution,
 )
 from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
 from launch_ros.substitutions import FindPackageShare
-from launch_ros.descriptions import ParameterValue
-def generate_launch_description() -> LaunchDescription:
 
+
+def generate_launch_description() -> LaunchDescription:
     # Declare all launch arguments
     declared_arguments = generate_declared_arguments()
 
     # Get substitution for all arguments
+    description_package = LaunchConfiguration("description_package")
+    xacro_filepath = LaunchConfiguration("xacro_filepath")
     name = LaunchConfiguration("name")
     prefix = LaunchConfiguration("prefix")
-    safety_limits = LaunchConfiguration("safety_limits")
-    safety_position_margin = LaunchConfiguration("safety_position_margin")
-    safety_k_position = LaunchConfiguration("safety_k_position")
-    external_devices = LaunchConfiguration("external_devices")
-    collision_chassis = LaunchConfiguration("collision_chassis")
-    collision_wheels = LaunchConfiguration("collision_wheels")
-    collision_arm = LaunchConfiguration("collision_arm")
-    collision_gripper = LaunchConfiguration("collision_gripper")
-    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
-    publish_state = LaunchConfiguration("publish_state")
-    execute_trajectories = LaunchConfiguration("execute_trajectories")
-    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
-    ros2_control = LaunchConfiguration("ros2_control")
-    ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
-    ros2_control_command_interface = LaunchConfiguration(
-        "ros2_control_command_interface"
-    )
-    servo = LaunchConfiguration("servo")
-    gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
-    gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
-    gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
-    gazebo_diff_drive = LaunchConfiguration("gazebo_diff_drive")
-    gazebo_joint_trajectory_controller = LaunchConfiguration(
-        "gazebo_joint_trajectory_controller"
-    )
-    gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
-    gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
-    enable_rviz = LaunchConfiguration("enable_rviz")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
-    log_level = LaunchConfiguration("log_level", default="info")
+    log_level = LaunchConfiguration("log_level")
 
-    # Extract URDF from description file
-    urdf_file_path = "/root/ws/src/pepper_ign_moveit2/pepper_robot_description/urdf/pepper_robot.urdf"
-
-    with open(urdf_file_path, "r") as urdf_file:
-        urdf_content = urdf_file.read()
-
-    robot_description = {"robot_description": urdf_content}
+    # URDF
+    _robot_description_xml = Command(
+        [
+            PathJoinSubstitution([FindExecutable(name="xacro")]),
+            " ",
+            PathJoinSubstitution(
+                [FindPackageShare(description_package), xacro_filepath]
+            ),
+            " ",
+            "name:=",
+            name,
+            " ",
+            "prefix:=",
+            prefix,
+        ]
+    )
+    robot_description = {
+        "robot_description": ParameterValue(_robot_description_xml, value_type=str)
+    }
 
     # List of nodes to be launched
     nodes = [
@@ -94,7 +81,7 @@ def generate_launch_description() -> LaunchDescription:
             executable="joint_state_publisher_gui",
             output="log",
             arguments=["--ros-args", "--log-level", log_level],
-            #parameters=[{"use_sim_time": use_sim_time}],
+            # parameters=[{"use_sim_time": use_sim_time}],
         ),
     ]
 
@@ -114,132 +101,20 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
             description="Custom package with robot description.",
         ),
         DeclareLaunchArgument(
-            "description_filepath",
-            default_value=path.join("urdf", "pepper_robot.urdf"),
+            "xacro_filepath",
+            default_value=path.join("urdf", "pepper_robot.urdf.xacro"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # Naming of the robot
         DeclareLaunchArgument(
             "name",
-            default_value="pepper_robot",
+            default_value="pepper_robot69",
             description="Name of the robot.",
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="",
+            default_value=[LaunchConfiguration("name"), "_"],
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
-        ),
-        # Safety controller
-        DeclareLaunchArgument(
-            "safety_limits",
-            default_value="true",
-            description="Flag to enable safety limits controllers on manipulator joints.",
-        ),
-        DeclareLaunchArgument(
-            "safety_position_margin",
-            default_value="0.15",
-            description="Lower and upper margin for position limits of all safety controllers.",
-        ),
-        DeclareLaunchArgument(
-            "safety_k_position",
-            default_value="20",
-            description="Parametric k-position factor of all safety controllers.",
-        ),
-        # Enables of sensors and miscellaneous parts
-        DeclareLaunchArgument(
-            "external_devices",
-            default_value="false",
-            description="Flag to enable external devices (mesh).",
-        ),
-        # Collision geometry
-        DeclareLaunchArgument(
-            "collision_chassis",
-            default_value="true",
-            description="Flag to enable collision geometry for the chassis of pepper_robot.",
-        ),
-        DeclareLaunchArgument(
-            "collision_wheels",
-            default_value="true",
-            description="Flag to enable collision geometry for the wheels of pepper_robot.",
-        ),
-        DeclareLaunchArgument(
-            "collision_arm",
-            default_value="true",
-            description="Flag to enable collision geometry for manipulator's arm.",
-        ),
-        DeclareLaunchArgument(
-            "collision_gripper",
-            default_value="true",
-            description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
-        ),
-        DeclareLaunchArgument(
-            "collision_external_devices",
-            default_value="true",
-            description="Flag to enable collision geometry for external devices.",
-        ),
-         # Geometry
-        DeclareLaunchArgument(
-            "high_quality_mesh",
-            default_value="true",
-            description="Flag to select the high or low quality model.",
-        ),
-        # Gripper
-        DeclareLaunchArgument(
-            "mimic_gripper_joints",
-            default_value="false",
-            description="Flag to mimic joints of the gripper.",
-        ),
-        # ROS 2 control
-        DeclareLaunchArgument(
-            "ros2_control",
-            default_value="true",
-            description="Flag to enable ros2 controllers for manipulator.",
-        ),
-        DeclareLaunchArgument(
-            "ros2_control_plugin",
-            default_value="ign",
-            description="The ros2_control plugin that should be loaded for the manipulator ('fake', 'ign', 'real' or custom).",
-        ),
-        DeclareLaunchArgument(
-            "ros2_control_command_interface",
-            default_value="effort",
-            description="The output control command interface provided by ros2_control ('position', 'velocity' or 'effort').",
-        ),
-        # Gazebo
-        DeclareLaunchArgument(
-            "gazebo_preserve_fixed_joint",
-            default_value="false",
-            description="Flag to preserve fixed joints and prevent lumping when generating SDF for Gazebo.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_self_collide",
-            default_value="false",
-            description="Flag to enable self-collision of all robot links when generating SDF for Gazebo.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_self_collide_fingers",
-            default_value="true",
-            description="Flag to enable self-collision of robot between fingers (finger tips) when generating SDF for Gazebo.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_diff_drive",
-            default_value="true",
-            description="Flag to enable DiffDrive Gazebo plugin for pepper_robot.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_joint_trajectory_controller",
-            default_value="false",
-            description="Flag to enable JointTrajectoryController Gazebo plugin for manipulator.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_joint_state_publisher",
-            default_value="false",
-            description="Flag to enable JointStatePublisher Gazebo plugin for all joints.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_pose_publisher",
-            default_value="true",
-            description="Flag to enable PosePublisher Gazebo plugin for true pose of robot.",
         ),
         # Miscellaneous
         DeclareLaunchArgument(
