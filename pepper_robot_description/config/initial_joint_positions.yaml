@@ -1,5 +1,4 @@
- initial_joint_positions:
-
+initial_joint_positions:
   HeadPitch: -0.2
   HeadYaw: 0.0
   LElbowRoll: -0.52
@@ -22,7 +21,7 @@
   LThumb1: 0.1
   LThumb2: 0.1
   LWristYaw: 0.0
-  RElbowRoll: -0.17
+  RElbowRoll: 0.17
   RElbowYaw: 1.22
   RFinger11: 0.1
   RFinger12: 0.1
@@ -38,7 +37,7 @@
   RFinger43: 0.1
   RHand: 0.5
   RShoulderPitch: 1.77
-  RShoulderRoll: 0.17
+  RShoulderRoll: -0.17
   RThumb1: 0.1
   RThumb2: 0.1
   RWristYaw: 0.0
