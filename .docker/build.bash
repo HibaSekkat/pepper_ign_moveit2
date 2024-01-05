@@ -3,7 +3,7 @@ set -e
 
 ## Configuration
 # Default Docker Hub user (used if user is not logged in)
-DEFAULT_DOCKERHUB_USER="andrejorsula"
+DEFAULT_DOCKERHUB_USER="hibasekkat"
 
 ## If the current user is not in the docker group, all docker commands will be run as root
 WITH_SUDO=""

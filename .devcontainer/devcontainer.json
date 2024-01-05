@@ -3,7 +3,7 @@
 	"build": {
 		"context": "${localWorkspaceFolder}",
 		"dockerfile": "${localWorkspaceFolder}/Dockerfile",
-		"cacheFrom": "andrejorsula/pepper_robot"
+		"cacheFrom": "hibasekkat/pepper_robot"
 	},
 	"workspaceFolder": "/root/ws",
 	"workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/root/ws/src/pepper_robot",

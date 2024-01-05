@@ -6,7 +6,7 @@ REPOSITORY_DIR="$(dirname "${SCRIPT_DIR}")"
 
 ## Configuration
 # Default Docker Hub user and repository name (used if inferred image is not available)
-DEFAULT_DOCKERHUB_USER="andrejorsula"
+DEFAULT_DOCKERHUB_USER="hibasekkat"
 DEFAULT_REPOSITORY_NAME="pepper_ign_moveit2"
 # Flags for running the container
 DOCKER_RUN_OPTS="${DOCKER_RUN_OPTS:-
@@ -48,7 +48,7 @@ fi
 IMAGE_NAME="${IMAGE_NAME:-"${DOCKERHUB_USER}/${REPOSITORY_NAME}"}"
 # Determine if such image exists (either locally or on Docker Hub), otherwise use the default image name
 if [[ -z "$(${WITH_SUDO} docker images -q "${IMAGE_NAME}" 2>/dev/null)" ]] || [[ -z "$(curl -fsSL "https://registry.hub.docker.com/v2/repositories/${IMAGE_NAME}" 2>/dev/null)" ]]; then
-    IMAGE_NAME="${DEFAULT_DOCKERHUB_USER}/${DEFAULT_REPOSITORY_NAME}"
+    IMAGE_NAME="${DOCKERHUB_USER}/${DEFAULT_REPOSITORY_NAME}"
 fi
 
 ## Use the provided container name or generate a unique one
@@ -68,12 +68,12 @@ DOCKER_RUN_OPTS="--name ${CONTAINER_NAME} ${DOCKER_RUN_OPTS}"
 ## Parse volumes and environment variables
 while getopts ":v:e:" opt; do
     case "${opt}" in
-        v) CUSTOM_VOLUMES+=("${OPTARG}") ;;
-        e) CUSTOM_ENVS+=("${OPTARG}") ;;
-        *)
-            echo >&2 "Usage: ${0} [-v HOST_DIR:DOCKER_DIR:OPTIONS] [-e ENV=VALUE] [TAG] [CMD]"
-            exit 2
-            ;;
+    v) CUSTOM_VOLUMES+=("${OPTARG}") ;;
+    e) CUSTOM_ENVS+=("${OPTARG}") ;;
+    *)
+        echo >&2 "Usage: ${0} [-v HOST_DIR:DOCKER_DIR:OPTIONS] [-e ENV=VALUE] [TAG] [CMD]"
+        exit 2
+        ;;
     esac
 done
 shift "$((OPTIND - 1))"
