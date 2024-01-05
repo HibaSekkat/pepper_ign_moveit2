@@ -8,7 +8,7 @@ import yaml
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.conditions import IfCondition, UnlessCondition
+from launch.conditions import IfCondition
 from launch.substitutions import (
     Command,
     FindExecutable,
@@ -17,65 +17,94 @@ from launch.substitutions import (
     PythonExpression,
 )
 from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
 from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-
     # Declare all launch arguments
     declared_arguments = generate_declared_arguments()
 
     # Get substitution for all arguments
+    description_package = LaunchConfiguration("description_package")
+    description_filepath = LaunchConfiguration("description_filepath")
     moveit_config_package = "pepper_robot_moveit_config"
     name = LaunchConfiguration("name")
     prefix = LaunchConfiguration("prefix")
-    safety_limits = LaunchConfiguration("safety_limits")
-    safety_position_margin = LaunchConfiguration("safety_position_margin")
-    safety_k_position = LaunchConfiguration("safety_k_position")
-    external_devices = LaunchConfiguration("external_devices")
-    collision_chassis = LaunchConfiguration("collision_chassis")
-    collision_wheels = LaunchConfiguration("collision_wheels")
-    collision_arm = LaunchConfiguration("collision_arm")
-    collision_gripper = LaunchConfiguration("collision_gripper")
-    high_quality_mesh = LaunchConfiguration("high_quality_mesh")
-    publish_state = LaunchConfiguration("publish_state")
-    execute_trajectories = LaunchConfiguration("execute_trajectories")
-    mimic_gripper_joints = LaunchConfiguration("mimic_gripper_joints")
+    collision = LaunchConfiguration("collision")
     ros2_control = LaunchConfiguration("ros2_control")
     ros2_control_plugin = LaunchConfiguration("ros2_control_plugin")
     ros2_control_command_interface = LaunchConfiguration(
         "ros2_control_command_interface"
     )
-    servo = LaunchConfiguration("servo")
+    mimic_finger_joints = LaunchConfiguration("mimic_finger_joints")
     gazebo_preserve_fixed_joint = LaunchConfiguration("gazebo_preserve_fixed_joint")
-    gazebo_self_collide = LaunchConfiguration("gazebo_self_collide")
-    gazebo_self_collide_fingers = LaunchConfiguration("gazebo_self_collide_fingers")
-    gazebo_diff_drive = LaunchConfiguration("gazebo_diff_drive")
-    gazebo_joint_trajectory_controller = LaunchConfiguration(
-        "gazebo_joint_trajectory_controller"
-    )
-    gazebo_joint_state_publisher = LaunchConfiguration("gazebo_joint_state_publisher")
-    gazebo_pose_publisher = LaunchConfiguration("gazebo_pose_publisher")
+    manage_controllers = LaunchConfiguration("manage_controllers")
+    enable_servo = LaunchConfiguration("enable_servo")
     enable_rviz = LaunchConfiguration("enable_rviz")
     rviz_config = LaunchConfiguration("rviz_config")
     use_sim_time = LaunchConfiguration("use_sim_time")
-    log_level = LaunchConfiguration("log_level", default="info")
+    log_level = LaunchConfiguration("log_level")
 
     # URDF
-    urdf_file_path = path.join(get_package_share_directory("pepper_robot_description"), "urdf",
-                               "pepper_robot.urdf")
-
-    with open(urdf_file_path, "r") as urdf_file:
-        urdf_content = urdf_file.read()
-
-    robot_description = {"robot_description": urdf_content}
+    _robot_description_xml = Command(
+        [
+            PathJoinSubstitution([FindExecutable(name="xacro")]),
+            " ",
+            PathJoinSubstitution(
+                [FindPackageShare(description_package), description_filepath]
+            ),
+            " ",
+            "name:=",
+            name,
+            " ",
+            "prefix:=",
+            prefix,
+            " ",
+            "ros2_control:=",
+            ros2_control,
+            " ",
+            "ros2_control_plugin:=",
+            ros2_control_plugin,
+            " ",
+            "ros2_control_command_interface:=",
+            ros2_control_command_interface,
+        ]
+    )
+    robot_description = {
+        "robot_description": ParameterValue(_robot_description_xml, value_type=str)
+    }
 
     # SRDF
-    srdf_file_path = path.join(get_package_share_directory("pepper_robot_moveit_config"), "srdf", "pepper_robot.srdf")
+    srdf_file_path = path.join(
+        get_package_share_directory("pepper_robot_moveit_config"),
+        "srdf",
+        "pepper_robot.srdf",
+    )
     with open(srdf_file_path, "r") as file:
-        srdf_content = file.read()
-
-    robot_description_semantic = {"robot_description_semantic": srdf_content}
+        _robot_description_semantic_xml = file.read()
+    # _robot_description_semantic_xml = Command(
+    #     [
+    #         PathJoinSubstitution([FindExecutable(name="xacro")]),
+    #         " ",
+    #         PathJoinSubstitution(
+    #             [
+    #                 FindPackageShare(moveit_config_package),
+    #                 "srdf",
+    #                 "pepper_robot.srdf.xacro",
+    #             ]
+    #         ),
+    #         " ",
+    #         "name:=",
+    #         name,
+    #         " ",
+    #         "prefix:=",
+    #         prefix,
+    #     ]
+    # )
+    robot_description_semantic = {
+        "robot_description_semantic": _robot_description_semantic_xml
+    }
 
     # Kinematics
     kinematics = load_yaml(
@@ -88,6 +117,7 @@ def generate_launch_description():
             moveit_config_package, path.join("config", "joint_limits.yaml")
         )
     }
+
     # Servo
     servo_params = {
         "moveit_servo": load_yaml(
@@ -95,6 +125,7 @@ def generate_launch_description():
         )
     }
     servo_params["moveit_servo"].update({"use_gazebo": use_sim_time})
+
     # Planning pipeline
     planning_pipeline = {
         "planning_pipelines": ["ompl"],
@@ -102,15 +133,15 @@ def generate_launch_description():
         "ompl": {
             "planning_plugin": "ompl_interface/OMPLPlanner",
             # TODO: Re-enable `default_planner_request_adapters/AddRuckigTrajectorySmoothing` once its issues are resolved
-            "request_adapters": "default_planner_request_adapters/AddTimeOptimalParameterization default_planner_request_adapters/ResolveConstraintFrames default_planner_request_adapters/FixWorkspaceBounds default_planner_request_adapters/FixStartStateBounds default_planner_request_adapters/FixStartStateCollision default_planner_request_adapters/FixStartStatePathConstraints",
-            # TODO: Reduce start_state_max_bounds_error once spawning with specific joint configuration is enabled
-            "start_state_max_bounds_error": 1.5707963,
+            "request_adapters": "default_planner_request_adapters/AddTimeOptimalParameterization default_planner_request_adapters/FixWorkspaceBounds default_planner_request_adapters/FixStartStateBounds default_planner_request_adapters/FixStartStateCollision default_planner_request_adapters/FixStartStatePathConstraints",
+            "start_state_max_bounds_error": 0.1,
         },
     }
     _ompl_yaml = load_yaml(
         moveit_config_package, path.join("config", "ompl_planning.yaml")
     )
     planning_pipeline["ompl"].update(_ompl_yaml)
+
     # Planning scene
     planning_scene_monitor_parameters = {
         "publish_planning_scene": True,
@@ -118,6 +149,7 @@ def generate_launch_description():
         "publish_state_updates": True,
         "publish_transforms_updates": True,
     }
+
     # MoveIt controller manager
     moveit_controller_manager_yaml = load_yaml(
         moveit_config_package, path.join("config", "moveit_controller_manager.yaml")
@@ -126,18 +158,20 @@ def generate_launch_description():
         "moveit_controller_manager": "moveit_simple_controller_manager/MoveItSimpleControllerManager",
         "moveit_simple_controller_manager": moveit_controller_manager_yaml,
     }
+
     # Trajectory execution
     trajectory_execution = {
-        "allow_trajectory_execution": execute_trajectories,
+        "allow_trajectory_execution": True,
         "moveit_manage_controllers": False,
         "trajectory_execution.allowed_execution_duration_scaling": 1.2,
         "trajectory_execution.allowed_goal_duration_margin": 0.5,
         "trajectory_execution.allowed_start_tolerance": 0.1,
     }
+
     # Controller parameters
     declared_arguments.append(
         DeclareLaunchArgument(
-            "__controller_parameters__basename",
+            "__controller_parameters_basename",
             default_value=["controllers_", ros2_control_command_interface, ".yaml"],
         )
     )
@@ -145,9 +179,10 @@ def generate_launch_description():
         [
             FindPackageShare(moveit_config_package),
             "config",
-            LaunchConfiguration("__controller_parameters__basename"),
+            LaunchConfiguration("__controller_parameters_basename"),
         ]
     )
+
     # List of nodes to be launched
     nodes = [
         # robot_state_publisher
@@ -159,12 +194,11 @@ def generate_launch_description():
             parameters=[
                 robot_description,
                 {
-                    "publish_frequency": 50.0,
+                    "publish_frequency": 100.0,
                     "frame_prefix": "",
                     "use_sim_time": use_sim_time,
                 },
             ],
-            condition=IfCondition(publish_state),
         ),
         # ros2_control_node (only for fake controller)
         Node(
@@ -181,21 +215,20 @@ def generate_launch_description():
                 IfCondition(
                     PythonExpression(
                         [
+                            "bool('",
+                            ros2_control,
+                            "') and ",
                             "'",
                             ros2_control_plugin,
                             "'",
                             " == ",
                             "'fake'",
-                            " and ",
-                            "'",
-                            execute_trajectories,
-                            "'",
                         ]
                     )
                 )
             ),
         ),
-        # move_group (with execution)
+        # move_group
         Node(
             package="moveit_ros_move_group",
             executable="move_group",
@@ -212,25 +245,6 @@ def generate_launch_description():
                 moveit_controller_manager,
                 {"use_sim_time": use_sim_time},
             ],
-            condition=IfCondition(execute_trajectories),
-        ),
-        # move_group (without execution)
-        Node(
-            package="moveit_ros_move_group",
-            executable="move_group",
-            output="log",
-            arguments=["--ros-args", "--log-level", log_level],
-            parameters=[
-                robot_description,
-                robot_description_semantic,
-                kinematics,
-                joint_limits,
-                planning_pipeline,
-                trajectory_execution,
-                planning_scene_monitor_parameters,
-                {"use_sim_time": use_sim_time},
-            ],
-            condition=UnlessCondition(execute_trajectories),
         ),
         # move_servo
         Node(
@@ -249,7 +263,7 @@ def generate_launch_description():
                 servo_params,
                 {"use_sim_time": use_sim_time},
             ],
-            condition=IfCondition(servo),
+            condition=IfCondition(enable_servo),
         ),
         # rviz2
         Node(
@@ -287,7 +301,7 @@ def generate_launch_description():
                 output="log",
                 arguments=[controller, "--ros-args", "--log-level", log_level],
                 parameters=[{"use_sim_time": use_sim_time}],
-                condition=IfCondition(execute_trajectories),
+                condition=IfCondition(manage_controllers),
             ),
         )
 
@@ -330,7 +344,7 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "description_filepath",
-            default_value=path.join("urdf", "pepper_robot.urdf"),
+            default_value=path.join("urdf", "pepper_robot.urdf.xacro"),
             description="Path to xacro or URDF description of the robot, relative to share of `description_package`.",
         ),
         # Naming of the robot
@@ -341,79 +355,8 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "prefix",
-            default_value="",
+            default_value="pepper_robot_",
             description="Prefix for all robot entities. If modified, then joint names in the configuration of controllers must also be updated.",
-        ),
-        # Safety controller
-        DeclareLaunchArgument(
-            "safety_limits",
-            default_value="true",
-            description="Flag to enable safety limits controllers on manipulator joints.",
-        ),
-        DeclareLaunchArgument(
-            "safety_position_margin",
-            default_value="0.15",
-            description="Lower and upper margin for position limits of all safety controllers.",
-        ),
-        DeclareLaunchArgument(
-            "safety_k_position",
-            default_value="20",
-            description="Parametric k-position factor of all safety controllers.",
-        ),
-        DeclareLaunchArgument(
-            "external_devices",
-            default_value="false",
-            description="Flag to enable external devices (mesh).",
-        ),
-        # Collision geometry
-        DeclareLaunchArgument(
-            "collision_chassis",
-            default_value="true",
-            description="Flag to enable collision geometry for the chassis of pepper_robot.",
-        ),
-        DeclareLaunchArgument(
-            "collision_wheels",
-            default_value="true",
-            description="Flag to enable collision geometry for the wheels of pepper_robot.",
-        ),
-        DeclareLaunchArgument(
-            "collision_arm",
-            default_value="true",
-            description="Flag to enable collision geometry for manipulator's arm.",
-        ),
-        DeclareLaunchArgument(
-            "collision_gripper",
-            default_value="true",
-            description="Flag to enable collision geometry for manipulator's gripper (hand and fingers).",
-        ),
-        DeclareLaunchArgument(
-            "collision_external_devices",
-            default_value="true",
-            description="Flag to enable collision geometry for external devices.",
-        ),
-        # Geometry
-        DeclareLaunchArgument(
-            "high_quality_mesh",
-            default_value="true",
-            description="Flag to select the high or low quality model.",
-        ),
-        # State publishing
-        DeclareLaunchArgument(
-            "publish_state",
-            default_value="true",
-            description="Flag to enable robot state publisher.",
-        ),
-        # Execution
-        DeclareLaunchArgument(
-            "execute_trajectories",
-            default_value="true",
-            description="Flag to enable execution of trajectories for MoveIt 2.",
-        ),
-        # Gripper
-        DeclareLaunchArgument(
-            "mimic_gripper_joints",
-            default_value="false",
-            description="Flag to mimic joints of the gripper.",
         ),
         # ROS 2 control
         DeclareLaunchArgument(
@@ -423,55 +366,25 @@ def generate_declared_arguments() -> List[DeclareLaunchArgument]:
         ),
         DeclareLaunchArgument(
             "ros2_control_plugin",
-            default_value="ign",
+            default_value="fake",
             description="The ros2_control plugin that should be loaded for the manipulator ('fake', 'ign', 'real' or custom).",
         ),
         DeclareLaunchArgument(
             "ros2_control_command_interface",
-            default_value="effort",
-            description="The output control command interface provided by ros2_control ('position', 'velocity' or 'effort').",
+            default_value="position",
+            description="The output control command interface provided by ros2_control ('position', 'velocity', 'effort' or certain combinations 'position,velocity').",
+        ),
+        # Controller management
+        DeclareLaunchArgument(
+            "manage_controllers",
+            default_value="true",
+            description="Flag to enable spawning of controllers.",
         ),
         # Servo
         DeclareLaunchArgument(
-            "servo",
-            default_value="true",
+            "enable_servo",
+            default_value="false",
             description="Flag to enable MoveIt2 Servo for manipulator.",
-        ),
-        # Gazebo
-        DeclareLaunchArgument(
-            "gazebo_preserve_fixed_joint",
-            default_value="false",
-            description="Flag to preserve fixed joints and prevent lumping when generating SDF for Gazebo.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_self_collide",
-            default_value="false",
-            description="Flag to enable self-collision of all robot links when generating SDF for Gazebo.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_self_collide_fingers",
-            default_value="true",
-            description="Flag to enable self-collision of robot between fingers (finger tips) when generating SDF for Gazebo.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_diff_drive",
-            default_value="true",
-            description="Flag to enable DiffDrive Gazebo plugin for pepper_robot.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_joint_trajectory_controller",
-            default_value="false",
-            description="Flag to enable JointTrajectoryController Gazebo plugin for manipulator.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_joint_state_publisher",
-            default_value="false",
-            description="Flag to enable JointStatePublisher Gazebo plugin for all joints.",
-        ),
-        DeclareLaunchArgument(
-            "gazebo_pose_publisher",
-            default_value="true",
-            description="Flag to enable PosePublisher Gazebo plugin for true pose of robot.",
         ),
         # Miscellaneous
         DeclareLaunchArgument(

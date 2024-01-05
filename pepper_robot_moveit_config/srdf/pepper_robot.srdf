@@ -1,14 +1,26 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <!--This does not replace URDF, and is not an extension of URDF.
     This is a format for representing semantic information about the robot structure.
-    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced
+are defined
 -->
 <robot name="pepper_robot">
-    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
-    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
-    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
-    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
-    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <!--GROUPS:
+    Representation of a set of joints and links. This can be useful for specifying DOF to plan for,
+    defining arms, end effectors, etc-->
+    <!--LINKS:
+    When a link is specified, the parent joint of that link (if it exists) is automatically
+    included-->
+    <!--JOINTS:
+    When a joint is specified, the child link of that joint (which will always exist) is
+    automatically included-->
+    <!--CHAINS:
+    When a chain is specified, all the links along the chain (including endpoints) are included in
+    the group. Additionally, all the joints that are parents to included links are also included.
+    This means that joints along the chain and the parent joint of the base link are included in the
+    group-->
+    <!--SUBGROUPS:
+    Groups can also be formed by referencing to already defined group names-->
     <group name="right_arm">
         <chain base_link="torso" tip_link="r_wrist" />
     </group>
@@ -62,6 +74,11 @@
     <group name="head">
         <chain base_link="torso" tip_link="Head" />
     </group>
+    <group name="torso">
+        <joint name="HipRoll" />
+        <joint name="HipPitch" />
+        <joint name="KneePitch" />
+    </group>
     <group_state name="down" group="left_arm">
         <joint name="LShoulderPitch" value="1.57075" />
         <joint name="LShoulderRoll" value="0" />
@@ -108,10 +125,12 @@
         <joint name="RHand" value="0.98" />
         <joint name="LHand" value="0.98" />
     </group_state>
-    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <!--END
+    EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector group="RHand" name="RHand" parent_group="right_arm" parent_link="r_wrist" />
-    <end_effector group="LHand" name="LHand" parent_group="left_arm" parent_link="l_wrist"/>
-    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <end_effector group="LHand" name="LHand" parent_group="left_arm" parent_link="l_wrist" />
+    <!--PASSIVE
+    JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="LFinger11" />
     <passive_joint name="LFinger12" />
     <passive_joint name="LFinger13" />
@@ -143,7 +162,10 @@
     <passive_joint name="WheelFL" />
     <passive_joint name="WheelFR" />
     <passive_joint name="WheelB" />
-    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <!--DISABLE
+    COLLISIONS: By default it is assumed that any link of the robot could potentially come into
+    collision with any other link in the robot. This tag disables collision checking between a
+    specified pair of links. -->
     <disable_collisions link1="Head" link2="Hip" reason="Never" />
     <disable_collisions link1="Head" link2="LShoulder" reason="Never" />
     <disable_collisions link1="Head" link2="Neck" reason="Adjacent" />
