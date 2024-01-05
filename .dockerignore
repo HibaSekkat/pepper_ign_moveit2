@@ -1,25 +1,40 @@
-# Docker
-**/Dockerfile
-**/.dockerignore
-**/.docker/host
-**/.docker/*.bash
+## Docker
+Dockerfile
+.dockerignore
+.docker/host/
+.docker/*.bash
 
-# Git
-**/.git
-**/.gitignore
+## Docker Compose
+docker-compose.yml
+.env
 
-# Pre-commit
-**/.git_hooks
-**/.pre-commit-config.yaml
+## Dev Container
+.devcontainer/
 
-# Colcon
-**/build
-**/install
-**/log
+## Git
+.git/
+.gitignore
 
-# Python
-**/__pycache__
+## GitHub
+.github/
 
-# Markdown
-**/README.md
+## Pre-commit
+.git_hooks/
+.pre-commit-config.yaml
+
+## Markdown
 **/CHANGELOG.md
+
+### Inherited from gitignore ###
+## Python
+**/__pycache__/
+**/.pytest_cache/
+**/*.pcd
+**/*.py[cod]
+**/*.pyc
+**/*$py.class
+
+## ROS 2 & Colcon
+build/
+install/
+log/
