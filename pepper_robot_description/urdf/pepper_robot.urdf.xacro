@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- URDF for Pepper -->
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
+
+  <!--                   -->
+  <!-- Imported elements -->
+  <!--                   -->
+  <xacro:include filename="$(find pepper_robot_description)/urdf/pepper_robot.gazebo" />
+  <xacro:include filename="$(find pepper_robot_description)/urdf/pepper_robot.ros2_control" />
+
+
+  <!--            -->
+  <!-- Parameters -->
+  <!--            -->
+  <!-- Name of the robot (mandatory) -->
+  <xacro:arg name="name" default="pepper_robot" />
+  <!-- Prefix for all entities -->
+  <xacro:arg name="prefix" default="$(arg name)_" />
+
+  <!-- Flag to enable ros2 controllers for manipulator -->
+  <xacro:arg name="ros2_control" default="true" />
+  <!-- The ros2_control plugin that should be loaded for the manipulator ('fake', 'ign', 'real' or
+  custom) -->
+  <xacro:arg name="ros2_control_plugin" default="fake" />
+  <!-- The output control command interface provided by ros2_control ('position', 'velocity',
+  'effort' or certain combinations 'position,velocity') -->
+  <xacro:arg name="ros2_control_command_interface" default="position" />
+  <!-- The filepath to parameters of ROS 2 controllers -->
+  <xacro:arg name="ros2_controller_parameters"
+    default="$(find pepper_robot_moveit_config)/config/controllers_$(arg ros2_control_command_interface).yaml" />
+
+  <!--       -->
+  <!-- Robot -->
+  <!--       -->
+
+  <!-- Optional: Fixate the base link to the world -->
+  <!-- <link name="world" />
+  <joint name="fixed" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin rpy="0 0 0" xyz="0 0 0.0" />
+  </joint> -->
+
+  <xacro:include filename="pepper_visual_collisions.xacro" />
+  <xacro:include filename="pepper_head.xacro" />
+  <xacro:include filename="pepper_legs.xacro" />
+  <xacro:include filename="pepper_torso.xacro" />
+  <xacro:include filename="pepper_arms.xacro" />
+  <xacro:include filename="pepper_sensors.xacro" />
+  <xacro:include filename="pepper_fingers.xacro" />
+  <xacro:include filename="pepper_wheels.xacro" />
+
+  <!-- ROS 2 control -->
+  <xacro:if value="$(arg ros2_control)">
+    <xacro:ros2_control_pepper_robot prefix="$(arg prefix)" plugin="$(arg ros2_control_plugin)"
+      command_interface="$(arg ros2_control_command_interface)" />
+
+    <!-- Gazebo - ROS 2 control (Ignition) -->
+    <xacro:if
+      value="${'ign' in '$(arg ros2_control_plugin)' or 'gz' in '$(arg ros2_control_plugin)'}">
+      <xacro:ign_ros2_control
+        controller_parameters="$(arg ros2_controller_parameters)" />
+    </xacro:if>
+  </xacro:if>
+
+  <!-- Gazebo - Additional plugins -->
+  <xacro:gazebo_misc_references />
+  <xacro:ign_pose_publisher />
+  <xacro:ign_diff_drive />
+</robot>
