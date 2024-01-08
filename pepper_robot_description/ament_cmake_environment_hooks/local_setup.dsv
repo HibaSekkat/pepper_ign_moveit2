@@ -1,4 +1,0 @@
-source;share/pepper_robot_description/environment/ign_gazebo_resource_path.bash
-source;share/pepper_robot_description/environment/sdf_path.bash
-source;share/pepper_robot_description/environment/ament_prefix_path.sh
-source;share/pepper_robot_description/environment/path.sh

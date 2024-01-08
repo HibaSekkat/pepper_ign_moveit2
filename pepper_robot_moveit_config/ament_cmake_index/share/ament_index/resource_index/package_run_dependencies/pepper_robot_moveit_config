@@ -1,1 +1,0 @@
-pepper_robot_description;backward_ros;control_msgs;controller_manager;hardware_interface;ign_ros2_control;joint_state_broadcaster;joint_trajectory_controller;moveit_ros_move_group;moveit_servo;moveit;robot_state_publisher;ros_ign_bridge;ros_ign_gazebo;rviz2;urdf;xacro

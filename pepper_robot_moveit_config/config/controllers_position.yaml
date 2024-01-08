@@ -5,13 +5,48 @@ controller_manager:
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-    joint_trajectory_controller:
+    head_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-    gripper_trajectory_controller:
+    torso_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-joint_trajectory_controller:
+    left_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    left_hand_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_hand_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+head_controller:
+  ros__parameters:
+    joints:
+      - HeadYaw
+      - HeadPitch
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+torso_controller:
+  ros__parameters:
+    joints:
+      - HipRoll
+      - HipPitch
+      - KneePitch
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+left_arm_controller:
   ros__parameters:
     joints:
       - LShoulderPitch
@@ -19,55 +54,40 @@ joint_trajectory_controller:
       - LElbowYaw
       - LElbowRoll
       - LWristYaw
-      - RShoulderPitch
-      - RShoulderRoll
-      - RElbowYaw
-      - RElbowRoll
-      - RWristYaw
-      - HeadYaw
-      - HeadPitch
-      - HipRoll
-      - HipPitch
-      - KneePitch
-      - LHand
-      - RHand
     command_interfaces:
       - position
     state_interfaces:
       - position
       - velocity
 
-gripper_trajectory_controller:
+left_hand_controller:
   ros__parameters:
     joints:
-      - LFinger11
-      - LFinger12
-      - LFinger13
-      - RFinger11
-      - RFinger12
-      - RFinger13
-      - LFinger21
-      - LFinger22
-      - LFinger23
-      - RFinger21
-      - RFinger22
-      - RFinger23
-      - LFinger31
-      - LFinger32
-      - LFinger33
-      - RFinger31
-      - RFinger32
-      - RFinger33
-      - LFinger41
-      - LFinger42
-      - LFinger43
-      - RFinger41
-      - RFinger42
-      - RFinger43
-      - LThumb1
-      - Rthumb1
-      - LThumb2
-      - RThumb2
+      - LHand
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+right_arm_controller:
+  ros__parameters:
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+      - RWristYaw
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+right_hand_controller:
+  ros__parameters:
+    joints:
+      - RHand
     command_interfaces:
       - position
     state_interfaces:

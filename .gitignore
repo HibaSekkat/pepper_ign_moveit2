@@ -1,7 +1,12 @@
-# Colcon
-**/build
-**/install
-**/log
+## Python
+**/__pycache__/
+**/.pytest_cache/
+**/*.pcd
+**/*.py[cod]
+**/*.pyc
+**/*$py.class
 
-# Python
-**/__pycache__
+## ROS 2 & Colcon
+build/
+install/
+log/
