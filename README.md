@@ -58,3 +58,9 @@ This enables:
 - Execution of binaries, scripts and examples via `ros2 run pepper_robot_* <executable>`
 - Launching of setup scripts via `ros2 launch pepper_robot_* <launch_script>`
 - Discoverability of shared resources
+
+To assess its functionality, start by constructing the Docker image (please be aware that having an NVIDIA GPU may be necessary for this configuration). Execute the following commands:
+.docker/build.bash
+
+Subsequently, initiate the application using the following command:
+.docker/run.bash 'ros2 launch pepper_robot gz.launch.py'
