@@ -1,6 +1,9 @@
 # pepper_robot_ign
 
 Gazebo configuration of pepper_robot.
+<p align="left" float="middle">
+  <img width="100%" src="../vid/ign.gif" alt="ign"/>
+</p>
 
 ## Instructions
 
