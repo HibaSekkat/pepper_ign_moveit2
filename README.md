@@ -60,7 +60,9 @@ This enables:
 - Discoverability of shared resources
 
 To assess its functionality, start by constructing the Docker image (please be aware that having an NVIDIA GPU may be necessary for this configuration). Execute the following commands:
-.docker/build.bash
+
+".docker/build.bash"
 
 Subsequently, initiate the application using the following command:
-.docker/run.bash 'ros2 launch pepper_robot gz.launch.py'
+
+".docker/run.bash 'ros2 launch pepper_robot gz.launch.py'"
