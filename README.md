@@ -36,9 +36,9 @@ Clone this repository, import dependencies, install dependencies and build with 
 
 ```bash
 # Clone this repository into your favourite ROS 2 workspace
-git clone https://github.com/HibaSekkat/Pepper.git
+git clone https://github.com/HibaSekkat/pepper_ign_moveit2.git
 # Import dependencies
-vcs import < Pepper/Pepper.repos
+vcs import <     pepper_ign_moveit2/pepper_robot.repos
 # Install dependencies
 IGNITION_VERSION=fortress rosdep install -y -r -i --rosdistro ${ROS_DISTRO} --from-paths .
 # Build
