@@ -17,7 +17,7 @@ Below is an overview of the included packages, with a short description of their
 - [**pepper_robot**](./pepper_robot) – Metapackage
 - [**pepper_robot_description**](./pepper_robot_description) – URDF and SDF description of the robot
 - [**pepper_robot_ign**](./pepper_robot_ign) – Additional Gazebo-specific configuration of the robot
-- [**pepper_robot_moveit_config**](./pepper_robot_moveit_config) – MoveIt 2 configuration for the robotic manipulator
+- [**pepper_robot_moveit_config**](./pepper_robot_moveit_config) – MoveIt 2 configuration for the robotic manipulations
 
 ## Instructions
 
