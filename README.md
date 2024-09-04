@@ -59,7 +59,11 @@ This enables:
 - Launching of setup scripts via `ros2 launch pepper_robot_* <launch_script>`
 - Discoverability of shared resources
 
-To assess its functionality, start by constructing the Docker image (please be aware that having an NVIDIA GPU may be necessary for this configuration). Execute the following commands:
+### Running with Docker
+
+If you prefer not to install and set up the environment on your local machine or want to ensure a consistent setup, you can run everything within a pre-configured Docker container. This method guarantees that all dependencies and configurations are handled, regardless of your local setup.
+
+To assess the functionality within the Docker environment, start by constructing the Docker image (please be aware that having an NVIDIA GPU may be necessary for this configuration). Execute the following commands:
 
 ```
 .docker/build.bash
