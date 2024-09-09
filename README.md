@@ -74,3 +74,17 @@ Subsequently, initiate the application using the following command:
 ```
 .docker/run.bash 'ros2 launch pepper_robot gz.launch.py'
 ```
+### Citation
+Please use the following citation if you use `pepper_ign_moveit2` in your work.
+
+'''
+@article{sekkat2024beyond,
+  title={Beyond simulation: Unlocking the frontiers of humanoid robot capability and intelligence with Pepper's open-source digital twin},
+  author={Sekkat, Hiba and Moutik, Oumaima and El Kari, Badr and Chaibi, Yassine and Tchakoucht, Taha Ait and Alaoui, Ahmed El Hilali},
+  journal={Heliyon},
+  volume={10},
+  number={14},
+  year={2024},
+  publisher={Elsevier}
+}
+'''
