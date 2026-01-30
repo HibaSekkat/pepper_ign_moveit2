@@ -89,9 +89,9 @@
     max_acceleration: 37.68
   LShoulderPitch:
     has_velocity_limits: true
-    max_velocity: 7.33998
+    max_velocity: 4.0
     has_acceleration_limits: true
-    max_acceleration: 22.01994
+    max_acceleration: 3.0 
   LShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
@@ -109,9 +109,9 @@
     max_acceleration: 0
   LWristYaw:
     has_velocity_limits: true
-    max_velocity: 17.3835
+    max_velocity: 5.0
     has_acceleration_limits: true
-    max_acceleration: 52.1505
+    max_acceleration: 5.0 
   RElbowRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
@@ -189,9 +189,9 @@
     max_acceleration: 37.68
   RShoulderPitch:
     has_velocity_limits: true
-    max_velocity: 7.33998
+    max_velocity: 4.0
     has_acceleration_limits: true
-    max_acceleration: 22.01994
+    max_acceleration: 3.0
   RShoulderRoll:
     has_velocity_limits: true
     max_velocity: 9.22756
@@ -209,21 +209,21 @@
     max_acceleration: 0
   RWristYaw:
     has_velocity_limits: true
-    max_velocity: 17.3835
+    max_velocity: 5.0
     has_acceleration_limits: true
-    max_acceleration: 52.1505
+    max_acceleration: 5.0
   HipRoll:
     has_velocity_limits: true
-    max_velocity: 2.27032
+    max_velocity: 1.5
     has_acceleration_limits: true
-    max_acceleration: 6.8797
+    max_acceleration: 1.5 
   HipPitch:
     has_velocity_limits: true
-    max_velocity: 2.93276
+    max_velocity: 2.0
     has_acceleration_limits: true
-    max_acceleration: 8.8871
+    max_acceleration: 2.0 
   KneePitch:
     has_velocity_limits: true
-    max_velocity: 2.93276
+    max_velocity: 2.0
     has_acceleration_limits: true
-    max_acceleration: 8.8871
+    max_acceleration: 2.0
